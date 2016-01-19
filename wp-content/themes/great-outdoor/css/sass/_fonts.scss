@@ -1,0 +1,82 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed);
+
+@mixin header-font{
+	font-family: "Roboto Slab", sans-serif;
+}
+
+@mixin main-font{
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+.button{
+	border: 2px solid $orange;
+	padding: .25em .5em;
+	color: $orange;
+	text-align: none;
+	text-decoration: none;
+	display: inline-block;
+	transition: all .5s;
+	margin-top: 1em;
+
+	&:hover{
+		background: $orange;
+		color: $white;
+	}
+}
+
+.section-header{
+	font-size: 1.4em;
+	margin-bottom: .5em;
+	text-align: center;
+	@include header-font;
+	clear: both;
+
+	&.orange{
+		color: $orange;
+	}
+
+	small{
+		font-size: .6em;
+		display: block;
+	}
+}
+
+.section-subhead{
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+h2, h3{
+	@include header-font;
+	margin-bottom: .5em;
+	color: $darkgreen;
+}
+
+h2{
+	text-transform: uppercase;
+}
+
+h3{
+	color: $green;
+}
+
+h4, h5, p, li, a, dd, blockquote{
+	@include main-font;
+	line-height: 1.4em;
+	color: $green;
+}
+
+@media screen and (min-width: 600px){
+
+	.section-header{
+
+		&.left{
+			text-align: left;
+		}
+		
+	}
+
+}

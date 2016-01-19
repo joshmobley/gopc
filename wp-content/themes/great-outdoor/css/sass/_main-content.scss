@@ -1,0 +1,247 @@
+.main-content{
+	@include clearfix;
+
+	.promo{
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: .5em;
+		text-align: center;
+		box-sizing: border-box;
+
+		h2, h3{
+			font-size: 1.4em;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		.promo-content{
+			padding: 1em 5%;
+			width: 90%;
+		}
+
+		&.full-width{
+			background: $brown url('../assets/site-footer-bg-400.jpg') no-repeat center;
+			box-sizing: border-box;
+			background-size: cover;
+			padding: 4em 5%;
+			width: 100%;
+			margin: 4em 0;
+
+			h2, p{
+				color: $white;
+			}
+
+			img{
+				box-shadow: 5px 5px 10px $black;
+				margin-bottom: 1em;
+			}
+
+			.button{
+				color: $white;
+				border-color: $white;
+
+				&:hover{
+					background: $darkgreen;
+					color: $white;
+				}
+			}
+
+			&.bg-image{
+				position: relative;
+				margin: 0 0 2em;
+				padding: 0;
+				background: none;
+				width: 100%;
+
+				img{ box-shadow: none; }
+
+
+				.promo-content{
+					background: $white;
+					
+					h2, p{ color: $green; }
+
+					.button{ 
+						color: $orange; 
+						border-color: $orange; 
+
+						&:hover{
+							background: $orange;
+							color: $white;
+						}
+					}
+				}
+
+			}
+			
+		}
+
+		.promo-content{
+
+			&.bg-orange{
+				background: $orange;
+
+				h2, p{ color: $white; }
+			}
+
+			&.bg-green{
+				background: $green;
+
+				h2, p{ color: $white; }
+			}
+
+		}
+
+
+	}
+
+	.adventure-menu{
+
+		ul{
+			display: flex;
+			flex-flow: row wrap;
+			width: 75%;
+			margin: 0 auto 2em;
+
+			li{
+				flex: 1 33%;
+				margin-bottom: 1em;
+				text-align: center;
+
+				a{
+					display: block;
+					background: $lightgreen;
+					background: url('../assets/activity-sprite.png');
+					background-repeat: no-repeat;
+					background-position: center 0;
+					background-size: 61px;
+					padding: 25px 0;
+					text-decoration: none;
+					@include header-font;
+					transition: all .5s;
+
+					&:hover{
+						color: $orange;
+					}
+
+					&.climb{
+						background-position: center -70px;
+					}
+
+					&.fish{
+						background-position: center -140px;
+					}
+
+					&.paddle{
+						background-position: center -210px;
+					}
+
+					&.travel{
+						background-position: center -280px;
+					}
+				}
+			}
+		}
+		
+
+	}
+
+	.page-section{
+		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 600px){
+
+	.main-content{
+
+		&.has-sidebar{
+			float: right;
+			width: 75%;
+			border-left: 1px solid $darkgreen;
+			padding-left: 2%;
+			box-sizing: border-box;
+	
+		}
+
+		.quarter-width{
+			width: 42.5%;
+			float: left;
+		}
+
+		.adventure-menu{
+
+			ul li{
+				flex: 1 20%;
+			}
+
+		}
+
+		.promo.full-width{
+
+			background-image: url('../assets/site-footer-bg-800.jpg');
+
+			&.bg-image .promo-content{
+				position: absolute;
+				bottom: 5vw;
+				background: none;
+				width: 42.5%;
+				text-align: left;
+				right: 0;
+	
+				h2, p, .button{
+					color: $white;
+					border-color: $white;
+				}
+			}
+		}
+
+	}
+	
+}
+
+@media screen and (min-width: 900px){
+
+	.main-content{
+
+		.half-width{
+			width: 42.5%;
+			float: left;
+			margin-bottom: 4em;
+		}
+
+		.promo.full-width{
+			clear: both;
+			background-image: url('../assets/site-footer-bg-1200.jpg');
+		}
+
+		.quarter-width{
+			width: 18.75%;
+		}
+
+		.promo.full-width.bg-image .promo-content{
+			font-size: 1.4em;
+		}
+
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+
+	.main-content{
+
+		.promo.full-width{
+			background-image: url('../assets/site-footer-bg-1600.jpg');
+		}
+
+	}
+
+}

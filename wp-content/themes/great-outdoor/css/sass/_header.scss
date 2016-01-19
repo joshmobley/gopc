@@ -1,0 +1,179 @@
+.no-scroll{
+	overflow:hidden;
+}
+
+header{
+	@include clearfix;
+	background: $brown url('../assets/site-footer-bg-400.png');
+	padding: 1em 5vw;
+	margin-bottom: .5em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	h1{
+		background: url('../assets/logo.png') no-repeat 0 0;
+		background-size: 100%;
+		text-indent: -9999em;
+		width: 200px;
+		height: 39px;
+		float: left;
+	}
+
+	.menu-link{
+		background: url('../assets/menu.png') no-repeat 0 0;
+		background-size: 100%;
+		text-indent: -9999em;
+		width: 30px;
+		height: 30px;
+		display: block;
+		float: right;
+	}
+
+	.nav-wrapper{
+		position: fixed;
+		width: 75vw;
+		padding: 5vw;
+		box-sizing: border-box;
+		height: 100vh;
+		background: $darkgreen;
+		left: -100vw;
+		top: 0;
+		z-index: 9999;
+		transition: all .5s;
+
+		&.visible{
+			left: 0;
+		}
+	}
+
+	#menu-main-nav{
+
+		li a{
+			@include header-font;
+			color: $tan;
+			text-decoration: none;
+			font-size: 1.2em;
+			padding: 1em 0;
+			border-bottom: 1px solid $green;
+			display: block;
+			position: relative;
+		}
+					
+	}
+
+	.searchform{
+		border: 1px solid $white;
+		background: rgba(255,255,255, .2);
+		padding: .5em;
+		margin-left: 2em
+
+		input{
+			@include header-font;
+		}
+
+		input[type="text"]{
+			border: none;
+			background: none;
+			width: 75%;
+			margin: 0 5% 0 0;
+			float: left;
+			padding: 0;
+			border-bottom: 1px solid $white;
+			color: $orange;
+			font-size: .8em;
+
+			&:focus{
+				outline: none;
+			}
+
+		}
+
+		input[type="submit"]{
+			border: none;
+			background: none;
+			color: $white;
+			width: 20%;
+			padding: 0;
+			margin: 0;
+			font-size: .8em;
+		}
+	}
+}
+
+.breadcrumbs{
+	font-size: .8em;
+	padding-left: 5%;
+}
+
+@media screen and (min-width: 400px){
+
+	header{
+		background-image: url('../assets/site-footer-bg-800.jpg');
+	}
+
+}
+
+@media screen and (min-width: 800px){
+
+	header{
+		background-image: url('../assets/site-footer-bg-1200.jpg');
+	}
+}
+
+@media screen and (min-width: 1200px){
+
+	header{
+		background-image: url('../assets/site-footer-bg-1600.jpg');
+
+		.menu-link{
+			display: none;
+		}
+
+		.nav-wrapper{
+			position: static;
+			height: auto;
+			width: auto;
+			background: none;
+		}
+
+		.searchform{
+			float: right;
+			width: 20%;
+		}
+
+		.nav-wrapper{
+			padding: 0;
+			transition: none;
+		}
+
+		#menu-main-nav{
+			width: 55%;
+			float: right;
+			text-align: right;
+			padding-top: .5em;
+
+			li{
+				display: inline-block;
+
+				a{
+					border-bottom: 0;
+					padding: 0 1em;
+					line-height: 1em;
+					display: inline-block;
+					border-right: 2px solid $tan;
+					transition: all .5s;
+
+					&:hover{
+						color: $lightgreen;
+					}
+				}
+
+				&:last-child a{
+					border: none;
+				}
+			}
+		}
+	}
+
+}

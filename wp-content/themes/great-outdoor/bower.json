@@ -1,0 +1,17 @@
+{
+    "name": "WordPress Starter There",
+    "description": "A starter theme for WordPress.",
+    "authors": [
+        "Joshua Rucker <ifiamblue@gmail.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "jquery": "1.11.3",
+        "bootstrap-sass": "3.3.6"
+    }
+}

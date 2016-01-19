@@ -1,0 +1,59 @@
+
+.filter{
+
+	.filter-header{
+		@include main-font;
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	.filter-options{
+		margin-bottom: 2em;
+
+		li{
+			margin-bottom: .25em;
+		}
+		
+		a{ 
+			color: $black;
+			text-decoration: none;
+			position: relative;
+			padding-left: 20px;
+
+			&:before{
+				content: '';
+				display: block;
+				height: 10px;
+				width: 10px;
+				border: 1px solid $orange;
+				position: absolute;
+				left: 0;
+				top: 15%;
+			}
+
+			&.is-selected{
+
+				&:before{
+					background: $orange;
+				}
+			}
+		}
+	}
+
+	.advert img{
+		width: 100%;
+	}
+
+
+}
+@media screen and (min-width: 600px){
+
+	.sidebar{
+		float: left;
+		width: 15%;
+		margin-right: 5%;
+		padding-left: 5%;
+		padding-top: 4em;
+	}
+
+}
