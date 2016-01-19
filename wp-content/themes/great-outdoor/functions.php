@@ -157,11 +157,11 @@
 
 
         foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'http://placehold.it/' . $url ) . '">';
+            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
         }
 
-        echo '<source srcset="' . esc_url( 'http://placehold.it/320x280' ) . '">';
-        echo '<img src="' . esc_url( 'http://placehold.it/320x280' ) . '" alt="">';
+        echo '<source srcset="' . esc_url( 'https://placehold.it/320x280' ) . '">';
+        echo '<img src="' . esc_url( 'https://placehold.it/320x280' ) . '" alt="">';
         echo '</picture>';
 
     }
@@ -178,11 +178,11 @@
 
 
         foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'http://placehold.it/' . $url ) . '">';
+            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
         }
 
-        echo '<source srcset="' . esc_url( 'http://placehold.it/300x80' ) . '">';
-        echo '<img src="' . esc_url( 'http://placehold.it/300x80' ) . '" alt="">';
+        echo '<source srcset="' . esc_url( 'https://placehold.it/300x80' ) . '">';
+        echo '<img src="' . esc_url( 'https://placehold.it/300x80' ) . '" alt="">';
         echo '</picture>';
 
     }
