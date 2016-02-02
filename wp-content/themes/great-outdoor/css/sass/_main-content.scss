@@ -54,7 +54,7 @@
 
 			&.bg-image{
 				position: relative;
-				margin: 0 0 2em;
+				margin: 4em 0;
 				padding: 0;
 				background: none;
 				width: 100%;
@@ -87,13 +87,13 @@
 			&.bg-orange{
 				background: $orange;
 
-				h2, p{ color: $white; }
+				h3, p, a{ color: $white!important; }
 			}
 
 			&.bg-green{
 				background: $green;
 
-				h2, p{ color: $white; }
+				h3, p{ color: $white!important; }
 			}
 
 		}
@@ -195,6 +195,34 @@
 				width: 42.5%;
 				text-align: left;
 				right: 0;
+
+				&.top-left{
+					top: 5vw;
+					left: 0;
+					right: auto;
+				}
+
+				&.bottom-left{
+					left: 0;
+					right: auto;
+				}
+
+				&.top-right{
+					top: 5vw;
+					bottom: auto;
+				}
+
+				&.top-center{
+					top: 5vw;
+					bottom: auto;
+					text-align: center;
+				}
+
+				&.bottom-center{
+					text-align: center;
+				}
+
+
 	
 				h2, p, .button{
 					color: $white;

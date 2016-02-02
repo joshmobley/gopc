@@ -1,0 +1,46 @@
+.inline-menu{
+	width: 90vw;
+	margin-left: 5vw;
+	margin-bottom: 4em;
+	text-align: center;
+
+	h3{
+		@include main-font;
+		color: $orange;
+		text-decoration: underline;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		font-size: .8em;
+	}
+
+	a{
+		@include header-font;
+		color: $orange;
+		font-size: 1.4em;
+		text-decoration: none;
+		margin: .25em 0;
+		display: block;
+		text-transform: uppercase;
+
+		&:hover{
+			color: $green;
+		}
+	}
+}
+
+@media screen and (min-width: 900px){
+
+	.inline-menu{
+		width: 70vw;
+		margin: 0 auto 4em;
+
+		li{
+			display: inline-block;
+
+			a{
+				margin: .25em 1em;
+			}
+		}
+	}
+
+}

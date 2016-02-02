@@ -2,7 +2,7 @@
 
 <section class="main-content">
 
-	<div class="full-width promo bg-image" id="post-1">
+	<div class="full-width promo bg-image no-margin-top" id="post-1">
 
 		<a href="#">
 		
