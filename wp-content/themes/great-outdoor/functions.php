@@ -57,6 +57,13 @@
 
     ## Documentation: http://codex.wordpress.org/Post_Types
 
+    // removing content box from product CPT
+    add_action('init', 'remove_content_editor');
+
+    function remove_content_editor() {
+        remove_post_type_support( 'product', 'editor' );
+    }
+
     /*****************************************************************************
     *** iii.  Custom Taxonomies
     ******************************************************************************/
@@ -211,6 +218,8 @@
     function woocommerce_support() {
         add_theme_support( 'woocommerce' );
     }
+
+
 
 
 ?>
