@@ -64,6 +64,23 @@
         remove_post_type_support( 'product', 'editor' );
     }
 
+    // create event post type
+    add_action( 'init', 'create_event_type' );
+    
+    function create_event_type() {
+        register_post_type( 'event',
+        array(
+          'labels' => array(
+            'name' => __( 'Events' ),
+            'singular_name' => __( 'Event' )
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'menu_icon' => 'dashicons-calendar'
+        )
+        );
+    }
+
     /*****************************************************************************
     *** iii.  Custom Taxonomies
     ******************************************************************************/
@@ -135,6 +152,15 @@
         register_nav_menu('community-nav',__( 'Community Menu' ));
     }   
     add_action( 'init', 'register_menus' );
+
+
+    //use dashicons
+
+    add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+
+    function load_dashicons_front_end() {
+        wp_enqueue_style( 'dashicons' );
+    }
 
     /*****************************************************************************s
     *** v.  Short Codes
