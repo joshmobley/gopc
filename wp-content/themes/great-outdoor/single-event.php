@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="breadcrumbs"><a href="#">Adventure</a> > <a href="#">Events</a> > <a href="#">Fly Tying Class</a> </div>
+<div class="breadcrumbs"><a href="#">Adventure</a> > <a href="#">Events</a> > <a href="#">Fish</a> > <a href="#">Fly Tying Class</a> </div>
 
 <section class="main-content event-page">
 
