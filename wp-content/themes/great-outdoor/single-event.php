@@ -24,9 +24,9 @@
 
 			<div class="cost"><span class="dashicons dashicons-money"></span><?php echo esc_html( get_field('cost') ); ?></div>
 
-			<div class="contact"><span class="dashicons dashicons-phone"></span>(336) 727-0906</div>
+			<div class="contact"><span class="dashicons dashicons-phone"></span><?php echo esc_html( get_field('phone') );?></div>
 
-			<div class="email"><span class="dashicons dashicons-email"></span><a href="mailto:events@greatoudoorprovision.com">events@greatoudoorprovision.com</a></div>
+			<div class="email"><span class="dashicons dashicons-email"></span><?php echo '<a href="mailto:' . esc_html( get_field('email') ) . '">' . esc_html( get_field('email') ) . '</a>'; ?></div>
 
 			<a href="#" class="register-link">Register Now</a>
 

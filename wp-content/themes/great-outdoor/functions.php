@@ -19,7 +19,7 @@
 
     function enqueue_styles() {
         wp_register_style( 'main-style', get_template_directory_uri() . '/css/styles.min.css', null, null, 'all' );
-        wp_enqueue_style( 'main-style' );
+        wp_enqueue_style( 'main-style', -2 );
         // // register font awesome
         // wp_register_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '', 'all' );
         // wp_enqueue_style( 'fontawesome' );
@@ -161,6 +161,25 @@
     function load_dashicons_front_end() {
         wp_enqueue_style( 'dashicons' );
     }
+
+    /**
+     * Register our sidebars and widgetized areas.
+     *
+     */
+    function product_filter_init() {
+    
+        register_sidebar( array(
+            'name'          => 'Shop/Products sidebar',
+            'id'            => 'product-filter',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ) );
+    
+    }
+    add_action( 'widgets_init', 'product_filter_init' );
+
 
     /*****************************************************************************s
     *** v.  Short Codes

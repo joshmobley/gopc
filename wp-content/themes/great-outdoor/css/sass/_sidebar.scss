@@ -2,9 +2,8 @@
 .filter{
 
 	.filter-header{
-		@include main-font;
-		text-transform: uppercase;
-		color: $black;
+		@include header-font;
+		color: $orange;
 	}
 
 	.filter-options{
@@ -50,10 +49,12 @@
 
 	.sidebar{
 		float: left;
-		width: 15%;
-		margin-right: 5%;
+		width: 25%;
+		padding-right: 5%;
 		padding-left: 5%;
-		padding-top: 4em;
+		padding-top: 2em;
+		border-right: 1px solid $green;
+		box-sizing: border-box;
 	}
 
 }

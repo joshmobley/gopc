@@ -1,19 +1,22 @@
-<?php get_header(); ?>
-
-<div class="breadcrumbs"><a href="#">Clothing &amp; Wearables</a> > <a href="#">Mens</a> > <a href="#">Jackets</a> > <a href="#">Tonnerro Down Jacket</a></div>
-
 <section class="main-content product-page">
 
 	<?php //wc_get_template_part( 'content', 'single-product' ); ?>
 
 	<?php //gopc_product_sizer(); ?>
-	<img class="product-photo" src="http://placehold.it/480x480" />
+	<?php 
+		$product = wc_get_product();
+		echo '<div class="product-photo">' . $product->get_image('large') . '</div>';
+	 ?>
 
 	<div class="product-info">
 
 		<h2 class="section-header orange left"><?php esc_html(the_title()); ?></h2>
 
 		<p class="product-info-text"><?php esc_html(the_excerpt()); ?></p>
+
+		<?php /*
+
+		HOLDING ON SIZES + COLORS UNTIL PHASE 2 
 
 		<h3 class="a11y availability-header">Colors available:</h3>
 		<ul class="colors-available availability-list">
@@ -47,7 +50,7 @@
 
 		?>
 		</ul>
-		<p>*Check your local store for your size</p>
+		<p>*Check your local store for your size</p> */ ?>
 
 		<h3 class="availability-header">Great for:</h3>
 		<ul class="activities-available availability-list">
@@ -74,36 +77,55 @@
 
 	<div class="product-additional-info">
 
+		<?php 
+			if( get_field('features') != null ){ $features = true; }
+			if( get_field('specs') != null ){ $specs = true; }
+		?>
+
 		<div class="features-and-specs">
 	
-			<a class="tab is-active" href="#">Features</a>
-			<a class="tab" href="#">Specs</a>
+			<?php /*if( $features ) : ?>
+				<a class="tab" data-tab="features" href="#">Features</a>
+			<?php endif; ?>
+
+			<?php if( $specs ) : ?>
+				<a class="tab" data-tab="specs" href="#">Specs</a>
+			<?php endif;*/ ?>
 	
-			<div class="features is-active">
+			<?php if( $features ) : ?>
+			<div class="features container">
+				<h3>Features</h3>
 				<?php esc_html(the_field('features')); ?>
 			</div>
+
+		<?php endif; ?>
+
+		<?php if( $specs ) : ?>
 	
-			<div class="specs">
-				<ul>
-					<li>Lorem</li>
-					<li>Lorem</li>
-					<li>Lorem</li>
-					<li>Lorem</li>
-					<li>Lorem</li>
-					<li>Lorem</li>
-				</ul>
+			<div class="specs container">
+				<h3>Specs</h3>
+				<?php esc_html(the_field('specs')); ?>
 			</div>
+
+		<?php endif; ?>
 	
 		</div><!--.features-and-specs-->
 
-		<div class="product-video">
-			<!--video goes here-->
-		</div><!--.product-video-->
+		<?php if( $video) : ?>
+
+			<div class="product-video">
+				<!--video goes here-->
+			</div><!--.product-video-->
+		<?php endif; ?>
+
+		<?php if( $testimonial ) : ?>
 	
-		<div class="product-testimonial">
-			<blockquote>&ldquo;I took this jacket with me to Florida. I was hot.&rdquo;</blockquote>
-			<span class="quote-credit">- Molly Ringwald <span>Store Manager, Winston-Salem</span></span>
-		</div><!--.product-testimonial-->
+			<div class="product-testimonial">
+				<blockquote>&ldquo;I took this jacket with me to Florida. I was hot.&rdquo;</blockquote>
+				<span class="quote-credit">- Molly Ringwald <span>Store Manager, Winston-Salem</span></span>
+			</div><!--.product-testimonial-->
+
+		<?php endif; ?>
 
 	</div><!--.product-additional-info-->
 
@@ -176,6 +198,3 @@
 	</div><!--.related-products-->
 
 </section><!--.main-content.has-sidebar-->
-
-<?php //get_sidebar('products'); ?>
-<?php get_footer(); ?>
