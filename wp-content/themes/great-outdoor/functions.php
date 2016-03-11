@@ -227,6 +227,53 @@
         echo '}';
       }
       echo '</style>';
+    }
+
+    function gopc_imagesizer( ){
+
+        $medImage = '600x400';
+        $medLargeImage = '800x400';
+        $largeImage = '1024x400';
+        $xlargeImage = '1600x600';
+
+        $mediaQueries = array(
+            1600 => $xlargeImage,
+            1024 => $largeImage,
+            600  => $medLargeImage,
+            340  => $medImage
+        );
+
+        echo '<picture>';
+
+
+        foreach( $mediaQueries as $px => $url ){
+            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
+        }
+
+        echo '<source srcset="' . esc_url( 'https://placehold.it/320x280' ) . '">';
+        echo '<img src="' . esc_url( 'https://placehold.it/320x280' ) . '" alt="">';
+        echo '</picture>';
+
+    }
+
+    function gopc_adsizer( ){
+
+        $medImage = '200x400';
+
+        $mediaQueries = array(
+            600  => $medImage
+        );
+
+        echo '<picture>';
+
+
+        foreach( $mediaQueries as $px => $url ){
+            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
+        }
+
+        echo '<source srcset="' . esc_url( 'https://placehold.it/300x80' ) . '">';
+        echo '<img src="' . esc_url( 'https://placehold.it/300x80' ) . '" alt="">';
+        echo '</picture>';
 
     }
 
