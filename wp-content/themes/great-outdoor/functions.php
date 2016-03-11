@@ -66,7 +66,7 @@
 
     // create event post type
     add_action( 'init', 'create_event_type' );
-    
+
     function create_event_type() {
         register_post_type( 'event',
         array(
@@ -150,7 +150,7 @@
         register_nav_menu('adventure-nav',__( 'Adventure Menu' ));
         register_nav_menu('locations-nav',__( 'Locations Menu' ));
         register_nav_menu('community-nav',__( 'Community Menu' ));
-    }   
+    }
     add_action( 'init', 'register_menus' );
 
 
@@ -167,7 +167,7 @@
      *
      */
     function product_filter_init() {
-    
+
         register_sidebar( array(
             'name'          => 'Shop/Products sidebar',
             'id'            => 'product-filter',
@@ -176,7 +176,7 @@
             'before_title'  => '<h2>',
             'after_title'   => '</h2>',
         ) );
-    
+
     }
     add_action( 'widgets_init', 'product_filter_init' );
 
@@ -191,51 +191,42 @@
     *** vi. Custom Image Functions
     ******************************************************************************/
 
-    function gopc_imagesizer( ){
-
-        $medImage = '600x400';
-        $medLargeImage = '800x400';
-        $largeImage = '1024x400';
-        $xlargeImage = '1600x600';
-
-        $mediaQueries = array(
-            1600 => $xlargeImage,
-            1024 => $largeImage, 
-            600  => $medLargeImage,
-            340  => $medImage
-        );
-
-        echo '<picture>';
 
 
-        foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
-        }
+    add_image_size( 'gopc-small', 400, 400 );
+    add_image_size( 'gopc-medium', 600, 600 );
+    add_image_size( 'gopc-large', 1024, 1024 );
+    add_image_size( 'gopc-extralarge', 1200, 1200 );
+    add_image_size( 'gopc-fullbleed', 1600, 1600 );
 
-        echo '<source srcset="' . esc_url( 'https://placehold.it/320x280' ) . '">';
-        echo '<img src="' . esc_url( 'https://placehold.it/320x280' ) . '" alt="">';
-        echo '</picture>';
-
-    }
-
-    function gopc_adsizer( ){
-
-        $medImage = '200x400';
-
-        $mediaQueries = array(
-            600  => $medImage
-        );
-
-        echo '<picture>';
+    function gopc_image_sizes( $imageObj , $selector ){
 
 
-        foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
-        }
+      $smallImage       = $imageObj['sizes']['gopc-small'];
+      $medImage         = $imageObj['sizes']['gopc-medium'];
+      $largeImage       = $imageObj['sizes']['gopc-large'];
+      $xlargeImage      = $imageObj['sizes']['gopc-extralarge'];
+      $fullbleedImage   = $imageObj['sizes']['gopc-fullbleed'];
 
-        echo '<source srcset="' . esc_url( 'https://placehold.it/300x80' ) . '">';
-        echo '<img src="' . esc_url( 'https://placehold.it/300x80' ) . '" alt="">';
-        echo '</picture>';
+      $mediaQueries = array(
+        '400'  => $medImage,
+        '600'  => $largeImage,
+        '1024' => $xlargeImage,
+        '1200' => $fullbleedImage
+      );
+
+      echo '<style>';
+      echo $selector . '{';
+      echo 'background-image: url(' . esc_url( $smallImage ) . ');';
+      echo '}';
+      foreach( $mediaQueries as $px => $url ){
+        echo '@media screen and (min-width: ' . esc_html( $px ) . 'px){';
+        echo esc_html( $selector ) . '{';
+        echo 'background-image: url(' . esc_url( $url ) . ');';
+        echo '}';
+        echo '}';
+      }
+      echo '</style>';
 
     }
 
@@ -253,13 +244,13 @@
     function my_theme_wrapper_start() {
       echo '<section id="main-content">';
     }
-    
+
     function my_theme_wrapper_end() {
       echo '</section>';
     }
 
     add_action( 'after_setup_theme', 'woocommerce_support' );
-  
+
     function woocommerce_support() {
         add_theme_support( 'woocommerce' );
     }
