@@ -36,9 +36,15 @@ if ( $adventure->have_posts() ) :
 	echo '<ul class="tiled-list">';
 while ( $adventure->have_posts() ) : $adventure->the_post(); ?>
 
+        <?php
+        $postImage = get_the_post_thumbnail();
+        if( $postImage == null ){
+            $postImage = '<img src="http://placehold.it/300x250" />';
+        }
+        ?>
 
 		<li class="tile">
-			<a href="<?php esc_url( the_permalink() ); ?>"><img src="http://placehold.it/300x250" /></a>
+			<a href="<?php esc_url( the_permalink() ); ?>"><?php echo $postImage; ?></a>
 			<a href="<?php esc_url( the_permalink() ); ?>"><h3><?php esc_html( the_title() ); ?></h3></a>
 			<?php esc_html(the_excerpt()); ?>
 		</li>

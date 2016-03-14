@@ -927,3 +927,6 @@ footer {
   padding-left: 25%; }
   .adventure .tiled-list .tile {
     width: 27%; }
+    .adventure .tiled-list .tile img {
+      width: 100%;
+      height: auto; }
