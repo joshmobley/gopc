@@ -31,6 +31,10 @@ if( get_field('content') != null ){
 
 					$textPosition = $section['text_position'];
 
+                    if( $postImage == null ){
+                        $postImage = '<img src="http://placehold.it/1600x900" />';
+                    }
+
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
 					echo $postImage;
@@ -53,6 +57,10 @@ if( get_field('content') != null ){
                         $post = $item['post'];
 
                         include( 'content-parser-variables.php' );
+
+                        if( $postImage == null ){
+                            $postImage = '<img src="http://placehold.it/1500x1000" />';
+                        }
 
 						$bgcolor = 'bg-' . $item['text_background_color'];
 						echo '<div class="half-width promo" id="post-' . $postCount . '">';
@@ -79,6 +87,10 @@ if( get_field('content') != null ){
                         $post = $item['post'];
 
                         include( 'content-parser-variables.php' );
+
+                        if( $postImage == null ){
+                            $postImage = '<img src="http://placehold.it/1500x1000" />';
+                        }
 
 						echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
 						echo '<a href="' . esc_url( $linkURL ) . '">';

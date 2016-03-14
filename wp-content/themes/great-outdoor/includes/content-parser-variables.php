@@ -14,10 +14,6 @@ if( $post->post_type == 'product'){
 
 //print_r('post image: ' . $postImage);
 
-if( $postImage == null ){
-    $postImage = '<img src="http://placehold.it/1500x1000" />';
-}
-
 if( $item['customize_content'] ){
 
     if( $item['custom_title'] ){ $title = $item['custom_title']; }
