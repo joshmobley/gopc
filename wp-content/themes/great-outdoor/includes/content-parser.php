@@ -23,13 +23,15 @@ if( get_field('content') != null ){
 
                     include( 'content-parser-variables.php' );
 
-					if( $section['no_margin'] == true ){
-						$class = 'no-margin-top page-header';
-					}
+					if( $section['no_margin'] == '1' ){
+						$class = 'no-margin-top page-header bg-image';
+					}else{
+                        $class = '';
+                    }
 
 					$textPosition = $section['text_position'];
 
-					echo '<div class="full-width promo bg-image ' . $class . '" id="post-' . $postCount . '">';
+					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
 					echo $postImage;
 					echo '<div class="promo-content ' . $textPosition . '">';
