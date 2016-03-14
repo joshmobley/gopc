@@ -13,7 +13,7 @@ if( $post->post_type == 'product'){
 }
 
 if( $postImage == null ){
-    $psotImage = '<img src="http://placehold.it/1500x1000" />';
+    $postImage = '<img src="http://placehold.it/1500x1000" />';
 }
 
 if( $item['customize_content'] ){
