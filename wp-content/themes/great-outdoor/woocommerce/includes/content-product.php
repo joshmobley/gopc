@@ -90,14 +90,12 @@
 
             <?php if( $features ) : ?>
             <div class="features container is-active">
-                <h3>Features</h3>
                 <?php esc_html(the_field('features')); ?>
             </div>
             <?php endif; ?>
 
             <?php if( $specs ) : ?>
             <div class="specs container">
-                <h3>Specs</h3>
                 <?php esc_html(the_field('specs')); ?>
             </div>
          <?php endif; ?>
