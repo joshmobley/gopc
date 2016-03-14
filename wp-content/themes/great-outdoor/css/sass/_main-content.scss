@@ -18,6 +18,7 @@
 
 		img{
 			width: 100%;
+            height: auto;
 		}
 
 		.promo-content{
@@ -64,12 +65,12 @@
 
 				.promo-content{
 					background: $white;
-					
+
 					h2, p{ color: $green; }
 
-					.button{ 
-						color: $orange; 
-						border-color: $orange; 
+					.button{
+						color: $orange;
+						border-color: $orange;
 
 						&:hover{
 							background: $orange;
@@ -79,7 +80,7 @@
 				}
 
 			}
-			
+
 		}
 
 		.promo-content{
@@ -148,12 +149,13 @@
 				}
 			}
 		}
-		
+
 
 	}
 
 	.page-section{
 		text-align: center;
+        clear: both;
 	}
 
 	&.blog-single{
@@ -163,7 +165,7 @@
 		.blog-header{
 			margin: 0 0 2em;
 
-			.featured-image{
+			.attachment-post-thumbnail{
 				width: 100vw;
 				margin-left: -5vw;
 				margin-bottom: 2em;
@@ -231,7 +233,7 @@
 			border-left: 1px solid $darkgreen;
 			padding-left: 2%;
 			box-sizing: border-box;
-	
+
 		}
 
 		.quarter-width{
@@ -286,7 +288,7 @@
 				}
 
 
-	
+
 				h2, p, .button{
 					color: $white;
 					border-color: $white;
@@ -319,7 +321,7 @@
 		}
 
 	}
-	
+
 }
 
 @media screen and (min-width: 900px){

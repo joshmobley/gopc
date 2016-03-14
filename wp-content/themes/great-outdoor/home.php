@@ -6,7 +6,7 @@
 
 		<a href="#">
 
-			<?php gopc_imagesizer( '#post-1' ); ?>
+			<?php //gopc_bgimage( '#post-1' ); ?>
 
 			<div class="promo-content">
 
@@ -71,7 +71,7 @@
 
 		</div>
 
-		<a href="#"><?php gopc_imagesizer( '#post-1' ); ?></a>
+		<a href="#"><?php gopc_bgimage( '#post-1' ); ?></a>
 
 		<div class="promo-content">
 

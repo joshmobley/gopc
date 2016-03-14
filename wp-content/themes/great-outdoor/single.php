@@ -5,7 +5,7 @@
     <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
 
     	<div class="blog-header">
-    		<img class="featured-image" src="http://placehold.it/1600x400" />
+            <?php echo get_the_post_thumbnail(); ?>
        		<div class="blog-header-text">
        			<h2><?php esc_html( the_title() ); ?></h2>
         		<time><?php esc_html( the_date() ); ?></time>
