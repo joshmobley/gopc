@@ -35,8 +35,8 @@ if( get_field('content') != null ){
 					echo '<a href="' . esc_url( $linkURL ) . '">';
 					echo $postImage;
 					echo '<div class="promo-content ' . $textPosition . '">';
-					echo '<h2>' . esc_html( get_the_title( $post->ID ) ) . '</h2>';
-					echo '<p>' . esc_html( substr( $post->post_content, 0, 150 ) . '...') . '</p>';
+					echo '<h2>' . esc_html( $title ) . '</h2>';
+					echo '<p>' . esc_html( $desc . '...') . '</p>';
 					echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
 					echo '</div><!--.promo-content-->';
 					echo '</a>';
