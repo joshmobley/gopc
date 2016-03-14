@@ -341,13 +341,15 @@ header {
     text-align: center;
     clear: both; }
   .main-content.blog-single {
-    padding: 2em 5%;
-    padding-top: 0; }
+    padding: 0 5%; }
+    .main-content.blog-single .attachment-post-thumbnail {
+      width: 100vw;
+      height: auto;
+      margin-left: -5vw;
+      margin-bottom: -80%; }
     .main-content.blog-single .blog-header {
-      margin: 0 0 2em; }
-      .main-content.blog-single .blog-header .attachment-post-thumbnail {
-        width: 100vw;
-        margin-left: -5vw; }
+      margin: 0 0 2em;
+      position: relative; }
       .main-content.blog-single .blog-header .blog-header-text {
         max-width: 800px;
         margin: 0 auto;
@@ -355,19 +357,25 @@ header {
         padding-bottom: 2em; }
       .main-content.blog-single .blog-header h2 {
         color: #d78105;
-        font-size: 2em;
-        margin-top: 2em; }
+        font-size: 2em; }
       .main-content.blog-single .blog-header time {
         font-family: "Roboto Condensed", sans-serif; }
     .main-content.blog-single .blog-content {
       max-width: 800px;
-      margin: 0 auto; }
-      .main-content.blog-single .blog-content img.alignright {
-        margin: 0em -4em 2em 2em;
-        float: right; }
-      .main-content.blog-single .blog-content img.alignleft {
-        margin: 0em 2em 2em -4em;
-        float: left; }
+      margin: 0 auto;
+      background: white;
+      padding: 2em;
+      position: relative;
+      margin-top: 2em; }
+      .main-content.blog-single .blog-content img {
+        padding: .5em;
+        background: #ffffff; }
+        .main-content.blog-single .blog-content img.alignright {
+          margin: 0em -6em 1em 2em;
+          float: right; }
+        .main-content.blog-single .blog-content img.alignleft {
+          margin: 0em 2em 1em -6em;
+          float: left; }
       .main-content.blog-single .blog-content h3 {
         font-size: 1.4em; }
       .main-content.blog-single .blog-content p {
