@@ -23,11 +23,18 @@ if( get_field('content') != null ){
 					if( $section['no-margin'] == true ){
 						$class = 'no-margin-top';
 					}
+
 					$textPosition = $section['text-position'];
+
+                    if( $post->post_type == 'product'){
+                        $product = wc_get_product();
+                        $postImage = $product->get_image_id();
+
+                    }
 
 					echo '<div class="full-width promo bg-image ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( get_the_permalink( $post->ID ) ) . '">';
-					gopc_imagesizer( '#post-' . $postCount );
+					echo '<style>#post-' . $postCount . '{ ' . $postImage . ' } </style>';
 					echo '<div class="promo-content ' . $textPosition . '">';
 					echo '<h2>' . esc_html( get_the_title( $post->ID ) ) . '</h2>';
 					echo esc_html( get_the_content( $post->ID ) );
@@ -83,7 +90,7 @@ if( get_field('content') != null ){
 					echo '</ul>';
 					echo '</div><!--.product-landing-menu-->';
 					break;
-				
+
 
 			}
 
@@ -91,6 +98,6 @@ if( get_field('content') != null ){
 
 		}
 	}else{
-		the_content(); 
+		the_content();
 	}
 ?>

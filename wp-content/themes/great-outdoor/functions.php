@@ -191,57 +191,59 @@
     *** vi. Custom Image Functions
     ******************************************************************************/
 
-
-
     add_image_size( 'gopc-small', 400, 400 );
     add_image_size( 'gopc-medium', 600, 600 );
     add_image_size( 'gopc-large', 1024, 1024 );
     add_image_size( 'gopc-extralarge', 1200, 1200 );
     add_image_size( 'gopc-fullbleed', 1600, 1600 );
 
-    function gopc_image_sizes( $imageObj , $selector ){
 
+    function gopc_bgimage( $imageObj , $selector ){
 
-      $smallImage       = $imageObj['sizes']['gopc-small'];
-      $medImage         = $imageObj['sizes']['gopc-medium'];
-      $largeImage       = $imageObj['sizes']['gopc-large'];
-      $xlargeImage      = $imageObj['sizes']['gopc-extralarge'];
-      $fullbleedImage   = $imageObj['sizes']['gopc-fullbleed'];
+          $mediaQueries = array(
+            '400'  => $medImage,
+            '600'  => $largeImage,
+            '1024' => $xlargeImage,
+            '1200' => $fullbleedImage
+          );
 
-      $mediaQueries = array(
-        '400'  => $medImage,
-        '600'  => $largeImage,
-        '1024' => $xlargeImage,
-        '1200' => $fullbleedImage
-      );
+          // set image urls
+          $smallImage       = $imageObj['sizes']['gopc-small'];
+          $medImage         = $imageObj['sizes']['gopc-medium'];
+          $largeImage       = $imageObj['sizes']['gopc-large'];
+          $xlargeImage      = $imageObj['sizes']['gopc-extralarge'];
+          $fullbleedImage   = $imageObj['sizes']['gopc-fullbleed'];
 
-      echo '<style>';
-      echo $selector . '{';
-      echo 'background-image: url(' . esc_url( $smallImage ) . ');';
-      echo '}';
-      foreach( $mediaQueries as $px => $url ){
-        echo '@media screen and (min-width: ' . esc_html( $px ) . 'px){';
-        echo esc_html( $selector ) . '{';
-        echo 'background-image: url(' . esc_url( $url ) . ');';
-        echo '}';
-        echo '}';
-      }
-      echo '</style>';
+          echo '<style>';
+          echo $selector . '{';
+          echo 'background-image: url(' . esc_url( $smallImage ) . ');';
+          echo '}';
+          foreach( $mediaQueries as $px => $url ){
+            echo '@media screen and (min-width: ' . esc_html( $px ) . 'px){';
+            echo esc_html( $selector ) . '{';
+            echo 'background-image: url(' . esc_url( $url ) . ');';
+            echo '}';
+            echo '}';
+          }
+          echo '</style>';
     }
 
-    function gopc_imagesizer( ){
 
-        $medImage = '600x400';
-        $medLargeImage = '800x400';
-        $largeImage = '1024x400';
-        $xlargeImage = '1600x600';
+    function gopc_image( $imageObj ){
 
         $mediaQueries = array(
-            1600 => $xlargeImage,
-            1024 => $largeImage,
-            600  => $medLargeImage,
-            340  => $medImage
+            '1600' => $fullbleedImage,
+            '1024' => $xlargeImage,
+            '600'  => $largeImage,
+            '340'  => $medImage
         );
+
+         // set image urls
+          $smallImage       = $imageObj['sizes']['gopc-small'];
+          $medImage         = $imageObj['sizes']['gopc-medium'];
+          $largeImage       = $imageObj['sizes']['gopc-large'];
+          $xlargeImage      = $imageObj['sizes']['gopc-extralarge'];
+          $fullbleedImage   = $imageObj['sizes']['gopc-fullbleed'];
 
         echo '<picture>';
 
@@ -252,27 +254,6 @@
 
         echo '<source srcset="' . esc_url( 'https://placehold.it/320x280' ) . '">';
         echo '<img src="' . esc_url( 'https://placehold.it/320x280' ) . '" alt="">';
-        echo '</picture>';
-
-    }
-
-    function gopc_adsizer( ){
-
-        $medImage = '200x400';
-
-        $mediaQueries = array(
-            600  => $medImage
-        );
-
-        echo '<picture>';
-
-
-        foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
-        }
-
-        echo '<source srcset="' . esc_url( 'https://placehold.it/300x80' ) . '">';
-        echo '<img src="' . esc_url( 'https://placehold.it/300x80' ) . '" alt="">';
         echo '</picture>';
 
     }

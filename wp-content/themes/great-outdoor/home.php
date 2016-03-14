@@ -5,20 +5,20 @@
 	<div class="full-width promo bg-image no-margin-top" id="post-1">
 
 		<a href="#">
-		
+
 			<?php gopc_imagesizer( '#post-1' ); ?>
 
 			<div class="promo-content">
-		
+
 				<h2>Fall Favorites</h2>
-		
+
 				<p>The Patagonia NanoPuff is the perfect sundown companion.</p>
-		
+
 				<a class="button" href="#">Fall Apparel &rarr;</a>
-		
+
 			</div>
 
-		</a>	
+		</a>
 
 	</div>
 
@@ -82,7 +82,7 @@
 			<a href="#" class="button">The Shop Table Products</a>
 
 		</div>
-		
+
 	</div>
 
 	<h2 class="section-header">Livin' la vida Loca</h2>

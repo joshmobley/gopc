@@ -25,6 +25,6 @@ $(document).ready(function(){
 		});
 	}
 
-	//activeTab($('.features-and-specs'));
+	activeTab($('.features-and-specs'));
 
 });

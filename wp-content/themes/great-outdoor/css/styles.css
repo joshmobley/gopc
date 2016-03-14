@@ -117,7 +117,7 @@ header {
   margin-bottom: .5em;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: bottom center; }
   header:after {
     content: '';
     height: 0;
@@ -615,7 +615,8 @@ header {
       display: block;
       clear: both; }
   .product-page .features-and-specs {
-    padding-bottom: .5em; }
+    padding-bottom: .5em;
+    margin-top: 2em; }
     .product-page .features-and-specs h3 {
       color: #d78105;
       margin-bottom: 1em; }
@@ -632,6 +633,7 @@ header {
     .product-page .features-and-specs .container {
       margin-bottom: 2em; }
     .product-page .features-and-specs div {
+      display: none;
       border: 1px solid #111111;
       margin-top: -1px;
       padding: 1em; }
@@ -668,12 +670,7 @@ header {
       display: block;
       clear: both; }
     .product-page .features-and-specs .container {
-      box-sizing: border-box;
-      float: left;
-      width: 45%;
-      margin-right: 5%; }
-      .product-page .features-and-specs .container:nth-child(2) {
-        margin-right: 0; }
+      box-sizing: border-box; }
   .product-page .product-video {
     float: left;
     width: 45%;

@@ -107,6 +107,7 @@
 
 	.features-and-specs{
 		padding-bottom: .5em;
+        margin-top: 2em;
 
 		h3{
 			color: $orange;
@@ -132,7 +133,7 @@
 		}
 
 		div{
-		//	display: none;
+			display: none;
 			border: 1px solid $black;
 			margin-top: -1px;
 			padding: 1em;
@@ -155,8 +156,8 @@
 		background: $tan;
 		width: 45%;
 
-		blockquote{ 
-			@include header-font; 
+		blockquote{
+			@include header-font;
 		}
 
 		.quote-credit{
@@ -179,20 +180,13 @@
 
 		.features-and-specs{
 			@include clearfix;
-		 
+
 		  /*clear: left;
 			float: left;
 			width: 45%;*/
 
 			.container{
 				box-sizing: border-box;
-				float: left;
-				width: 45%;
-				margin-right: 5%;
-
-				&:nth-child(2){
-					margin-right: 0;
-				}
 			}
 
 		}
