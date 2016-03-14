@@ -34,7 +34,7 @@
 				@include main-font;
 				color: $darkgreen;
 			}
-			
+
 			label > span:before{
 				border-color: $orange!important;
 			}
@@ -95,6 +95,7 @@
 	background-color: $darkgreen;
 	background-position: center;
 	text-shadow: 0 0 4px $black;
+    height: 140px;
 
 	b{
 		background: $darkgreen;
@@ -131,7 +132,7 @@
 		.products-inner{
 			padding-left: 5%;
 		}
-		
+
 	}
 
 }
@@ -158,7 +159,7 @@
 				width: 31.15%;
 				margin: 0 2% 2em 0;
 				float: left;
-				
+
 				img{
 					float: none;
 					width: 100%;
@@ -168,7 +169,7 @@
 					float: none;
 					width: 100%;
 				}
-			
+
 		}
 
 	}

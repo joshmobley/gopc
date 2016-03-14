@@ -878,7 +878,8 @@ footer {
   margin-bottom: 2em;
   background-color: #383a00;
   background-position: center;
-  text-shadow: 0 0 4px #111111; }
+  text-shadow: 0 0 4px #111111;
+  height: 140px; }
   .page-title b {
     background: #383a00;
     padding: .5em 1em;
