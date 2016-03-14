@@ -24,7 +24,7 @@ if( get_field('content') != null ){
                     include( 'content-parser-variables.php' );
 
 					if( $section['no_margin'] == true ){
-						$class = 'no-margin-top';
+						$class = 'no-margin-top page-header';
 					}
 
 					$textPosition = $section['text_position'];

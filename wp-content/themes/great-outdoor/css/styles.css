@@ -396,19 +396,27 @@ header {
             flex: 1 20%; }
   .main-content .promo.full-width {
     background-image: url("../assets/site-footer-bg-800.jpg"); }
+    .main-content .promo.full-width.page-header {
+      background: #383a00; }
+      .main-content .promo.full-width.page-header img {
+        width: 90%;
+        margin: 0;
+        vertical-align: bottom;
+        border-right: 10px solid #ffffff;
+        border-left: 10px solid #ffffff; }
     .main-content .promo.full-width.bg-image .promo-content {
       position: absolute;
       bottom: 5vw;
       background: none;
       width: 42.5%;
       text-align: left;
-      right: 0; }
+      right: 5%; }
       .main-content .promo.full-width.bg-image .promo-content.top-left {
         top: 5vw;
         left: 0;
         right: auto; }
       .main-content .promo.full-width.bg-image .promo-content.bottom-left {
-        left: 0;
+        left: 5%;
         right: auto; }
       .main-content .promo.full-width.bg-image .promo-content.top-right {
         top: 5vw;

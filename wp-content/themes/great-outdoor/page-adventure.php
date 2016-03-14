@@ -5,7 +5,7 @@
 	$feature = get_field('featured-story');
     $postImage = get_the_post_thumbnail( $feature->ID);
 
-	echo '<div class="full-width promo bg-image no-margin-top" id="post-">';
+	echo '<div class="full-width promo bg-image no-margin-top page-header" id="post-">';
 	echo '<a href="' . esc_url( get_the_permalink( $feature->ID ) )  . '">';
 	if( $postImage == null ){
         $postImage = '<img src="http://placehold.it/1500x1000" />';
