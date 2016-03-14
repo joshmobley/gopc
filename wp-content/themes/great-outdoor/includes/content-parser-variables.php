@@ -12,6 +12,8 @@ if( $post->post_type == 'product'){
     $postImage = get_the_post_thumbnail($post->ID);
 }
 
+//print_r('post image: ' . $postImage);
+
 if( $postImage == null ){
     $postImage = '<img src="http://placehold.it/1500x1000" />';
 }

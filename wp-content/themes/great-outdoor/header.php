@@ -5,7 +5,7 @@
         <?php wp_head(); ?>
     </head>
 
-    <body>
+    <body class="<?php global $post; echo $post->post_name; ?>">
 
         <header class="header">
 
@@ -17,7 +17,7 @@
             <div class="nav-wrapper">
 
                 <?php
-                    
+
                     get_search_form();
 
                     $args = array(
@@ -26,7 +26,7 @@
                         'fallback_cb' => 'wp_list_categories',
                         'title_li' => false
                         );
-    
+
                     wp_nav_menu($args);
 
                 ?>
@@ -35,6 +35,6 @@
 
         </header>
 
-            
+
 
 

@@ -347,8 +347,7 @@ header {
       margin: 0 0 2em; }
       .main-content.blog-single .blog-header .attachment-post-thumbnail {
         width: 100vw;
-        margin-left: -5vw;
-        margin-bottom: 2em; }
+        margin-left: -5vw; }
       .main-content.blog-single .blog-header .blog-header-text {
         max-width: 800px;
         margin: 0 auto;
@@ -356,7 +355,8 @@ header {
         padding-bottom: 2em; }
       .main-content.blog-single .blog-header h2 {
         color: #d78105;
-        font-size: 2em; }
+        font-size: 2em;
+        margin-top: 2em; }
       .main-content.blog-single .blog-header time {
         font-family: "Roboto Condensed", sans-serif; }
     .main-content.blog-single .blog-content {
@@ -922,3 +922,8 @@ footer {
     .related-products li .related-products-content {
       float: none;
       width: 100%; } }
+
+.adventure .tiled-list {
+  padding-left: 25%; }
+  .adventure .tiled-list .tile {
+    width: 27%; }

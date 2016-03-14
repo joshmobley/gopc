@@ -14,10 +14,6 @@ if( get_field('content') != null ){
 				echo '<h2 class="section-header">' . esc_html( $title ) . '</h2>';
 			}
 
-
-
-
-
 			switch ( $layout ){
 
 				// ------ PROMOS ------

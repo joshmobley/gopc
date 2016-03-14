@@ -3,12 +3,17 @@
 	echo '<div class="main-content">';
 
 	$feature = get_field('featured-story');
+    $postImage = get_the_post_thumbnail( $feature->ID);
 
 	echo '<div class="full-width promo bg-image no-margin-top" id="post-">';
 	echo '<a href="' . esc_url( get_the_permalink( $feature->ID ) )  . '">';
-	gopc_bgimage( '#post-' . $postCount );
+	if( $postImage == null ){
+        $postImage = '<img src="http://placehold.it/1500x1000" />';
+    }
+    echo $postImage;
 	echo '<div class="promo-content">';
 	echo '<h2>' . esc_html( get_the_title( $feature->ID ) ) . '</h2>';
+
 	echo '<p>' . esc_html( get_the_excerpt( $feature->ID ) ) . '</p>';
 	echo '<a class="button" href="' . esc_url( get_the_permalink( $feature->ID ) ) . '">' . 'Read More' . ' &rarr;</a>';
 	echo '</div><!--.promo-content-->';
