@@ -12,6 +12,10 @@ if( $post->post_type == 'product'){
     $postImage = get_the_post_thumbnail($post->ID);
 }
 
+if( $postImage == null ){
+    $psotImage = '<img src="http://placehold.it/1500x1000" />';
+}
+
 if( $item['customize_content'] ){
 
     if( $item['custom_title'] ){ $title = $item['custom_title']; }
