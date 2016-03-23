@@ -180,6 +180,39 @@
     }
     add_action( 'widgets_init', 'product_filter_init' );
 
+    /**
+    * Custom Taxonomy for Blog Posts
+    */
+
+    function regions_tax_init() {
+    // create a new taxonomy
+    register_taxonomy(
+        'regions',
+        'post',
+        array(
+            'label' => __( 'Regions' ),
+            'labels' => array(
+                'name'          => 'Regions',
+                'singular_name' => 'Region',
+                'add_new'       => 'Add Region',
+                'edit_item'     => 'Edit Region',
+                'new_item'      => 'New Region',
+                'view_item'     => 'View Region',
+                'all_items'     => 'All Regions',
+                'menu_name'     => 'Regions'
+            ),
+            'rewrite' => array( 'slug' => 'region' ),
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'show_in_nav_menus' => true,
+            'show_in_quick_edit' => true,
+            'hierarchical' => true
+
+        )
+    );
+}
+add_action( 'init', 'regions_tax_init' );
+
 
     /*****************************************************************************s
     *** v.  Short Codes
