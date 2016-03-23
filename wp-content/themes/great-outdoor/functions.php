@@ -195,6 +195,7 @@
                 'name'          => 'Regions',
                 'singular_name' => 'Region',
                 'add_new'       => 'Add Region',
+                'add_new_item'  => 'Add Region',
                 'edit_item'     => 'Edit Region',
                 'new_item'      => 'New Region',
                 'view_item'     => 'View Region',
