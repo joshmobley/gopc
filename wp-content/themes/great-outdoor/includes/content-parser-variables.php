@@ -9,7 +9,7 @@ $postImage = get_the_post_thumbnail($post->ID);
 
 if( $post->post_type == 'product'){
     $product = wc_get_product();
-    $desc = substr( $post->post_excerpt, 0, 120 ) . '...';
+    $desc = strip_tags( substr( $post->post_excerpt, 0, 120 ) ) . '...';
     //$desc = $product['post_excerpt'];
   //  $postImage = get_image('large');
 }
