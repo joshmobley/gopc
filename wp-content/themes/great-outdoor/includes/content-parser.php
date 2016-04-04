@@ -9,6 +9,8 @@ if( get_field('content') != null ){
 			$title = $section['section_title'];
 			$post = $section['post'];
 			$posts = $section['posts'];
+            $fullWidth = false;
+
 
 			if( $title != null ){
 				echo '<h2 class="section-header">' . esc_html( $title ) . '</h2>';
@@ -16,10 +18,16 @@ if( get_field('content') != null ){
 
 			switch ( $layout ){
 
+
+
 				// ------ PROMOS ------
 				case 'full-width-promo':
 
+                $fullWidth = true;
+
                     echo '<div class="page-section">';
+
+                    include( 'content-parser-variables.php' );
 
 					if( $section['no_margin'] == '1' ){
 						$class = 'no-margin-top page-header bg-image';
@@ -32,10 +40,6 @@ if( get_field('content') != null ){
                     if( $postImage == null ){
                         $postImage = '<img src="http://placehold.it/1600x900" />';
                     }
-
-
-
-                    include( 'content-parser-variables.php' );
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
