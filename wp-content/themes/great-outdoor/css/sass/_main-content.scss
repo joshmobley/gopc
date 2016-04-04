@@ -1,4 +1,4 @@
-.main-content{
+    .main-content{
 	@include clearfix;
 
 	.promo{
@@ -267,7 +267,7 @@
                 background: $darkgreen;
 
                 img{
-                    width: 90%;
+                    width: 80%;
                     margin: 0;
                     vertical-align: bottom;
                     border-right: 10px solid $white;

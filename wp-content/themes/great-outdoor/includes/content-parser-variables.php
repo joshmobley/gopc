@@ -1,7 +1,7 @@
 <?php
 
 $title = get_the_title( $post->ID );
-$desc = substr( $post->post_content, 0, 120 ) . '...';
+$desc = esc_html( substr( $post->post_content, 0, 120 ) . '...' );
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
 
