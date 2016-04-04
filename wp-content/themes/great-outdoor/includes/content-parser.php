@@ -21,8 +21,6 @@ if( get_field('content') != null ){
 
                     echo '<div class="page-section">';
 
-                    include( 'content-parser-variables.php' );
-
 					if( $section['no_margin'] == '1' ){
 						$class = 'no-margin-top page-header bg-image';
 					}else{
@@ -34,6 +32,10 @@ if( get_field('content') != null ){
                     if( $postImage == null ){
                         $postImage = '<img src="http://placehold.it/1600x900" />';
                     }
+
+
+
+                    include( 'content-parser-variables.php' );
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
