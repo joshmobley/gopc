@@ -18,8 +18,6 @@ if( get_field('content') != null ){
 
 			switch ( $layout ){
 
-
-
 				// ------ PROMOS ------
 				case 'full-width-promo':
 
