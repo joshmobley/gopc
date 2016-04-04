@@ -17,12 +17,14 @@ if( $post->post_type == 'product'){
 //print_r('post image: ' . $postImage);
 
 if( $fullWidth == true ){
-    if( get_field('customize_content') ){
-        $customTitle    = get_field('custom_title');
-        $customDesc     = get_field('custom_description');
-        $customLinkText = get_field('link_text');
-        $customLinkURL  = get_field('link_url');
-        $customImage    = get_field('custom_image');
+
+    if( $section['customize_content'] ){
+
+        $customTitle    = $section['custom_title'];
+        $customDesc     = $section['custom_description'];
+        $customLinkText = $section['link_text'];
+        $customLinkURL  = $section['link_url'];
+        $customImage    = $section['custom_image'];
 
         if( $customTitle ){ $title = $customTitle; }
         if( $customDesc ){ $desc = $customDesc; }

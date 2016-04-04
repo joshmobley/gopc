@@ -21,7 +21,7 @@ if( get_field('content') != null ){
 				// ------ PROMOS ------
 				case 'full-width-promo':
 
-                $fullWidth = true;
+                    $fullWidth = true;
 
                     echo '<div class="page-section">';
 
