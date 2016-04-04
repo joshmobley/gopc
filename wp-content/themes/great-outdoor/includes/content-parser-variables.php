@@ -16,11 +16,11 @@ if( $post->post_type == 'product'){
 
 if( $item['customize_content'] ){
 
-    if( $item['custom_title'] ){ $title = $item['custom_title']; }
-    if( $item['custom_description'] ){ $desc = $item['custom_description']; }
-    if( $item['link_text'] ){ $linkText = $item['link_text']; }
-    if( $item['link_url'] ){ $linkURL = $item['link_url']; }
-    if( $item['custom_image' ] ){
+    if( $item['custom_title'] != null ){ $title = $item['custom_title']; }
+    if( $item['custom_description'] != null ){ $desc = $item['custom_description']; }
+    if( $item['link_text'] != null ){ $linkText = $item['link_text']; }
+    if( $item['link_url'] != null ){ $linkURL = $item['link_url']; }
+    if( $item['custom_image' ] != null ){
         $postImage = $item['custom_image'];
         $srcSet = '<img width="2080" height="1544" src="' . $postImage['url'] . '" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="' . $postImage['name'] . '" srcset="' . $postImage['sizes']['gopc-small'] . ' 300w, ' . $postImage['sizes']['gopc-large'] . ' 1024w,' . $postImage['sizes']['medium'] . ' 400w, ' . $postImage['sizes']['gopc-medium'] . ' 600w, ' . $postImage['sizes']['gopc-extralarge'] . ' 1200w, ' . $postImage['sizes']['gopc-fullbleed'] . ' 1600w, ' . $postImage['sizes']['full-size'] . '" sizes="(max-width: 2080px) 100vw, 2080px">';
         $postImage = $srcSet;
