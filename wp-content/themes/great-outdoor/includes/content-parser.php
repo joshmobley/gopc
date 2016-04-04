@@ -41,7 +41,7 @@ if( get_field('content') != null ){
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
-					echo $postImage;
+                    echo $postImage;
 					echo '<div class="promo-content ' . $textPosition . '">';
 					echo '<h2>' . esc_html( $title ) . '</h2>';
 					echo '<p>' . esc_html( $desc . '...') . '</p>';
@@ -50,6 +50,7 @@ if( get_field('content') != null ){
 					echo '</a>';
 					echo '</div><!--.full-width.promo-->';
                     echo '</div><!--.page-section-->';
+                    $postCount++;
 					break;
 
 				case 'half-width-promo':
@@ -62,20 +63,18 @@ if( get_field('content') != null ){
 
                         include( 'content-parser-variables.php' );
 
-                        if( $postImage == null ){
-                            $postImage = '<img src="http://placehold.it/1500x1000" />';
-                        }
-
 						$bgcolor = 'bg-' . $item['text_background_color'];
 						echo '<div class="half-width promo" id="post-' . $postCount . '">';
 						echo '<a href="' . esc_url( $linkURL ) . '">';
-						echo $postImage;
+                        echo $postImage;
+                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 						echo '<div class="promo-content ' . $bgcolor . '">';
 						echo '<h3>' . esc_html( $title ) . '</h3>';
 						echo '<p>' . esc_html( $desc ) . '</p>';
 						echo '</div><!--.promo-content-->';
 						echo '</a>';
 						echo '</div><!--.half-width.promo-->';
+                        $postCount++;
 					}
 
                     echo '</div><!--.page-section-->';
@@ -92,19 +91,19 @@ if( get_field('content') != null ){
 
                         include( 'content-parser-variables.php' );
 
-                        if( $postImage == null ){
-                            $postImage = '<img src="http://placehold.it/1500x1000" />';
-                        }
+
 
 						echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
 						echo '<a href="' . esc_url( $linkURL ) . '">';
                         echo $postImage;
+                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 						echo '<div class="promo-content">';
 						echo '<h3>' . esc_html( $title ) . '</h3>';
 						echo '<p>' . esc_html( $desc ) . '</p>';
 						echo '</div><!--.promo-content-->';
 						echo '</a>';
 						echo '</div><!--.quarter-width.promo-->';
+                        $postCount++;
 					}
 
                     echo '</div><!--.page-section-->';
@@ -120,6 +119,7 @@ if( get_field('content') != null ){
 					echo '<ul>';
 					foreach( $section['menu_items'] as $item ){
 						echo '<li><a href="' . $item['post_link'] . '">' . $item['label'] . '</a></li>';
+                        $postCount++;
 					}
 					echo '</ul>';
 					echo '</div><!--.product-landing-menu-->';
@@ -127,8 +127,6 @@ if( get_field('content') != null ){
 
 
 			}
-
-			$postCount++;
 
 		}
 	}else{

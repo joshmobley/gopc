@@ -231,15 +231,43 @@ add_action( 'init', 'regions_tax_init' );
     add_image_size( 'gopc-extralarge', 1200, 1200 );
     add_image_size( 'gopc-fullbleed', 1600, 1600 );
 
+    function gopc_bgimageID( $imageID, $selector){
+
+
+
+
+        // set image urls
+        $smallImage       = wp_get_attachment_image_src( $imageID, 'gopc-small' )[0];
+        $medImage         = wp_get_attachment_image_src( $imageID, 'gopc-medium' )[0];
+        $largeImage       = wp_get_attachment_image_src( $imageID, 'gopc-large' )[0];
+        $xlargeImage      = wp_get_attachment_image_src( $imageID, 'gopc-extralarge' )[0];
+        $fullbleedImage   = wp_get_attachment_image_src( $imageID, 'gopc-fullbleed' )[0];
+
+        $mediaQueries = array(
+          '400'  => $medImage,
+          '600'  => $largeImage,
+          '1024' => $xlargeImage,
+          '1200' => $fullbleedImage
+        );
+
+        echo '<style>';
+        echo $selector . '{';
+        echo 'background-image: url(' . esc_url( $smallImage ) . ');';
+        echo '}';
+        foreach( $mediaQueries as $px => $url ){
+          echo '@media screen and (min-width: ' . esc_html( $px ) . 'px){';
+          echo esc_html( $selector ) . '{';
+          echo 'background-image: url(' . esc_url( $url ) . ');';
+          echo '}';
+          echo '}';
+        }
+        echo '</style>';
+    }
+
 
     function gopc_bgimage( $imageObj , $selector ){
 
-          $mediaQueries = array(
-            '400'  => $medImage,
-            '600'  => $largeImage,
-            '1024' => $xlargeImage,
-            '1200' => $fullbleedImage
-          );
+
 
           // set image urls
           $smallImage       = $imageObj['sizes']['gopc-small'];
@@ -247,6 +275,13 @@ add_action( 'init', 'regions_tax_init' );
           $largeImage       = $imageObj['sizes']['gopc-large'];
           $xlargeImage      = $imageObj['sizes']['gopc-extralarge'];
           $fullbleedImage   = $imageObj['sizes']['gopc-fullbleed'];
+
+          $mediaQueries = array(
+            '400'  => $medImage,
+            '600'  => $largeImage,
+            '1024' => $xlargeImage,
+            '1200' => $fullbleedImage
+          );
 
           echo '<style>';
           echo $selector . '{';

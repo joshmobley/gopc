@@ -21,6 +21,14 @@
             height: auto;
 		}
 
+        .promo-bg-image{
+            height: 300px;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
 		.promo-content{
 			padding: 1em 5%;
 			width: 90%;

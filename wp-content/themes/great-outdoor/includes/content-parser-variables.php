@@ -4,7 +4,13 @@ $title = get_the_title( $post->ID );
 $desc = strip_tags( substr( $post->post_content, 0, 120 ) ). '...';
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
-$postImage = get_the_post_thumbnail($post->ID);
+$imageID = get_post_thumbnail_id($post->ID);
+$postImage = gopc_bgimageID( $imageID, '#bg-' . $postCount );
+
+
+
+
+//print_r($postImage);
 
 
 if( $post->post_type == 'product'){
@@ -31,9 +37,7 @@ if( $fullWidth == true ){
         if( $customLinkText ){ $linkText = $customLinkText; }
         if( $customLinkURL ){ $linkURL = $customLinkURL; }
         if( $customImage ){
-            $postImage = $customImage;
-            $srcSet = '<img width="2080" height="1544" src="' . $postImage['url'] . '" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="' . $postImage['name'] . '" srcset="' . $postImage['sizes']['gopc-small'] . ' 300w, ' . $postImage['sizes']['gopc-large'] . ' 1024w,' . $postImage['sizes']['medium'] . ' 400w, ' . $postImage['sizes']['gopc-medium'] . ' 600w, ' . $postImage['sizes']['gopc-extralarge'] . ' 1200w, ' . $postImage['sizes']['gopc-fullbleed'] . ' 1600w, ' . $postImage['sizes']['full-size'] . '" sizes="(max-width: 2080px) 100vw, 2080px">';
-            $postImage = $srcSet;
+            $postImage = gopc_image($customImage, '#bg-' . $postCount);
         }
     }
 }else if( $item['customize_content'] ){
@@ -43,9 +47,7 @@ if( $fullWidth == true ){
     if( $item['link_text'] ){ $linkText = $item['link_text']; }
     if( $item['link_url'] ){ $linkURL = $item['link_url']; }
     if( $item['custom_image' ] ){
-        $postImage = $item['custom_image'];
-        $srcSet = '<img width="2080" height="1544" src="' . $postImage['url'] . '" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="' . $postImage['name'] . '" srcset="' . $postImage['sizes']['gopc-small'] . ' 300w, ' . $postImage['sizes']['gopc-large'] . ' 1024w,' . $postImage['sizes']['medium'] . ' 400w, ' . $postImage['sizes']['gopc-medium'] . ' 600w, ' . $postImage['sizes']['gopc-extralarge'] . ' 1200w, ' . $postImage['sizes']['gopc-fullbleed'] . ' 1600w, ' . $postImage['sizes']['full-size'] . '" sizes="(max-width: 2080px) 100vw, 2080px">';
-        $postImage = $srcSet;
+        $postImage = gopc_bgimage( $item['custom_image'], '#bg-' . $postCount);
     }
 }
 ?>
