@@ -281,6 +281,8 @@ header {
         .main-content .promo.full-width .button:hover {
           background: #383a00;
           color: #ffffff; }
+      .main-content .promo.full-width.page-header .promo-bg-image {
+        height: 43vw; }
       .main-content .promo.full-width.bg-image {
         position: relative;
         margin: 4em 0;

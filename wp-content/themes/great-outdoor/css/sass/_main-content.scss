@@ -61,6 +61,12 @@
 				}
 			}
 
+            &.page-header{
+                .promo-bg-image{
+                    height: 43vw;
+                }
+            }
+
 			&.bg-image{
 				position: relative;
 				margin: 4em 0;
