@@ -254,15 +254,15 @@ header {
     .main-content .promo img {
       width: 100%;
       height: auto; }
-    .main-content .promo .promo-bg-image {
-      height: 29vw;
-      width: 100%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center; }
     .main-content .promo .promo-content {
       padding: 1em 5%;
       width: 90%; }
+    .main-content .promo .promo-bg-image {
+      width: 100%;
+      height: 60vw;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
     .main-content .promo.full-width {
       background: #644023 url("../assets/site-footer-bg-400.jpg") no-repeat center;
       box-sizing: border-box;
@@ -346,6 +346,8 @@ header {
   .main-content .page-section {
     text-align: center;
     clear: both; }
+  .main-content .section-header + .page-section {
+    margin-top: -2em; }
   .main-content.blog-single {
     padding: 0 5%; }
     .main-content.blog-single .attachment-post-thumbnail {
@@ -464,13 +466,31 @@ header {
     margin-bottom: 4em; }
   .main-content .promo.full-width {
     clear: both;
-    background-image: url("../assets/site-footer-bg-1200.jpg"); }
+    background-image: url("../assets/site-footer-bg-1200.jpg");
+    height: 100vh; }
+    .main-content .promo.full-width .promo-bg-image {
+      height: 50vh;
+      margin-bottom: 2em; }
+    .main-content .promo.full-width.page-header {
+      height: 65vh; }
+      .main-content .promo.full-width.page-header .promo-bg-image {
+        width: 80%;
+        height: 65vh;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        border-right: 10px solid #ffffff;
+        border-left: 10px solid #ffffff; }
   .main-content .quarter-width {
     width: 18.75%; }
   .main-content .promo.full-width.bg-image .promo-content {
     font-size: 1.4em; } }
 
 @media screen and (min-width: 1200px) {
+  .main-content .promo.quarter-width .promo-bg-image {
+    height: 15vw; }
+  .main-content .promo.half-width .promo-bg-image {
+    height: 29vw; }
   .main-content .promo.full-width {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 

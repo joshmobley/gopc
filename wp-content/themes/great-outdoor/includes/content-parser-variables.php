@@ -5,22 +5,14 @@ $desc = strip_tags( substr( $post->post_content, 0, 120 ) ). '...';
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
 $imageID = get_post_thumbnail_id($post->ID);
-$postImage = gopc_bgimageID( $imageID, '#bg-' . $postCount );
+gopc_bgimageID( $imageID, '#bg-' . $postCount );
 
-
-
-
-//print_r($postImage);
 
 
 if( $post->post_type == 'product'){
     $product = wc_get_product();
     $desc = strip_tags( substr( $post->post_excerpt, 0, 120 ) ) . '...';
-    //$desc = $product['post_excerpt'];
-  //  $postImage = get_image('large');
 }
-
-//print_r('post image: ' . $postImage);
 
 if( $fullWidth == true ){
 
@@ -37,17 +29,18 @@ if( $fullWidth == true ){
         if( $customLinkText ){ $linkText = $customLinkText; }
         if( $customLinkURL ){ $linkURL = $customLinkURL; }
         if( $customImage ){
-            $postImage = gopc_image($customImage, '#bg-' . $postCount);
+            gopc_bgimage( $customImage, '#bg-' . $postCount );
         }
     }
+
 }else if( $item['customize_content'] ){
 
     if( $item['custom_title'] ){ $title = $item['custom_title']; }
     if( $item['custom_description'] ){ $desc = $item['custom_description']; }
     if( $item['link_text'] ){ $linkText = $item['link_text']; }
     if( $item['link_url'] ){ $linkURL = $item['link_url']; }
-    if( $item['custom_image' ] ){
-        $postImage = gopc_bgimage( $item['custom_image'], '#bg-' . $postCount);
+    if( $item['custom_image'] ){
+        gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
     }
 }
 ?>

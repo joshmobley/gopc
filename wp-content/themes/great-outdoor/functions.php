@@ -318,11 +318,11 @@ add_action( 'init', 'regions_tax_init' );
 
 
         foreach( $mediaQueries as $px => $url ){
-            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( 'https://placehold.it/' . $url ) . '">';
+            echo '<source media="(min-width: ' . esc_html( $px ) . 'px)" srcset="' . esc_url( $url ) . '">';
         }
 
-        echo '<source srcset="' . esc_url( 'https://placehold.it/320x280' ) . '">';
-        echo '<img src="' . esc_url( 'https://placehold.it/320x280' ) . '" alt="">';
+        echo '<source srcset="' . esc_url( $smallImage ) . '">';
+        echo '<img src="' . esc_url( $smallImage ) . '" alt="">';
         echo '</picture>';
 
     }

@@ -35,13 +35,9 @@ if( get_field('content') != null ){
 
 					$textPosition = $section['text_position'];
 
-                    if( $postImage == null ){
-                        $postImage = '<img src="http://placehold.it/1600x900" />';
-                    }
-
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
 					echo '<a href="' . esc_url( $linkURL ) . '">';
-                    echo $postImage;
+                    echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 					echo '<div class="promo-content ' . $textPosition . '">';
 					echo '<h2>' . esc_html( $title ) . '</h2>';
 					echo '<p>' . esc_html( $desc . '...') . '</p>';
@@ -66,7 +62,6 @@ if( get_field('content') != null ){
 						$bgcolor = 'bg-' . $item['text_background_color'];
 						echo '<div class="half-width promo" id="post-' . $postCount . '">';
 						echo '<a href="' . esc_url( $linkURL ) . '">';
-                        echo $postImage;
                         echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 						echo '<div class="promo-content ' . $bgcolor . '">';
 						echo '<h3>' . esc_html( $title ) . '</h3>';
@@ -91,11 +86,8 @@ if( get_field('content') != null ){
 
                         include( 'content-parser-variables.php' );
 
-
-
 						echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
 						echo '<a href="' . esc_url( $linkURL ) . '">';
-                        echo $postImage;
                         echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 						echo '<div class="promo-content">';
 						echo '<h3>' . esc_html( $title ) . '</h3>';

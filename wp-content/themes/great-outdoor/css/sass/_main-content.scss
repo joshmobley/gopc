@@ -21,18 +21,18 @@
             height: auto;
 		}
 
-        .promo-bg-image{
-            height: 29vw;
-            width: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
 		.promo-content{
 			padding: 1em 5%;
 			width: 90%;
 		}
+
+        .promo-bg-image{
+            width: 100%;
+            height: 60vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
 		&.full-width{
 			background: $brown url('../assets/site-footer-bg-400.jpg') no-repeat center;
@@ -165,6 +165,10 @@
 		text-align: center;
         clear: both;
 	}
+
+    .section-header + .page-section{
+        margin-top: -2em;
+    }
 
 	&.blog-single{
 		padding: 0 5%;
@@ -367,6 +371,27 @@
 		.promo.full-width{
 			clear: both;
 			background-image: url('../assets/site-footer-bg-1200.jpg');
+            height: 100vh;
+
+            .promo-bg-image{
+                height: 50vh;
+                margin-bottom: 2em;
+            }
+
+            &.page-header{
+                height: 65vh;
+
+                .promo-bg-image{
+                    width: 80%;
+                    height: 65vh;
+                    margin: 0 auto;
+                    background-size: cover;
+                    background-position: center;
+                    border-right: 10px solid $white;
+                    border-left: 10px solid $white;
+                }
+            }
+
 		}
 
 		.quarter-width{
@@ -375,6 +400,7 @@
 
 		.promo.full-width.bg-image .promo-content{
 			font-size: 1.4em;
+
 		}
 
 	}
@@ -385,9 +411,24 @@
 
 	.main-content{
 
-		.promo.full-width{
-			background-image: url('../assets/site-footer-bg-1600.jpg');
-		}
+		.promo{
+
+            &.quarter-width{
+                .promo-bg-image{
+                    height: 15vw;
+                }
+            }
+
+            &.half-width{
+                .promo-bg-image{
+                    height: 29vw;
+                }
+            }
+
+            &.full-width{
+			  background-image: url('../assets/site-footer-bg-1600.jpg');
+		    }
+        }
 
 	}
 
