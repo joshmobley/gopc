@@ -469,6 +469,8 @@ header {
     float: left;
     margin-bottom: 4em;
     margin-left: 5%; }
+    .main-content .half-width .promo-bg-image {
+      height: 29vw; }
   .main-content .promo.full-width {
     clear: both;
     background-image: url("../assets/site-footer-bg-1200.jpg");
@@ -491,14 +493,12 @@ header {
   .main-content .quarter-width {
     width: 21.25%;
     margin-left: 3%; }
+    .main-content .quarter-width .promo-bg-image {
+      height: 15vw; }
   .main-content .promo.full-width.bg-image .promo-content {
     font-size: 1.4em; } }
 
 @media screen and (min-width: 1200px) {
-  .main-content .promo.quarter-width .promo-bg-image {
-    height: 15vw; }
-  .main-content .promo.half-width .promo-bg-image {
-    height: 29vw; }
   .main-content .promo.full-width {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 

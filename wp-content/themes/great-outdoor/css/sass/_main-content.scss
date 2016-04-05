@@ -378,6 +378,9 @@
 			margin-bottom: 4em;
             margin-left: 5%;
 
+            .promo-bg-image{
+                height: 29vw;
+            }
 		}
 
 		.promo.full-width{
@@ -413,6 +416,11 @@
 		.quarter-width{
 			width: 21.25%;
             margin-left: 3%;
+
+
+            .promo-bg-image{
+                height: 15vw;
+            }
 		}
 
 		.promo.full-width.bg-image .promo-content{
@@ -429,18 +437,6 @@
 	.main-content{
 
 		.promo{
-
-            &.quarter-width{
-                .promo-bg-image{
-                    height: 15vw;
-                }
-            }
-
-            &.half-width{
-                .promo-bg-image{
-                    height: 29vw;
-                }
-            }
 
             &.full-width{
 			  background-image: url('../assets/site-footer-bg-1600.jpg');
