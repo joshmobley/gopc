@@ -51,7 +51,7 @@ if( get_field('content') != null ){
 
 				case 'half-width-promo':
 
-                    echo '<div class="page-section">';
+                    echo '<div class="page-section half-container">';
 
 					foreach( $posts as $item ){
 
@@ -78,7 +78,7 @@ if( get_field('content') != null ){
 
 				case 'quarter-width-promo':
 
-                    echo '<div class="page-section">';
+                    echo '<div class="page-section quarter-container">';
 
 					foreach( $posts as $item ){
 

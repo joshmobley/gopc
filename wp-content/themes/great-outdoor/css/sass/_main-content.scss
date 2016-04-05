@@ -2,8 +2,8 @@
 	@include clearfix;
 
 	.promo{
-		width: 90%;
-		margin-left: 5%;
+		width: 80%;
+		margin-left: 10%;
 		margin-bottom: .5em;
 		text-align: center;
 		box-sizing: border-box;
@@ -177,7 +177,7 @@
     }
 
 	&.blog-single{
-		padding: 0 5%;
+		padding: 0 10%;
 
         .attachment-post-thumbnail{
             width: 100vw;
@@ -299,7 +299,7 @@
 				background: none;
 				width: 42.5%;
 				text-align: left;
-				right: 5%;
+				right: 10%;
 
 				&.top-left{
 					top: 5vw;
@@ -308,7 +308,7 @@
 				}
 
 				&.bottom-left{
-					left: 5%;
+					left: 10%;
 					right: auto;
 				}
 
@@ -368,10 +368,16 @@
 
 	.main-content{
 
+        .half-container{
+            padding: 0 5%;
+        }
+
 		.half-width{
 			width: 42.5%;
 			float: left;
 			margin-bottom: 4em;
+            margin-left: 5%;
+
 		}
 
 		.promo.full-width{
@@ -400,8 +406,13 @@
 
 		}
 
+        .quarter-container{
+            padding: 0 7%;
+        }
+
 		.quarter-width{
-			width: 18.75%;
+			width: 21.25%;
+            margin-left: 3%;
 		}
 
 		.promo.full-width.bg-image .promo-content{

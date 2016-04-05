@@ -242,8 +242,8 @@ header {
     display: block;
     clear: both; }
   .main-content .promo {
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
     margin-bottom: .5em;
     text-align: center;
     box-sizing: border-box; }
@@ -351,7 +351,7 @@ header {
   .main-content .section-header + .page-section {
     margin-top: -2em; }
   .main-content.blog-single {
-    padding: 0 5%; }
+    padding: 0 10%; }
     .main-content.blog-single .attachment-post-thumbnail {
       width: 100vw;
       height: auto;
@@ -428,13 +428,13 @@ header {
       background: none;
       width: 42.5%;
       text-align: left;
-      right: 5%; }
+      right: 10%; }
       .main-content .promo.full-width.bg-image .promo-content.top-left {
         top: 5vw;
         left: 0;
         right: auto; }
       .main-content .promo.full-width.bg-image .promo-content.bottom-left {
-        left: 5%;
+        left: 10%;
         right: auto; }
       .main-content .promo.full-width.bg-image .promo-content.top-right {
         top: 5vw;
@@ -462,10 +462,13 @@ header {
       font-family: "Roboto Slab", sans-serif; } }
 
 @media screen and (min-width: 900px) {
+  .main-content .half-container {
+    padding: 0 5%; }
   .main-content .half-width {
     width: 42.5%;
     float: left;
-    margin-bottom: 4em; }
+    margin-bottom: 4em;
+    margin-left: 5%; }
   .main-content .promo.full-width {
     clear: both;
     background-image: url("../assets/site-footer-bg-1200.jpg");
@@ -483,8 +486,11 @@ header {
         background-position: center;
         border-right: 10px solid #ffffff;
         border-left: 10px solid #ffffff; }
+  .main-content .quarter-container {
+    padding: 0 7%; }
   .main-content .quarter-width {
-    width: 18.75%; }
+    width: 21.25%;
+    margin-left: 3%; }
   .main-content .promo.full-width.bg-image .promo-content {
     font-size: 1.4em; } }
 
