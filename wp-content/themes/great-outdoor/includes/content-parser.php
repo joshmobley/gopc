@@ -110,7 +110,7 @@ if( get_field('content') != null ){
 					echo '<h3>' . $section['menu_title'] . '</h3>';
 					echo '<ul>';
 					foreach( $section['menu_items'] as $item ){
-						echo '<li><a href="' . $item['post_link'] . '">' . $item['label'] . '</a></li>';
+						echo '<li><a href="' . get_term_link( $item['post_link'], 'product_cat' ) . '">' . $item['label'] . '</a></li>';
                         $postCount++;
 					}
 					echo '</ul>';
