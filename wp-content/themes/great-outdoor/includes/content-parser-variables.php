@@ -2,7 +2,7 @@
 
 $title = get_the_title( $post->ID );
 if( get_the_excerpt( $post->ID ) != null ){
-    $desc = get_the_excerpt( $post->ID );
+    $desc = strip_tags( get_the_excerpt( $post->ID ) );
 }else{
     $desc = strip_tags( substr( $post->post_content, 0, 85 ) ). '...';
 }
