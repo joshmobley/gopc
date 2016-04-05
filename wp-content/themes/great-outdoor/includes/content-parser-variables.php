@@ -1,18 +1,15 @@
 <?php
 
 $title = get_the_title( $post->ID );
-$desc = strip_tags( substr( $post->post_content, 0, 120 ) ). '...';
+if( get_the_excerpt( $post->ID ) != null ){
+    $desc = get_the_excerpt( $post->ID );
+}else{
+    $desc = strip_tags( substr( $post->post_content, 0, 85 ) ). '...';
+}
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
 $imageID = get_post_thumbnail_id($post->ID);
 gopc_bgimageID( $imageID, '#bg-' . $postCount );
-
-
-
-if( $post->post_type == 'product'){
-    $product = wc_get_product();
-    $desc = strip_tags( substr( $post->post_excerpt, 0, 120 ) ) . '...';
-}
 
 if( $fullWidth == true ){
 
