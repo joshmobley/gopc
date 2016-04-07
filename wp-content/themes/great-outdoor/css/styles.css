@@ -684,14 +684,14 @@ header {
         background: #ffffff; }
     .product-page .features-and-specs .container {
       margin-bottom: 2em; }
-    .product-page .features-and-specs div {
+    .product-page .features-and-specs > div {
       display: none;
       border: 1px solid #111111;
       margin-top: -1px;
       padding: 1em; }
-      .product-page .features-and-specs div.is-active {
+      .product-page .features-and-specs > div.is-active {
         display: block; }
-      .product-page .features-and-specs div li {
+      .product-page .features-and-specs > div li {
         list-style: disc;
         margin-left: 1em; }
   .product-page .related-products {
