@@ -117,6 +117,19 @@ if( get_field('content') != null ){
 					echo '</div><!--.product-landing-menu-->';
 					break;
 
+                case 'activity-menu':
+
+                    echo '<div class="adventure-menu">';
+                    echo '<ul>';
+                    echo '<li><a href="' . bloginfo('url') . '/shop/camp-hike" class="camp">Camp/Hike</a></li>';
+                    echo '<li><a href="' . bloginfo('url') . '/shop/climb" class="climb">Climb</a></li>';
+                    echo '<li><a href="' . bloginfo('url') . '/shop/fish" class="fish">Fish</a></li>';
+                    echo '<li><a href="' . bloginfo('url') . '/shop/paddle" class="paddle">Paddle</a></li>';
+                    echo '<li><a href="' . bloginfo('url') . '/shop/travel" class="travel">Travel</a></li>';
+                    echo '</ul>';
+                    echo '</div>';
+
+                    break;
 
 			}
 
