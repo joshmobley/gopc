@@ -35,6 +35,7 @@ get_header( 'shop' ); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php include('includes/content-product.php'); ?>
+            <?php include('single-product/up-sells.php'); ?>
 
 		<?php endwhile; // end of the loop. ?>
 

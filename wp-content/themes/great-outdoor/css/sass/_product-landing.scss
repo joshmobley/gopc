@@ -28,6 +28,12 @@
 	}
 }
 
+.woocommerce-pagination{
+    clear: both;
+    float: right;
+    margin: 0 10% 2em;
+}
+
 @media screen and (min-width: 900px){
 
 	.inline-menu{
