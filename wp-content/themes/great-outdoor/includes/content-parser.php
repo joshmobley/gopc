@@ -9,6 +9,10 @@ if( get_field('content') != null ){
 			$title = $section['section_title'];
 			$post = $section['post'];
 			$posts = $section['posts'];
+            $automate = $section['automate_content'];
+            if( $automate == true ){
+                $category = $section['automated_category'];
+            }
             $fullWidth = false;
 
 			if( $title != null && $layout != 'full-width-promo' ){
@@ -85,23 +89,55 @@ if( get_field('content') != null ){
 
                     echo '<div class="page-section quarter-container">';
 
-					foreach( $posts as $item ){
+                    if( $automate == true ){
 
-                        $post = $item['post'];
+                        $automate_args = array(
+                            'post_type' => 'product',
+                            'posts_per_page' => 4
+                        );
 
-                        include( 'content-parser-variables.php' );
+                        $posts = new WP_Query( $automate_args );
 
-						echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
-						echo '<a href="' . esc_url( $linkURL ) . '">';
-                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
-						echo '<div class="promo-content">';
-						echo '<h3>' . esc_html( $title ) . '</h3>';
-						echo '<p>' . esc_html( $desc ) . '</p>';
-						echo '</div><!--.promo-content-->';
-						echo '</a>';
-						echo '</div><!--.quarter-width.promo-->';
-                        $postCount++;
-					}
+                        while ( $posts->have_posts() ) {
+                            $posts->the_post();
+
+                            include( 'content-parser-variables.php' );
+
+                            echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
+                            echo '<a href="' . esc_url( $linkURL ) . '">';
+                            echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
+                            echo '<div class="promo-content">';
+                            echo '<h3>' . esc_html( $title ) . '</h3>';
+                            echo '<p>' . esc_html( $desc ) . '</p>';
+                            echo '</div><!--.promo-content-->';
+                            echo '</a>';
+                            echo '</div><!--.quarter-width.promo-->';
+                            $postCount++;
+                        }
+
+
+
+                    }else{
+                        foreach( $posts as $item ){
+
+                            $post = $item['post'];
+
+                            include( 'content-parser-variables.php' );
+
+                            echo '<div class="quarter-width promo" id="post-' . $postCount . '">';
+                            echo '<a href="' . esc_url( $linkURL ) . '">';
+                            echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
+                            echo '<div class="promo-content">';
+                            echo '<h3>' . esc_html( $title ) . '</h3>';
+                            echo '<p>' . esc_html( $desc ) . '</p>';
+                            echo '</div><!--.promo-content-->';
+                            echo '</a>';
+                            echo '</div><!--.quarter-width.promo-->';
+                            $postCount++;
+                        }
+                    }
+
+
 
                     echo '</div><!--.page-section-->';
 
