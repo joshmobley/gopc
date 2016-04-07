@@ -309,15 +309,17 @@ header {
       background: #6d6f44; }
       .main-content .promo .promo-content.bg-green h3, .main-content .promo .promo-content.bg-green p {
         color: #ffffff !important; }
+  .main-content .adventure-menu h2 {
+    width: 20%;
+    float: left;
+    margin-right: 5%; }
   .main-content .adventure-menu ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    width: 75%;
-    margin: 0 auto 2em; }
+            flex-flow: row wrap; }
     .main-content .adventure-menu ul li {
       -webkit-flex: 1 33%;
           -ms-flex: 1 33%;
@@ -894,6 +896,20 @@ header {
     padding-top: 2em;
     border-right: 1px solid #6d6f44;
     box-sizing: border-box; } }
+
+.brand-bar {
+  background: #deec9b;
+  padding: 1em 0; }
+  .brand-bar ul {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+  .brand-bar li {
+    width: 10%;
+    margin: 0 2%;
+    display: inline-block; }
+  .brand-bar + footer {
+    margin-top: 0; }
 
 footer {
   background: #644023 url("../assets/site-footer-bg-400.jpg");

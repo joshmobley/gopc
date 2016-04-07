@@ -1,4 +1,4 @@
-    .main-content{
+.main-content{
 	@include clearfix;
 
 	.promo{
@@ -118,11 +118,15 @@
 
 	.adventure-menu{
 
+        h2{
+            width: 20%;
+            float: left;
+            margin-right: 5%;
+        }
+
 		ul{
 			display: flex;
 			flex-flow: row wrap;
-			width: 75%;
-			margin: 0 auto 2em;
 
 			li{
 				flex: 1 33%;
