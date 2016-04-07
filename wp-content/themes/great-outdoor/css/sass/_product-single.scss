@@ -191,6 +191,14 @@
 
 		}
 
+        .product-photo{
+
+            .columns-3 img{
+                width: 30%;
+                margin: .5em 1.5%;
+            }
+        }
+
 		.product-video{
 			float: left;
 			width: 45%;

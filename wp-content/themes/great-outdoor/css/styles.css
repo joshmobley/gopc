@@ -723,6 +723,9 @@ header {
       clear: both; }
     .product-page .features-and-specs .container {
       box-sizing: border-box; }
+  .product-page .product-photo .columns-3 img {
+    width: 30%;
+    margin: .5em 1.5%; }
   .product-page .product-video {
     float: left;
     width: 45%;
