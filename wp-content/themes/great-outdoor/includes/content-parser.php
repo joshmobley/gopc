@@ -11,9 +11,8 @@ if( get_field('content') != null ){
 			$posts = $section['posts'];
             $fullWidth = false;
 
-
-			if( $title != null ){
-				echo '<h2 class="section-header">' . esc_html( $title ) . '</h2>';
+			if( $title != null && $layout != 'full-width-promo' ){
+                echo '<h2 class="section-header">' . esc_html( $title ) . '</h2>';
 			}
 
 			switch ( $layout ){
@@ -24,6 +23,8 @@ if( get_field('content') != null ){
                     $fullWidth = true;
 
                     echo '<div class="page-section">';
+
+                    $sectionTitle = $title;
 
                     include( 'content-parser-variables.php' );
 
@@ -36,6 +37,10 @@ if( get_field('content') != null ){
 					$textPosition = $section['text_position'];
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
+                    if( $sectionTitle != null ){
+                        echo '<h2 class="section-header">' . esc_html( $sectionTitle ) . '</h2>';
+                    }
+
 					echo '<a href="' . esc_url( $linkURL ) . '">';
                     echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 					echo '<div class="promo-content ' . $textPosition . '">';
