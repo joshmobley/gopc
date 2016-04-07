@@ -52,10 +52,15 @@
         </ul>
         <p>*Check your local store for your size</p> */ ?>
 
+        <?php
+
+        $activities = get_field('activities');
+        if( $activities != null ) :
+
+        ?>
         <h3 class="availability-header">Great for:</h3>
         <ul class="activities-available availability-list">
             <?php
-                $activities = get_field('activities');
                 foreach( $activities as $activity){
                     if($activity == 'camp-hike'){
                         $activityLabel = 'Camp/Hike';
@@ -73,30 +78,32 @@
             ?>
         </ul>
 
+        <?php endif; ?>
+
         <?php
-            if( get_field('features') != null ){ $features = true; }
-            if( get_field('specs') != null ){ $specs = true; }
+            $features = get_field('features');
+            $specs = get_field('specs');
         ?>
 
         <div class="features-and-specs">
 
-            <?php if( $features ) : ?>
+            <?php if( $features != null ) : ?>
                 <a class="tab" data-tab="features" href="#">Features</a>
             <?php endif; ?>
 
-            <?php if( $specs ) : ?>
+            <?php if( $specs != null ) : ?>
                 <a class="tab" data-tab="specs" href="#">Specs</a>
             <?php endif; ?>
 
-            <?php if( $features ) : ?>
+            <?php if( $features != null ) : ?>
             <div class="features container is-active">
-                <?php esc_html(the_field('features')); ?>
+                <?php echo $features; ?>
             </div>
             <?php endif; ?>
 
             <?php if( $specs ) : ?>
             <div class="specs container">
-                <?php esc_html(the_field('specs')); ?>
+                <?php echo $specs; ?>
             </div>
          <?php endif; ?>
 

@@ -68,21 +68,24 @@
 /* product archive styles */
 
 .products{
-	li{
-		float: left;
-		width: 47.5%;
-		margin-bottom: 2em;
-		text-align: center;
 
-		&:nth-child(odd){
-			margin-right: 5%;
-		}
+    a{
+        display: block;
+        float: left;
+        width: 47.5%;
+        margin-bottom: 2em;
+        text-align: center;
+        margin-right: 5%;
 
-		img{
-			height: 180px;
-			width: auto;
-		}
-	}
+        &:nth-child(3n+1){
+            clear: left;
+        }
+
+        img{
+            height: 180px;
+            width: auto;
+        }
+    }
 }
 
 .page-title{
@@ -121,12 +124,10 @@
 			margin-left: -4vw;
 		}
 
-		li{
+		a{
 			width: 47.75%;
+			margin: 0 2% 2em 0;
 
-			&:nth-child(odd){
-				margin: 0 2% 2em 0;
-			}
 		}
 
 		.products-inner{
@@ -143,13 +144,11 @@
 		width: 75%;
 		margin-right: 5%;
 		float: right;
-			li{
+			a{
 				width: 31.15%;
 				margin: 0 2% 2em 0;
+                margin: 0 2% 2em 0;
 
-				&:nth-child(odd){
-					margin: 0 2% 2em 0;
-				}
 			}
 		}
 
