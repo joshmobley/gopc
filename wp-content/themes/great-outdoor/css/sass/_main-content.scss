@@ -117,11 +117,22 @@
 	}
 
 	.adventure-menu{
+        margin: 0 auto 2em;
+        width: 80%;
+        color: $green;
 
         h2{
             width: 20%;
             float: left;
             margin-right: 5%;
+            text-align: right;
+
+            span{
+                text-transform: none;
+                margin-top: 1em;
+                display: block;
+                font-size: .8em;
+            }
         }
 
 		ul{

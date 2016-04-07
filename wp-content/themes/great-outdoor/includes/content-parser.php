@@ -120,7 +120,7 @@ if( get_field('content') != null ){
                 case 'activity-menu':
 
                     echo '<div class="adventure-menu">';
-                    echo '<h2>What&rsquop;s your adventure? <span>Destinations, expert advice, stories, meetups, &amp; more</span></h2>';
+                    echo '<h2>What&rsquo;s your adventure? <span>Destinations, expert advice, stories, meetups, &amp; more</span></h2>';
                     echo '<ul>';
                     echo '<li><a href="' . get_bloginfo('url') . '/shop/camp-hike" class="camp">Camp/Hike</a></li>';
                     echo '<li><a href="' . get_bloginfo('url') . '/shop/climb" class="climb">Climb</a></li>';

@@ -309,44 +309,54 @@ header {
       background: #6d6f44; }
       .main-content .promo .promo-content.bg-green h3, .main-content .promo .promo-content.bg-green p {
         color: #ffffff !important; }
-  .main-content .adventure-menu h2 {
-    width: 20%;
-    float: left;
-    margin-right: 5%; }
-  .main-content .adventure-menu ul {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
-    .main-content .adventure-menu ul li {
-      -webkit-flex: 1 33%;
-          -ms-flex: 1 33%;
-              flex: 1 33%;
-      margin-bottom: 1em;
-      text-align: center; }
-      .main-content .adventure-menu ul li a {
+  .main-content .adventure-menu {
+    margin: 0 auto 2em;
+    width: 80%;
+    color: #6d6f44; }
+    .main-content .adventure-menu h2 {
+      width: 20%;
+      float: left;
+      margin-right: 5%;
+      text-align: right; }
+      .main-content .adventure-menu h2 span {
+        text-transform: none;
+        margin-top: 1em;
         display: block;
-        background: #deec9b;
-        background: url("../assets/activity-sprite.png");
-        background-repeat: no-repeat;
-        background-position: center 0;
-        background-size: 61px;
-        padding: 25px 0;
-        text-decoration: none;
-        font-family: "Roboto Slab", sans-serif;
-        transition: all .5s; }
-        .main-content .adventure-menu ul li a:hover {
-          color: #d78105; }
-        .main-content .adventure-menu ul li a.climb {
-          background-position: center -70px; }
-        .main-content .adventure-menu ul li a.fish {
-          background-position: center -140px; }
-        .main-content .adventure-menu ul li a.paddle {
-          background-position: center -210px; }
-        .main-content .adventure-menu ul li a.travel {
-          background-position: center -280px; }
+        font-size: .8em; }
+    .main-content .adventure-menu ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .main-content .adventure-menu ul li {
+        -webkit-flex: 1 33%;
+            -ms-flex: 1 33%;
+                flex: 1 33%;
+        margin-bottom: 1em;
+        text-align: center; }
+        .main-content .adventure-menu ul li a {
+          display: block;
+          background: #deec9b;
+          background: url("../assets/activity-sprite.png");
+          background-repeat: no-repeat;
+          background-position: center 0;
+          background-size: 61px;
+          padding: 25px 0;
+          text-decoration: none;
+          font-family: "Roboto Slab", sans-serif;
+          transition: all .5s; }
+          .main-content .adventure-menu ul li a:hover {
+            color: #d78105; }
+          .main-content .adventure-menu ul li a.climb {
+            background-position: center -70px; }
+          .main-content .adventure-menu ul li a.fish {
+            background-position: center -140px; }
+          .main-content .adventure-menu ul li a.paddle {
+            background-position: center -210px; }
+          .main-content .adventure-menu ul li a.travel {
+            background-position: center -280px; }
   .main-content .page-section {
     text-align: center;
     clear: both; }
