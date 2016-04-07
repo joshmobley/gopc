@@ -789,7 +789,9 @@ header {
       clear: both; }
     .related-products.is-single li {
       width: 21%;
-      margin: 0 2%; } }
+      margin: 0 2%; }
+      .related-products.is-single li img {
+        height: auto; } }
 
 .event-page {
   width: 90%;
