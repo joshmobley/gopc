@@ -360,8 +360,6 @@ header {
   .main-content .page-section {
     text-align: center;
     clear: both; }
-  .main-content .section-header + .page-section {
-    margin-top: -2em; }
   .main-content.blog-single {
     padding: 0 10%; }
     .main-content.blog-single .attachment-post-thumbnail {
