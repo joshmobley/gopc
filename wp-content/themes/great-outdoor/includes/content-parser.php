@@ -91,9 +91,21 @@ if( get_field('content') != null ){
 
                     if( $automate == true ){
 
+                        foreach( $category as $catID ){
+                            $catList .= $catID . ',';
+                        }
+
                         $automate_args = array(
                             'post_type' => 'product',
-                            'posts_per_page' => 4
+                            'posts_per_page' => 4,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'product_cat',
+                                    'field' => 'tag_ID',
+                                    'terms' => array($catList)
+                                )
+                            )
+
                         );
 
                         $posts = new WP_Query( $automate_args );
