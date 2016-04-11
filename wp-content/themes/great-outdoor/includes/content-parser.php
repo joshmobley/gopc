@@ -162,8 +162,18 @@ if( get_field('content') != null ){
                     echo '<div class="page-section wysiwyg">';
                     if( $section['add_photos_or_videos'] == true ){ echo '<div class="half-width">'; }
                     echo $section['content'];
-                    if( $section['add_photos_or_videos'] == true ){ echo '</div><div class="half-width">'; }
-                    print_r($section['add_media']);
+                    if( $section['add_photos_or_videos'] == true ){
+                        echo '</div><div class="half-width">';
+                        print_r($section['add_media']);
+                        foreach( $section['add_media'] as $media ){
+                            if( $media['choose_format'] == 'image' ){
+                                gopc_image($media['image']);
+                            }else{
+                                '<iframe width="100%" src="' . $media['video'] . '" />';
+                            }
+                        }
+
+
                     echo '</div>';
 
                     break;
