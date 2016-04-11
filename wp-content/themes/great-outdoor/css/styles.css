@@ -514,7 +514,10 @@ header {
     width: 21.25%;
     margin-left: 3%; }
     .main-content .quarter-width .promo-bg-image {
-      height: 15vw; }
+      height: 15vw;
+      background-size: cover;
+      border: 1px solid #eee;
+      background-position: center; }
   .main-content .promo.full-width.bg-image .promo-content {
     font-size: 1.4em; } }
 
