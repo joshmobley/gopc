@@ -646,6 +646,13 @@ header {
     .inline-menu a:hover {
       color: #6d6f44; }
 
+.prdctfltr_checkboxes label {
+  position: relative; }
+  .prdctfltr_checkboxes label i {
+    right: 0;
+    top: 15%;
+    position: absolute; }
+
 .woocommerce-pagination {
   clear: both;
   float: right;

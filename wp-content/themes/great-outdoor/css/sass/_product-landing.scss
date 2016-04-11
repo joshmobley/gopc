@@ -28,6 +28,18 @@
 	}
 }
 
+.prdctfltr_checkboxes{
+    label{
+        position: relative;
+
+        i{
+            right: 0;
+            top: 15%;
+            position: absolute;
+        }
+    }
+}
+
 .woocommerce-pagination{
     clear: both;
     float: right;
