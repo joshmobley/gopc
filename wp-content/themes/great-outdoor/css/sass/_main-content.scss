@@ -1,6 +1,10 @@
 .main-content{
 	@include clearfix;
 
+    .wysiwyg{
+        margin-bottom: 2em;
+    }
+
 	.promo{
 		width: 80%;
 		margin-left: 10%;
@@ -272,6 +276,10 @@
 			box-sizing: border-box;
 
 		}
+
+        .wysiwyg{
+            padding-bottom: 4em;
+        }
 
 		.quarter-width{
 			width: 42.5%;
