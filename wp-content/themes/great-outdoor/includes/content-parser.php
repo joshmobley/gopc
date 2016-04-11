@@ -159,8 +159,9 @@ if( get_field('content') != null ){
 
                 case 'wysiwyg':
 
-                    echo '<div class="wysiwyg">';
+                    echo '<div class="page-section wysiwyg">';
                     echo $section['content'];
+                    echo '</div>';
 
                     break;
 
