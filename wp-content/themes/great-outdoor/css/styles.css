@@ -289,7 +289,7 @@ header {
       padding: 4em 5%;
       width: 100%;
       margin: 4em 0; }
-      .main-content .promo.full-width h2, .main-content .promo.full-width p {
+      .main-content .promo.full-width h2, .main-content .promo.full-width p, .main-content .promo.full-width a {
         color: #ffffff; }
       .main-content .promo.full-width .promo-bg-image {
         width: 100%;
