@@ -2,7 +2,7 @@
 
 <section class="main-content">
 
-    <?php include( get_template_directory() . 'includes/content-parser.php'); ?>
+    <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
 
 <?php
 
