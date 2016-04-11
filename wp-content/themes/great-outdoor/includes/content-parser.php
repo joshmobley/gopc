@@ -170,7 +170,7 @@ if( get_field('content') != null ){
                                 gopc_bg_image( $media['image'], '#wysiwyg-media-' . $postCount );
                                 echo '<div class="bg-image" id="wysiwyg-media-' . $postCount . '"></div>';
                             }else{
-                                echo '<iframe width="500px" height="300px" src="' . $media['video'] . '"></iframe>';
+                                echo '<iframe width="500" height="300" src="' . $media['video'] . '"></iframe>';
                             }
                             $postCount++;
                         }
