@@ -246,6 +246,9 @@ header {
     clear: both; }
   .main-content .wysiwyg {
     margin-bottom: 2em; }
+    .main-content .wysiwyg .bg-image {
+      background-size: cover;
+      height: 300px; }
   .main-content .promo {
     width: 80%;
     margin-left: 10%;

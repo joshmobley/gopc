@@ -3,6 +3,11 @@
 
     .wysiwyg{
         margin-bottom: 2em;
+
+        .bg-image{
+            background-size: cover;
+            height: 300px;
+        }
     }
 
 	.promo{
