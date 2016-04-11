@@ -200,7 +200,26 @@ header {
 
 @media screen and (min-width: 800px) {
   header {
-    background-image: url("../assets/site-footer-bg-1200.jpg"); } }
+    background-image: url("../assets/site-footer-bg-1200.jpg"); }
+  .menu-item-has-children {
+    position: relative; }
+    .menu-item-has-children:hover .sub-menu {
+      display: block; }
+  .sub-menu {
+    position: absolute;
+    width: 25%;
+    background: black;
+    display: none;
+    z-index: 9999;
+    padding: 1em;
+    top: 2em; }
+    .sub-menu li {
+      display: block; }
+    .sub-menu li a {
+      display: block;
+      border: none;
+      text-align: left;
+      padding: 0; } }
 
 @media screen and (min-width: 1200px) {
   header {
