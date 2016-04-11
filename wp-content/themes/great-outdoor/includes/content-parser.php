@@ -160,7 +160,10 @@ if( get_field('content') != null ){
                 case 'wysiwyg':
 
                     echo '<div class="page-section wysiwyg">';
+                    if( $section['add_photos_or_videos'] == true ){ echo '<div class="half-width">'; }
                     echo $section['content'];
+                    if( $section['add_photos_or_videos'] == true ){ echo '</div><div class="half-width">'; }
+                    print_r($section['add_media']);
                     echo '</div>';
 
                     break;
