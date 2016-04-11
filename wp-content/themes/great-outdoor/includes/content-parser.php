@@ -164,7 +164,7 @@ if( get_field('content') != null ){
                     echo $section['content'];
                     if( $section['add_photos_or_videos'] == true ){
                         echo '</div><div class="half-width">';
-                        print_r($section['add_media']);
+
                         foreach( $section['add_media'] as $media ){
                             if( $media['choose_format'] == 'image' ){
                                 gopc_image($media['image']);
@@ -172,6 +172,8 @@ if( get_field('content') != null ){
                                 '<iframe width="100%" src="' . $media['video'] . '" />';
                             }
                         }
+                        echo '</div>';
+                    }
 
 
                     echo '</div>';
