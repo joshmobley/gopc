@@ -518,7 +518,12 @@ header {
     .main-content .promo.full-width {
       clear: both;
       background-image: url("../assets/site-footer-bg-1200.jpg");
-      height: 100vh; }
+      zoom: 1; }
+      .main-content .promo.full-width:after {
+        content: '';
+        height: 0;
+        display: block;
+        clear: both; }
       .main-content .promo.full-width .promo-bg-image {
         height: 50vh;
         margin-bottom: 2em; }

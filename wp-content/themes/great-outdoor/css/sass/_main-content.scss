@@ -447,7 +447,7 @@
 		.promo.full-width{
 			clear: both;
 			background-image: url('../assets/site-footer-bg-1200.jpg');
-            height: 100vh;
+            @include clearfix;
 
             .promo-bg-image{
                 height: 50vh;
