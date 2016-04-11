@@ -164,13 +164,15 @@ if( get_field('content') != null ){
                     echo $section['content'];
                     if( $section['add_photos_or_videos'] == true ){
                         echo '</div><div class="half-width">';
-
+                        $postCount = 0;
                         foreach( $section['add_media'] as $media ){
                             if( $media['choose_format'] == 'image' ){
-                                gopc_image($media['image']);
+                                gopc_bg_image( $media['image'], '#wysiwyg-media-' . $postCount );
+                                echo '<div class="bg-image" id="wysiwyg-media-' . $postCount . '"></div>';
                             }else{
-                                echo '<iframe width="100%" src="' . $media['video'] . '"></iframe>';
+                                echo '<iframe width="500px" height="300px" src="' . $media['video'] . '"></iframe>';
                             }
+                            $postCount++;
                         }
                         echo '</div>';
                     }
