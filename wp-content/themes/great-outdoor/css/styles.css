@@ -1063,6 +1063,11 @@ footer {
       float: none;
       width: 100%; } }
 
+#ai1ec-container {
+  width: 80%;
+  margin: 2em auto;
+  padding-bottom: 2em; }
+
 .adventure .tiled-list {
   padding-left: 25%; }
   .adventure .tiled-list .tile {
