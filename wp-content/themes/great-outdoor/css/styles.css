@@ -207,19 +207,19 @@ header {
       display: block; }
   .sub-menu {
     position: absolute;
-    width: 25%;
+    width: 200px;
     background: black;
     display: none;
     z-index: 9999;
-    padding: 1em;
-    top: 2em; }
+    padding: 1em; }
     .sub-menu li {
       display: block; }
     .sub-menu li a {
       display: block;
       border: none;
       text-align: left;
-      padding: 0; } }
+      padding: 0;
+      margin: 0 0 .5em; } }
 
 @media screen and (min-width: 1200px) {
   header {
@@ -260,15 +260,15 @@ header {
         width: 25%;
         background: black;
         z-index: 9999;
-        padding: 1em;
-        top: 2em; }
+        padding: 1em; }
         header #menu-main-nav .sub-menu li {
           display: block; }
         header #menu-main-nav .sub-menu li a {
           display: block;
           border: none;
           text-align: left;
-          padding: 0; } }
+          padding: 0;
+          margin: 0 0 .5em; } }
 
 .main-content {
   zoom: 1;

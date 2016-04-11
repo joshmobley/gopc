@@ -132,12 +132,11 @@ header{
 
     .sub-menu{
         position: absolute;
-        width: 25%;
+        width: 200px;
         background: black;
         display: none;
         z-index: 9999;
         padding: 1em;
-        top: 2em;
 
         li{ display: block; }
 
@@ -146,6 +145,7 @@ header{
             border: none;
             text-align: left;
             padding: 0;
+            margin: 0 0 .5em;
         }
     }
 }
@@ -209,7 +209,6 @@ header{
                 background: black;
                 z-index: 9999;
                 padding: 1em;
-                top: 2em;
 
                 li{ display: block; }
 
@@ -218,6 +217,7 @@ header{
                     border: none;
                     text-align: left;
                     padding: 0;
+                    margin: 0 0 .5em;
                 }
             }
 		}
