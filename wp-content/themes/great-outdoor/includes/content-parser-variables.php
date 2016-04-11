@@ -2,9 +2,11 @@
 
 $title = get_the_title( $post->ID );
 if( get_the_excerpt( $post->ID ) != null ){
-    $desc = strip_tags( get_the_excerpt( $post->ID ) );
+    $body = get_the_excerpt( $post->ID );
+    $desc = strip_tags( substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
 }else{
-    $desc = strip_tags( substr( $post->post_content, 0, 85 ) ). '...';
+    $body = $post->post_content;
+    $desc = strip_tags( substr( $body, 0, strpos( $body, ' ',85 ))). '...';
 }
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
