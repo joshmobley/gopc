@@ -45,13 +45,26 @@ if( get_field('content') != null ){
                         echo '<h2 class="section-header">' . esc_html( $sectionTitle ) . '</h2>';
                     }
 
+                    if( $section['arrange_content'] == 'side' ){
+                        echo '<div class="half-width">';
+                    }
+
 					echo '<a href="' . esc_url( $linkURL ) . '">';
                     echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
-					echo '<div class="promo-content ' . $textPosition . '">';
-					echo '<h2>' . esc_html( $title ) . '</h2>';
-					echo '<p>' . esc_html( $desc . '...') . '</p>';
+
+                    if( $section['arrange_content'] == 'side' ){
+                       echo '</div><div class="half-width">';
+                    }
+					   echo '<div class="promo-content ' . $textPosition . '">';
+					   echo '<h2>' . esc_html( $title ) . '</h2>';
+					   echo '<p>' . esc_html( $desc . '...') . '</p>';
 					echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
-					echo '</div><!--.promo-content-->';
+
+                    if( $section['arrange_content'] == 'side' ){
+                        echo '</div>';
+                    }
+
+                    echo '</div><!--.promo-content-->';
 					echo '</a>';
 					echo '</div><!--.full-width.promo-->';
                     echo '</div><!--.page-section-->';
