@@ -18,8 +18,8 @@ if( $automate != true ){
 
             $customTitle    = $section['custom_title'];
             $customDesc     = $section['custom_description'];
-            $customLinkText = $section['link_text'];
-            $customLinkURL  = $section['link_url'];
+            $customLinkText = $section['custom_link_text'];
+            $customLinkURL  = $section['custom_link_url'];
             $customImage    = $section['custom_image'];
 
             if( $customTitle ){ $title = $customTitle; }
@@ -35,8 +35,8 @@ if( $automate != true ){
 
         if( $item['custom_title'] ){ $title = $item['custom_title']; }
         if( $item['custom_description'] ){ $desc = $item['custom_description']; }
-        if( $item['link_text'] ){ $linkText = $item['link_text']; }
-        if( $item['link_url'] ){ $linkURL = $item['link_url']; }
+        if( $item['link_text'] ){ $linkText = $item['custom_link_text']; }
+        if( $item['link_url'] ){ $linkURL = $item['custom_link_url']; }
         if( $item['custom_image'] ){
             gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
         }
