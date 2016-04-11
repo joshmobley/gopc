@@ -123,12 +123,14 @@
 
             &.bg-orange{
                 background: $orange;
+                border: 1px solid $orange;
 
                 h3, p, a{ color: $white!important; }
             }
 
             &.bg-green{
                 background: $green;
+                border: 1px solid $green;
 
                 h3, p{ color: $white!important; }
             }
@@ -430,14 +432,15 @@
         /* CONTENT PARSER */
 
         .half-container{
-            padding: 0 5%;
+            padding: 0 9%;
+            margin-bottom: 2em;
+            @include clearfix;
         }
 
 		.half-width{
-			width: 42.5%;
+			width: 48%;
 			float: left;
-			margin-bottom: 4em;
-            margin-left: 5%;
+            margin: 0 1%;
 
             .promo-bg-image{
                 height: 29vw;

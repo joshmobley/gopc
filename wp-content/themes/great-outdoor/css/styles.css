@@ -319,11 +319,13 @@ header {
               background: #d78105;
               color: #ffffff; }
     .main-content .promo .promo-content.bg-orange {
-      background: #d78105; }
+      background: #d78105;
+      border: 1px solid #d78105; }
       .main-content .promo .promo-content.bg-orange h3, .main-content .promo .promo-content.bg-orange p, .main-content .promo .promo-content.bg-orange a {
         color: #ffffff !important; }
     .main-content .promo .promo-content.bg-green {
-      background: #6d6f44; }
+      background: #6d6f44;
+      border: 1px solid #6d6f44; }
       .main-content .promo .promo-content.bg-green h3, .main-content .promo .promo-content.bg-green p {
         color: #ffffff !important; }
   .main-content .wysiwyg {
@@ -507,12 +509,18 @@ header {
   .main-content {
     /* CONTENT PARSER */ }
     .main-content .half-container {
-      padding: 0 5%; }
+      padding: 0 9%;
+      margin-bottom: 2em;
+      zoom: 1; }
+      .main-content .half-container:after {
+        content: '';
+        height: 0;
+        display: block;
+        clear: both; }
     .main-content .half-width {
-      width: 42.5%;
+      width: 48%;
       float: left;
-      margin-bottom: 4em;
-      margin-left: 5%; }
+      margin: 0 1%; }
       .main-content .half-width .promo-bg-image {
         height: 29vw; }
     .main-content .promo.full-width {
