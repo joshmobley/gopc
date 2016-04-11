@@ -169,7 +169,7 @@ if( get_field('content') != null ){
                             if( $media['choose_format'] == 'image' ){
                                 gopc_image($media['image']);
                             }else{
-                                '<iframe width="100%" src="' . $media['video'] . '" />';
+                                echo '<iframe width="100%" src="' . $media['video'] . '" />';
                             }
                         }
                         echo '</div>';
