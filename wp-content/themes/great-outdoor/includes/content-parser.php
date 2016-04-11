@@ -167,7 +167,7 @@ if( get_field('content') != null ){
                         $postCount = 0;
                         foreach( $section['add_media'] as $media ){
                             if( $media['choose_format'] == 'image' ){
-                                gopc_bg_image( $media['image'], '#wysiwyg-media-' . $postCount );
+                                gopc_bgimage( $media['image'], '#wysiwyg-media-' . $postCount );
                                 echo '<div class="bg-image" id="wysiwyg-media-' . $postCount . '"></div>';
                             }else{
                                 echo '<iframe width="500" height="300" src="' . $media['video'] . '"></iframe>';
