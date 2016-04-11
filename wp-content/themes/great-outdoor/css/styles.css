@@ -254,7 +254,22 @@ header {
           header #menu-main-nav li a:hover {
             color: #deec9b; }
         header #menu-main-nav li:last-child a {
-          border: none; } }
+          border: none; }
+      header #menu-main-nav .sub-menu {
+        position: absolute;
+        width: 25%;
+        background: black;
+        display: none;
+        z-index: 9999;
+        padding: 1em;
+        top: 2em; }
+        header #menu-main-nav .sub-menu li {
+          display: block; }
+        header #menu-main-nav .sub-menu li a {
+          display: block;
+          border: none;
+          text-align: left;
+          padding: 0; } }
 
 .main-content {
   zoom: 1;
