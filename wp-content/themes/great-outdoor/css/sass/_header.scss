@@ -119,35 +119,6 @@ header{
 	header{
 		background-image: url('../assets/site-footer-bg-1200.jpg');
 	}
-
-    .menu-item-has-children{
-        position: relative;
-
-        &:hover{
-            .sub-menu{
-                display: block;
-            }
-        }
-    }
-
-    .sub-menu{
-        position: absolute;
-        width: 200px;
-        background: black;
-        display: none;
-        z-index: 9999;
-        padding: 1em;
-
-        li{ display: block; }
-
-        li a{
-            display: block;
-            border: none;
-            text-align: left;
-            padding: 0;
-            margin: 0 0 .5em;
-        }
-    }
 }
 
 @media screen and (min-width: 1200px){
@@ -203,9 +174,20 @@ header{
 				}
 			}
 
+            .menu-item-has-children{
+                position: relative;
+
+                &:hover{
+                    .sub-menu{
+                        display: block;
+                    }
+                }
+            }
+
             .sub-menu{
                 position: absolute;
-                width: 25%;
+                width: 200px;
+                display: none;
                 background: black;
                 z-index: 9999;
                 padding: 1em;
@@ -218,6 +200,7 @@ header{
                     text-align: left;
                     padding: 0;
                     margin: 0 0 .5em;
+                    font-size: 1em;
                 }
             }
 		}
