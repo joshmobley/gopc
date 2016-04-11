@@ -157,6 +157,13 @@ if( get_field('content') != null ){
 
 				// ------- MENUS --------
 
+                case 'wysiwyg':
+
+                    echo '<div class="wysiwyg">';
+                    echo $section['content'];
+
+                    break;
+
 				case 'inline-menu':
 
 					echo '<div class="inline-menu">';

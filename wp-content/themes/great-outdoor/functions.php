@@ -214,6 +214,36 @@
 }
 add_action( 'init', 'regions_tax_init' );
 
+function activities_tax_init() {
+    // create a new taxonomy
+    register_taxonomy(
+        'activities',
+        'post',
+        array(
+            'label' => __( 'Activities' ),
+            'labels' => array(
+                'name'          => 'Activities',
+                'singular_name' => 'Activity',
+                'add_new'       => 'Add Activity',
+                'add_new_item'  => 'Add Activity',
+                'edit_item'     => 'Edit Activity',
+                'new_item'      => 'New Activity',
+                'view_item'     => 'View Activity',
+                'all_items'     => 'All Activities',
+                'menu_name'     => 'Activities'
+            ),
+            'rewrite' => array( 'slug' => 'activity' ),
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'show_in_nav_menus' => true,
+            'show_in_quick_edit' => true,
+            'hierarchical' => true
+
+        )
+    );
+}
+add_action( 'init', 'activities_tax_init' );
+
 
     /*****************************************************************************s
     *** v.  Short Codes
