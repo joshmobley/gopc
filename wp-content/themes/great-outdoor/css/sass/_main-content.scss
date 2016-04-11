@@ -1,6 +1,143 @@
 .main-content{
 	@include clearfix;
 
+    .page-section{
+        text-align: center;
+        clear: both;
+    }
+
+    .section-header{
+        margin-bottom: 1em;
+    }
+
+    /* CONTENT PARSER */
+
+    .promo{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: .5em;
+        text-align: center;
+        box-sizing: border-box;
+
+        h2, h3{
+            font-size: 1.4em;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .promo-content{
+            padding: 1em 5%;
+            width: 90%;
+        }
+
+        .promo-bg-image{
+            width: 100%;
+            height: 60vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.half-width{
+            margin-bottom: 2em;
+
+            .promo-bg-image{
+                border: 1px solid #eee;
+                border-bottom: none;
+            }
+        }
+
+        &.quarter-width{
+            margin-bottom: 2em;
+
+            .promo-bg-image{
+                border: 1px solid #eee;
+            }
+        }
+
+        &.full-width{
+            background: $brown url('../assets/site-footer-bg-400.jpg') no-repeat center;
+            box-sizing: border-box;
+            background-size: cover;
+            padding: 4em 5%;
+            width: 100%;
+            margin: 4em 0;
+
+            h2, p{
+                color: $white;
+            }
+
+            .promo-bg-image{
+                width: 100%;
+                margin: 0 auto 1em;
+            }
+
+            .button{
+                color: $white;
+                border-color: $white;
+
+                &:hover{
+                    background: $darkgreen;
+                    color: $white;
+                }
+            }
+
+            &.bg-image{
+                position: relative;
+                margin: 4em 0;
+                padding: 0;
+                background: none;
+                width: 100%;
+
+                .promo-bg-image{ box-shadow: none; }
+
+
+                .promo-content{
+                    background: $white;
+
+                    h2, p{ color: $green; }
+
+                    .button{
+                        color: $orange;
+                        border-color: $orange;
+
+                        &:hover{
+                            background: $orange;
+                            color: $white;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .promo-content{
+
+            &.bg-orange{
+                background: $orange;
+
+                h3, p, a{ color: $white!important; }
+            }
+
+            &.bg-green{
+                background: $green;
+
+                h3, p{ color: $white!important; }
+            }
+
+        }
+
+
+    }
+
     .wysiwyg{
         margin-bottom: 2em;
 
@@ -10,120 +147,7 @@
         }
     }
 
-	.promo{
-		width: 80%;
-		margin-left: 10%;
-		margin-bottom: .5em;
-		text-align: center;
-		box-sizing: border-box;
 
-		h2, h3{
-			font-size: 1.4em;
-		}
-
-		a{
-			text-decoration: none;
-		}
-
-		img{
-			width: 100%;
-            height: auto;
-		}
-
-		.promo-content{
-			padding: 1em 5%;
-			width: 90%;
-		}
-
-        .promo-bg-image{
-            width: 100%;
-            height: 60vw;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-		&.full-width{
-			background: $brown url('../assets/site-footer-bg-400.jpg') no-repeat center;
-			box-sizing: border-box;
-			background-size: cover;
-			padding: 4em 5%;
-			width: 100%;
-			margin: 4em 0;
-
-			h2, p{
-				color: $white;
-			}
-
-			img{
-				box-shadow: 5px 5px 10px $black;
-				margin-bottom: 1em;
-			}
-
-			.button{
-				color: $white;
-				border-color: $white;
-
-				&:hover{
-					background: $darkgreen;
-					color: $white;
-				}
-			}
-
-            &.page-header{
-                .promo-bg-image{
-                    height: 43vw;
-                }
-            }
-
-			&.bg-image{
-				position: relative;
-				margin: 4em 0;
-				padding: 0;
-				background: none;
-				width: 100%;
-
-				img{ box-shadow: none; }
-
-
-				.promo-content{
-					background: $white;
-
-					h2, p{ color: $green; }
-
-					.button{
-						color: $orange;
-						border-color: $orange;
-
-						&:hover{
-							background: $orange;
-							color: $white;
-						}
-					}
-				}
-
-			}
-
-		}
-
-		.promo-content{
-
-			&.bg-orange{
-				background: $orange;
-
-				h3, p, a{ color: $white!important; }
-			}
-
-			&.bg-green{
-				background: $green;
-
-				h3, p{ color: $white!important; }
-			}
-
-		}
-
-
-	}
 
 	.adventure-menu{
         margin: 0 auto 2em;
@@ -191,13 +215,10 @@
 
 	}
 
-	.page-section{
-		text-align: center;
-        clear: both;
-	}
+	/* BLOG STYLES */
 
-	&.blog-single{
-		padding: 0 10%;
+    &.blog-single{
+        padding: 0 10%;
 
         .attachment-post-thumbnail{
             width: 100vw;
@@ -206,66 +227,66 @@
             margin-bottom: -80%;
         }
 
-		.blog-header{
-			margin: 0 0 2em;
+        .blog-header{
+            margin: 0 0 2em;
             position: relative;
 
-			.blog-header-text{
-				max-width: 800px;
-				margin: 0 auto;
-				border-bottom: 1px solid $green;
-				padding-bottom: 2em;
-			}
+            .blog-header-text{
+                max-width: 800px;
+                margin: 0 auto;
+                border-bottom: 1px solid $green;
+                padding-bottom: 2em;
+            }
 
-			h2{
-				color: $orange;
-				font-size: 2em;
-			}
+            h2{
+                color: $orange;
+                font-size: 2em;
+            }
 
-			time{
-				@include main-font;
-			}
-		}
+            time{
+                @include main-font;
+            }
+        }
 
-		.blog-content{
-			max-width: 800px;
-			margin: 0 auto;
+        .blog-content{
+            max-width: 800px;
+            margin: 0 auto;
             background: white;
             padding: 2em;
             position: relative;
             margin-top: 2em;
 
-			img{
+            img{
                 padding: .5em;
                 background: $white;
 
-				&.alignright{
-					margin: 0em -6em 1em 2em;
-					float: right;
-				}
+                &.alignright{
+                    margin: 0em -6em 1em 2em;
+                    float: right;
+                }
 
-				&.alignleft{
-					margin: 0em 2em 1em -6em;
-					float: left;
-				}
-			}
-			h3{
-				font-size: 1.4em;
-			}
-			p{
-				color: $black;
-				margin: 2em 0;
-				font-size: 1.1em;
-				line-height: 1.6em;
-			}
-			strong, b{
-				font-weight: bold;
-			}
-			em, i{
-				font-style: italic;
-			}
-		}
-	}
+                &.alignleft{
+                    margin: 0em 2em 1em -6em;
+                    float: left;
+                }
+            }
+            h3{
+                font-size: 1.4em;
+            }
+            p{
+                color: $black;
+                margin: 2em 0;
+                font-size: 1.1em;
+                line-height: 1.6em;
+            }
+            strong, b{
+                font-weight: bold;
+            }
+            em, i{
+                font-style: italic;
+            }
+        }
+    }
 
 }
 
@@ -282,13 +303,49 @@
 
 		}
 
+        .tiled-list{
+
+            .tile{
+                width: 20%;
+                margin: 2.5%;
+                float: left;
+
+                a{
+                    text-decoration: none;
+                }
+
+                img{
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+
+                h3{
+                    color: $orange;
+                    @include header-font;
+                }
+            }
+
+        }
+
+        /* CONTENT PARSER */
+
         .wysiwyg{
             padding-bottom: 4em;
         }
 
+        .quarter-container{
+            width: 90%;
+            margin: 0 auto;
+        }
+
 		.quarter-width{
-			width: 42.5%;
-			float: left;
+            width: 45%;
+            margin: 0 2.5% 2em;
+            float: left;
+
+            .promo-bg-image{
+                height: 25vw;
+            }
 		}
 
 		.adventure-menu{
@@ -304,16 +361,18 @@
 			background-image: url('../assets/site-footer-bg-800.jpg');
 
 
+            .promo-bg-image{ box-shadow: 5px 5px 10px $black; }
 
             &.page-header{
                 background: $darkgreen;
 
-                img{
+                .promo-bg-image{
                     width: 80%;
-                    margin: 0;
+                    margin: 0 auto;
                     vertical-align: bottom;
                     border-right: 10px solid $white;
                     border-left: 10px solid $white;
+                    box-shadow: none;
                 }
             }
 
@@ -360,30 +419,6 @@
 			}
 		}
 
-		.tiled-list{
-
-			.tile{
-				width: 20%;
-				margin: 2.5%;
-				float: left;
-
-				a{
-					text-decoration: none;
-				}
-
-				img{
-					width: 100%;
-					margin-bottom: 1em;
-				}
-
-				h3{
-					color: $orange;
-					@include header-font;
-				}
-			}
-
-		}
-
 	}
 
 }
@@ -391,6 +426,8 @@
 @media screen and (min-width: 900px){
 
 	.main-content{
+
+        /* CONTENT PARSER */
 
         .half-container{
             padding: 0 5%;
@@ -424,7 +461,6 @@
                     width: 80%;
                     height: 65vh;
                     margin: 0 auto;
-                    background-size: cover;
                     background-position: center;
                     border-right: 10px solid $white;
                     border-left: 10px solid $white;
@@ -434,12 +470,12 @@
 		}
 
         .quarter-container{
-            padding: 0 7%;
+            width: 82%;
         }
 
 		.quarter-width{
-			width: 21.25%;
-            margin-left: 3%;
+			width: 23%;
+            margin: 0 1% 2em;
 
 
             .promo-bg-image{
@@ -462,6 +498,8 @@
 @media screen and (min-width: 1200px){
 
 	.main-content{
+
+        /* CONTENT PARSER */
 
 		.promo{
 
