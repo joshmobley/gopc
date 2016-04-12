@@ -8,7 +8,42 @@
 
     .section-header{
         margin-bottom: 1em;
+
+        &.is-page-title{
+            padding: 2em 0 0;
+            color: $orange;
+
+        }
     }
+
+    /* ARCHIVE STYLES */
+
+    .archive-view{
+        width:80%;
+        margin: 0 auto;
+
+        .tiled-list{
+            width: 75%;
+            float: right;
+
+            .tile{
+                width: 27%;
+
+                &:nth-child(3n+1){
+                    clear: left;
+                }
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .pagination-link{ clear: both; text-align: center; }
+    }
+
+
 
     /* CONTENT PARSER */
 

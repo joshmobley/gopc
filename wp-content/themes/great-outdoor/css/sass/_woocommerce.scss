@@ -1,6 +1,11 @@
 /* filter styles */
 
-.prdctfltr_wc{
+.post-filter{
+    float: left;
+    width: 25%;
+}
+
+.prdctfltr_wc, .post-filter{
 
 	.prdctfltr_filter_title{
 		display: none!important;
@@ -23,10 +28,20 @@
 		}
 	}
 
-	.prdctfltr_regular_title{
+	.prdctfltr_regular_title, > li{
 		@include header-font;
 		color: $orange;
+        list-style: none;
 	}
+
+    > li{
+        margin-bottom: 2em;
+
+        ul li a{
+            text-decoration: none;
+            color: $black;
+        }
+    }
 
 	&.prdctfltr_square .prdctfltr_filter{
 
