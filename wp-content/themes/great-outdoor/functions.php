@@ -61,25 +61,10 @@
     add_action('init', 'remove_content_editor');
 
     function remove_content_editor() {
-        remove_post_type_support( 'product', 'editor' );
+        //remove_post_type_support( 'product', 'editor' );
     }
 
-    // create event post type
-    add_action( 'init', 'create_event_type' );
 
-    function create_event_type() {
-        register_post_type( 'event',
-        array(
-          'labels' => array(
-            'name' => __( 'Events' ),
-            'singular_name' => __( 'Event' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-calendar'
-        )
-        );
-    }
 
     /*****************************************************************************
     *** iii.  Custom Taxonomies
