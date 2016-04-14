@@ -18,7 +18,7 @@
             echo '<ul>';
             while ( $brands->have_posts() ) {
                 $brands->the_post();
-                echo '<li>' . gopc_image( get_field(brand_logo) ) . '</li>';
+                echo '<li><a href="' . get_the_permalink() . '"><img src="' . get_field(brand_logo)['sizes']['small'] . '" alt="' . get_the_title() . '" /></a></li>';
             }
             echo '</ul>';
         } else {
