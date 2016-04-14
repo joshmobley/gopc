@@ -458,6 +458,13 @@
 					color: $white;
 					border-color: $white;
 				}
+
+                &.dark{
+                    h2, p, .button{
+                        color: $black;
+                        border-color: $black;
+                    }
+                }
 			}
 		}
 

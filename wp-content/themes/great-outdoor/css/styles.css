@@ -548,7 +548,10 @@ header {
           bottom: 1em; }
         .main-content .promo.full-width.bg-image .promo-content h2, .main-content .promo.full-width.bg-image .promo-content p, .main-content .promo.full-width.bg-image .promo-content .button {
           color: #ffffff;
-          border-color: #ffffff; } }
+          border-color: #ffffff; }
+        .main-content .promo.full-width.bg-image .promo-content.dark h2, .main-content .promo.full-width.bg-image .promo-content.dark p, .main-content .promo.full-width.bg-image .promo-content.dark .button {
+          color: #111111;
+          border-color: #111111; } }
 
 @media screen and (min-width: 900px) {
   .main-content {
