@@ -8,6 +8,13 @@
         $brands_args = array(
             'post_type' => 'page',
             'post_parent' => $brandParent,
+            'meta_query' => array(
+                array(
+                    'key' => 'show_in_brand_bar',
+                    'value' => true,
+                    'compare' => '==',
+                ),
+            ),
         );
 
         // The Query
