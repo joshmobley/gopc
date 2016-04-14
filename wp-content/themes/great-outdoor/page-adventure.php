@@ -11,7 +11,12 @@
 
     echo '<div class="post-filter">';
 
-        wp_list_categories();
+        wp_list_categories(
+            array(
+                'depth' => 1,
+                'taxonomy' => 'category',
+            )
+        );
 
         wp_list_categories(
             array(
