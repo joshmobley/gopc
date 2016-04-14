@@ -35,7 +35,7 @@ $(document).ready(function(){
         var $allVideos = $("iframe[src^='http://www.youtube.com'], iframe[src^='https://www.youtube.com'], iframe[src^='//player.vimeo.com'], iframe[src^='https://player.vimeo.com'], iframe[src^='http://player.vimeo.com']"),
 
             // The element that is fluid width
-            $fluidEl = $(".sub_section.no-image p, .blog_article p, .case-study div");
+            $fluidEl = $(".half-width");
 
         // Figure out and save aspect ratio for each video
         $allVideos.each(function() {
