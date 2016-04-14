@@ -39,6 +39,7 @@ if( get_field('content') != null ){
                     }
 
 					$textPosition = $section['text_position'];
+                    $textColor = $section['text_color'];
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
                     if( $sectionTitle != null ){
@@ -55,10 +56,10 @@ if( get_field('content') != null ){
                     if( $section['arrange_content'] == 'side' ){
                        echo '</div><div class="half-width">';
                     }
-					   echo '<div class="promo-content ' . $textPosition . '">';
+					   echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
 					   echo '<h2>' . esc_html( $title ) . '</h2>';
 					   echo '<p>' . esc_html( $desc . '...') . '</p>';
-					echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
+					   echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
 
                     if( $section['arrange_content'] == 'side' ){
                         echo '</div>';
