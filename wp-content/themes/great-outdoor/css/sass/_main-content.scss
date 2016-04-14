@@ -402,6 +402,21 @@
 
             &.page-header{
                 background: $darkgreen;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @media screen and (min-width: 400px){
+                    background-image: url('../assets/home-header-bg-800.jpg');
+                }
+
+                @media screen and (min-width: 800px){
+                     background-image: url('../assets/home-header-bg-1200.jpg');
+                }
+
+                @media screen and (min-width: 1200px){
+                     background-image: url('../assets/home-header-bg-1600.jpg');
+                }
 
                 .promo-bg-image{
                     width: 80%;
