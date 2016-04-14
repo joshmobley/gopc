@@ -415,36 +415,41 @@
 
 			&.bg-image .promo-content{
 				position: absolute;
-				bottom: 5vw;
 				background: none;
 				width: 42.5%;
-				text-align: left;
-				right: 10%;
+				text-align: right;
+				right: 8%;
+                bottom: 1em;
 
 				&.top-left{
-					top: 5vw;
 					left: 0;
 					right: auto;
+                    text-align: left;
+                    top: 1em;
 				}
 
 				&.bottom-left{
-					left: 10%;
+					left: 8%;
 					right: auto;
+                    text-align: left;
+                    bottom: 1em;
 				}
 
 				&.top-right{
-					top: 5vw;
 					bottom: auto;
+                    text-align: right;
+                    top: 1em;
 				}
 
 				&.top-center{
-					top: 5vw;
 					bottom: auto;
 					text-align: center;
+                    top: 1em;
 				}
 
 				&.bottom-center{
 					text-align: center;
+                    bottom: 1em;
 				}
 
 
