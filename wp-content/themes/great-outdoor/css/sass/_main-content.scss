@@ -176,7 +176,9 @@
     }
 
     .wysiwyg{
-        margin-bottom: 2em;
+        width: 80%;
+        margin: 2em auto;
+        @include clearfix;
 
         .bg-image{
             background-size: cover;
@@ -367,7 +369,7 @@
         /* CONTENT PARSER */
 
         .wysiwyg{
-            padding-bottom: 4em;
+            margin: 4em auto;
         }
 
         .quarter-container{
@@ -425,6 +427,7 @@
                     border-right: 10px solid $white;
                     border-left: 10px solid $white;
                     box-shadow: none;
+                    background-color: $white;
                 }
             }
 
