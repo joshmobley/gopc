@@ -99,3 +99,8 @@ wp-content/mysql.sql
 *.asf
 *.wmv
 *.avi
+wp-content/plugins/wordpress-importer/parsers.php
+wp-content/plugins/wordpress-importer/readme.txt
+wp-content/plugins/wordpress-importer/tmp-wordpress-importer-readme.pot
+wp-content/plugins/wordpress-importer/wordpress-importer.php
+wp-content/plugins/wordpress-importer/languages/wordpress-importer.pot
