@@ -62,6 +62,23 @@
 
     function remove_content_editor() {
         //remove_post_type_support( 'product', 'editor' );
+        remove_post_type_support( 'locations', 'editor' );
+    }
+
+    add_action( 'init', 'create_locations' );
+
+    function create_locations() {
+      register_post_type( 'locations',
+        array(
+          'labels' => array(
+            'name' => __( 'Locations' ),
+            'singular_name' => __( 'Location' )
+          ),
+          'menu_icon' => 'dashicons-store',
+          'public' => true,
+          'has_archive' => true,
+        )
+      );
     }
 
 
