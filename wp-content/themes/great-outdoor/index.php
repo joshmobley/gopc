@@ -2,11 +2,87 @@
 
 <section class="main-content">
 
-    <h2>Index.php</h2>
+    <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
 
-    <?php get_template_part('loop'); ?>
 
-</section><!--#main-->
+<div class="archive-view">
 
-<?php get_sidebar(); ?>
-<?php get_Footer(); ?>
+<?php
+
+    echo '<div class="post-filter">';
+
+        wp_list_categories(
+            array(
+                'depth' => 1,
+                'taxonomy' => 'category',
+            )
+        );
+
+        wp_list_categories(
+            array(
+                'title_li' => 'Regions',
+                'taxonomy' => 'regions',
+            )
+        );
+
+        wp_list_categories(
+            array(
+                'title_li' => 'Activities',
+                'taxonomy' => 'activities',
+            )
+        );
+    echo '</div>';
+
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+$adventureArgs = array(
+    'post_type' => 'post',
+    'paged' => $paged,
+);
+
+
+
+$adventure = new WP_Query( $adventureArgs );
+
+
+
+if ( $adventure->have_posts() ) :
+    echo '<ul class="tiled-list">';
+
+    while ( $adventure->have_posts() ) : $adventure->the_post(); ?>
+
+        <?php
+        $postImage = get_the_post_thumbnail();
+        if( $postImage == null ){
+            $postImage = '<img src="http://placehold.it/300x250" />';
+        }
+        ?>
+
+        <li class="tile">
+            <a href="<?php esc_url( the_permalink() ); ?>"><?php echo $postImage; ?></a>
+            <a href="<?php esc_url( the_permalink() ); ?>"><h3><?php esc_html( the_title() ); ?></h3></a>
+            <?php
+                $body = get_the_excerpt();
+                echo esc_html(substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
+            ?>
+        </li>
+
+
+
+<?php endwhile; ?>
+    <div class="pagination-link">
+        <?php previous_posts_link( 'Newer Posts', $adventure->max_num_pages ); ?>
+        <?php next_posts_link( 'Older Posts', $adventure->max_num_pages ); ?>
+    </div>
+    </ul>
+    <?php wp_reset_postdata(); ?>
+<?php else : ?>
+    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+<?php endif; ?>
+
+</div><!--.archive-view-->
+
+
+</section><!--.main-content-->
+<?php get_footer(); ?>
