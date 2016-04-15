@@ -37,8 +37,8 @@ if( $automate != true ){
 
         if( $item['custom_title'] ){ $title = $item['custom_title']; }
         if( $item['custom_description'] ){ $desc = $item['custom_description']; }
-        if( $item['link_text'] ){ $linkText = $item['custom_link_text']; }
-        if( $item['link_url'] ){ $linkURL = $item['custom_link_url']; }
+        if( $item['custom_link_text'] ){ $linkText = $item['custom_link_text']; }
+        if( $item['custom_link_url'] ){ $linkURL = $item['custom_link_url']; }
         if( $item['custom_image'] ){
             gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
         }
