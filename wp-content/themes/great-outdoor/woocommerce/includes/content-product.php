@@ -113,6 +113,16 @@
 
         <?php
             $features = get_field('features');
+            $length = get_field('length');
+            $width = get_field('width');
+            $weight = get_field('weight');
+            $capacity = get_field('capacity');
+            $legRoom = get_field('leg_room');
+            $numberOfPaddlers = get_field('number_of_paddlers');
+            $hatchesIncluded = get_field('hatches_included');
+            $rodHoldersIncluded = get_field('rod_holders_included');
+            $material = get_field('material');
+            $madeIn = get_field('made_in');
             $specs = get_field('specs');
         ?>
 
@@ -134,6 +144,47 @@
 
             <?php if( $specs ) : ?>
             <div class="specs container">
+                <?php
+                    echo '<ul class="category-specs">';
+                    if( $length ){
+                        $lengthFeet = $length . ' ft';
+                        $lengthCM = $length*30.48 . ' cm';
+                        echo '<li>Length: ' . $length . '/' . $lengthCM . '</li>';
+                    }
+                    if( $width ){
+                        $widthIN = $width . ' in';
+                        $widthCM = $width*2.54 . ' cm';
+                        echo '<li>Width: ' . $widthIN . '/' . $widthCM . '</li>';
+                    }
+                    if( $weight ){
+                        $weightLB = $weight . ' lbs';
+                        $weightKG = $weight*0.453592 . ' kg';
+                        echo '<li>Weight: ' . $weightLB . '/' . $weightKG . '</li>';
+                    }
+                    if( $capacity ){
+                        $capacityLB = $capacity . ' lbs';
+                        $capacityKG = $capacity*0.453592 . ' kg';
+                        echo '<li>Capacity: ' . $capacityLB . '/' . $capacityKG . '</li>';
+                    }
+                    if( $legRoom ){
+                        $legRoomIN = $legRoom . ' in';
+                        $legRoomCM = $legRoom*2.54 . 'cm';
+                        echo '<li>Leg Room: ' . $legRoomIN . '/' . $legRoomCM . '</li>';
+                    }
+                    if( $numberOfPaddlers ){
+                        echo '<li>Number of Paddlers: ' . $numberOfPaddlers . '</li>';
+                    }
+                    if( $rodHoldersIncluded ){
+                        echo '<li>Rod Holder Included: ' . $rodHoldersIncluded . '</li>';
+                    }
+                    if( $material ){
+                        echo '<li>Material: ' . $material . '</li>';
+                    }
+                    if( $madeIn ){
+                        echo '<li>Made in: ' . $madeIN . '</li>';
+                    }
+                    echo '</ul>';
+                ?>
                 <?php echo $specs; ?>
             </div>
          <?php endif; ?>
