@@ -151,28 +151,28 @@
                 <?php
                     echo '<ul class="category-specs">';
                     if( $length ){
-                        $lengthFeet = $length . ' ft';
-                        $lengthCM = $length*30.48 . ' cm';
+                        $lengthFeet = round( $length, 0 ) . 'ft ' (($length*12)%12) . ' in';
+                        $lengthCM = round( $length*30.48, 2) . ' cm';
                         echo '<li>Length: ' . $length . '/' . $lengthCM . '</li>';
                     }
                     if( $width ){
                         $widthIN = $width . ' in';
-                        $widthCM = $width*2.54 . ' cm';
+                        $widthCM = round( $width*2.54, 2 ) . ' cm';
                         echo '<li>Width: ' . $widthIN . '/' . $widthCM . '</li>';
                     }
                     if( $weight ){
                         $weightLB = $weight . ' lbs';
-                        $weightKG = $weight*0.453592 . ' kg';
+                        $weightKG = round( $weight*0.453592, 2 ) . ' kg';
                         echo '<li>Weight: ' . $weightLB . '/' . $weightKG . '</li>';
                     }
                     if( $capacity ){
                         $capacityLB = $capacity . ' lbs';
-                        $capacityKG = $capacity*0.453592 . ' kg';
+                        $capacityKG = round( $capacity*0.453592, 2 ) . ' kg';
                         echo '<li>Capacity: ' . $capacityLB . '/' . $capacityKG . '</li>';
                     }
                     if( $legRoom ){
                         $legRoomIN = $legRoom . ' in';
-                        $legRoomCM = $legRoom*2.54 . 'cm';
+                        $legRoomCM = round ( $legRoom*2.54, 2 ) . 'cm';
                         echo '<li>Leg Room: ' . $legRoomIN . '/' . $legRoomCM . '</li>';
                     }
                     if( $numberOfPaddlers ){
