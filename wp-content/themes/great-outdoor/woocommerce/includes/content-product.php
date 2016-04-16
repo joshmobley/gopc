@@ -151,9 +151,9 @@
                 <?php
                     echo '<ul class="category-specs">';
                     if( $length ){
-                        $lengthFeet = round( $length, 0 ) . 'ft ' . (($length*12)%12) . ' in';
+                        $lengthFT = round( $length, 0 ) . '&rsquo;' . (($length*12)%12) . '&rdquo;ft';
                         $lengthCM = round( $length*30.48, 2) . ' cm';
-                        echo '<li>Length: ' . $length . '/' . $lengthCM . '</li>';
+                        echo '<li>Length: ' . $lengthFT . '/' . $lengthCM . '</li>';
                     }
                     if( $width ){
                         $widthIN = $width . ' in';
