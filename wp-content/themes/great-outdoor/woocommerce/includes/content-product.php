@@ -151,7 +151,7 @@
                 <?php
                     echo '<ul class="category-specs">';
                     if( $length ){
-                        $lengthFeet = round( $length, 0 ) . 'ft ' (($length*12)%12) . ' in';
+                        $lengthFeet = round( $length, 0 ) . 'ft ' . (($length*12)%12) . ' in';
                         $lengthCM = round( $length*30.48, 2) . ' cm';
                         echo '<li>Length: ' . $length . '/' . $lengthCM . '</li>';
                     }
