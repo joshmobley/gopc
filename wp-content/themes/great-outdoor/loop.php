@@ -1,4 +1,6 @@
-<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
+<div class="archive-view">
+<?php if ( have_posts() ):
+ while ( have_posts() ) : the_post(); ?>
 
     <article class="excerpt">
 
@@ -10,8 +12,12 @@
 
     </article>
 
-<?php endwhile; else: ?>
+<?php endwhile;
+    echo '<div class="pagination-link">' . get_posts_nav_link() . '</div>';
+else: ?>
 
     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 
+
 <?php endif; ?>
+</div>

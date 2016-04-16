@@ -125,7 +125,7 @@
             $madeIn = get_field('made_in');
             $specs = get_field('specs');
 
-            if( $features || $length || $width || $capacity || $legRoom || $numberOfPaddlers || $hatchesIncluded || $rodHoldersIncluded || $material || $madeIn || $specs ){
+            if( $length || $width || $capacity || $legRoom || $numberOfPaddlers || $hatchesIncluded || $rodHoldersIncluded || $material || $madeIn || $specs ){
                 $catSpecs = true;
             }
         ?>
