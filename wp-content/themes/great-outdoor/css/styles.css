@@ -1257,6 +1257,9 @@ footer {
     margin-top: 0 !important; }
   .search [data-posttype="locations"] .location-info {
     float: left;
-    width: 25%;
+    width: 20%;
     border-right: 1px solid #d78105;
-    margin-right: 2em; }
+    margin-right: 5%;
+    /* WHAT */ }
+  .search [data-posttype="locations"] .location-excerpt {
+    padding-left: 25%; }
