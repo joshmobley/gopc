@@ -189,7 +189,14 @@ if( get_field('content') != null ){
                         foreach( $section['add_media'] as $media ){
                             if( $media['choose_format'] == 'image' ){
                                 gopc_bgimage( $media['image'], '#wysiwyg-media-' . $postCount );
+                                if( $media['url'] ){
+                                    echo '<a href="' . $media['url'] . '">';
+                                }
                                 echo '<div class="bg-image" id="wysiwyg-media-' . $postCount . '"></div>';
+
+                                if( $media['url'] ){
+                                    echo '</a>';
+                                }
                             }else{
                                 echo '<iframe width="500" height="300" src="' . $media['video'] . '"></iframe>';
                             }
