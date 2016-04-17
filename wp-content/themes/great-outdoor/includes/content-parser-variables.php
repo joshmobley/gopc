@@ -3,10 +3,10 @@
 $title = get_the_title( $post->ID );
 if( get_the_excerpt( $post->ID ) != null ){
     $body = get_the_excerpt( $post->ID );
-    $desc = strip_tags( substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
+    if( $body ){ $desc = strip_tags( substr( $body, 0, strpos( $body, ' ', 85 ))) . '...'; }
 }else{
     $body = $post->post_content;
-    $desc = strip_tags( substr( $body, 0, strpos( $body, ' ',85 ))). '...';
+    if( $body ){ $desc = strip_tags( substr( $body, 0, strpos( $body, ' ',85 ))). '...'; }
 }
 $linkText = 'Read More';
 $linkURL = get_the_permalink( $post->ID );
