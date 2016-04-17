@@ -17,7 +17,7 @@
             <p class="telephone"><?php the_field('phone_number'); ?></p>
         </div>
 
-        <p class="location-excerpt"><?php echo substr( get_field('location_description'), 0, 340 ) . '...';  ?></p>
+        <div class="location-excerpt"><?php echo substr( get_field('location_description'), 0, 340 ) . '...';  ?></div>
 
         <?php else: ?>
 
