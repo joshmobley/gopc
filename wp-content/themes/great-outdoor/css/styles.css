@@ -523,8 +523,6 @@ header {
               flex: 1 20%; }
     .main-content .promo.full-width {
       background-image: url("../assets/site-footer-bg-800.jpg"); }
-      .main-content .promo.full-width .promo-bg-image {
-        box-shadow: 5px 5px 10px #111111; }
       .main-content .promo.full-width.page-header {
         background: #383a00;
         background-repeat: no-repeat;
@@ -547,7 +545,6 @@ header {
           vertical-align: bottom;
           border-right: 10px solid #ffffff;
           border-left: 10px solid #ffffff;
-          box-shadow: none;
           background-color: #ffffff; }
       .main-content .promo.full-width.bg-image .promo-content {
         position: absolute;
