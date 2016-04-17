@@ -1,10 +1,18 @@
 .search{
+
+    .page-section{
+        width: 100%;
+        margin: 2em auto;
+        text-align: left;
+    }
+
     time{ display: none; }
 
     .section-title{
         font-size: 1.4em;
         color: $orange;
         margin-bottom: 2em;
+        text-align: center;
     }
 
     article{
@@ -38,15 +46,7 @@
         }
 
         .location-info{
-            float: left;
-            width: 20%;
-            border-right: 1px solid $orange;
-            margin-right: 5%;
-            /* WHAT */
-        }
-
-        .location-excerpt{
-            padding-left: 25%;
+            margin-bottom: 1em;
         }
     }
 
@@ -58,6 +58,32 @@
         img{
             width: 100%;
             height: auto;
+        }
+    }
+
+    @media screen and (min-width: 800px){
+        .page-section{
+          //  width: 80%;
+        }
+
+        .section-title{
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+
+
+        .location-info{
+            float: left;
+            width: 20%;
+            border-right: 1px solid $orange;
+            margin-right: 5%;
+            /* WHAT */
+        }
+
+        .location-excerpt{
+            padding-left: 25%;
         }
     }
 }

@@ -1226,13 +1226,19 @@ footer {
     margin-bottom: 1em;
     text-transform: uppercase; }
 
+.search .page-section {
+  width: 100%;
+  margin: 2em auto;
+  text-align: left; }
+
 .search time {
   display: none; }
 
 .search .section-title {
   font-size: 1.4em;
   color: #d78105;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  text-align: center; }
 
 .search article {
   clear: left; }
@@ -1262,13 +1268,7 @@ footer {
   .search [data-posttype="locations"] h2 a {
     margin-top: 0 !important; }
   .search [data-posttype="locations"] .location-info {
-    float: left;
-    width: 20%;
-    border-right: 1px solid #d78105;
-    margin-right: 5%;
-    /* WHAT */ }
-  .search [data-posttype="locations"] .location-excerpt {
-    padding-left: 25%; }
+    margin-bottom: 1em; }
 
 .search .product-image {
   float: left;
@@ -1277,3 +1277,17 @@ footer {
   .search .product-image img {
     width: 100%;
     height: auto; }
+
+@media screen and (min-width: 800px) {
+  .search .section-title {
+    text-align: left; } }
+
+@media screen and (min-width: 1200px) {
+  .search .location-info {
+    float: left;
+    width: 20%;
+    border-right: 1px solid #d78105;
+    margin-right: 5%;
+    /* WHAT */ }
+  .search .location-excerpt {
+    padding-left: 25%; } }
