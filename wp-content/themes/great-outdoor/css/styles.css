@@ -352,8 +352,6 @@ header {
         padding: 0;
         background: none;
         width: 100%; }
-        .main-content .promo.full-width.bg-image .promo-bg-image {
-          box-shadow: none; }
         .main-content .promo.full-width.bg-image .promo-content {
           background: #ffffff; }
           .main-content .promo.full-width.bg-image .promo-content h2, .main-content .promo.full-width.bg-image .promo-content p {
