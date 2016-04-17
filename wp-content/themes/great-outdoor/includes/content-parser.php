@@ -62,8 +62,8 @@ if( get_field('content') != null ){
                        echo '</div><div class="half-width">';
                     }
 					   echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
-					   echo '<h2>' . esc_html( $title ) . '</h2>';
-					   echo '<p>' . esc_html( $desc ) . '</p>';
+					   if( $title ){ echo '<h2>' . esc_html( $title ) . '</h2>'; }
+					   if( $desc ){ echo '<p>' . esc_html( $desc ) . '</p>'; }
 
                        if( !$noURL ){
                             echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
