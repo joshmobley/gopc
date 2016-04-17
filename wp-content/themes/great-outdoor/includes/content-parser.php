@@ -11,6 +11,8 @@ if( get_field('content') != null ){
 			$posts = $section['posts'];
             $automate = $section['automate_content'];
             if( $automate == true ){
+                $automateContent = $section['content_to_automate'];
+                $brand   = $section['automated_brands'];
                 $category = $section['automated_category'];
             }
             $fullWidth = false;
@@ -112,22 +114,47 @@ if( get_field('content') != null ){
 
                     if( $automate == true ){
 
-                        foreach( $category as $catID ){
-                            $catList .= $catID . ',';
+                        if( $automateContent == 'categories' ){
+
+                            foreach( $category as $catID ){
+                                $catList .= $catID . ',';
+                            }
+
+                            $automate_args = array(
+                                'post_type' => 'product',
+                                'posts_per_page' => 4,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'product_cat',
+                                        'field' => 'tag_ID',
+                                        'terms' => array($catList)
+                                    )
+                                )
+
+                            );
+
+                        }else{
+
+                            foreach( $brand as $catID ){
+                                $catList .= $catID . ',';
+                            }
+
+                            $automate_args = array(
+                                'post_type' => 'product',
+                                'posts_per_page' => 4,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'pa_brands',
+                                        'field' => 'tag_ID',
+                                        'terms' => array($catList)
+                                    )
+                                )
+
+                            );
+
                         }
 
-                        $automate_args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => 4,
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'product_cat',
-                                    'field' => 'tag_ID',
-                                    'terms' => array($catList)
-                                )
-                            )
 
-                        );
 
                         $posts = new WP_Query( $automate_args );
 
