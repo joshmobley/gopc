@@ -14,7 +14,16 @@
         <!-- End Google Tag Manager -->
     </head>
 
-    <body class="<?php global $post; echo $post->post_name; ?>">
+    <?php
+        if( is_search() ){
+            $posttype = 'search';
+        }else{
+            global $post;
+            $posttype = $post->post_name;
+        }
+    ?>
+
+    <body class="<?php echo $posttype; ?>">
 
         <header class="header">
 

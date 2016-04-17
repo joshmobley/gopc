@@ -1,14 +1,33 @@
 <div class="archive-view">
 <?php if ( have_posts() ):
- while ( have_posts() ) : the_post(); ?>
+ while ( have_posts() ) : the_post();
 
-    <article class="excerpt">
+ $posttype = $post->post_type;
+
+ ?>
+
+    <article class="excerpt" data-posttype="<?php echo $posttype; ?>">
+
+        <?php if( $posttype == 'locations' ): ?>
+
+        <h2><a href="<?php the_permalink(); ?>">Locations: <?php the_title(); ?></a></h2>
+
+        <div class="location-info">
+            <p class="address"><?php the_field('address'); ?></p>
+            <p class="telephone"><?php the_field('phone_number'); ?></p>
+        </div>
+
+        <p><?php echo get_field('location_description'); ?></p>
+
+        <?php else: ?>
 
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <time><?php echo get_the_date(); ?></time>
 
         <p><?php the_excerpt(); ?></p>
+
+        <?php endif; ?>
 
     </article>
 

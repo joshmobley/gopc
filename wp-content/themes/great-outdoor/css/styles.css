@@ -1225,3 +1225,38 @@ footer {
     font-size: 1em !important;
     margin-bottom: 1em;
     text-transform: uppercase; }
+
+.search time {
+  display: none; }
+
+.search .section-title {
+  font-size: 1.4em;
+  color: #d78105;
+  margin-bottom: 2em; }
+
+.search article h2 a {
+  font-size: 1.2em;
+  color: #d78105;
+  font-family: "Roboto Slab", sans-serif;
+  text-decoration: none;
+  max-width: 600px !important;
+  margin: 3em 0 1em !important;
+  display: block; }
+
+.search [data-posttype="locations"] {
+  border: 2px solid #d78105;
+  padding: 2em;
+  margin-bottom: 2em;
+  zoom: 1; }
+  .search [data-posttype="locations"]:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both; }
+  .search [data-posttype="locations"] h2 a {
+    margin-top: 0 !important; }
+  .search [data-posttype="locations"] .location-info {
+    float: left;
+    width: 25%;
+    border-right: 1px solid #d78105;
+    margin-right: 2em; }

@@ -1,0 +1,39 @@
+.search{
+    time{ display: none; }
+
+    .section-title{
+        font-size: 1.4em;
+        color: $orange;
+        margin-bottom: 2em;
+    }
+
+    article{
+        h2 a{
+            font-size: 1.2em;
+            color: $orange;
+            @include header-font;
+            text-decoration: none;
+            max-width: 600px!important;
+            margin: 3em 0 1em!important;
+            display: block;
+        }
+    }
+
+    [data-posttype="locations"]{
+        border: 2px solid $orange;
+        padding: 2em;
+        margin-bottom: 2em;
+        @include clearfix;
+
+        h2 a{
+            margin-top: 0 !important;
+        }
+
+        .location-info{
+            float: left;
+            width: 25%;
+            border-right: 1px solid $orange;
+            margin-right: 2em;
+        }
+    }
+}
