@@ -50,7 +50,10 @@ if( get_field('content') != null ){
                         echo '<div class="half-width">';
                     }
 
-					echo '<a href="' . esc_url( $linkURL ) . '">';
+                    if( !$noURL ){
+                        echo '<a href="' . esc_url( $linkURL ) . '">';
+                    }
+
                     echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
 
                     if( $section['arrange_content'] == 'side' ){
@@ -59,7 +62,11 @@ if( get_field('content') != null ){
 					   echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
 					   echo '<h2>' . esc_html( $title ) . '</h2>';
 					   echo '<p>' . esc_html( $desc . '...') . '</p>';
-					   echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
+
+                       if( !$noURL ){
+                            echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
+
+                       }
 
                     if( $section['arrange_content'] == 'side' ){
                         echo '</div>';

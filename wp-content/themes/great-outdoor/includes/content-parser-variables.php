@@ -23,6 +23,7 @@ if( $automate != true ){
             $customLinkText = $section['custom_link_text'];
             $customLinkURL  = $section['custom_link_url'];
             $customImage    = $section['custom_image'];
+            $noURL          = $section['no_link_url'];
 
             if( $customTitle ){ $title = $customTitle; }
             if( $customDesc ){ $desc = $customDesc; }
