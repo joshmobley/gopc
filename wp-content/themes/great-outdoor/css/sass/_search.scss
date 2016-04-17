@@ -8,6 +8,14 @@
     }
 
     article{
+        clear: left;
+
+        .type{
+            display: block;
+            font-size: .7em;
+            color: $green;
+        }
+
         h2 a{
             font-size: 1.2em;
             color: $orange;
@@ -39,6 +47,17 @@
 
         .location-excerpt{
             padding-left: 25%;
+        }
+    }
+
+    .product-image{
+        float: left;
+        width: 20%;
+        margin-right: 5%;
+
+        img{
+            width: 100%;
+            height: auto;
         }
     }
 }

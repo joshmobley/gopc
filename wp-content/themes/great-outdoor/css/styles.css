@@ -1234,14 +1234,20 @@ footer {
   color: #d78105;
   margin-bottom: 2em; }
 
-.search article h2 a {
-  font-size: 1.2em;
-  color: #d78105;
-  font-family: "Roboto Slab", sans-serif;
-  text-decoration: none;
-  max-width: 600px !important;
-  margin: 3em 0 1em !important;
-  display: block; }
+.search article {
+  clear: left; }
+  .search article .type {
+    display: block;
+    font-size: .7em;
+    color: #6d6f44; }
+  .search article h2 a {
+    font-size: 1.2em;
+    color: #d78105;
+    font-family: "Roboto Slab", sans-serif;
+    text-decoration: none;
+    max-width: 600px !important;
+    margin: 3em 0 1em !important;
+    display: block; }
 
 .search [data-posttype="locations"] {
   border: 2px solid #d78105;
@@ -1263,3 +1269,11 @@ footer {
     /* WHAT */ }
   .search [data-posttype="locations"] .location-excerpt {
     padding-left: 25%; }
+
+.search .product-image {
+  float: left;
+  width: 20%;
+  margin-right: 5%; }
+  .search .product-image img {
+    width: 100%;
+    height: auto; }
