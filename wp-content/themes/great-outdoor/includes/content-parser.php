@@ -63,7 +63,7 @@ if( get_field('content') != null ){
                     }
 					   echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
 					   echo '<h2>' . esc_html( $title ) . '</h2>';
-					   echo '<p>' . esc_html( $desc . '...') . '</p>';
+					   echo '<p>' . esc_html( $desc ) . '</p>';
 
                        if( !$noURL ){
                             echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
