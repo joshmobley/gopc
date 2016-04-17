@@ -82,6 +82,16 @@
     }
 
 
+    /* ensuring all CPTS make it to search results */
+    function filter_search($query) {
+        if ($query->is_search) {
+        $query->set('post_type', array('post', 'page', 'product', 'locations', 'events'));
+        };
+        return $query;
+    };
+    add_filter('pre_get_posts', 'filter_search');
+
+
 
     /*****************************************************************************
     *** iii.  Custom Taxonomies
