@@ -23,22 +23,26 @@
             <!--<a href="#" class="search-link">Search</a>-->
             <a href="#" class="menu-link">Menu</a>
 
+            <div class="utility-nav">
+
+                <?php get_search_form(); ?>
+
+            </div>
+
             <div class="nav-wrapper">
 
-                <?php
+                    <?php
 
-                    get_search_form();
+                        $args = array(
+                            'container' => false,
+                            'menu_class' => false,
+                            'fallback_cb' => 'wp_list_categories',
+                            'title_li' => false
+                            );
 
-                    $args = array(
-                        'container' => false,
-                        'menu_class' => false,
-                        'fallback_cb' => 'wp_list_categories',
-                        'title_li' => false
-                        );
+                        wp_nav_menu($args);
 
-                    wp_nav_menu($args);
-
-                ?>
+                    ?>
 
             </div>
 

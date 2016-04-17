@@ -64,8 +64,7 @@ header{
 
 	.searchform{
 		border: 1px solid $white;
-		background: rgba(255,255,255, .2);
-		padding: .5em;
+		padding: .25em;
 		margin-left: 2em
 
 		input{
@@ -80,7 +79,7 @@ header{
 			float: left;
 			padding: 0;
 			border-bottom: 1px solid $white;
-			color: $orange;
+			color: $white;
 			font-size: .8em;
 
 			&:focus{
@@ -117,7 +116,19 @@ header{
 @media screen and (min-width: 800px){
 
 	header{
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2.5em;
 		background-image: url('../assets/site-footer-bg-1200.jpg');
+        position:relative;
+
+        .utility-nav{
+            position: absolute;
+            top: .5em;
+            right: 10%;
+            width: 80%;
+
+        }
 	}
 }
 
@@ -125,6 +136,7 @@ header{
 
 	header{
 		background-image: url('../assets/site-footer-bg-1600.jpg');
+
 
 		.menu-link{
 			display: none;
@@ -148,9 +160,7 @@ header{
 		}
 
 		#menu-main-nav{
-			width: 55%;
-			float: right;
-			text-align: right;
+            padding-left: 25%;
 			padding-top: .5em;
 
 			li{
