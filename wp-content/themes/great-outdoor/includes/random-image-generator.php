@@ -6,6 +6,7 @@
         if( $postImage == null ){
 
             $activities = wp_get_post_terms( $post->ID, 'activities' );
+            $print_r($activities);
 
             if( $activities[0]['slug'] == 'paddle-act'){
                 $postImage = wp_get_attachment_image_src( $paddleImg[$paddleCount], 'thumbnail' );
@@ -26,6 +27,8 @@
                 $postImage = wp_get_attachment_image_src( $generalImg[$generalCount], 'thumbnail' );
                 $generalCount++;
             }
+
+            print_r($postImage);
 
         }
         ?>
