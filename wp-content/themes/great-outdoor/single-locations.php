@@ -77,8 +77,14 @@
                     echo '<ul>';
                     while ( $locationEvents->have_posts() ) {
                         $locationEvents->the_post();
-                        print_r($post);
-                        echo '<li class="event-item">' . get_the_title() . '</li>';
+
+                        $event = Ai1ec_Events_Helper::get_event($post->ID);
+
+                        echo '<li class="event-item">';
+                        echo '<span class="date">' . $event->long_start_date . '</span>';
+                        echo '<span class="title">' . get_the_title() . '</span>';
+                        echo '<span class="venue">' . $event->venue . '</span>';
+                        echo '</li>';
                     }
                     echo '</ul>';
                 } else {
