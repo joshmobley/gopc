@@ -14,19 +14,19 @@
            // $activityObj = wp_get_post_terms( $post->ID, 'activities' );
             print_r( $activityObj);
 
-            if( $activityObj[0]['slug'] == 'paddle-act'){
+            if( $activities[0]->'slug' == 'paddle-act'){
                 $postImage = wp_get_attachment_image_src( $paddleImg[$paddleCount], 'thumbnail' );
                 $paddleCount++;
-            }elseif( $activityObj[0]['slug'] == 'hiking-act'){
+            }elseif( $activities[0]->'slug' == 'hiking-act'){
                 $postImage = wp_get_attachment_image_src( $campImg[$campCount], 'thumbnail' );
                 $campCount++;
-            }elseif( $activityObj[0]['slug'] == 'climb-act'){
+            }elseif( $activities[0]->'slug' == 'climb-act'){
                 $postImage = wp_get_attachment_image_src( $climbImg[$climbCount], 'thumbnail' );
                 $climbCount++;
-            }elseif( $activityObj[0]['slug'] == 'travel-act'){
+            }elseif( $activities[0]->'slug' == 'travel-act'){
                 $postImage = wp_get_attachment_image_src( $travelImg[$travelCount], 'thumbnail' );
                 $travelCount++;
-            }elseif( $activityObj[0]['slug'] == 'fish-act' ){
+            }elseif( $activities[0]->'slug' == 'fish-act' ){
                 $postImage = wp_get_attachment_image_src( $fishImg[$fishCount], 'thumbnail' );
                 $fishCount++;
             }else{
