@@ -40,20 +40,25 @@
 
             <div class="nav-wrapper">
 
-                    <?php
-
-                        $args = array(
-                            'container' => false,
-                            'menu_class' => false,
-                            'fallback_cb' => 'wp_list_categories',
-                            'title_li' => false
-                            );
-
-                        wp_nav_menu($args);
-
-                    ?>
+                <ul id="menu-main-nav">
+                    <li data-mega="products-mega">
+                        <a href="<?php echo get_bloginfo('url'); ?>/products">Products</a>
+                        <?php include('includes/mega-menu-products.php'); ?>
+                    </li>
+                    <li data-mega="adventure-mega">
+                        <a href="<?php echo get_bloginfo('url'); ?>/adventure">Adventure</a>
+                    </li>
+                    <li data-mega="locations-mega">
+                        <a href="<?php echo get_bloginfo('url'); ?>/locations">Locations</a>
+                    </li>
+                    <li data-mega="community-mega">
+                        <a href="<?php echo get_bloginfo('url'); ?>/community">Community</a>
+                    </li>
+                </ul>
 
             </div>
+
+
 
         </header>
 

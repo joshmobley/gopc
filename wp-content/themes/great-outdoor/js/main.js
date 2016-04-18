@@ -70,4 +70,24 @@ $(document).ready(function(){
 
     youtubeResize();
 
+    function ajaxPostFilter( el ){
+        $(el).find('.cat-item').click( function(event){
+            event.preventDefault();
+
+
+            var num_id = $(this).attr('class').match(/\d+/);
+            $(this).toggleClass('active');
+
+            console.log(num_id);
+        });
+    }
+
+    //ajaxPostFilter('.post-filter');
+
+    $('#menu-main-nav li').hover( function(){
+        $('#' + $(this).attr('data-mega')).stop().fadeIn();
+    }, function(){
+        $('#' + $(this).attr('data-mega')).stop().fadeOut();
+    });
+
 });

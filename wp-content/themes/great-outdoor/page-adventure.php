@@ -11,6 +11,7 @@
 
     echo '<div class="post-filter">';
 
+
         wp_list_categories(
             array(
                 'depth' => 1,
@@ -31,6 +32,7 @@
                 'taxonomy' => 'activities',
             )
         );
+
     echo '</div>';
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
