@@ -69,6 +69,8 @@
 
                 echo '<h2 class="section-title">Upcoming ' . $term . ' Events</h2>';
 
+                include('includes/timely-helper.php');
+
                 // The Query
                 $locationEvents = new WP_Query( $locationEventsArgs );
 
