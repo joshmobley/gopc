@@ -282,43 +282,56 @@
     .blog-content{
         padding: 0 10%;
         max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 2em;
-            position: relative;
-            margin-top: 2em;
+        margin: 0 auto;
+        background: white;
+        padding: 2em;
+        position: relative;
+        margin-top: 2em;
 
-            img{
-                padding: .5em;
-                background: $white;
-                max-width: 100%;
-                height: auto;
+        img{
+            padding: .5em;
+            background: $white;
+            max-width: 100%;
+            height: auto;
 
-                &.alignright{
-                    margin: 0em -6em 1em 2em;
-                    float: right;
+            &.alignright{
+                margin: 0em -6em 1em 2em;
+                float: right;
+            }
+
+            &.alignleft{
+                margin: 0em 2em 1em -6em;
+                float: left;
+            }
+        }
+        h3{
+            font-size: 1.4em;
+        }
+        p{
+            color: $black;
+            margin: 2em 0;
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        strong, b{
+            font-weight: bold;
+        }
+        em, i{
+            font-style: italic;
+        }
+
+        .wpcolumn{
+            @include main-font;
+
+            &.wpcolumn-last{
+                border: 1px solid $orange;
+                padding: 1em;
+
+                br{
+                    margin-bottom: 1em;
                 }
-
-                &.alignleft{
-                    margin: 0em 2em 1em -6em;
-                    float: left;
-                }
             }
-            h3{
-                font-size: 1.4em;
-            }
-            p{
-                color: $black;
-                margin: 2em 0;
-                font-size: 1.1em;
-                line-height: 1.6em;
-            }
-            strong, b{
-                font-weight: bold;
-            }
-            em, i{
-                font-style: italic;
-            }
+        }
 
         .attachment-post-thumbnail{
             width: 100vw;

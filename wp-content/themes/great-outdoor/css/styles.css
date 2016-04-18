@@ -326,6 +326,13 @@ p + p {
       font-weight: bold; }
     .main-content .blog-content em, .main-content .blog-content i {
       font-style: italic; }
+    .main-content .blog-content .wpcolumn {
+      font-family: "Roboto Condensed", sans-serif; }
+      .main-content .blog-content .wpcolumn.wpcolumn-last {
+        border: 1px solid #d78105;
+        padding: 1em; }
+        .main-content .blog-content .wpcolumn.wpcolumn-last br {
+          margin-bottom: 1em; }
     .main-content .blog-content .attachment-post-thumbnail {
       width: 100vw;
       height: auto;
