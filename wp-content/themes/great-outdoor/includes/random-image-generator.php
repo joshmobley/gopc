@@ -5,6 +5,8 @@
 
         if( $postImage == null ){
 
+            print_r('randomizer');
+
             $activities = wp_get_post_terms( $post->ID, 'activities' );
             $print_r($activities);
 
