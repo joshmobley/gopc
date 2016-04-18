@@ -57,7 +57,7 @@
 
                 }
 
-                do_shortcode('[ai1ec cat_name="Triangle"]');
+                echo do_shortcode('[ai1ec view="stream" cat_name="Triangle"]');
 
                /* $locationEventsArgs = array(
                     'post_type' => 'ai1ec_event',
