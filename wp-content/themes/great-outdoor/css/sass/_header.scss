@@ -230,6 +230,14 @@ header{
             float: left;
             box-sizing: border-box;
 
+            h4 a, li a{
+                text-decoration: none;
+            }
+
+            h4 a{
+                @include header-font;
+            }
+
 
             .color-box{
                 width: 100%;
