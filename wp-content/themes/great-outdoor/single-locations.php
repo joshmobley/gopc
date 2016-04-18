@@ -49,12 +49,27 @@
             </a>
         </div>
 
-        <div class="location-events">
+        <div class="location-events half-width promo">
             <?php
 
                 if( $post->post_name == 'raleigh' ){
                     echo do_shortcode('[ai1ec view="stream" cat_name="Triangle" events_limit="3"]');
-
+                }elseif( $post->post_name == 'chapel-hill'){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Triad" events_limit="3"]');
+                }elseif( $post->post_name == 'charlotte' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Charlotte" events_limit="3"]');
+                }elseif( $post->post_name == 'charlottesville' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Charlottesville" events_limit="3"]');
+                }elseif( $post->post_name == 'greenville' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Greenville" events_limit="3"]');
+                }elseif( $post->post_name == 'greensboro' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Triad" events_limit="3"]');
+                }elseif( $post->post_name == 'virginia-beach' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Virginia Beach" events_limit="3"]');
+                }elseif( $post->post_name == 'wilmington' ){
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Wilmington" events_limit="3"]');
+                }else{
+                    echo do_shortcode('[ai1ec view="stream" events_limit="3"]');
                 }
 
                /* $locationEventsArgs = array(
