@@ -1076,6 +1076,8 @@ header {
       .mega-menu .mega-menu-column.fifth {
         width: 18%;
         margin: .5em 1%; }
+        .mega-menu .mega-menu-column.fifth:nth-child(5n+1) {
+          clear: left; }
       .mega-menu .mega-menu-column.quarter {
         width: 23%;
         margin: .5em 1%; }

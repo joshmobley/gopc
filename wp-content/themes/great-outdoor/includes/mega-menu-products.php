@@ -2,6 +2,7 @@
     <h2 class="mega-menu-title">A Sampling of our Products</h2>
     <h3 class="mega-menu-subtitle">Product info, staff recommendations, picture and more.</h3>
 
+    <div>
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/mens-clothing-2/">Men's Clothing</a></h4>
         <ul>
@@ -79,4 +80,5 @@
     <div class="mega-menu-column fifth">
         <img src="http://placehold.it/300x250" />
     </div>
+</div>
  </div><!--.mega-menu#products-mega-->
