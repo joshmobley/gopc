@@ -53,10 +53,11 @@
             <?php
 
                 if( $post->post_name == 'raleigh' ){
-                    $term = 'triangle';
+                    //$term = 'triangle';
+                    do_shortcode('[ai1ec cat_name="event-triangle"]');
                 }
 
-                $locationEventsArgs = array(
+               /* $locationEventsArgs = array(
                     'post_type' => 'ai1ec_event',
                     'tax_query' => array(
                         array(
@@ -90,8 +91,8 @@
                 } else {
                     // no posts found
                 }
-                /* Restore original Post Data */
-                wp_reset_postdata();
+                /* Restore original Post Data
+                wp_reset_postdata();*/
             ?>
         </div>
 
