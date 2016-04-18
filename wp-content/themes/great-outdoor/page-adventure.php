@@ -53,12 +53,7 @@ if ( $adventure->have_posts() ) :
 
     while ( $adventure->have_posts() ) : $adventure->the_post(); ?>
 
-        <?php
-        $postImage = get_the_post_thumbnail();
-        if( $postImage == null ){
-            $postImage = '<img src="http://placehold.it/300x250" />';
-        }
-        ?>
+        <?php include('includes/random-image-generator.php'); ?>
 
 		<li class="tile">
 			<a href="<?php esc_url( the_permalink() ); ?>"><?php echo $postImage; ?></a>

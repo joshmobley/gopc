@@ -43,13 +43,15 @@
 
     <ul class="tiled-list">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) :
+
+        include('includes/random-image-counter.php');
+
+        while ( have_posts() ) : the_post(); ?>
 
         <?php
-        $postImage = get_the_post_thumbnail();
-        if( $postImage == null ){
-            $postImage = '<img src="http://placehold.it/300x250" />';
-        }
+
+        include('includes/random-image-generator.php');
         ?>
 
         <li class="tile">
