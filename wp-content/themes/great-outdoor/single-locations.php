@@ -54,8 +54,10 @@
 
                 if( $post->post_name == 'raleigh' ){
                     //$term = 'triangle';
-                    do_shortcode('[ai1ec cat_name="Triangle"]');
+
                 }
+
+                do_shortcode('[ai1ec cat_name="Triangle"]');
 
                /* $locationEventsArgs = array(
                     'post_type' => 'ai1ec_event',
