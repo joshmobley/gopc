@@ -9,9 +9,9 @@
 
             print_r($post->ID);
 
-            print_r(wp_get_post_terms( $post->ID, 'activities' ));
-
             $activityObj = wp_get_post_terms( $post->ID, 'activities' );
+
+           // $activityObj = wp_get_post_terms( $post->ID, 'activities' );
             $print_r('worked: ' . $activityObj);
 
             if( $activities[0]['slug'] == 'paddle-act'){
