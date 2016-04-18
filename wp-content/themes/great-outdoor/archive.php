@@ -16,7 +16,7 @@
 
     echo '<div class="post-filter">';
 
-        wp_list_categories(
+        /*wp_list_categories(
             array(
                 'depth' => 1,
                 'taxonomy' => 'category',
@@ -34,7 +34,9 @@
                 'title_li' => 'Activities',
                 'taxonomy' => 'activities',
             )
-        );
+        );*/
+
+echo do_shortcode( '[searchandfilter id="34148"]' );
     echo '</div>';
 
 
@@ -42,6 +44,7 @@
 
 
     <ul class="tiled-list">
+
 
 <?php if ( have_posts() ) :
 

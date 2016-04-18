@@ -3,7 +3,7 @@
 
         include('activities-default-photos.php');
 
-        if( $postImage == null ){
+        if( !$postImage ){
 
             $activityObj = wp_get_post_terms( $post->ID, 'activities' );
 
