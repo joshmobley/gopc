@@ -1311,6 +1311,10 @@ footer {
     margin-bottom: 1em;
     text-transform: uppercase; }
 
+.location-events #ai1ec-container {
+  width: 100%;
+  margin: 0; }
+
 .search .page-section {
   width: 100%;
   margin: 2em auto;
