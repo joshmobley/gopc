@@ -1,4 +1,4 @@
-    <?php if( is_page() || is_singular('locations') ){
+    <?php if( is_page() || is_singular() ){
         include('includes/brand-bar.php');
     } ?>
     <footer class="footer">
