@@ -34,7 +34,7 @@
                 $generalCount++;
             }
 
-            print_r($postImage);
+          //  print_r($postImage);
 
         }
         ?>
