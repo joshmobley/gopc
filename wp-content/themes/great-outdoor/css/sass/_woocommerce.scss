@@ -1,10 +1,5 @@
 /* filter styles */
 
-.post-filter{
-    float: left;
-    width: 25%;
-}
-
 .prdctfltr_wc .prdctfltr_woocommerce_ordering .prdctfltr_filter label > span{
     position: static!important;
 }
@@ -145,6 +140,13 @@
 }
 
 @media screen and (min-width: 800px){
+
+
+
+.post-filter{
+    float: left;
+    width: 25%;
+}
 
 	.prdctfltr_wc + .products{
 		margin: 0 0 2em;
