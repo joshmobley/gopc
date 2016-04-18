@@ -10,6 +10,7 @@
         $hours          = get_field('hours');
         $locationDesc   = get_field('location_description');
         $googleView     = get_field('location_google_view');
+        $locationImage  = get_field('location_image');
         $resourceLinks  = get_field('resource_links');
         $facebook       = get_field('facebook_url');
         $twitter        = get_field('twitter_usrname');
@@ -120,7 +121,11 @@
         </div>
 
         <div class="half-width">
-           <?php echo $googleView; ?>
+           <?php
+                if( $googleView) { echo $googleView; }
+                else{ gopc_image($locationImage); }
+
+            ?>
         </div>
 
     </div>
