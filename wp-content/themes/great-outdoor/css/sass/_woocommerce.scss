@@ -5,6 +5,10 @@
     width: 25%;
 }
 
+.prdctfltr_wc .prdctfltr_woocommerce_ordering .prdctfltr_filter label > span{
+    position: static!important;
+}
+
 .prdctfltr_wc, .post-filter{
 
 	.prdctfltr_filter_title{
@@ -48,10 +52,14 @@
 			label{
 				@include main-font;
 				color: $darkgreen;
+                padding-left: 20px;
 			}
 
 			label > span:before{
 				border-color: $orange!important;
+                position: absolute;
+                left: 0;
+                top: 0;
 			}
 
 			label.prdctfltr_active > span:before{
@@ -59,9 +67,6 @@
 				width: 7px;
 				border: 1px solid $orange;
 				background: $orange;
-                position: absolute;
-                left: 0;
-                top: 0;
 			}
 	}
 

@@ -1083,6 +1083,9 @@ footer {
   float: left;
   width: 25%; }
 
+.prdctfltr_wc .prdctfltr_woocommerce_ordering .prdctfltr_filter label > span {
+  position: static !important; }
+
 .prdctfltr_wc .prdctfltr_filter_title, .post-filter .prdctfltr_filter_title {
   display: none !important; }
 
@@ -1112,19 +1115,20 @@ footer {
 
 .prdctfltr_wc.prdctfltr_square .prdctfltr_filter label, .post-filter.prdctfltr_square .prdctfltr_filter label {
   font-family: "Roboto Condensed", sans-serif;
-  color: #383a00; }
+  color: #383a00;
+  padding-left: 20px; }
 
 .prdctfltr_wc.prdctfltr_square .prdctfltr_filter label > span:before, .post-filter.prdctfltr_square .prdctfltr_filter label > span:before {
-  border-color: #d78105 !important; }
+  border-color: #d78105 !important;
+  position: absolute;
+  left: 0;
+  top: 0; }
 
 .prdctfltr_wc.prdctfltr_square .prdctfltr_filter label.prdctfltr_active > span:before, .post-filter.prdctfltr_square .prdctfltr_filter label.prdctfltr_active > span:before {
   height: 7px;
   width: 7px;
   border: 1px solid #d78105;
-  background: #d78105;
-  position: absolute;
-  left: 0;
-  top: 0; }
+  background: #d78105; }
 
 .cat-image-header {
   width: 100%; }
