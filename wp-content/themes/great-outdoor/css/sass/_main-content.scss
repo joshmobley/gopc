@@ -273,6 +273,8 @@
             img{
                 padding: .5em;
                 background: $white;
+                max-width: 100%;
+                height: auto;
 
                 &.alignright{
                     margin: 0em -6em 1em 2em;
