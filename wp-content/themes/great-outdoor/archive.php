@@ -50,6 +50,7 @@
         while ( have_posts() ) : the_post(); ?>
 
         <?php
+        $postImage = get_the_post_thumbnail();
 
         include('includes/random-image-generator.php');
         ?>
