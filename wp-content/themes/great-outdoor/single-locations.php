@@ -49,8 +49,12 @@
             </a>
         </div>
 
-        <div>
+        <div class="location-events">
             <?php
+
+                if( $post->post_name == 'raleigh' ){
+                    $term = 'triangle';
+                }
 
                 $locationEventsArgs = array(
                     'post_type' => 'ai1ec_event',
@@ -58,10 +62,12 @@
                         array(
                             'taxonomy'  => 'events_categories',
                             'field'     => 'slug',
-                            'terms'     => 'event-triangle',
+                            'terms'     => 'event-' . $term,
                         ),
                     ),
                 );
+
+                echo '<h2 class="section-title">Upcoming ' . $term . ' Events</h2>';
 
                 // The Query
                 $locationEvents = new WP_Query( $locationEventsArgs );
@@ -71,7 +77,8 @@
                     echo '<ul>';
                     while ( $locationEvents->have_posts() ) {
                         $locationEvents->the_post();
-                        echo '<li>' . get_the_title() . '</li>';
+                        print_r($post);
+                        echo '<li class="event-item">' . get_the_title() . '</li>';
                     }
                     echo '</ul>';
                 } else {
