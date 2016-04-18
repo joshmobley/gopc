@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 400px){
 
-	footer{
+	.site-footer{
 		background-image: url('../assets/site-footer-bg-800.jpg');
 	}
 
@@ -47,14 +47,14 @@
 
 @media screen and (min-width: 800px){
 
-	footer{
+	.site-footer{
 		background-image: url('../assets/site-footer-bg-1200.jpg');
 	}
 }
 
 @media screen and (min-width: 1200px){
 
-	footer{
+	.site-footer{
 		background-image: url('../assets/site-footer-bg-1600.jpg');
 	}
 
