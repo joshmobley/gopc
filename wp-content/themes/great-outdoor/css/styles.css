@@ -153,6 +153,10 @@ p + p {
         .main-content .archive-view .tiled-list .tile img {
           width: 100%;
           height: auto; }
+    .main-content .archive-view .post-filter .children {
+      display: none; }
+    .main-content .archive-view .post-filter .sf-option-active .children {
+      display: block; }
     .main-content .archive-view .pagination-link {
       clear: both;
       text-align: center; }

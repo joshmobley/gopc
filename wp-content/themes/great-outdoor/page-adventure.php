@@ -33,7 +33,7 @@
             )
         );*/
 
-echo do_shortcode( '[searchandfilter id="34148"]' );
+    echo do_shortcode( '[searchandfilter id="34148"]' );
 
     echo '</div>';
 

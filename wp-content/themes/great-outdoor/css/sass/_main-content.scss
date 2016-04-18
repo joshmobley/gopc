@@ -58,6 +58,18 @@
             }
         }
 
+        .post-filter{
+            .children{
+                display: none;
+            }
+
+            .sf-option-active{
+                .children{
+                    display: block;
+                }
+            }
+        }
+
         .pagination-link{ clear: both; text-align: center; }
     }
 
