@@ -261,39 +261,9 @@
 
 	/* BLOG STYLES */
 
-    &.blog-single{
+    .blog-content{
         padding: 0 10%;
-
-        .attachment-post-thumbnail{
-            width: 100vw;
-            height: auto;
-            margin-left: -5vw;
-            margin-bottom: -80%;
-        }
-
-        .blog-header{
-            margin: 0 0 2em;
-            position: relative;
-
-            .blog-header-text{
-                max-width: 800px;
-                margin: 0 auto;
-                border-bottom: 1px solid $green;
-                padding-bottom: 2em;
-            }
-
-            h2{
-                color: $orange;
-                font-size: 2em;
-            }
-
-            time{
-                @include main-font;
-            }
-        }
-
-        .blog-content{
-            max-width: 800px;
+        max-width: 800px;
             margin: 0 auto;
             background: white;
             padding: 2em;
@@ -329,6 +299,34 @@
             em, i{
                 font-style: italic;
             }
+
+        .attachment-post-thumbnail{
+            width: 100vw;
+            height: auto;
+            margin-left: -5vw;
+            margin-bottom: -80%;
+        }
+
+        .blog-header{
+            margin: 0 0 2em;
+            position: relative;
+
+            .blog-header-text{
+                max-width: 800px;
+                margin: 0 auto;
+                border-bottom: 1px solid $green;
+                padding-bottom: 2em;
+            }
+
+            h2{
+                color: $orange;
+                font-size: 2em;
+            }
+
+            time{
+                @include main-font;
+            }
+
         }
     }
 
