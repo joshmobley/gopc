@@ -1056,6 +1056,7 @@ header {
   .mega-menu {
     display: none;
     position: absolute;
+    border: 1px solid #ccc;
     top: 6em;
     left: 10%;
     width: 80%;
