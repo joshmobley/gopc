@@ -151,8 +151,8 @@
                 <?php
                     echo '<ul class="category-specs">';
                     if( $length ){
-                        $lengthFT = round( $length, 0 ) . '&rsquo;' . (($length*12)%12) . '&rdquo;ft';
-                        $lengthCM = round( $length*30.48, 2) . ' cm';
+                        $lengthFT = floor( $length ) . '&rsquo;' . (($length*12)%12) . '&rdquo;ft';
+                        $lengthCM = round( $length*12*2.54, 2) . ' cm';
                         echo '<li>Length: ' . $lengthFT . '/' . $lengthCM . '</li>';
                     }
                     if( $width ){
