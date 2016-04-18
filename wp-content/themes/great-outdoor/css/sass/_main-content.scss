@@ -325,10 +325,11 @@
 
             &.wpcolumn-last{
                 border: 1px solid $orange;
-                padding: 1em;
+                padding: 2em;
 
-                br{
-                    margin-bottom: 1em;
+                li{
+                    list-style: disc;
+                    margin-left: 1em;
                 }
             }
         }
