@@ -53,11 +53,9 @@
             <?php
 
                 if( $post->post_name == 'raleigh' ){
-                    //$term = 'triangle';
+                    echo do_shortcode('[ai1ec view="stream" cat_name="Triangle" events_limit="3"]');
 
                 }
-
-                echo do_shortcode('[ai1ec view="stream" cat_name="Triangle"]');
 
                /* $locationEventsArgs = array(
                     'post_type' => 'ai1ec_event',
