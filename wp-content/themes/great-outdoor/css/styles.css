@@ -128,6 +128,16 @@ p + p {
     .main-content .section-header.is-page-title {
       padding: 2em 0 0;
       color: #d78105; }
+  .main-content table {
+    border: 1px solid #ccc; }
+    .main-content table th {
+      background: #d78105;
+      color: #ffffff;
+      font-family: "Roboto Slab", sans-serif; }
+    .main-content table td {
+      border: 1px solid #ccc;
+      padding: .5em;
+      font-family: "Roboto Condensed", sans-serif; }
   .main-content .archive-view {
     width: 80%;
     margin: 0 auto; }
@@ -457,7 +467,6 @@ p + p {
         display: block;
         clear: both; }
       .main-content .promo.full-width .promo-bg-image {
-        height: 50vh;
         margin-bottom: 2em; }
       .main-content .promo.full-width.page-header {
         height: 65vh; }

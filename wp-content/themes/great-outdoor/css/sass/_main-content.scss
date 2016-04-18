@@ -16,6 +16,22 @@
         }
     }
 
+    table{
+        border: 1px solid #ccc;
+
+        th{
+            background: $orange;
+            color: $white;
+            @include header-font;
+        }
+
+        td{
+            border: 1px solid #ccc;
+            padding: .5em;
+            @include main-font;
+        }
+    }
+
     /* ARCHIVE STYLES */
 
     .archive-view{
@@ -519,7 +535,6 @@
             @include clearfix;
 
             .promo-bg-image{
-                height: 50vh;
                 margin-bottom: 2em;
             }
 
