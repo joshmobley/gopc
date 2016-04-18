@@ -135,14 +135,6 @@ header{
 		background-image: url('../assets/site-footer-bg-1200.jpg');
         position:relative;
 
-        .utility-nav{
-            position: absolute;
-            top: .5em;
-            right: 10%;
-            width: 80%;
-            display: block;
-
-        }
 	}
 }
 
@@ -152,6 +144,14 @@ header{
 		background-image: url('../assets/site-footer-bg-1600.jpg');
 
 
+        .utility-nav{
+            position: absolute;
+            top: .5em;
+            right: 10%;
+            width: 80%;
+            display: block;
+
+        }
 		.menu-link{
 			display: none;
 		}

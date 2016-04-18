@@ -10,6 +10,8 @@
 }
 
 .prdctfltr_wc, .post-filter{
+    width: 80%;
+    margin: 2em auto;
 
 	.prdctfltr_filter_title{
 		display: none!important;
@@ -102,15 +104,16 @@
         width: 47.5%;
         margin-bottom: 2em;
         text-align: center;
-        margin-right: 5%;
+        margin-right: 2%;
 
-        &:nth-child(3n+1){
+        &:nth-child(2n+1){
             clear: left;
         }
 
         img{
             height: 180px;
             width: auto;
+            max-width: 100%;
         }
     }
 }
@@ -141,7 +144,7 @@
 	@include main-font;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
 
 	.prdctfltr_wc + .products{
 		margin: 0 0 2em;
@@ -154,6 +157,18 @@
 		a{
 			width: 47.75%;
 			margin: 0 2% 2em 0;
+
+            &:nth-child(2n+1){
+                clear: none;
+            }
+
+            &:nth-child(3n+1){
+                clear: left;
+            }
+
+            img{
+                max-width: none;
+            }
 
 		}
 
