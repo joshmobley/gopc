@@ -1,38 +1,14 @@
+
 .product-page{
 	width: 90%;
 	margin: 1em auto;
 
 	.product-photo{
-		float: left;
-		margin-bottom: 2em;
-		width: 45%;
-		text-align: center;
-
-		img{
-			max-width: 100%;
-			height: auto;
-		}
-	}
-
-	.product-info{
-		float: right;
-		width: 45%;
-		margin-right: 5%;
-
-		.product-info-text{
-			margin-bottom: 1em;
-		}
-
-	}
-
-	.availability-header{
-		float: left;
-		margin-right: .5em;
-		padding-top: 1em;
-	}
-
-	.availability-list{
-	}
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 
 	.colors-available{
 
@@ -260,6 +236,37 @@
 }
 
 @media screen and (min-width: 800px){
+
+    .product-photo{
+        float: left;
+        margin-bottom: 2em;
+        width: 45%;
+        text-align: center;
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+    .product-info{
+        float: right;
+        width: 45%;
+        margin-right: 5%;
+
+        .product-info-text{
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .availability-header{
+        float: left;
+        margin-right: .5em;
+        padding-top: 1em;
+    }
 
 
     .related-products.is-single{

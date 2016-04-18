@@ -823,24 +823,9 @@ header {
 .product-page {
   width: 90%;
   margin: 1em auto; }
-  .product-page .product-photo {
-    float: left;
-    margin-bottom: 2em;
-    width: 45%;
-    text-align: center; }
-    .product-page .product-photo img {
-      max-width: 100%;
-      height: auto; }
-  .product-page .product-info {
-    float: right;
-    width: 45%;
-    margin-right: 5%; }
-    .product-page .product-info .product-info-text {
-      margin-bottom: 1em; }
-  .product-page .availability-header {
-    float: left;
-    margin-right: .5em;
-    padding-top: 1em; }
+  .product-page .product-photo img {
+    width: 100%;
+    height: auto; }
   .product-page .colors-available li {
     display: inline-block;
     list-style: none;
@@ -991,6 +976,24 @@ header {
     padding: 1em; } }
 
 @media screen and (min-width: 800px) {
+  .product-photo {
+    float: left;
+    margin-bottom: 2em;
+    width: 45%;
+    text-align: center; }
+    .product-photo img {
+      max-width: 100%;
+      height: auto; }
+  .product-info {
+    float: right;
+    width: 45%;
+    margin-right: 5%; }
+    .product-info .product-info-text {
+      margin-bottom: 1em; }
+  .availability-header {
+    float: left;
+    margin-right: .5em;
+    padding-top: 1em; }
   .related-products.is-single {
     width: 80%;
     margin: 2em auto;
