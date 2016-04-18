@@ -42,12 +42,21 @@
     <div class="page-section half-container">
 
         <div class="half-width promo">
-            <a href="https://greatoutdoor.wpengine.com/2014/07/30/chacotour-2014/">
+            <?php
+                $promoURL = get_field('promo_url');
+                if( $promoURL ){
+                    echo '<a href="' . $promoURL . '">';
+                }
+            ?>
                 <div id="promo-bg" class="promo-bg-image"></div>
                 <div class="promo-content bg-green">
                     <h3><?php echo $promoText; ?></h3>
                 </div><!--.promo-content-->
-            </a>
+            <?php
+                if($promoURL){
+                    echo '</a>';
+                }
+            ?>
         </div>
 
         <div class="location-events half-width promo">
