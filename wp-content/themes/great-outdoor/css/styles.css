@@ -1121,7 +1121,10 @@ footer {
   height: 7px;
   width: 7px;
   border: 1px solid #d78105;
-  background: #d78105; }
+  background: #d78105;
+  position: absolute;
+  left: 0;
+  top: 0; }
 
 .cat-image-header {
   width: 100%; }
@@ -1130,9 +1133,11 @@ footer {
   .prdctfltr_wc {
     float: left;
     width: 20%;
-    padding: 2em 5%;
+    padding: 2em 2em 2em 5%;
     border-right: 1px solid #6d6f44;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+    .prdctfltr_wc .prdctfltr_filter label {
+      max-width: 200px; } }
 
 /* product archive styles */
 .prdctfltr_wc + .products a {
