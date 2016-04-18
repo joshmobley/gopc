@@ -12,7 +12,7 @@
             $activityObj = wp_get_post_terms( $post->ID, 'activities' );
 
            // $activityObj = wp_get_post_terms( $post->ID, 'activities' );
-            print_r( $activityObj);
+           // print_r( $activityObj);
 
             if( $activities[0]->slug == 'paddle-act'){
                 $postImage = wp_get_attachment_image_src( $paddleImg[$paddleCount], 'thumbnail' );
@@ -34,7 +34,7 @@
                 $generalCount++;
             }
 
-          //  print_r($postImage);
+          print_r($postImage);
 
         }
         ?>
