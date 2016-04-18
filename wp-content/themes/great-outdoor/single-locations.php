@@ -34,7 +34,7 @@
 
     </div>
 
-    <h2 class="section-header"><span>Greetings from our <span>Raleigh Store</h2>
+    <h2 class="section-header"><span>Greetings from our <span><?php echo get_the_title(); ?> Store</h2>
 
     <?php gopc_bgimage( $promoImage, '#promo-bg' ); ?>
 
@@ -50,7 +50,36 @@
         </div>
 
         <div>
-            <!-- events go here -->
+            <?php
+
+                $locationEventsArgs = array(
+                    'post_type' => 'ai1ec_event',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy'  => 'events_categories',
+                            'field'     => 'slug',
+                            'terms'     => 'event-triangle',
+                        ),
+                    ),
+                );
+
+                // The Query
+                $locationEvents = new WP_Query( $locationEventsArgs );
+
+                // The Loop
+                if ( $locationEvents->have_posts() ) {
+                    echo '<ul>';
+                    while ( $locationEvents->have_posts() ) {
+                        $locationEvents->the_post();
+                        echo '<li>' . get_the_title() . '</li>';
+                    }
+                    echo '</ul>';
+                } else {
+                    // no posts found
+                }
+                /* Restore original Post Data */
+                wp_reset_postdata();
+            ?>
         </div>
 
     </div>
