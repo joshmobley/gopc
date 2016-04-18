@@ -18,11 +18,13 @@
 
     table{
         border: 1px solid #ccc;
+        margin-bottom: 2em;
 
         th{
             background: $orange;
             color: $white;
             @include header-font;
+            padding: .5em;
         }
 
         td{

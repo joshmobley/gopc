@@ -129,11 +129,13 @@ p + p {
       padding: 2em 0 0;
       color: #d78105; }
   .main-content table {
-    border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+    margin-bottom: 2em; }
     .main-content table th {
       background: #d78105;
       color: #ffffff;
-      font-family: "Roboto Slab", sans-serif; }
+      font-family: "Roboto Slab", sans-serif;
+      padding: .5em; }
     .main-content table td {
       border: 1px solid #ccc;
       padding: .5em;
