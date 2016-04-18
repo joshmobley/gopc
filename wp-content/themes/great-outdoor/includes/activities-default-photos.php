@@ -92,4 +92,12 @@
         34257
     );
 
+    $campImgHistory     = $campImg;
+    $climbImgHistory    = $climbImg;
+    $travelImgHistory   = $travelImg;
+    $fishImgHistory     = $fishImg;
+    $paddleImgHistory   = $paddleImg;
+    $generalImgHistory  = $generalImg;
+
+
 ?>
