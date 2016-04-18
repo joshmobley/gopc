@@ -85,7 +85,7 @@ $(document).ready(function(){
     //ajaxPostFilter('.post-filter');
 
     $('#menu-main-nav li').hover( function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeIn();
+        $('#' + $(this).attr('data-mega')).stop().fadeIn().delay(500);
     }, function(){
         $('#' + $(this).attr('data-mega')).stop().fadeOut();
     });

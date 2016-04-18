@@ -243,9 +243,55 @@ header{
         }
 
         .mega-menu-column{
-            width: 18%;
-            margin: 0 1%;
             float: left;
+            box-sizing: border-box;
+
+
+            .color-box{
+                width: 100%;
+                display: block;
+                padding: 1em;
+                box-sizing: border-box;
+                text-decoration: none;
+                text-align: center;
+
+                h4{
+                    color: $white;
+                    @include header-font;
+                    font-size: 1.2em;
+                }
+
+                p{
+                    color: $white;
+                }
+            }
+
+            &.fifth{
+                width: 18%;
+                margin: .5em 1%;
+            }
+
+            &.quarter{
+                width: 23%;
+                margin: .5em 1%;
+
+                &:nth-child(even) .color-box{
+                    background: $red;
+                }
+
+                .color-box{
+                    background: $orange;
+                }
+            }
+
+            &.full{
+                margin: .5em 1%;
+                width: 98%;
+
+                .color-box{
+                    background: $green;
+                }
+            }
 
             img{
                 width: 100%;
@@ -262,6 +308,40 @@ header{
 
             ul + .mega-menu-column-title{
                 margin-top: .5em;
+            }
+        }
+
+        .activity-icon{
+            display: block;
+            background: $lightgreen;
+            background: url('../assets/activity-sprite.png');
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 61px;
+            text-align: center;
+            padding: 25px 0;
+            text-decoration: none;
+            @include header-font;
+            transition: all .5s;
+
+            &:hover{
+                color: $orange;
+            }
+
+            &.climb{
+                background-position: center -70px;
+            }
+
+            &.fish{
+                background-position: center -140px;
+            }
+
+            &.paddle{
+                background-position: center -210px;
+            }
+
+            &.travel{
+                background-position: center -280px;
             }
         }
     }

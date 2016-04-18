@@ -47,12 +47,15 @@
                     </li>
                     <li data-mega="adventure-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/adventure">Adventure</a>
+                        <?php include('includes/mega-menu-adventure.php'); ?>
                     </li>
                     <li data-mega="locations-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/locations">Locations</a>
+                        <?php include('includes/mega-menu-locations.php'); ?>
                     </li>
                     <li data-mega="community-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/community">Community</a>
+                        <?php include('includes/mega-menu-community.php'); ?>
                     </li>
                 </ul>
 
