@@ -32,7 +32,7 @@
     <div class="mega-menu-column quarter">
         <a href="https://greatoutdoor.wpengine.com/category/stories-from-the-field/" class="color-box">
             <h4>Stories from the Field</h4>
-            <p>From adventurers who were there</p>
+            <p>From those who were there</p>
         </a>
     </div>
 
