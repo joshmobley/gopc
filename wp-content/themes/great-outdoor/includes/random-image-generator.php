@@ -7,6 +7,10 @@
 
             print_r('randomizer');
 
+            print_r($post->ID);
+
+            print_r(wp_get_post_terms( $post->ID, 'activities' ));
+
             $activities = wp_get_post_terms( $post->ID, 'activities' );
             $print_r($activities);
 
