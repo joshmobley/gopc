@@ -2,6 +2,15 @@
 	overflow:hidden;
 }
 
+
+
+.mega-menu{
+    display: none;
+    position: absolute;
+    left: -100%;
+    width: 0;
+}
+
 header{
 	@include clearfix;
 	background: $brown url('../assets/site-footer-bg-400.png');
@@ -46,6 +55,10 @@ header{
 			left: 0;
 		}
 	}
+
+    .utility-nav{
+        display: none;
+    }
 
 	#menu-main-nav{
 
@@ -127,6 +140,7 @@ header{
             top: .5em;
             right: 10%;
             width: 80%;
+            display: block;
 
         }
 	}
@@ -179,40 +193,10 @@ header{
 					}
 				}
 
-				> &:last-child a{
+				&:last-child a{
 					border: none;
 				}
 			}
-
-            .menu-item-has-children{
-                position: relative;
-
-                &:hover{
-                    .sub-menu{
-                        display: block;
-                    }
-                }
-            }
-
-             .sub-menu{
-                position: absolute;
-                width: 200px;
-                display: none;
-                background: black;
-                z-index: 9999;
-                padding: 1em;
-
-                li{ display: block; }
-
-                li a{
-                    display: block;
-                    border: none;
-                    text-align: left;
-                    padding: 0;
-                    margin: 0 0 .5em;
-                    font-size: 1em;
-                }
-            }
 		}
 	}
 

@@ -113,6 +113,12 @@ p + p {
 .no-scroll {
   overflow: hidden; }
 
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: -100%;
+  width: 0; }
+
 header {
   zoom: 1;
   background: #644023 url("../assets/site-footer-bg-400.png");
@@ -154,6 +160,8 @@ header {
     transition: all .5s; }
     header .nav-wrapper.visible {
       left: 0; }
+  header .utility-nav {
+    display: none; }
   header #menu-main-nav > li > a {
     font-family: "Roboto Slab", sans-serif;
     color: #f4efe8;
@@ -208,7 +216,8 @@ header {
       position: absolute;
       top: .5em;
       right: 10%;
-      width: 80%; } }
+      width: 80%;
+      display: block; } }
 
 @media screen and (min-width: 1200px) {
   header {
@@ -240,28 +249,8 @@ header {
           transition: all .5s; }
           header #menu-main-nav > li > a:hover {
             color: #deec9b; }
-        > header #menu-main-nav > li:last-child a {
+        header #menu-main-nav > li:last-child a {
           border: none; }
-      header #menu-main-nav .menu-item-has-children {
-        position: relative; }
-        header #menu-main-nav .menu-item-has-children:hover .sub-menu {
-          display: block; }
-      header #menu-main-nav .sub-menu {
-        position: absolute;
-        width: 200px;
-        display: none;
-        background: black;
-        z-index: 9999;
-        padding: 1em; }
-        header #menu-main-nav .sub-menu li {
-          display: block; }
-        header #menu-main-nav .sub-menu li a {
-          display: block;
-          border: none;
-          text-align: left;
-          padding: 0;
-          margin: 0 0 .5em;
-          font-size: 1em; }
   .mega-menu {
     display: none;
     position: absolute;
