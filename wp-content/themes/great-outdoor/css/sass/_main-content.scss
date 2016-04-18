@@ -59,6 +59,13 @@
         }
 
         .post-filter{
+
+            h4{
+                @include header-font;
+                color: $orange;
+                font-size: 1.2em;
+            }
+
             .children{
                 display: none;
             }
