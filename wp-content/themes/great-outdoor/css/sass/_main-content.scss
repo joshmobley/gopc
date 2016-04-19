@@ -54,9 +54,23 @@
             padding: 0 1em;
             box-sizing: border-box;
 
-            img{
-                width: 100%;
-                height: auto;
+            .tile{
+
+
+                a{
+                    text-decoration: none;
+                }
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 1em;
+                }
+
+                h3{
+                    color: $orange;
+                    @include header-font;
+                }
             }
 
         }
@@ -411,20 +425,6 @@
 
                 &:nth-child(3n+1){
                     clear: left;
-                }
-
-                a{
-                    text-decoration: none;
-                }
-
-                img{
-                    width: 100%;
-                    margin-bottom: 1em;
-                }
-
-                h3{
-                    color: $orange;
-                    @include header-font;
                 }
             }
 

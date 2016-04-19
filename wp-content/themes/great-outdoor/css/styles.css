@@ -154,9 +154,15 @@ p + p {
     .main-content .archive-view .tiled-list {
       padding: 0 1em;
       box-sizing: border-box; }
-      .main-content .archive-view .tiled-list img {
+      .main-content .archive-view .tiled-list .tile a {
+        text-decoration: none; }
+      .main-content .archive-view .tiled-list .tile img {
         width: 100%;
-        height: auto; }
+        height: auto;
+        margin-bottom: 1em; }
+      .main-content .archive-view .tiled-list .tile h3 {
+        color: #d78105;
+        font-family: "Roboto Slab", sans-serif; }
     .main-content .archive-view .pagination-link {
       clear: both;
       text-align: center; }
@@ -385,14 +391,6 @@ p + p {
         float: left; }
         .main-content .tiled-list .tile:nth-child(3n+1) {
           clear: left; }
-        .main-content .tiled-list .tile a {
-          text-decoration: none; }
-        .main-content .tiled-list .tile img {
-          width: 100%;
-          margin-bottom: 1em; }
-        .main-content .tiled-list .tile h3 {
-          color: #d78105;
-          font-family: "Roboto Slab", sans-serif; }
     .main-content .wysiwyg {
       margin: 4em auto; }
     .main-content .quarter-container {
