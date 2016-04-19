@@ -4,7 +4,10 @@
 
 .woocommerce-pagination{
     text-align: center;
-    a{
+    float: none;
+    width: 100%;
+    padding: 1em 10%;
+    li{
         display: inline;
     }
 }

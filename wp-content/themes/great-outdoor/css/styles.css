@@ -1210,8 +1210,11 @@ header {
   display: none; }
 
 .woocommerce-pagination {
-  text-align: center; }
-  .woocommerce-pagination a {
+  text-align: center;
+  float: none;
+  width: 100%;
+  padding: 1em 10%; }
+  .woocommerce-pagination li {
     display: inline; }
 
 .post-filter {
