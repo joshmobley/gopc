@@ -216,6 +216,14 @@ header{
             display: block;
         }
 
+        &.is-static{
+            display: block;
+            position: static;
+            border: none;
+            width: 80%;
+            margin: 2em auto;
+        }
+
         .mega-menu-title{
             text-align: center;
             font-size: 1.4em;

@@ -1066,6 +1066,12 @@ header {
     z-index: 9999; }
     .mega-menu.is-active {
       display: block; }
+    .mega-menu.is-static {
+      display: block;
+      position: static;
+      border: none;
+      width: 80%;
+      margin: 2em auto; }
     .mega-menu .mega-menu-title {
       text-align: center;
       font-size: 1.4em; }
