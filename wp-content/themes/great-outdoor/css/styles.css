@@ -1218,15 +1218,27 @@ header {
     display: inline; }
 
 .post-filter {
-  float: left;
-  width: 25%;
-  border-right: 1px solid #6d6f44;
+  padding: 2em;
+  zoom: 1;
+  margin-top: -3em;
+  width: 100%;
+  font-size: .8em;
+  border: none;
   box-sizing: border-box; }
+  .post-filter:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both; }
   .post-filter h4, .post-filter h4 a {
     color: #d78105;
     font-family: "Roboto Slab", sans-serif;
     text-size: 1.2em;
     text-decoration: none; }
+  .post-filter .responsive-column {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%; }
   .post-filter h4 {
     color: #6d6f44; }
   .post-filter h4 + h4 {
@@ -1269,7 +1281,13 @@ header {
     width: 20%;
     padding: 2em 2em 2em 5%;
     border-right: 1px solid #6d6f44;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+    .post-filter .responsive-column {
+      float: none;
+      width: 100%;
+      margin: 0; }
+    .post-filter .responsive-column + .responsive-column {
+      margin-top: 1em; } }
 
 /* product archive styles */
 .post-filter + .products a {
@@ -1329,8 +1347,10 @@ header {
       padding-left: 5%; } }
 
 @media screen and (min-width: 800px) {
-  .post-filter .children.is-active {
-    display: block; }
+  .post-filter {
+    font-size: 1em; }
+    .post-filter .children.is-active {
+      display: block; }
   .post-filter + .products {
     width: 75%;
     margin-right: 5%;

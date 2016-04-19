@@ -1,4 +1,6 @@
 <div class="post-filter">
+
+    <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
         <ul class="children" data-path="mens-clothing">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
@@ -33,6 +35,8 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/kitchen/">Camp Kitchen</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/">All Camp/Hike</a></li>
         </ul>
+    </div>
+    <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/climb/">Climb</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/fish/">Fish</a></h4>
 
@@ -65,4 +69,5 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad &amp; Co</a></li>
         </ul>
-        </div>
+    </div>
+</div>

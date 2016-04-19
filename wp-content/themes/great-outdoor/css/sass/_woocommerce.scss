@@ -13,15 +13,24 @@
 }
 
 .post-filter{
-    float: left;
-    width: 25%;
-    border-right: 1px solid $green;
+    padding: 2em;
+    @include clearfix;
+    margin-top: -3em;
+    width: 100%;
+    font-size: .8em;
+    border: none;
     box-sizing: border-box;
     h4, h4 a{
         color: $orange;
         @include header-font;
         text-size: 1.2em;
         text-decoration: none;
+    }
+
+    .responsive-column{
+        float: left;
+        width: 45%;
+        margin: 0 2.5%;
     }
 
     h4{
@@ -94,6 +103,18 @@
 		padding: 2em 2em 2em 5%;
 		border-right: 1px solid $green;
 		box-sizing: border-box;
+
+        .responsive-column{
+            float: none;
+            width: 100%;
+            margin: 0;
+        }
+
+
+
+       .responsive-column + .responsive-column{
+            margin-top: 1em;
+        }
 
 	}
 
@@ -196,6 +217,7 @@
 @media screen and (min-width: 800px){
 
     .post-filter{
+        font-size: 1em;
         .children.is-active{
             display: block;
         }
