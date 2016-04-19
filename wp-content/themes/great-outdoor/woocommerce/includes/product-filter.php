@@ -58,7 +58,7 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/gift-card/gift-card/">Gift Cards</a></h4>
 
         <h4 class="mega-menu-column-title">Featured Brands</h4>
-        <ul id="featured-brand-list">
+        <ul id="featured-brand-list" class="children is-active">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>

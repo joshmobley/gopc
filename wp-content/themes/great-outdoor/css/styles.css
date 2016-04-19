@@ -1224,8 +1224,10 @@ header {
   .post-filter h4 + h4 {
     margin-top: 1em; }
   .post-filter .children {
-    padding-left: 2em;
+    padding-left: 1em;
     display: none; }
+    .post-filter .children li {
+      margin-top: .25em; }
     .post-filter .children.is-active {
       display: block; }
     .post-filter .children a {

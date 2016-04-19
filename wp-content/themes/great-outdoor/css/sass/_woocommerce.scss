@@ -22,8 +22,12 @@
         margin-top: 1em;
     }
     .children{
-        padding-left: 2em;
+        padding-left: 1em;
         display: none;
+
+        li{
+            margin-top: .25em;
+        }
 
         &.is-active{
             display: block;
