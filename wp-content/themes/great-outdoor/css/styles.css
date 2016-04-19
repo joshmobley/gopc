@@ -365,7 +365,7 @@ p + p {
       .main-content .blog-content .blog-header time {
         font-family: "Roboto Condensed", sans-serif; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .main-content {
     /* CONTENT PARSER */ }
     .main-content.has-sidebar {
@@ -415,17 +415,17 @@ p + p {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center; } }
-      @media screen and (min-width: 600px) and (min-width: 400px) {
+      @media screen and (min-width: 800px) and (min-width: 400px) {
         .main-content .promo.full-width.page-header {
           background-image: url("../assets/home-header-bg-800.jpg"); } }
-      @media screen and (min-width: 600px) and (min-width: 800px) {
+      @media screen and (min-width: 800px) and (min-width: 800px) {
         .main-content .promo.full-width.page-header {
           background-image: url("../assets/home-header-bg-1200.jpg"); } }
-      @media screen and (min-width: 600px) and (min-width: 1200px) {
+      @media screen and (min-width: 800px) and (min-width: 1200px) {
         .main-content .promo.full-width.page-header {
           background-image: url("../assets/home-header-bg-1600.jpg"); } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
         .main-content .promo.full-width.page-header .promo-bg-image {
           width: 80%;
           margin: 0 auto;
