@@ -41,9 +41,11 @@
         margin: 0 auto;
 
         .post-filter{
+            background: #eee;
+            padding: 2em;
+            margin-top: -3em;
             width: 100%;
             border: none;
-            padding: 0 5%;
 
             [data-sf-field-input-type="checkbox"]{ display: none; }
         }
@@ -383,6 +385,8 @@
         .archive-view{
             .post-filter{
                 width: 25%;
+                background: none;
+                margin: 0;
                 border-right: 1px solid $green;
                 padding: 0 2em 2em 0;
 
