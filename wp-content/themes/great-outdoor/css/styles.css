@@ -374,9 +374,7 @@ p + p {
       box-sizing: border-box; }
     .main-content .archive-view .post-filter {
       width: 25%;
-      background: none;
       margin: 0;
-      border-right: 1px solid #6d6f44;
       padding: 0 2em 2em 0; }
     .main-content .tiled-list {
       width: 75%;
