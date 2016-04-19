@@ -1393,6 +1393,9 @@ header {
   .social-links a.instagram-link {
     background: #125688; }
 
+.location-description {
+  text-align: left; }
+
 .search .page-section {
   width: 100%;
   margin: 2em auto;

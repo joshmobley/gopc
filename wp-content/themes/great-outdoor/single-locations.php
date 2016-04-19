@@ -125,7 +125,7 @@
 
     <div class="full-width promo">
 
-        <div class="half-width">
+        <div class="half-width location-description">
             <?php echo $locationDesc; ?>
         </div>
 
