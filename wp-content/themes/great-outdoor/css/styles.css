@@ -1182,6 +1182,10 @@ header {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
 /* filter styles */
+.post-filter {
+  float: left;
+  width: 25%; }
+
 .searchandfilter h4 {
   color: #d78105;
   font-size: 1.2;
