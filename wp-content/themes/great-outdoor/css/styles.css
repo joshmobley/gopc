@@ -365,8 +365,9 @@ p + p {
       padding-left: 2%;
       box-sizing: border-box; }
     .main-content .archive-view .post-filter {
-      width: 20%;
-      border-right: 1px solid #6d6f44; }
+      width: 25%;
+      border-right: 1px solid #6d6f44;
+      padding: 0 2em 2em 0; }
       .main-content .archive-view .post-filter [data-sf-field-input-type="select"] {
         display: none; }
       .main-content .archive-view .post-filter [data-sf-field-input-type="checkbox"] {
