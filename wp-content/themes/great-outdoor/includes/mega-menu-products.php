@@ -75,6 +75,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad &amp; Co</a></li>
         </ul>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/gift-card/gift-card/">Gift Cards</a></h4>
     </div>
 
     <div class="mega-menu-column fifth">
