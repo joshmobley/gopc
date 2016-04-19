@@ -17,15 +17,7 @@
 
     ## Resource: http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
 
-    function enqueue_styles() {
-        wp_register_style( 'main-style', get_template_directory_uri() . '/css/styles.min.css?c', null, null, 'all' );
-        wp_enqueue_style( 'main-style', -2 );
-        // // register font awesome
-        // wp_register_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '', 'all' );
-        // wp_enqueue_style( 'fontawesome' );
-    }
 
-    add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
     // enqueue jquery from google cdn
     function my_jquery_enqueue() {

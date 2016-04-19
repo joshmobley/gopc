@@ -57,6 +57,9 @@ get_header( 'shop' );?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 
+        <?php /* TO DO -- POPULATE WITH PHP -- CURRENTLY POPULATING W/ hard coding! */ ?>
+        <?php include('includes/product-filter.php'); ?>
+
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
