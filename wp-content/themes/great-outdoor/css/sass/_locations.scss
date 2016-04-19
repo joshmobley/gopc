@@ -1,12 +1,9 @@
 .location-details{
-    position: absolute;
+    position: static;
     background: black;
     background: rgba(0,0,0,.7);
-    bottom: 0;
-    right: 10%;
-    width: 20%;
     text-align: left;
-    padding: 3em 2em;
+    padding: 3em 10%;
     box-sizing: border-box;
 
     h3{
@@ -66,4 +63,16 @@
     text-align: left;
     padding-right: 2em;
     box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px){
+    .location-details{
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        width: 20%;
+        padding: 3em 2em;
+    }
+
 }

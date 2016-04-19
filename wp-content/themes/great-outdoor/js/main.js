@@ -32,7 +32,7 @@ $(document).ready(function(){
     function youtubeResize(){
 
         // Find all YouTube videos
-        var $allVideos = $("iframe[src^='http://www.youtube.com'], iframe[src^='https://www.youtube.com'], iframe[src^='//player.vimeo.com'], iframe[src^='https://player.vimeo.com'], iframe[src^='http://player.vimeo.com']"),
+        var $allVideos = $("iframe[src^='http://www.youtube.com'], iframe[src^='https://www.youtube.com'], iframe[src^='//player.vimeo.com'], iframe[src^='https://player.vimeo.com'], iframe[src^='http://player.vimeo.com'], iframe[src^='https://www.google.com/maps/']"),
 
             // The element that is fluid width
             $fluidEl = $(".half-width, .blog-content");
