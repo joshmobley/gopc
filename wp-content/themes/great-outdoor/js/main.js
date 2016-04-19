@@ -91,4 +91,17 @@ $(document).ready(function(){
         $('#' + $(this).attr('data-mega')).stop().fadeOut(50);
     });
 
+    var featuredBrandLinks =
+        '<div class="prdctfltr_filter">' +
+            '<span class="prdctfltr_regular_title">Featured Brands</span>' +
+            '<ul>';
+
+    $('#featured-brand-list li').each( function(){
+        featuredBrandLinks += '<li><a href="' + $(this).children('a').attr('href') + '">' + $(this).text() + '</a></li>';
+    });
+
+    featuredBrandLinks += '</ul></div>';
+
+    $('.prdctfltr_filter_inner').append(featuredBrandLinks);
+
 });

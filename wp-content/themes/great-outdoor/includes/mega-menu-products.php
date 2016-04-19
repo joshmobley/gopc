@@ -68,7 +68,7 @@
 
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title">Featured Brands</h4>
-        <ul>
+        <ul id="featured-brand-list">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
