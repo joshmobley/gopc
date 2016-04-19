@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header( 'shop' );?>
 
 	<?php
 		/**
@@ -30,7 +30,6 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
 		do_action( 'woocommerce_before_main_content' );
-        do_shortcode('[searchandfilter id="35122"]');
 	?>
 
 
@@ -58,9 +57,12 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 
-			<?php woocommerce_product_loop_start(); ?>
 
+
+                <?php echo do_shortcode('[searchandfilter id="35122"]'); ?>
+			<?php woocommerce_product_loop_start(); ?>
 				<?php woocommerce_product_subcategories(); ?>
+
 
 				<?php include( 'includes/category-headers.php'); ?>
 

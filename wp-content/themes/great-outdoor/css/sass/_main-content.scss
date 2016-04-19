@@ -58,25 +58,6 @@
             }
         }
 
-        .post-filter{
-
-            h4{
-                @include header-font;
-                color: $orange;
-                font-size: 1.2em;
-            }
-
-            .children{
-                display: none;
-            }
-
-            .sf-option-active{
-                .children{
-                    display: block;
-                }
-            }
-        }
-
         .pagination-link{ clear: both; text-align: center; }
     }
 
