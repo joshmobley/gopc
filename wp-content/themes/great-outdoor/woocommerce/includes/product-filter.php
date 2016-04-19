@@ -24,7 +24,7 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
 
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Camp &amp; Hike Gear</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/">Camp &amp; Hike Gear</a></h4>
         <ul class="children">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/tents/">Tents</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/packs/">Packs</a></li>
@@ -55,7 +55,7 @@
             <li><a href="#">High Tech Gadgets</a></li>
         </ul>
         <h4 class="mega-menu-column-title">Featured Brands</h4>
-        <ul id="featured-brand-list" class="children">
+        <ul id="featured-brand-list">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
