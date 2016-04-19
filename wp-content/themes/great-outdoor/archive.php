@@ -64,7 +64,7 @@
                 'taxonomy' => 'activities',
             )
         );*/
-
+echo do_shortcode( '[searchandfilter id="35140"]' );
 echo do_shortcode( '[searchandfilter id="34148"]' );
     echo '</div>';
 

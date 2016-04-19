@@ -40,22 +40,21 @@
         width:80%;
         margin: 0 auto;
 
+        .post-filter{
+            width: 100%;
+            border: none;
+            padding: 0 5%;
+        }
+
         .tiled-list{
-            width: 75%;
-            float: right;
+            padding: 0 1em;
+            box-sizing: border-box;
 
-            .tile{
-                width: 27%;
-
-                &:nth-child(3n+1){
-                    clear: left;
-                }
-
-                img{
-                    width: 100%;
-                    height: auto;
-                }
+            img{
+                width: 100%;
+                height: auto;
             }
+
         }
 
         .pagination-link{ clear: both; text-align: center; }
