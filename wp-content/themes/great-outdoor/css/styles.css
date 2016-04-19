@@ -262,6 +262,11 @@ p + p {
     margin: 0 auto 2em;
     width: 80%;
     color: #6d6f44; }
+    .main-content .adventure-menu h2 span {
+      text-transform: none;
+      margin-top: 1em;
+      display: block;
+      font-size: .8em; }
     .main-content .adventure-menu ul {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -390,11 +395,6 @@ p + p {
       float: left;
       margin-right: 5%;
       text-align: right; }
-      .main-content .adventure-menu h2 span {
-        text-transform: none;
-        margin-top: 1em;
-        display: block;
-        font-size: .8em; }
     .main-content .adventure-menu ul li {
       -webkit-flex: 1 20%;
           -ms-flex: 1 20%;
