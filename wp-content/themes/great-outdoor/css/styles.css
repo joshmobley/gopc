@@ -920,6 +920,20 @@ p + p {
   position: absolute;
   left: -100%;
   width: 0; }
+  .mega-menu.is-static {
+    display: block;
+    position: static;
+    border: none;
+    width: 80%;
+    margin: 2em auto; }
+  .mega-menu .mega-menu-subtitle {
+    color: #d78105;
+    margin-bottom: 2em; }
+  .mega-menu .mega-menu-column {
+    margin: 1em 0; }
+    .mega-menu .mega-menu-column .mega-menu-column-title a {
+      font-family: "Roboto Slab", sans-serif;
+      color: #d78105 !important; }
 
 header {
   zoom: 1;
@@ -1066,12 +1080,6 @@ header {
     z-index: 9999; }
     .mega-menu.is-active {
       display: block; }
-    .mega-menu.is-static {
-      display: block;
-      position: static;
-      border: none;
-      width: 80%;
-      margin: 2em auto; }
     .mega-menu .mega-menu-title {
       text-align: center;
       font-size: 1.4em; }

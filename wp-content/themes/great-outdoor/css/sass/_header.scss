@@ -9,6 +9,28 @@
     position: absolute;
     left: -100%;
     width: 0;
+
+    &.is-static{
+        display: block;
+        position: static;
+        border: none;
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    .mega-menu-subtitle{
+        color: $orange;
+        margin-bottom: 2em;
+    }
+
+    .mega-menu-column{
+        margin: 1em 0;
+
+        .mega-menu-column-title a{
+            @include header-font;
+            color: $orange!important;
+        }
+    }
 }
 
 header{
@@ -214,14 +236,6 @@ header{
 
         &.is-active{
             display: block;
-        }
-
-        &.is-static{
-            display: block;
-            position: static;
-            border: none;
-            width: 80%;
-            margin: 2em auto;
         }
 
         .mega-menu-title{
