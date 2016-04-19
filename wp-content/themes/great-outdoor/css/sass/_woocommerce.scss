@@ -29,6 +29,12 @@
         }
 
     }
+
+    .sf-field-taxonomy-pa_brands{
+        li:nth-child(n+10){
+            display: none;
+        }
+    }
 }
 
 @media screen and (min-width: 600px){

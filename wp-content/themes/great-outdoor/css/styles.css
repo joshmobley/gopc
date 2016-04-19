@@ -1202,6 +1202,9 @@ header {
 .searchandfilter .sf-option-active .children {
   display: block; }
 
+.searchandfilter .sf-field-taxonomy-pa_brands li:nth-child(n+10) {
+  display: none; }
+
 @media screen and (min-width: 600px) {
   .searchandfilter {
     float: left;
