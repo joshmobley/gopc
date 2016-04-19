@@ -1126,7 +1126,7 @@ header {
         width: 23%;
         margin: .5em 1%; }
         .mega-menu .mega-menu-column.quarter:nth-child(even) .color-box {
-          background: red; }
+          background: #bd0000; }
         .mega-menu .mega-menu-column.quarter .color-box {
           background: #d78105; }
       .mega-menu .mega-menu-column.full {

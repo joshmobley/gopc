@@ -22,6 +22,13 @@
         <a class="activity-icon travel" href="https://greatoutdoor.wpengine.com/activity/travel-act/">Travel</a>
     </div>
 </div>
+
+    <div class="mega-menu-column full">
+        <a href="https://greatoutdoor.wpengine.com/calendar/" class="color-box">
+            <h4>Events Calendar</h4>
+            <p>Join us on outdoor adventure or in-the-shop fun. Demos, Classes, Meetups, and more.</p>
+        </a>
+    </div>
     <div class="mega-menu-column quarter">
         <a href="https://greatoutdoor.wpengine.com/category/destinations/" class="color-box">
             <h4>Trip Destinations</h4>
@@ -47,13 +54,6 @@
         <a href="https://greatoutdoor.wpengine.com/category/company-culture/" class="color-box">
             <h4>Company Culture</h4>
             <p>What we're up to...</p>
-        </a>
-    </div>
-
-    <div class="mega-menu-column full">
-        <a href="https://greatoutdoor.wpengine.com/calendar/" class="color-box">
-            <h4>Events Calendar</h4>
-            <p>Join us on outdoor adventure or in-the-shop fun. Demos, Classes, Meetups, and more.</p>
         </a>
     </div>
  </div><!--.mega-menu#products-mega-->
