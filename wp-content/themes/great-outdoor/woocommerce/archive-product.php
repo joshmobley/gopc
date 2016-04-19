@@ -33,7 +33,7 @@ get_header( 'shop' ); ?>
 	?>
 
 
-		
+
 
 		<?php
 			/**
@@ -69,7 +69,7 @@ get_header( 'shop' ); ?>
 
 				<a href="<?php esc_url(the_permalink()); ?>">
 				<li>
-					<?php 
+					<?php
 					$product = wc_get_product();
 					echo $product->get_image('medium');
 
@@ -114,7 +114,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		//do_action( 'woocommerce_sidebar' );
+		do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php get_footer( 'shop' ); ?>
