@@ -1,6 +1,6 @@
 <div class="post-filter">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="mens-clothing">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shorts/">Shorts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-swim/">Swim</a></li>
@@ -8,7 +8,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">All Mens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">Women's Clothing</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="womens-clothing">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/womens-tops/">Tops</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/womens-shorts/">Shorts</a></li>
@@ -16,7 +16,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/">All Womens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">Footwear</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="footwear">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/mens-footwear/">Mens</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/womens-footwear/">Womens</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/kids-footwear/">Kids</a></li>
@@ -25,7 +25,7 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
 
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/">Camp &amp; Hike Gear</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="camp-hike">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/tents/">Tents</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/packs/">Packs</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/sleeping/">Sleeping Systems</a></li>
@@ -37,7 +37,7 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/fish/">Fish</a></h4>
 
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/">Paddle</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="paddle">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/kayaks/">Kayaks</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/canoes/">Canoes</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/paddle-boards/">Paddleboards</a></li>
@@ -48,7 +48,7 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/travel">Travel</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/pets/">Pets</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/outdoor-fun/">Outdoor Fun</a></h4>
-        <ul class="children">
+        <ul class="children" data-path="disc-golf">
             <li><a href="#">Disc Golf</a></li>
             <li><a href="#">Kites</a></li>
             <li><a href="#">Outdoor Toys</a></li>

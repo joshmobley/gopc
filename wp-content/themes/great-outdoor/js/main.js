@@ -91,6 +91,23 @@ $(document).ready(function(){
         $('#' + $(this).attr('data-mega')).stop().fadeOut(50);
     });
 
+    /* hack alert -- looking at path to expose children on product filter */
+
+    //console.log(window.location.pathname.split('/'));
+    var loc = window.location.pathname.split('/');
+
+    $('.post-filter .children').each( function(){
+
+        var ul = $(this);
+        var path = ul.attr('data-path');
+
+        for( var i = 0; i < loc.length; i++ ){
+            if( loc[i] == path ){
+                ul.addClass('is-active');
+            }
+        }
+
+    });
 
 
 
