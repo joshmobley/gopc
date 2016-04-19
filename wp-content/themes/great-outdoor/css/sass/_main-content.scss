@@ -382,6 +382,9 @@
 
         .archive-view{
             .post-filter{
+                width: 20%;
+                border-right: 1px solid $green;
+
                 [data-sf-field-input-type="select"]{
                     display: none;
                 }
@@ -393,9 +396,11 @@
         }
 
         .tiled-list{
+            width: 75%;
+            float: right;
 
             .tile{
-                width: 20%;
+                width: 27.5%;
                 margin: 2.5%;
                 float: left;
 
