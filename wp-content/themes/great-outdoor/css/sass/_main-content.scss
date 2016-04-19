@@ -44,6 +44,8 @@
             width: 100%;
             border: none;
             padding: 0 5%;
+
+            [data-sf-field-input-type="checkbox"]{ display: none; }
         }
 
         .tiled-list{
@@ -377,6 +379,18 @@
 			box-sizing: border-box;
 
 		}
+
+        .archive-view{
+            .post-filter{
+                [data-sf-field-input-type="select"]{
+                    display: none;
+                }
+
+                [data-sf-field-input-type="checkbox"]{
+                    display: block;
+                }
+            }
+        }
 
         .tiled-list{
 
