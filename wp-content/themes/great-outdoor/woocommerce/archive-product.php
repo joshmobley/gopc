@@ -57,7 +57,6 @@ get_header( 'shop' );?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 
-            <?php echo do_shortcode('[searchandfilter id="35122"]'); ?>
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
