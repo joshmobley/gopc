@@ -4,7 +4,7 @@
 
     <div>
     <div class="mega-menu-column fifth">
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/mens-clothing-2/">Men's Clothing</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/mens-clothing/">Men's Clothing</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shorts/">Shorts</a></li>
@@ -32,7 +32,7 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
 
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Camp &amp; Hike Gear</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/">Camp &amp; Hike Gear</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/tents/">Tents</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/packs/">Packs</a></li>

@@ -1,5 +1,5 @@
 <div class="post-filter">
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing-2/">Men's Clothing</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
         <ul class="children">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shorts/">Shorts</a></li>
