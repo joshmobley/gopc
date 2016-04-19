@@ -2,6 +2,14 @@
 
 <section class="main-content">
 
+    <?php
+
+    $urlParams = explode('/', getenv('REQUEST_URI'))[3];
+
+    if( !$urlParams ) :
+
+    ?>
+
     <div class="page-section">
 
         <style>#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-400x267.jpg);}
@@ -21,9 +29,13 @@
 
     </div>
 
-    <!--<h2 class="section-header is-page-title">
-        <?php the_archive_title(); ?>
-    </h2>-->
+    <?php else: ?>
+
+    <h2 class="section-header is-page-title">
+        Adventure
+    </h2>
+
+    <?php endif; ?>
 
 
 
