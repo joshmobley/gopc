@@ -3,6 +3,8 @@
     <head>
         <title><?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
+        <!-- responsive meta tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M3D3LZ"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
