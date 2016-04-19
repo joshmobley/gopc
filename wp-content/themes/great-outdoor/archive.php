@@ -2,6 +2,25 @@
 
 <section class="main-content">
 
+    <?php
+        $adventurePage = new WP_Query(array('post_type' => 'page', 'name' => 'adventure'));
+
+        if ( $adventurePage -> have_posts() ) :
+
+        while ( $adventurePage -> have_posts() ) : $adventurePage -> the_post(); ?>
+
+
+                <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
+
+        <?php endwhile; ?>
+
+
+                <?php wp_reset_postdata(); ?>
+
+        <?php else : ?>
+        <?php endif; ?>
+
+
     <?php //include( get_template_directory() . '/includes/content-parser.php'); ?>
 
     <h2 class="section-header is-page-title">
@@ -69,6 +88,8 @@ echo do_shortcode( '[searchandfilter id="34148"]' );
 <?php endwhile; ?>
 
         <div class="pagination-link"><?php posts_nav_link(); ?></div>
+
+        <?php wp_reset_postdata(); ?>
 
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

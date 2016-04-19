@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 
     $('#menu-main-nav li').hover( function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeIn();
+        $('#' + $(this).attr('data-mega')).stop().fadeIn().delay(200);
     }, function(){
         $('#' + $(this).attr('data-mega')).stop().fadeOut(50);
     });

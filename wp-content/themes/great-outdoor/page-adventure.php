@@ -5,7 +5,7 @@
     <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
 
 
-<div class="archive-view">
+<div class="archive-view test">
 
 <?php
 
@@ -50,10 +50,10 @@ $adventure = new WP_Query( $adventureArgs );
 
 
 
-if ( $adventure->have_posts() ) :
+if ( have_posts() ) :
 	echo '<ul class="tiled-list">';
 
-    while ( $adventure->have_posts() ) : $adventure->the_post(); ?>
+    while ( have_posts() ) : the_post(); ?>
 
         <?php include('includes/random-image-generator.php'); ?>
 
@@ -70,8 +70,8 @@ if ( $adventure->have_posts() ) :
 
 <?php endwhile; ?>
     <div class="pagination-link">
-        <?php previous_posts_link( 'Newer Posts', $adventure->max_num_pages ); ?>
-        <?php next_posts_link( 'Older Posts', $adventure->max_num_pages ); ?>
+        <?php previous_posts_link( 'Newer Posts', max_num_pages ); ?>
+        <?php next_posts_link( 'Older Posts', max_num_pages ); ?>
     </div>
     </ul>
     <?php wp_reset_postdata(); ?>
