@@ -5,6 +5,9 @@
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.min.css?c" />
 
+        <!--[if IE lt 9]>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
+        <![endif]-->
 
         <!-- responsive meta tag-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
