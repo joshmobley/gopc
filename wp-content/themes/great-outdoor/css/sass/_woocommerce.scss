@@ -3,7 +3,11 @@
 .post-filter{
     float: left;
     width: 25%;
+    border-right: 1px solid $green;
+    box-sizing: border-box;
 }
+
+.pf_more{ display: none; }
 
 .searchandfilter{
     h4{
