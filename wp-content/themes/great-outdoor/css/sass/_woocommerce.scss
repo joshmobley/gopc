@@ -2,6 +2,13 @@
 
 .woocommerce-result-count, .woocommerce-ordering{ display: none; }
 
+.woocommerce-pagination{
+    text-align: center;
+    a{
+        display: inline;
+    }
+}
+
 .post-filter{
     float: left;
     width: 25%;
