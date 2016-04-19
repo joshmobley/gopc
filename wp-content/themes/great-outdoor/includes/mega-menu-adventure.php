@@ -1,6 +1,6 @@
 <div class="mega-menu" id="adventure-mega">
     <h2 class="mega-menu-title">What's your Adventure?</h2>
-    <h3 class="mega-menu-subtitle">Gear Tips, Expert Adveice, Adventure Stories, Club Connections &amp; more.</h3>
+    <h3 class="mega-menu-subtitle">Gear Tips, Expert Advice, Adventure Stories, Club Connections &amp; more.</h3>
     <div>
     <div class="mega-menu-column fifth">
         <a class="activity-icon camp" href="<?php echo get_bloginfo('url'); ?>/activity/camp-hike-act/">Camp/Hike</a>
