@@ -1394,7 +1394,9 @@ header {
     background: #125688; }
 
 .location-description {
-  text-align: left; }
+  text-align: left;
+  padding-right: 2em;
+  box-sizing: border-box; }
 
 .search .page-section {
   width: 100%;
