@@ -4,7 +4,11 @@
 
     <?php
 
+    print_r(explode('/', getenv('REQUEST_URI')));
+
     $urlParams = explode('/', getenv('REQUEST_URI'))[3];
+
+    print_r($urlParams);
 
     if( !$urlParams ) :
 
