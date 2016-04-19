@@ -262,6 +262,8 @@ p + p {
     margin: 0 auto 2em;
     width: 80%;
     color: #6d6f44; }
+    .main-content .adventure-menu h2 {
+      text-align: center; }
     .main-content .adventure-menu h2 span {
       text-transform: none;
       margin-top: 1em;
