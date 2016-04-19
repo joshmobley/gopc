@@ -2,30 +2,28 @@
 
 <section class="main-content">
 
-    <?php
-        $adventurePage = new WP_Query(array('post_type' => 'page', 'name' => 'adventure'));
+    <div class="page-section">
 
-        if ( $adventurePage -> have_posts() ) :
+        <style>#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-400x267.jpg);}
+            @media screen and (min-width: 400px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-600x400.jpg);}}
+            @media screen and (min-width: 600px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-1024x683.jpg);}}
+            @media screen and (min-width: 1024px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-1200x800.jpg);}}
+            @media screen and (min-width: 1200px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-1600x1067.jpg);}}
+        </style>
 
-        while ( $adventurePage -> have_posts() ) : $adventurePage -> the_post(); ?>
+        <div class="full-width promo no-margin-top page-header bg-image" id="post-0">
+            <div id="bg-0" class="promo-bg-image"></div>
+            <div class="promo-content bottom-right light">
+                <h2>Everybody's Got a Story.</h2>
+                <p>Places, Experiences and the Gear That Got'em There.</p>
+            </div><!--.promo-content-->
+        </div><!--.full-width.promo-->
 
+    </div>
 
-                <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
-
-        <?php endwhile; ?>
-
-
-                <?php wp_reset_postdata(); ?>
-
-        <?php else : ?>
-        <?php endif; ?>
-
-
-    <?php //include( get_template_directory() . '/includes/content-parser.php'); ?>
-
-    <h2 class="section-header is-page-title">
+    <!--<h2 class="section-header is-page-title">
         <?php the_archive_title(); ?>
-    </h2>
+    </h2>-->
 
 
 
