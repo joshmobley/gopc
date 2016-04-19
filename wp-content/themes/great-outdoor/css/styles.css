@@ -149,8 +149,6 @@ p + p {
       margin-top: -3em;
       width: 100%;
       border: none; }
-      .main-content .archive-view .post-filter [data-sf-field-input-type="checkbox"] {
-        display: none; }
     .main-content .archive-view .tiled-list {
       padding: 0 1em;
       box-sizing: border-box; }
@@ -380,10 +378,6 @@ p + p {
       margin: 0;
       border-right: 1px solid #6d6f44;
       padding: 0 2em 2em 0; }
-      .main-content .archive-view .post-filter [data-sf-field-input-type="select"] {
-        display: none; }
-      .main-content .archive-view .post-filter [data-sf-field-input-type="checkbox"] {
-        display: block; }
     .main-content .tiled-list {
       width: 75%;
       float: right; }

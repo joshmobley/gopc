@@ -46,8 +46,6 @@
             margin-top: -3em;
             width: 100%;
             border: none;
-
-            [data-sf-field-input-type="checkbox"]{ display: none; }
         }
 
         .tiled-list{
@@ -403,14 +401,6 @@
                 margin: 0;
                 border-right: 1px solid $green;
                 padding: 0 2em 2em 0;
-
-                [data-sf-field-input-type="select"]{
-                    display: none;
-                }
-
-                [data-sf-field-input-type="checkbox"]{
-                    display: block;
-                }
             }
         }
 
