@@ -378,6 +378,8 @@ p + p {
         width: 27.5%;
         margin: 2.5%;
         float: left; }
+        .main-content .tiled-list .tile:nth-child(3n+1) {
+          clear: left; }
         .main-content .tiled-list .tile a {
           text-decoration: none; }
         .main-content .tiled-list .tile img {

@@ -404,6 +404,10 @@
                 margin: 2.5%;
                 float: left;
 
+                &:nth-child(3n+1){
+                    clear: left;
+                }
+
                 a{
                     text-decoration: none;
                 }
