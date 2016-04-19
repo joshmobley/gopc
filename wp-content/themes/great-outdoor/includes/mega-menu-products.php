@@ -14,11 +14,11 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/womens-clothing/">Women's Clothing</a></h4>
         <ul>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/womens-tops/">Tops</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/womens-shorts/">Shorts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/womens-swim/">Swim</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/women-clothing/">All Womens</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-tops/">Tops</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-shorts/">Shorts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-swim/">Swim</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
         </div>
 
