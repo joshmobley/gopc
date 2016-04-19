@@ -139,15 +139,28 @@
 
     </div>
 
-    <div class="full-width promo" style="background: none; ">
-        <h3 class="section-title">Local Outdoor Resources</h3>
-        <ul>
-        <?php
-        foreach( $resourceLinks as $link ){
-            echo '<li><a href="' . $link['link_url'] . '">' . $link['link_title'] . '</a></li>';
-        }
-        ?>
-        </ul>
+    <div class="page-section half-container">
+
+        <div class="half-width promo local-resources" style="background: none; ">
+            <h3 class="section-title">Local Outdoor Resources</h3>
+            <ul>
+            <?php
+            foreach( $resourceLinks as $link ){
+                echo '<li><a href="' . $link['link_url'] . '">' . $link['link_title'] . '</a></li>';
+            }
+            ?>
+            </ul>
+        </div>
+
+        <div class="half-width promo social-links">
+
+            <a href="<?php echo $facebook; ?>" target="_blank" class="facebook-link">The <?php echo get_the_title(); ?> Shop on Facebook</a>
+            <a href="<?php echo $twitter; ?>" target="_blank" class="twitter-link">The <?php echo get_the_title(); ?> Shop on Twitter</a>
+            <a href="<?php echo $instagram; ?>" target="_blank" class="instagram-link">The <?php echo get_the_title(); ?> Shop on Instagram</a>
+
+        </div>
+
+
     </div>
 
 </div>

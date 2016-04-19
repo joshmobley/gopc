@@ -1371,6 +1371,28 @@ header {
   width: 100%;
   margin: 0; }
 
+.half-width.local-resources {
+  text-align: left; }
+  .half-width.local-resources li {
+    margin-left: 2em;
+    list-style: disc; }
+    .half-width.local-resources li a {
+      color: #d78105; }
+
+.social-links a {
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: white;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.4em; }
+  .social-links a.facebook-link {
+    background: #3B5998; }
+  .social-links a.twitter-link {
+    background: #55acee; }
+  .social-links a.instagram-link {
+    background: #125688; }
+
 .search .page-section {
   width: 100%;
   margin: 2em auto;

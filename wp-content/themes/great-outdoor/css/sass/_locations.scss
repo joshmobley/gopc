@@ -23,3 +23,41 @@
         margin: 0;
     }
 }
+
+.half-width.local-resources{
+    text-align: left;
+
+    li{
+        margin-left: 2em;
+        list-style: disc;
+
+        a{
+            color: $orange;
+        }
+    }
+}
+
+.social-links{
+
+    a{
+        display: block;
+        padding: 1em;
+        margin-bottom: 1em;
+        color: white;
+        @include header-font;
+        font-size: 1.4em;
+
+        &.facebook-link{
+            background: #3B5998;
+        }
+
+        &.twitter-link{
+            background: #55acee;
+        }
+
+        &.instagram-link{
+            background: #125688;
+        }
+
+    }
+}
