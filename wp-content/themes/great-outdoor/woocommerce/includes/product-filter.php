@@ -54,6 +54,9 @@
             <li><a href="#">Outdoor Toys</a></li>
             <li><a href="#">High Tech Gadgets</a></li>
         </ul>
+
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/gift-card/gift-card/">Gift Cards</a></h4>
+
         <h4 class="mega-menu-column-title">Featured Brands</h4>
         <ul id="featured-brand-list">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
@@ -62,5 +65,4 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad &amp; Co</a></li>
         </ul>
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/gift-card/gift-card/">Gift Cards</a></h4>
-</div>
+        </div>
