@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-.pf_more{ display: none; }
-
 .searchandfilter{
     h4{
         color: $orange;
@@ -54,12 +52,17 @@
 	.prdctfltr_woocommerce_ordering{
 		margin-bottom: 2em;
 
-		.prdctfltr_checkboxes label{
-			margin-bottom: .25em;
-			color: $black;
-			position: relative;
-			margin-left: -1.5em;
-		}
+		.prdctfltr_checkboxes{
+            label{
+			     margin-bottom: .25em;
+			     color: $black;
+			     position: relative;
+			     margin-left: -1.5em;
+		    }
+
+            .pf_more{ display: none; }
+
+        }
 	}
 
 	.prdctfltr_regular_title, > li{
@@ -89,7 +92,7 @@
 				border-color: $orange!important;
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: 2px;
 			}
 
 			label.prdctfltr_active > span:before{

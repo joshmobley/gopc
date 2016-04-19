@@ -1188,9 +1188,6 @@ header {
   border-right: 1px solid #6d6f44;
   box-sizing: border-box; }
 
-.pf_more {
-  display: none; }
-
 .searchandfilter h4 {
   color: #d78105;
   font-size: 1.2;
@@ -1223,6 +1220,8 @@ header {
       color: #111111;
       position: relative;
       margin-left: -1.5em; }
+    .prdctfltr_wc .prdctfltr_woocommerce_ordering .prdctfltr_checkboxes .pf_more, .post-filter .prdctfltr_woocommerce_ordering .prdctfltr_checkboxes .pf_more {
+      display: none; }
   .prdctfltr_wc .prdctfltr_regular_title, .prdctfltr_wc > li, .post-filter .prdctfltr_regular_title, .post-filter > li {
     font-family: "Roboto Slab", sans-serif;
     color: #d78105;
@@ -1240,7 +1239,7 @@ header {
     border-color: #d78105 !important;
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 2px; }
   .prdctfltr_wc.prdctfltr_square .prdctfltr_filter label.prdctfltr_active > span:before, .post-filter.prdctfltr_square .prdctfltr_filter label.prdctfltr_active > span:before {
     height: 7px;
     width: 7px;

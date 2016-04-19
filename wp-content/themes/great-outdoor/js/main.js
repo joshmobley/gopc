@@ -86,9 +86,9 @@ $(document).ready(function(){
 
 
     $('#menu-main-nav li').hover( function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeIn().delay(500);
+        $('#' + $(this).attr('data-mega')).stop().fadeIn();
     }, function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeOut();
+        $('#' + $(this).attr('data-mega')).stop().fadeOut(50);
     });
 
 });
