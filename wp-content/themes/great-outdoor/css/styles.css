@@ -1204,7 +1204,6 @@ header {
   position: static !important; }
 
 .prdctfltr_wc, .post-filter {
-  width: 80%;
   margin: 2em auto; }
   .prdctfltr_wc .prdctfltr_filter_title, .post-filter .prdctfltr_filter_title {
     display: none !important; }
