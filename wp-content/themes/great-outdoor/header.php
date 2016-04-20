@@ -51,15 +51,15 @@
 
                 <ul id="menu-main-nav">
                     <li data-mega="products-mega">
-                        <a href="<?php echo get_bloginfo('url'); ?>/products">Products</a>
+                        <a href="<?php echo get_bloginfo('url'); ?>/products"><span>Products</span></a>
                         <?php include('includes/mega-menu-products.php'); ?>
                     </li>
                     <li data-mega="adventure-mega">
-                        <a href="<?php echo get_bloginfo('url'); ?>/adventure">Adventure</a>
+                        <a href="<?php echo get_bloginfo('url'); ?>/adventure"><span>Adventure</span></a>
                         <?php include('includes/mega-menu-adventure.php'); ?>
                     </li>
                     <li data-mega="locations-mega">
-                        <a href="<?php echo get_bloginfo('url'); ?>/locations">Locations</a>
+                        <a href="<?php echo get_bloginfo('url'); ?>/locations"><span>Locations</span></a>
                         <?php include('includes/mega-menu-locations.php'); ?>
                     </li>
                     <li data-mega="community-mega">

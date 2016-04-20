@@ -204,11 +204,16 @@ header{
 
 				> a{
 					border-bottom: 0;
-					padding: 0 1em;
+					padding: 1em 0;
 					line-height: 1em;
 					display: inline-block;
-					border-right: 2px solid $tan;
 					transition: all .5s;
+
+                    span{
+                        border-right: 2px solid $tan;
+                        padding-right: 1em;
+                        margin-right: 1em;
+                    }
 
 					&:hover{
 						color: $lightgreen;
@@ -226,7 +231,7 @@ header{
         display: none;
         position: absolute;
         border: 1px solid #ccc;
-        top: 6em;
+        top: 6.5em;
         left: 10%;
         width: 80%;
         padding: 2em;
