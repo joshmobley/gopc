@@ -32,7 +32,7 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
 
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/">Camp &amp; Hike Gear</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/camp-hike/">Camp &amp; Hike Gear</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/tents/">Tents</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/packs/">Packs</a></li>
