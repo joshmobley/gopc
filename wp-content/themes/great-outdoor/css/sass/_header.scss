@@ -164,6 +164,7 @@ header{
 
 	header{
 		background-image: url('../assets/site-footer-bg-1600.jpg');
+        padding-bottom: 0;
 
 
         .utility-nav{
@@ -197,7 +198,6 @@ header{
 
 		#menu-main-nav{
             padding-left: 25%;
-			padding-top: .5em;
 
 			> li{
 				display: inline-block;
@@ -231,7 +231,7 @@ header{
         display: none;
         position: absolute;
         border: 1px solid #ccc;
-        top: 6.5em;
+        top: 6em;
         left: 10%;
         width: 80%;
         padding: 2em;
