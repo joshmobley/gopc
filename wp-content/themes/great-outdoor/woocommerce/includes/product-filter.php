@@ -63,11 +63,11 @@
 
         <h4 class="mega-menu-column-title">Featured Brands</h4>
         <ul id="featured-brand-list" class="children is-active">
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad &amp; Co</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=black-diamond">Black Diamond</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=osprey">Osprey</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=patagonia">Patagonia</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=smartwool">Smartwool</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=toad-co">Toad &amp; Co</a></li>
         </ul>
     </div>
 </div>
