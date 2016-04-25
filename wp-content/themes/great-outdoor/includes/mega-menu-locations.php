@@ -28,7 +28,7 @@
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/locations/greensboro">Greensboro, NC</a></h4>
         <p>Friendly Shopping Center<br/>
-            3104 Northland Ave<br/>
+            3104 Northline Ave<br/>
             336-851-1331</p>
     </div>
 
