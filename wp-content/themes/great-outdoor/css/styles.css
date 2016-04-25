@@ -1125,6 +1125,9 @@ header {
         text-decoration: none; }
       .mega-menu .mega-menu-column h4 a {
         font-family: "Roboto Slab", sans-serif; }
+      .mega-menu .mega-menu-column .promo-text {
+        text-align: center;
+        font-family: "Roboto Slab", sans-serif; }
       .mega-menu .mega-menu-column .color-box {
         width: 100%;
         display: block;

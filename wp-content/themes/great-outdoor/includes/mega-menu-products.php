@@ -79,7 +79,10 @@
     </div>
 
     <div class="mega-menu-column fifth">
-        <img src="http://placehold.it/300x250" />
+        <a href="http://greatoutdoorprovision.com/2016/04/featured-shop-spring-2016/">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/front-table-promo.jpg" />
+            <h4 class="promo-text">Featured in the Shop</h4>
+        </a>
     </div>
 </div>
  </div><!--.mega-menu#products-mega-->
