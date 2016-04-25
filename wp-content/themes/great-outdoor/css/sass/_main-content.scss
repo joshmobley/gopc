@@ -212,6 +212,10 @@
         margin: 2em auto;
         @include clearfix;
 
+        h2, h3, h4, h5{
+            margin: 2em auto;
+        }
+
         p, h2, h3, h4, h5, blockquote, span, a, ul, ol, time, article{
             max-width: 800px;
             margin-left: auto;

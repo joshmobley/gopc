@@ -3,7 +3,7 @@
     <head>
         <title><?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.min.css?c" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.min.css?4.25.16" />
 
         <!--[if IE lt 9]>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
