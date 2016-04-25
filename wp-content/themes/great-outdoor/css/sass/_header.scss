@@ -80,6 +80,14 @@ header{
 
     .utility-nav{
         display: none;
+
+        a{
+            float: right;
+            margin: .25em 1em;
+            color: $orange;
+            text-decoration: none;
+            font-size: .8em;
+        }
     }
 
 	#menu-main-nav{

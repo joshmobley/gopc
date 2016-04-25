@@ -1004,6 +1004,12 @@ header {
       left: 0; }
   header .utility-nav {
     display: none; }
+    header .utility-nav a {
+      float: right;
+      margin: .25em 1em;
+      color: #d78105;
+      text-decoration: none;
+      font-size: .8em; }
   header #menu-main-nav > li > a {
     font-family: "Roboto Slab", sans-serif;
     color: #f4efe8;
