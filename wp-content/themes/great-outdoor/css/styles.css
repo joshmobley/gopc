@@ -678,6 +678,12 @@ p + p {
     background-size: 45px; }
     .product-page .activities-available li.climb {
       background-position: 0 -50px; }
+    .product-page .activities-available li.fish {
+      background-position: 0 -100px; }
+    .product-page .activities-available li.paddle {
+      background-position: 0 -150px; }
+    .product-page .activities-available li.travel {
+      background-position: 0 -200px; }
   .product-page .product-additional-info {
     clear: both;
     zoom: 1; }
