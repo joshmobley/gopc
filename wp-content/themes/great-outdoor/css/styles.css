@@ -1062,6 +1062,8 @@ header {
       height: auto;
       width: auto;
       background: none; }
+    header .mobile-only-menu {
+      display: none !important; }
     header .searchform {
       float: right;
       width: 20%; }

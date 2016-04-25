@@ -3,7 +3,7 @@
     <head>
         <title><?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.min.css?4.25.16?a" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.min.css?4.25.16?b" />
 
         <!--[if IE lt 9]>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
@@ -65,6 +65,9 @@
                     <li data-mega="community-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/community/about-us">Community</a>
                         <?php //include('includes/mega-menu-community.php'); ?>
+                    </li>
+                    <li class="mobile-only-menu">
+                        <a href="<?php echo get_bloginfo('url'); ?>/calendar">Calendar</a>
                     </li>
                 </ul>
 
