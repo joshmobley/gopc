@@ -260,6 +260,8 @@ p + p {
     .main-content .wysiwyg .bg-image {
       background-size: cover;
       height: 300px; }
+    .main-content .wysiwyg .wp-caption.aligncenter {
+      margin: 2em auto; }
   .main-content .adventure-menu {
     margin: 0 auto 2em;
     width: 80%;
