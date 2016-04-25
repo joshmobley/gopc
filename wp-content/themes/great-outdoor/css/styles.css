@@ -677,13 +677,17 @@ p + p {
     width: 50px;
     background-size: 45px; }
     .product-page .activities-available li.climb {
-      background-position: 0 -50px; }
+      background-position: 0 -50px;
+      background-repeat: no-repeat; }
     .product-page .activities-available li.fish {
-      background-position: 0 -100px; }
+      background-position: 0 -100px;
+      background-repeat: no-repeat; }
     .product-page .activities-available li.paddle {
-      background-position: 0 -150px; }
+      background-position: 0 -150px;
+      background-repeat: no-repeat; }
     .product-page .activities-available li.travel {
-      background-position: 0 -200px; }
+      background-position: 0 -200px;
+      background-repeat: no-repeat; }
   .product-page .product-additional-info {
     clear: both;
     zoom: 1; }

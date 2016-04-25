@@ -76,18 +76,22 @@
 
 		&.climb{
 			background-position: 0 -50px;
+            background-repeat: no-repeat;
 		}
 
         &.fish{
             background-position: 0 -100px;
+            background-repeat: no-repeat;
         }
 
 		&.paddle{
             background-position: 0 -150px;
+            background-repeat: no-repeat;
 		}
 
         &.travel{
             background-position: 0 -200px;
+            background-repeat: no-repeat;
         }
 	}
 
