@@ -67,7 +67,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=osprey">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=patagonia">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=smartwool">Smartwool</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=toadco">Toad &amp; Co</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=toadco">Toad&amp;Co</a></li>
         </ul>
     </div>
 </div>

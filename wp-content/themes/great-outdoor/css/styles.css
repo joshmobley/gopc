@@ -1152,6 +1152,10 @@ header {
         margin: .5em 1%; }
         .mega-menu .mega-menu-column.fifth:nth-child(5n+1) {
           clear: left; }
+        .mega-menu .mega-menu-column.fifth:nth-child(even) .color-box {
+          background: #bd0000; }
+        .mega-menu .mega-menu-column.fifth .color-box {
+          background: #d78105; }
       .mega-menu .mega-menu-column.quarter {
         width: 23%;
         margin: .5em 1%; }

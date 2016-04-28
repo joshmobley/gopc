@@ -307,6 +307,14 @@ header{
                 &:nth-child(5n+1){
                     clear: left;
                 }
+
+                &:nth-child(even) .color-box{
+                    background: $red;
+                }
+
+                .color-box{
+                    background: $orange;
+                }
             }
 
             &.quarter{

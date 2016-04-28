@@ -20,7 +20,9 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-swim/">Swim</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
-        </div>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
+
+    </div>
 
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/footwear/">Footwear</a></h4>
@@ -30,7 +32,6 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/kids-footwear/">Kids</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">All Footwear</a></li>
         </ul>
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
 
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/camp-hike/">Camp &amp; Hike Gear</a></h4>
         <ul>
@@ -73,7 +74,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad &amp; Co</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/toad-co/">Toad&amp;Co</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/gift-card/gift-card/">Gift Cards</a></h4>
     </div>

@@ -65,7 +65,7 @@
                     </li>
                     <li data-mega="community-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/community/about-us">Community</a>
-                        <?php //include('includes/mega-menu-community.php'); ?>
+                        <?php include('includes/mega-menu-community.php'); ?>
                     </li>
                     <li class="mobile-only-menu">
                         <a href="<?php echo get_bloginfo('url'); ?>/calendar">Calendar</a>
