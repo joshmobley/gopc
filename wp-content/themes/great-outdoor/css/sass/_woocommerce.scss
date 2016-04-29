@@ -40,6 +40,28 @@
     h4 + h4{
         margin-top: 1em;
     }
+
+    .current-cat .children{
+        display: block;
+    }
+
+    .children .current-cat{
+        display: block!important;
+    }
+
+    .product_cat > ul > .cat-item{
+        margin-bottom: 1em;
+
+        > a{
+            @include header-font;
+            color: $orange;
+            text-decoration: none;
+        }
+
+    }
+
+    .current-cat-parent .children{ display: block; }
+
     .children{
         padding-left: 1em;
         display: none;

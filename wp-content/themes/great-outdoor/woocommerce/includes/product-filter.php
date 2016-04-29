@@ -1,5 +1,11 @@
 <div class="post-filter">
 
+    <?php wp_list_categories(array(
+        'taxonomy' => 'product_cat',
+        'depth' => 3,
+        'hierarchical' => true,
+    )); ?>
+
     <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
         <ul class="children" data-path="mens-clothing">
@@ -20,6 +26,10 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">Footwear</a></h4>
         <ul class="children" data-path="footwear">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/mens-footwear/">Mens</a></li>
+            <ul class="children" data-path="mens-footwear">
+                <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-footwear/mens-hiking">Hiking</a></li>
+                <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-footwear/">Mens</a></li>
+            </ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/womens-footwear/">Womens</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/kids-footwear/">Kids</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">All Footwear</a></li>
