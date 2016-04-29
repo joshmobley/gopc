@@ -253,7 +253,7 @@ p + p {
       clear: both; }
     .main-content .wysiwyg h2, .main-content .wysiwyg h3, .main-content .wysiwyg h4, .main-content .wysiwyg h5 {
       margin: 2em auto; }
-    .main-content .wysiwyg p, .main-content .wysiwyg h2, .main-content .wysiwyg h3, .main-content .wysiwyg h4, .main-content .wysiwyg h5, .main-content .wysiwyg blockquote, .main-content .wysiwyg span, .main-content .wysiwyg a, .main-content .wysiwyg ul, .main-content .wysiwyg ol, .main-content .wysiwyg time, .main-content .wysiwyg article {
+    .main-content .wysiwyg * {
       max-width: 800px;
       margin-left: auto;
       margin-right: auto; }
