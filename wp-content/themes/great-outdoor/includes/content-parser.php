@@ -66,7 +66,7 @@ if( get_field('content') != null ){
 					   if( $desc ){ echo '<p>' . esc_html( $desc ) . '</p>'; }
 
                        if( !$noURL ){
-                            echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . ' &rarr;</a>';
+                            echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . '</a>';
                        }
 
                     if( $section['arrange_content'] == 'side' ){
