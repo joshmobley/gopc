@@ -64,7 +64,7 @@
                         <?php include('includes/mega-menu-locations.php'); ?>
                     </li>
                     <li data-mega="community-mega">
-                        <a href="<?php echo get_bloginfo('url'); ?>/community/about-us">Community</a>
+                        <a href="<?php echo get_bloginfo('url'); ?>/community">Community</a>
                         <?php include('includes/mega-menu-community.php'); ?>
                     </li>
                     <li class="mobile-only-menu">

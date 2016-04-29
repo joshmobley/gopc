@@ -18,7 +18,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/land-trust-day">Land Trust Day</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Coat Swap Day</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/habitat-day">Habitat for Humanity</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/community/scout-benefit-program">Local Boy and Girl Scouts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/community/scouts">Local Boy and Girl Scouts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/trustys-trailblazers">Trusty’s Trailblazers</a></li>
         </ul>
     </div>
@@ -26,14 +26,14 @@
     <div class="mega-menu-column fifth">
         <a href="<?php echo get_bloginfo('url'); ?>/calendar" class="color-box">
             <h4>Events</h4>
-            <p>Join us on outdoor adventure or in-the-shop fun. Meetups, demos, classes and more.</p>
+            <p>Join us for outdoor adventure or in-the-shop fun. Meetups, demos, classes and more.</p>
         </a>
     </div>
 
     <div class="mega-menu-column fifth">
         <a href="<?php echo get_bloginfo('url'); ?>/join-muleteam" class="color-box">
             <h4>Join MuleTeam</h4>
-            <p>Get our newsletter, learn about events and promotions first, and get deals exclusive to members.</p>
+            <p>Get our newsletter with fun adventure stories, events, promos and deals exclusive to you!</p>
         </a>
     </div>
 
