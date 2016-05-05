@@ -1,10 +1,14 @@
 <div class="post-filter">
 
+    <?php print_r(get_the_category()); ?>
+
+    <div class="responsive-column">
     <?php wp_list_categories(array(
         'taxonomy' => 'product_cat',
         'depth' => 3,
         'hierarchical' => true,
     )); ?>
+    </div>
 
     <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
