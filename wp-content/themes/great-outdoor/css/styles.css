@@ -1273,35 +1273,33 @@ header {
     float: left;
     width: 45%;
     margin: 0 2.5%; }
-  .post-filter h4 {
-    color: #6d6f44; }
-  .post-filter h4 + h4 {
-    margin-top: 1em; }
-  .post-filter .current-cat .children {
-    display: block; }
-  .post-filter .current-cat-parent .current-cat {
-    display: block; }
-  .post-filter .children .current-cat {
-    display: block !important; }
-  .post-filter .product_cat > ul > .cat-item {
-    margin-bottom: 1em; }
-    .post-filter .product_cat > ul > .cat-item > a {
-      font-family: "Roboto Slab", sans-serif;
-      color: #d78105;
-      text-decoration: none; }
-  .post-filter .current-cat-parent .children {
-    display: block; }
   .post-filter .children {
-    padding-left: 1em;
-    display: none; }
+    padding-left: 1em; }
     .post-filter .children li {
-      margin-top: .25em; }
-    .post-filter .children.is-active {
+      margin-top: .25em;
+      display: none; }
+    .post-filter .children.is-active li {
       display: block; }
     .post-filter .children a {
       text-decoration: none; }
     .post-filter .children + h4 {
       margin-top: 1em; }
+  .post-filter h4 {
+    color: #6d6f44; }
+  .post-filter h4 + h4 {
+    margin-top: 1em; }
+  .post-filter .current-cat .children li {
+    display: block; }
+  .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent {
+    display: block; }
+  .post-filter .children .current-cat {
+    display: block !important; }
+  .post-filter .responsive-column > ul > .cat-item {
+    margin-bottom: 1em; }
+    .post-filter .responsive-column > ul > .cat-item > a {
+      font-family: "Roboto Slab", sans-serif;
+      color: #d78105;
+      text-decoration: none; }
 
 .searchandfilter h4 {
   color: #d78105;

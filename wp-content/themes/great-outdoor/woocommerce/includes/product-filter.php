@@ -1,16 +1,18 @@
 <div class="post-filter">
 
-    <?php print_r(get_the_category()); ?>
 
     <div class="responsive-column">
+        <ul>
     <?php wp_list_categories(array(
         'taxonomy' => 'product_cat',
         'depth' => 3,
         'hierarchical' => true,
+        'title_li' => '',
     )); ?>
+        </ul>
     </div>
 
-    <div class="responsive-column">
+   <?php /* <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
         <ul class="children" data-path="mens-clothing">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
@@ -84,4 +86,6 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=toadco">Toad&amp;Co</a></li>
         </ul>
     </div>
+
+    */?>
 </div>
