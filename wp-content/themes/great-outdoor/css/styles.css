@@ -1264,7 +1264,7 @@ header {
     height: 0;
     display: block;
     clear: both; }
-  .post-filter h4, .post-filter h4 a {
+  .post-filter h4, .post-filter h4 a, .post-filter li.pa_brands {
     color: #d78105;
     font-family: "Roboto Slab", sans-serif;
     text-size: 1.2em;
@@ -1300,6 +1300,9 @@ header {
       font-family: "Roboto Slab", sans-serif;
       color: #d78105;
       text-decoration: none; }
+  .post-filter .pa_brands ul li a {
+    text-decoration: none;
+    margin: .5em 0 0 1em; }
 
 .searchandfilter h4 {
   color: #d78105;

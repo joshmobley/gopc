@@ -21,6 +21,7 @@
         'orderby' => 'count',
         'order' => 'desc',
         'number' => 15,
+        'title_li' => 'Brands',
         )); ?>
     </div>
 

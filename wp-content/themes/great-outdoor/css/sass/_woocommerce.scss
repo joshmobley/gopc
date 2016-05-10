@@ -20,7 +20,7 @@
     font-size: .8em;
     border: none;
     box-sizing: border-box;
-    h4, h4 a{
+    h4, h4 a, li.pa_brands{
         color: $orange;
         @include header-font;
         text-size: 1.2em;
@@ -86,6 +86,13 @@
             text-decoration: none;
         }
 
+    }
+
+    .pa_brands{
+        ul li a{
+            text-decoration: none;
+            margin: .5em 0 0 1em;
+        }
     }
 
 
