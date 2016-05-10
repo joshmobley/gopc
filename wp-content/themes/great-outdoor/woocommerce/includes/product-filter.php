@@ -8,8 +8,17 @@
         'depth' => 3,
         'hierarchical' => true,
         'title_li' => '',
+        'orderby' => 'count',
+        'order' => 'desc',
     )); ?>
         </ul>
+
+        <ul>
+    <?php wp_list_categories( array(
+        'taxonomy' => 'pa_brands',
+        'depth' => 1,
+        'hierarchical' => false,
+        )); ?>
     </div>
 
    <?php /* <div class="responsive-column">
