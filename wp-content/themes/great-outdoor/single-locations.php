@@ -29,7 +29,7 @@
         <div class="location-details">
             <h3>Address &amp; Hours</h3>
             <p class="address"><?php echo $address; ?></p>
-            <p class="phone"><?php echo $phone; ?></p>
+            <p class="phone"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
             <p class="hours"><?php echo $hours; ?></p>
         </div><!--.promo-content-->
 

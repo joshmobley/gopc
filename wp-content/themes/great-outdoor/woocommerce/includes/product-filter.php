@@ -18,6 +18,9 @@
         'taxonomy' => 'pa_brands',
         'depth' => 1,
         'hierarchical' => false,
+        'orderby' => 'count',
+        'order' => 'desc',
+        'number' => 15,
         )); ?>
     </div>
 
