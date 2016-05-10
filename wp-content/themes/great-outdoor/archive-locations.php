@@ -18,7 +18,7 @@
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/locations/charlotte">Charlotte, NC</a></h4>
         <p>Park Rd Shopping Ctr<br/>
-        4341 Park Road<br/>
+        4275 Park Road<br/>
         704-523-1089</p>
     </div>
 
