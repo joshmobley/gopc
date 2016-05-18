@@ -146,7 +146,7 @@ p + p {
     .main-content .archive-view .post-filter {
       background: #eee;
       padding: 2em;
-      margin-top: -3em;
+      margin-bottom: 2em;
       width: 100%;
       border: none; }
     .main-content .archive-view .tiled-list {
@@ -1240,6 +1240,36 @@ header {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
 /* filter styles */
+.do-filter-open, .do-filter-close {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2em 0; }
+
+@media screen and (min-width: 800px) {
+  .do-filter-open, .do-filter-close {
+    display: none; } }
+
+.post-filter .responsive-column {
+  position: fixed;
+  right: -100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 2em;
+  box-sizing: border-box;
+  background: #ffffff;
+  overflow-y: scroll;
+  transition: all .3s; }
+  .post-filter .responsive-column.is-open {
+    right: 0; }
+  @media screen and (min-width: 800px) {
+    .post-filter .responsive-column {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0; } }
+
 .woocommerce-result-count, .woocommerce-ordering {
   display: none; }
 
@@ -1252,11 +1282,10 @@ header {
     display: inline; }
 
 .post-filter {
-  padding: 2em;
+  padding: 0 2em;
   zoom: 1;
-  margin-top: -3em;
+  margin-bottom: 2em;
   width: 100%;
-  font-size: .8em;
   border: none;
   box-sizing: border-box; }
   .post-filter:after {
@@ -1264,30 +1293,45 @@ header {
     height: 0;
     display: block;
     clear: both; }
-  .post-filter h4, .post-filter h4 a {
+  .post-filter h4, .post-filter h4 a, .post-filter li.pa_brands {
     color: #d78105;
     font-family: "Roboto Slab", sans-serif;
     text-size: 1.2em;
     text-decoration: none; }
-  .post-filter .responsive-column {
-    float: left;
-    width: 45%;
-    margin: 0 2.5%; }
-  .post-filter h4 {
-    color: #6d6f44; }
-  .post-filter h4 + h4 {
-    margin-top: 1em; }
+  .post-filter .responsive-column a {
+    color: #111111; }
+  @media screen and (min-width: 800px) {
+    .post-filter .children li {
+      display: none; }
+    .post-filter .current-cat .children li {
+      display: block; }
+    .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent, .post-filter .current-cat-parent .children li {
+      display: block; }
+    .post-filter .children .current-cat {
+      display: block !important; } }
   .post-filter .children {
-    padding-left: 1em;
-    display: none; }
+    padding-left: 1em; }
     .post-filter .children li {
       margin-top: .25em; }
-    .post-filter .children.is-active {
-      display: block; }
     .post-filter .children a {
       text-decoration: none; }
     .post-filter .children + h4 {
       margin-top: 1em; }
+  .post-filter h4 {
+    color: #6d6f44; }
+  .post-filter h4 + h4 {
+    margin-top: 1em; }
+  .post-filter .current-cat > a {
+    color: #d78105; }
+  .post-filter .responsive-column > ul > .cat-item {
+    margin-bottom: 1em; }
+    .post-filter .responsive-column > ul > .cat-item > a {
+      font-family: "Roboto Slab", sans-serif;
+      color: #d78105;
+      text-decoration: none; }
+  .post-filter .pa_brands ul li a {
+    text-decoration: none;
+    margin: .5em 0 0 1em; }
 
 .searchandfilter h4 {
   color: #d78105;
@@ -1304,12 +1348,12 @@ header {
   display: none; }
 
 .post-filter {
-  margin: 2em auto; }
+  margin: 0 auto; }
 
 .cat-image-header {
   width: 100%; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .post-filter {
     float: left;
     width: 20%;

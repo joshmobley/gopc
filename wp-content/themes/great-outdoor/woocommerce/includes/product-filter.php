@@ -1,6 +1,33 @@
 <div class="post-filter">
 
+    <a href="#" class="do-filter-open is-mobile button">Filter</a>
+
     <div class="responsive-column">
+        <a href="#" class="do-filter-close is-mobile button">Close</a>
+        <ul>
+    <?php wp_list_categories(array(
+        'taxonomy' => 'product_cat',
+        'depth' => 3,
+        'hierarchical' => true,
+        'title_li' => '',
+    )); ?>
+        </ul>
+
+        <ul>
+    <?php wp_list_categories( array(
+        'taxonomy' => 'pa_brands',
+        'depth' => 1,
+        'hierarchical' => false,
+        'orderby' => 'count',
+        'order' => 'desc',
+        'number' => 10,
+        'title_li' => 'Brands',
+        )); ?>
+
+        <a href="#" class="do-filter-close is-mobile button">Close</a>
+    </div>
+
+   <?php /* <div class="responsive-column">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">Men's Clothing</a></h4>
         <ul class="children" data-path="mens-clothing">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
@@ -20,6 +47,10 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">Footwear</a></h4>
         <ul class="children" data-path="footwear">
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/mens-footwear/">Mens</a></li>
+            <ul class="children" data-path="mens-footwear">
+                <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-footwear/mens-hiking">Hiking</a></li>
+                <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-footwear/">Mens</a></li>
+            </ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/womens-footwear/">Womens</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/kids-footwear/">Kids</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">All Footwear</a></li>
@@ -70,4 +101,6 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/products/?pa_brands=toadco">Toad&amp;Co</a></li>
         </ul>
     </div>
+
+    */?>
 </div>

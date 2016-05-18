@@ -1,5 +1,42 @@
 /* filter styles */
 
+.do-filter-open, .do-filter-close{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 2em 0;
+}
+
+@media screen and (min-width: 800px){
+    .do-filter-open, .do-filter-close{
+        display: none;
+    }
+}
+
+.post-filter .responsive-column{
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2em;
+    box-sizing: border-box;
+    background: $white;
+    overflow-y: scroll;
+    transition: all .3s;
+
+    &.is-open{
+        right: 0;
+    }
+
+    @media screen and (min-width: 800px){
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+}
+
 .woocommerce-result-count, .woocommerce-ordering{ display: none; }
 
 .woocommerce-pagination{
@@ -13,14 +50,13 @@
 }
 
 .post-filter{
-    padding: 2em;
+    padding: 0 2em;
     @include clearfix;
-    margin-top: -3em;
+    margin-bottom: 2em;
     width: 100%;
-    font-size: .8em;
     border: none;
     box-sizing: border-box;
-    h4, h4 a{
+    h4, h4 a, li.pa_brands{
         color: $orange;
         @include header-font;
         text-size: 1.2em;
@@ -28,28 +64,34 @@
     }
 
     .responsive-column{
-        float: left;
-        width: 45%;
-        margin: 0 2.5%;
+
+        a{ color: $black; }
     }
 
-    h4{
-        color: $green;
+    @media screen and (min-width: 800px){
+
+        .children li{
+            display: none;
+        }
+
+        .current-cat .children li{
+            display: block;
+        }
+
+        .current-cat-parent .current-cat, .children .current-cat-parent, .current-cat-parent .children li{
+            display: block;
+        }
+
+        .children .current-cat{
+            display: block!important;
+        }
     }
 
-    h4 + h4{
-        margin-top: 1em;
-    }
     .children{
         padding-left: 1em;
-        display: none;
 
         li{
             margin-top: .25em;
-        }
-
-        &.is-active{
-            display: block;
         }
 
         a{
@@ -60,6 +102,38 @@
             margin-top: 1em;
         }
     }
+
+    h4{
+        color: $green;
+    }
+
+    h4 + h4{
+        margin-top: 1em;
+    }
+
+    .current-cat > a{
+        color: $orange;
+    }
+
+    .responsive-column > ul > .cat-item{
+        margin-bottom: 1em;
+
+        > a{
+            @include header-font;
+            color: $orange;
+            text-decoration: none;
+        }
+
+    }
+
+    .pa_brands{
+        ul li a{
+            text-decoration: none;
+            margin: .5em 0 0 1em;
+        }
+    }
+
+
 }
 
 .searchandfilter{
@@ -88,14 +162,14 @@
 }
 
 .post-filter{
-    margin: 2em auto;
+    margin: 0 auto;
 }
 
 .cat-image-header{
 	width: 100%;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
 
 	.post-filter{
 		float: left;
