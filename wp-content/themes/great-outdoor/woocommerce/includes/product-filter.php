@@ -10,8 +10,6 @@
         'depth' => 3,
         'hierarchical' => true,
         'title_li' => '',
-        'orderby' => 'count',
-        'order' => 'desc',
     )); ?>
         </ul>
 
