@@ -1284,7 +1284,7 @@ header {
 .post-filter {
   padding: 0 2em;
   zoom: 1;
-  margin-top: -3em;
+  margin-bottom: 2em;
   width: 100%;
   border: none;
   box-sizing: border-box; }
