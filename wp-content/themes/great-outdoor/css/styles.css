@@ -1273,6 +1273,8 @@ header {
     float: left;
     width: 45%;
     margin: 0 2.5%; }
+    .post-filter .responsive-column a {
+      color: #111111; }
   .post-filter .children {
     padding-left: 1em; }
     .post-filter .children li {
@@ -1294,6 +1296,8 @@ header {
     display: block; }
   .post-filter .children .current-cat {
     display: block !important; }
+  .post-filter .current-cat > a {
+    color: #d78105; }
   .post-filter .responsive-column > ul > .cat-item {
     margin-bottom: 1em; }
     .post-filter .responsive-column > ul > .cat-item > a {

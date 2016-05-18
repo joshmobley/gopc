@@ -31,6 +31,8 @@
         float: left;
         width: 45%;
         margin: 0 2.5%;
+
+        a{ color: $black; }
     }
 
     .children{
@@ -75,6 +77,10 @@
 
     .children .current-cat{
         display: block!important;
+    }
+
+    .current-cat > a{
+        color: $orange;
     }
 
     .responsive-column > ul > .cat-item{
