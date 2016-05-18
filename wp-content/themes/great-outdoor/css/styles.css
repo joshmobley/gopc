@@ -1300,13 +1300,19 @@ header {
     text-decoration: none; }
   .post-filter .responsive-column a {
     color: #111111; }
+  @media screen and (min-width: 800px) {
+    .post-filter .children li {
+      display: none; }
+    .post-filter .current-cat .children li {
+      display: block; }
+    .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent, .post-filter .current-cat-parent .children li {
+      display: block; }
+    .post-filter .children .current-cat {
+      display: block !important; } }
   .post-filter .children {
     padding-left: 1em; }
     .post-filter .children li {
-      margin-top: .25em;
-      display: none; }
-    .post-filter .children.is-active li {
-      display: block; }
+      margin-top: .25em; }
     .post-filter .children a {
       text-decoration: none; }
     .post-filter .children + h4 {
@@ -1315,12 +1321,6 @@ header {
     color: #6d6f44; }
   .post-filter h4 + h4 {
     margin-top: 1em; }
-  .post-filter .current-cat .children li {
-    display: block; }
-  .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent, .post-filter .current-cat-parent .children li {
-    display: block; }
-  .post-filter .children .current-cat {
-    display: block !important; }
   .post-filter .current-cat > a {
     color: #d78105; }
   .post-filter .responsive-column > ul > .cat-item {

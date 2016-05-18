@@ -68,19 +68,30 @@
         a{ color: $black; }
     }
 
+    @media screen and (min-width: 800px){
+
+        .children li{
+            display: none;
+        }
+
+        .current-cat .children li{
+            display: block;
+        }
+
+        .current-cat-parent .current-cat, .children .current-cat-parent, .current-cat-parent .children li{
+            display: block;
+        }
+
+        .children .current-cat{
+            display: block!important;
+        }
+    }
+
     .children{
         padding-left: 1em;
 
         li{
             margin-top: .25em;
-            display: none;
-        }
-
-        &.is-active{
-
-            li{
-                display: block;
-            }
         }
 
         a{
@@ -98,18 +109,6 @@
 
     h4 + h4{
         margin-top: 1em;
-    }
-
-    .current-cat .children li{
-        display: block;
-    }
-
-    .current-cat-parent .current-cat, .children .current-cat-parent, .current-cat-parent .children li{
-        display: block;
-    }
-
-    .children .current-cat{
-        display: block!important;
     }
 
     .current-cat > a{
