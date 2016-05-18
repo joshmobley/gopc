@@ -22,7 +22,7 @@
         'hierarchical' => false,
         'orderby' => 'count',
         'order' => 'desc',
-        'number' => 15,
+        'number' => 10,
         'title_li' => 'Brands',
         )); ?>
 
