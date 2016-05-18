@@ -1267,7 +1267,8 @@ header {
     .post-filter .responsive-column {
       position: static;
       width: auto;
-      height: auto; } }
+      height: auto;
+      padding: 0; } }
 
 .woocommerce-result-count, .woocommerce-ordering {
   display: none; }
@@ -1352,7 +1353,7 @@ header {
 .cat-image-header {
   width: 100%; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .post-filter {
     float: left;
     width: 20%;

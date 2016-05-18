@@ -33,6 +33,7 @@
         position: static;
         width: auto;
         height: auto;
+        padding: 0;
     }
 }
 
@@ -169,7 +170,7 @@
 	width: 100%;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
 
 	.post-filter{
 		float: left;
