@@ -1290,7 +1290,7 @@ header {
     margin-top: 1em; }
   .post-filter .current-cat .children li {
     display: block; }
-  .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent {
+  .post-filter .current-cat-parent .current-cat, .post-filter .children .current-cat-parent, .post-filter .current-cat-parent .children li {
     display: block; }
   .post-filter .children .current-cat {
     display: block !important; }
