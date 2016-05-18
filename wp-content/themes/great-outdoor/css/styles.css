@@ -1240,6 +1240,25 @@ header {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
 /* filter styles */
+.post-filter .responsive-column {
+  position: fixed;
+  right: -100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  box-sizing: border-box;
+  background: #ffffff;
+  overflow-y: scroll;
+  transition: all .3s; }
+  .post-filter .responsive-column.is-open {
+    right: 0; }
+  @media screen and (min-width: 800px) {
+    .post-filter .responsive-column {
+      position: static;
+      width: auto;
+      height: auto; } }
+
 .woocommerce-result-count, .woocommerce-ordering {
   display: none; }
 
@@ -1256,7 +1275,6 @@ header {
   zoom: 1;
   margin-top: -3em;
   width: 100%;
-  font-size: .8em;
   border: none;
   box-sizing: border-box; }
   .post-filter:after {
@@ -1269,12 +1287,8 @@ header {
     font-family: "Roboto Slab", sans-serif;
     text-size: 1.2em;
     text-decoration: none; }
-  .post-filter .responsive-column {
-    float: left;
-    width: 45%;
-    margin: 0 2.5%; }
-    .post-filter .responsive-column a {
-      color: #111111; }
+  .post-filter .responsive-column a {
+    color: #111111; }
   .post-filter .children {
     padding-left: 1em; }
     .post-filter .children li {

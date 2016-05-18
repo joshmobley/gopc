@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    ($('.do-filter-open, .do-filter-close').on('click', function(event){
+        event.preventDefault();
+        $('.post-filter .responsive-column').toggleClass('is-open');
+    }))();
+
 	function mobileNav(){
 		$('.menu-link').click(function(event){
 			event.preventDefault();

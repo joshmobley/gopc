@@ -1,7 +1,10 @@
 <div class="post-filter">
 
+    <a href="#" class="do-filter-open is-mobile button">Filter</a>
 
     <div class="responsive-column">
+        <a href="#" class="do-filter-close is-mobile button">Close</a>
+        <h2 class="section-title">Filter</h2>
         <ul>
     <?php wp_list_categories(array(
         'taxonomy' => 'product_cat',
