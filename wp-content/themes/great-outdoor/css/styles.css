@@ -1240,13 +1240,23 @@ header {
     background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
 /* filter styles */
+.do-filter-open, .do-filter-close {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2em 0; }
+
+@media screen and (min-width: 800px) {
+  .do-filter-open, .do-filter-close {
+    display: none; } }
+
 .post-filter .responsive-column {
   position: fixed;
   right: -100vw;
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 2em;
+  padding: 0 2em;
   box-sizing: border-box;
   background: #ffffff;
   overflow-y: scroll;
@@ -1271,7 +1281,7 @@ header {
     display: inline; }
 
 .post-filter {
-  padding: 2em;
+  padding: 0 2em;
   zoom: 1;
   margin-top: -3em;
   width: 100%;
@@ -1337,7 +1347,7 @@ header {
   display: none; }
 
 .post-filter {
-  margin: 2em auto; }
+  margin: 0 auto; }
 
 .cat-image-header {
   width: 100%; }
