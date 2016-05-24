@@ -941,13 +941,35 @@ p + p {
 .no-scroll {
   overflow: hidden; }
 
+.do-menu-close {
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
+  z-index: 9999;
+  display: none; }
+  .do-menu-close.is-open {
+    display: block; }
+
 .mega-menu {
-  display: none;
-  position: absolute;
-  left: -100%;
-  width: 0; }
+  display: block;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 999;
+  padding: 4em 5vw;
+  box-sizing: border-box;
+  background: #ffffff;
+  transition: all .5s;
+  visibility: hidden; }
+  .mega-menu.is-open {
+    right: 0;
+    visibility: visible; }
   .mega-menu.is-static {
-    display: block;
+    visibility: visible;
     position: static;
     border: none;
     width: 80%;
@@ -957,9 +979,87 @@ p + p {
     margin-bottom: 2em; }
   .mega-menu .mega-menu-column {
     margin: 1em 0; }
+    .mega-menu .mega-menu-column img {
+      width: 100%; }
+    .mega-menu .mega-menu-column .mega-menu-column-title {
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 1.2em; }
     .mega-menu .mega-menu-column .mega-menu-column-title a {
       font-family: "Roboto Slab", sans-serif;
       color: #d78105 !important; }
+    .mega-menu .mega-menu-column .mega-menu-column-title + .mega-menu-column-title, .mega-menu .mega-menu-column ul + .mega-menu-column-title {
+      margin-top: 1em; }
+
+.mega-menu .mega-menu-title {
+  text-align: center;
+  font-size: 1.4em; }
+
+.mega-menu .mega-menu-subtitle {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #d78105; }
+
+.mega-menu .mega-menu-column ul {
+  margin-left: 2em; }
+
+.mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
+  text-decoration: none; }
+
+.mega-menu .mega-menu-column h4 a {
+  font-family: "Roboto Slab", sans-serif; }
+
+.mega-menu .mega-menu-column .promo-text {
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif; }
+
+.mega-menu .mega-menu-column .color-box {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center; }
+  .mega-menu .mega-menu-column .color-box h4 {
+    color: #ffffff;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.2em; }
+  .mega-menu .mega-menu-column .color-box p {
+    color: #ffffff; }
+
+.mega-menu .mega-menu-column.full {
+  margin: .5em 1%;
+  width: 98%; }
+  .mega-menu .mega-menu-column.full .color-box {
+    background: #6d6f44; }
+
+.mega-menu .mega-menu-column img {
+  width: 100%; }
+
+.mega-menu .mega-menu-column ul + .mega-menu-column-title {
+  margin-top: .5em; }
+
+.mega-menu .activity-icon {
+  display: block;
+  background: #deec9b;
+  background: url("../assets/activity-sprite.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 61px;
+  text-align: center;
+  padding: 25px 0;
+  text-decoration: none;
+  font-family: "Roboto Slab", sans-serif;
+  transition: all .5s; }
+  .mega-menu .activity-icon:hover {
+    color: #d78105; }
+  .mega-menu .activity-icon.climb {
+    background-position: center -70px; }
+  .mega-menu .activity-icon.fish {
+    background-position: center -140px; }
+  .mega-menu .activity-icon.paddle {
+    background-position: center -210px; }
+  .mega-menu .activity-icon.travel {
+    background-position: center -280px; }
 
 header {
   zoom: 1;
@@ -1061,6 +1161,10 @@ header {
     background-image: url("../assets/site-footer-bg-1200.jpg");
     position: relative; } }
 
+@media screen and (min-width: 1024px) {
+  .do-menu-close {
+    display: none !important; } }
+
 @media screen and (min-width: 1200px) {
   header {
     background-image: url("../assets/site-footer-bg-1600.jpg");
@@ -1105,7 +1209,7 @@ header {
         header #menu-main-nav > li:last-child a {
           border: none; }
   .mega-menu {
-    display: none;
+    display: block;
     position: absolute;
     border: 1px solid #ccc;
     top: 6em;
@@ -1114,9 +1218,11 @@ header {
     padding: 2em;
     box-sizing: border-box;
     background: #ffffff;
-    z-index: 9999; }
-    .mega-menu.is-active {
-      display: block; }
+    height: auto;
+    z-index: 9999;
+    opacity: 0; }
+    .mega-menu.is-open {
+      opacity: 1; }
     .mega-menu .mega-menu-title {
       text-align: center;
       font-size: 1.4em; }
@@ -1170,11 +1276,6 @@ header {
           background: #6d6f44; }
       .mega-menu .mega-menu-column img {
         width: 100%; }
-      .mega-menu .mega-menu-column .mega-menu-column-title {
-        font-family: "Roboto Slab", sans-serif;
-        font-size: 1.2em; }
-        .mega-menu .mega-menu-column .mega-menu-column-title + .mega-menu-column-title {
-          margin-top: .5em; }
       .mega-menu .mega-menu-column ul + .mega-menu-column-title {
         margin-top: .5em; }
     .mega-menu .activity-icon {

@@ -49,7 +49,7 @@
             </div>
 
             <div class="nav-wrapper">
-
+                <a href="#" class="do-menu-close">Close</a>
                 <ul id="menu-main-nav">
                     <li data-mega="products-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/products"><span>Products</span></a>
@@ -66,9 +66,6 @@
                     <li data-mega="community-mega">
                         <a href="<?php echo get_bloginfo('url'); ?>/community">Community</a>
                         <?php include('includes/mega-menu-community.php'); ?>
-                    </li>
-                    <li class="mobile-only-menu">
-                        <a href="<?php echo get_bloginfo('url'); ?>/calendar">Calendar</a>
                     </li>
                 </ul>
 

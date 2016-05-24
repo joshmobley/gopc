@@ -91,9 +91,25 @@ $(document).ready(function(){
 
     /* mega menu animation */
     $('#menu-main-nav li').hover( function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeIn().delay(200);
+        if( $(window).width() >= 1200 ){
+            $('#' + $(this).attr('data-mega')).addClass('is-open');
+        }
     }, function(){
-        $('#' + $(this).attr('data-mega')).stop().fadeOut(50);
+        if( $(window).width() >= 1200 ) {
+            $('#' + $(this).attr('data-mega')).removeClass('is-open');
+        }
+
+    });
+
+    $('#menu-main-nav > li > a').on('click', function(event){
+        if( $(window).width() < 1200){
+            event.preventDefault();
+            $(this).siblings('.mega-menu').addClass('is-open');
+            $('.do-menu-close').addClass('is-open').on('click', function(){
+                $(this).removeClass('is-open');
+                $('.mega-menu').removeClass('is-open');
+            });
+        }
     });
 
     /* hack alert -- looking at path to expose children on product filter */
