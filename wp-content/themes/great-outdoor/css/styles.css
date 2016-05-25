@@ -963,13 +963,10 @@ p + p {
   padding: 4em 5vw;
   box-sizing: border-box;
   background: #ffffff;
-  transition: all .5s;
-  visibility: hidden; }
+  transition: all .3s; }
   .mega-menu.is-open {
-    right: 0;
-    visibility: visible; }
+    right: 0; }
   .mega-menu.is-static {
-    visibility: visible;
     position: static;
     border: none;
     width: 80%;
@@ -1198,6 +1195,9 @@ header {
       padding-left: 25%; }
       header #menu-main-nav > li {
         display: inline-block; }
+        header #menu-main-nav > li:hover .mega-menu {
+          display: block;
+          opacity: 1; }
         header #menu-main-nav > li > a {
           border-bottom: 0;
           padding: 1em 0;
@@ -1213,7 +1213,6 @@ header {
         header #menu-main-nav > li:last-child a {
           border: none; }
   .mega-menu {
-    display: block;
     position: absolute;
     border: 1px solid #ccc;
     top: 6em;
@@ -1224,9 +1223,11 @@ header {
     background: #ffffff;
     height: auto;
     z-index: 9999;
-    opacity: 0; }
-    .mega-menu.is-open {
-      opacity: 1; }
+    opacity: 0;
+    display: none; }
+    .mega-menu.is-static, .mega-menu.is-open {
+      opacity: 1;
+      display: block; }
     .mega-menu .mega-menu-title {
       text-align: center;
       font-size: 1.4em; }

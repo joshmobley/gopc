@@ -66,7 +66,6 @@ $(document).ready(function(){
             $el
               .width(newWidth)
               .height(newWidth * $el.data('aspectRatio'));
-
           });
 
         // Kick off one resize to fix all videos on page load
@@ -78,12 +77,8 @@ $(document).ready(function(){
     function ajaxPostFilter( el ){
         $(el).find('.cat-item').click( function(event){
             event.preventDefault();
-
-
             var num_id = $(this).attr('class').match(/\d+/);
             $(this).toggleClass('active');
-
-            console.log(num_id);
         });
     }
 
@@ -92,13 +87,12 @@ $(document).ready(function(){
     /* mega menu animation */
     $('#menu-main-nav li').hover( function(){
         if( $(window).width() >= 1200 ){
-            $('#' + $(this).attr('data-mega')).addClass('is-open');
+            $('#' + $(this).attr('data-mega')).stop().show();
         }
     }, function(){
         if( $(window).width() >= 1200 ) {
-            $('#' + $(this).attr('data-mega')).removeClass('is-open');
+            $('#' + $(this).attr('data-mega')).stop().hide();
         }
-
     });
 
     $('#menu-main-nav > li > a').on('click', function(event){

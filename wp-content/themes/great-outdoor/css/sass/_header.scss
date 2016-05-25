@@ -29,16 +29,13 @@
     padding: 4em 5vw;
     box-sizing: border-box;
     background: $white;
-    transition: all .5s;
-    visibility: hidden;
+    transition: all .3s;
 
     &.is-open{
         right: 0;
-        visibility: visible;
     }
 
     &.is-static{
-        visibility: visible;
         position: static;
         border: none;
         width: 80%;
@@ -388,6 +385,15 @@ header{
 			> li{
 				display: inline-block;
 
+                &:hover{
+
+
+                        .mega-menu{
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
+
 				> a{
 					border-bottom: 0;
 					padding: 1em 0;
@@ -414,7 +420,6 @@ header{
 	}
 
     .mega-menu{
-        display: block;
         position: absolute;
         border: 1px solid #ccc;
         top: 6em;
@@ -426,9 +431,11 @@ header{
         height: auto;
         z-index: 9999;
         opacity: 0;
+        display: none;
 
-        &.is-open{
+        &.is-static, &.is-open{
             opacity: 1;
+            display: block;
         }
 
         .mega-menu-title{
