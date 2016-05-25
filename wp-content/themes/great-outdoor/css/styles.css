@@ -999,44 +999,48 @@ p + p {
   margin-bottom: 2em;
   color: #d78105; }
 
-.mega-menu .mega-menu-column ul {
-  margin-left: 2em; }
-
-.mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
-  text-decoration: none; }
-
-.mega-menu .mega-menu-column h4 a {
-  font-family: "Roboto Slab", sans-serif; }
-
-.mega-menu .mega-menu-column .promo-text {
-  text-align: center;
-  font-family: "Roboto Slab", sans-serif; }
-
-.mega-menu .mega-menu-column .color-box {
-  width: 100%;
-  display: block;
-  padding: 1em;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-align: center; }
-  .mega-menu .mega-menu-column .color-box h4 {
-    color: #ffffff;
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.2em; }
-  .mega-menu .mega-menu-column .color-box p {
-    color: #ffffff; }
-
-.mega-menu .mega-menu-column.full {
-  margin: .5em 1%;
-  width: 98%; }
-  .mega-menu .mega-menu-column.full .color-box {
+.mega-menu .mega-menu-column {
+  width: 45%;
+  margin-right: 5%;
+  float: left; }
+  .mega-menu .mega-menu-column ul {
+    margin-left: 1em; }
+  .mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
+    text-decoration: none; }
+  .mega-menu .mega-menu-column h4 a {
+    font-family: "Roboto Slab", sans-serif; }
+  .mega-menu .mega-menu-column .promo-text {
+    text-align: center;
+    font-family: "Roboto Slab", sans-serif; }
+  .mega-menu .mega-menu-column .color-box {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
     background: #6d6f44; }
-
-.mega-menu .mega-menu-column img {
-  width: 100%; }
-
-.mega-menu .mega-menu-column ul + .mega-menu-column-title {
-  margin-top: .5em; }
+    .mega-menu .mega-menu-column .color-box h4 {
+      color: #ffffff;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 1.2em; }
+    .mega-menu .mega-menu-column .color-box p {
+      color: #ffffff; }
+  .mega-menu .mega-menu-column.full {
+    margin: .5em 1%;
+    width: 98%; }
+    .mega-menu .mega-menu-column.full .color-box {
+      background: #6d6f44; }
+  .mega-menu .mega-menu-column.fifth:nth-child(even) .color-box {
+    background: #bd0000; }
+  .mega-menu .mega-menu-column.fifth .color-box {
+    background: #d78105; }
+  .mega-menu .mega-menu-column.quarter:nth-child(even) .color-box {
+    background: #bd0000; }
+  .mega-menu .mega-menu-column img {
+    width: 100%; }
+  .mega-menu .mega-menu-column ul + .mega-menu-column-title {
+    margin-top: .5em; }
 
 .mega-menu .activity-icon {
   display: block;

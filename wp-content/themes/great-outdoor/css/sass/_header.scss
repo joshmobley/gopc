@@ -91,9 +91,12 @@
         }
 
         .mega-menu-column{
+            width: 45%;
+            margin-right: 5%;
+            float: left;
 
             ul{
-                margin-left: 2em;
+                margin-left: 1em;
             }
 
             h4 a, li a{
@@ -116,6 +119,7 @@
                 box-sizing: border-box;
                 text-decoration: none;
                 text-align: center;
+                background: $green;
 
                 h4{
                     color: $white;
@@ -136,6 +140,24 @@
 
                 .color-box{
                     background: $green;
+                }
+            }
+
+            &.fifth{
+
+                &:nth-child(even) .color-box{
+                    background: $red;
+                }
+
+                .color-box{
+                    background: $orange;
+                }
+            }
+
+            &.quarter{
+
+                &:nth-child(even) .color-box{
+                    background: $red;
                 }
             }
 
