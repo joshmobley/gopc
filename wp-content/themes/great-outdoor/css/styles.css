@@ -87,12 +87,19 @@ table {
   text-align: center;
   margin-bottom: 2em; }
 
+h1 {
+  color: #d78105;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", sans-serif; }
+
 h2, h3 {
   font-family: "Roboto Slab", sans-serif;
   margin-bottom: .5em;
   color: #383a00; }
 
 h2 {
+  font-size: 1.4em;
   text-transform: uppercase; }
 
 h3 {
