@@ -44,37 +44,51 @@ if( get_field('content') != null ){
                     $textColor = $section['text_color'];
 
 					echo '<div class="full-width promo ' . $class . '" id="post-' . $postCount . '">';
-                    if( $sectionTitle != null ){
-                        echo '<h2 class="section-header">' . esc_html( $sectionTitle ) . '</h2>';
-                    }
 
-                    if( $section['arrange_content'] == 'side' ){
-                        echo '<div class="half-width">';
-                    }
 
-                    if( !$noURL ){
-                        echo '<a href="' . esc_url( $linkURL ) . '">';
-                    }
+                    if( $mediaType == 'video' ){
 
-                    echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
-
-                    if( $section['arrange_content'] == 'side' ){
-                       echo '</div><div class="half-width">';
-                    }
-					   echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
-					   if( $title ){ echo '<h2>' . esc_html( $title ) . '</h2>'; }
-					   if( $desc ){ echo '<p>' . esc_html( $desc ) . '</p>'; }
-
-                       if( !$noURL ){
-                            echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . '</a>';
-                       }
-
-                    if( $section['arrange_content'] == 'side' ){
+                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" >';
+                        echo $customVideo;
                         echo '</div>';
+
+                    }else{
+
+                        if( $sectionTitle != null ){
+                            echo '<h2 class="section-header">' . esc_html( $sectionTitle ) . '</h2>';
+                        }
+
+                        if( $section['arrange_content'] == 'side' ){
+                            echo '<div class="half-width">';
+                        }
+
+                        if( !$noURL ){
+                            echo '<a href="' . esc_url( $linkURL ) . '">';
+                        }
+
+                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
+
+                        if( $section['arrange_content'] == 'side' ){
+                           echo '</div><div class="half-width">';
+                        }
+                           echo '<div class="promo-content ' . $textPosition . ' ' . $textColor . '">';
+                           if( $title ){ echo '<h2>' . esc_html( $title ) . '</h2>'; }
+                           if( $desc ){ echo '<p>' . esc_html( $desc ) . '</p>'; }
+
+                           if( !$noURL ){
+                                echo '<a class="button" href="' . esc_url( $linkURL ) . '">' . $linkText . '</a>';
+                           }
+
+                        if( $section['arrange_content'] == 'side' ){
+                            echo '</div>';
+                        }
+
+                        echo '</div><!--.promo-content-->';
+                        echo '</a>';
+
                     }
 
-                    echo '</div><!--.promo-content-->';
-					echo '</a>';
+
 					echo '</div><!--.full-width.promo-->';
                     echo '</div><!--.page-section-->';
                     $postCount++;

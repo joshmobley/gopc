@@ -78,6 +78,9 @@ h4, h5, p, li, a, dd, blockquote{
 	color: $green;
 }
 
+em{ font-style: italic; }
+strong{ font-weight: bold; }
+
 p + p{
     margin-top: 1em;
 }

@@ -23,14 +23,21 @@ if( $automate != true ){
             $customLinkText = $section['custom_link_text'];
             $customLinkURL  = $section['custom_link_url'];
             $customImage    = $section['custom_image'];
+            $customVideo    = $section['custom_video'];
+            $mediaType      = $section['image_or_video'];
             $noURL          = $section['no_link_url'];
 
             if( $customTitle ){ $title = $customTitle; }
             if( $customDesc ){ $desc = $customDesc; }
             if( $customLinkText ){ $linkText = $customLinkText; }
             if( $customLinkURL ){ $linkURL = $customLinkURL; }
-            if( $customImage ){
-                gopc_bgimage( $customImage, '#bg-' . $postCount );
+            if( $mediaType == 'image' ){
+                if( $customImage ){
+                    gopc_bgimage( $customImage, '#bg-' . $postCount );
+                }
+            }else{
+                gopc_videoBg( $customVideo, '#bg-' . $postCount );
+
             }
         }
 
@@ -40,8 +47,14 @@ if( $automate != true ){
         if( $item['custom_description'] ){ $desc = $item['custom_description']; }
         if( $item['custom_link_text'] ){ $linkText = $item['custom_link_text']; }
         if( $item['custom_link_url'] ){ $linkURL = $item['custom_link_url']; }
-        if( $item['custom_image'] ){
-            gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
+        if( $mediaType == 'image' ){
+            if( $item['custom_image'] ){
+                gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
+            }
+        }else{
+            if( $item['custom_video'] ){
+              //  gopc_videoBg( $item)
+            }
         }
     }
 }

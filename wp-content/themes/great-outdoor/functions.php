@@ -387,6 +387,22 @@ add_action( 'init', 'activities_tax_init' );
 
     }
 
+    function gopc_videoBg( $embed, $selector ){
+        //echo $embed;
+        echo '<style>'.
+                $selector . '{' .
+                'position: relative;' .
+                '}' .
+                $selector . ' iframe{' .
+                'position: absolute;' .
+                'top: 0;' .
+                'left: 0; ' .
+                'height: 100%!important;' .
+                'width: 100%!important;' .
+                '}' .
+             '</style>';
+    }
+
 
     /******************************************************************************
     *** vii. WooCommerce Hooks
