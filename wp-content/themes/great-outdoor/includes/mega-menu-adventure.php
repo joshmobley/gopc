@@ -1,24 +1,25 @@
 <div class="mega-menu" id="adventure-mega">
+    <h2 class="is-mobile">What's your Adventure?</h2>
     <h2 class="mega-menu-title">What's your Adventure?</h2>
     <h3 class="mega-menu-subtitle">Gear Tips, Expert Advice, Adventure Stories, Club Connections &amp; more.</h3>
     <div>
-    <div class="mega-menu-column fifth">
+    <div class="mega-menu-column fifth mobile-2-col">
         <a class="activity-icon camp" href="<?php echo get_bloginfo('url'); ?>/activity/camp-hike-act/">Camp/Hike</a>
     </div>
 
-    <div class="mega-menu-column fifth">
+    <div class="mega-menu-column fifth mobile-2-col">
         <a class="activity-icon climb" href="<?php echo get_bloginfo('url'); ?>/activity/climb-act/">Climb</a>
     </div>
 
-    <div class="mega-menu-column fifth">
+    <div class="mega-menu-column fifth mobile-2-col">
         <a class="activity-icon fish" href="<?php echo get_bloginfo('url'); ?>/activity/fish-act/">Fish</a>
     </div>
 
-    <div class="mega-menu-column fifth">
+    <div class="mega-menu-column fifth mobile-2-col">
         <a class="activity-icon paddle" href="<?php echo get_bloginfo('url'); ?>/activity/paddle-act/">Paddle</a>
     </div>
 
-    <div class="mega-menu-column fifth">
+    <div class="mega-menu-column fifth mobile-2-col">
         <a class="activity-icon travel" href="<?php echo get_bloginfo('url'); ?>/activity/travel-act/">Travel</a>
     </div>
 </div>

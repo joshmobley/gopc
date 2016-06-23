@@ -35,12 +35,21 @@
         right: 0;
     }
 
+    .is-mobile{
+        color: $green;
+        text-align: center;
+    }
+
     &.is-static{
         position: static;
         border: none;
         width: 80%;
         margin: 2em auto;
+
+        .mega-menu-title, .mega-menu-subtitle{ display: block; }
     }
+
+    .mega-menu-title, .mega-menu-subtitle{ display: none; }
 
     .mega-menu-subtitle{
         color: $orange;
@@ -70,137 +79,154 @@
                 margin-top: 1em;
             }
         }
+
+        &.mobile-2-col{
+            float: left;
+            width: 45%;
+            margin: 1em 2.5%;
+        }
+
+        &.full{
+            clear: both;
+        }
     }
+}
+
+#locations-mega{
+    text-align: center;
 }
 
 .mega-menu{
 
 
-        .mega-menu-title{
-            text-align: center;
-            font-size: 1.4em;
+    .mega-menu-title{
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .mega-menu-subtitle{
+        text-align: center;
+        margin-bottom: 2em;
+        color: $orange;
+    }
+
+    .mega-menu-column{
+
+        ul{
+            margin-left: 1em;
         }
 
-        .mega-menu-subtitle{
-            text-align: center;
-            margin-bottom: 2em;
-            color: $orange;
+        h4 a, li a{
+            text-decoration: none;
         }
 
-        .mega-menu-column{
-            width: 45%;
-            margin-right: 5%;
-            float: left;
+        li a{
+            font-size: 1.2em;
+        }
 
-            ul{
-                margin-left: 1em;
-            }
+        li{
+            margin: .5em 0;
+        }
 
-            h4 a, li a{
-                text-decoration: none;
-            }
+        h4 a{
+            @include header-font;
+        }
 
-            h4 a{
+        .promo-text{
+            text-align: center;
+            @include header-font;
+        }
+
+        .color-box{
+            width: 100%;
+            display: block;
+            padding: 1em;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-align: center;
+            background: $green;
+
+            h4{
+                color: $white;
                 @include header-font;
+                font-size: 1.2em;
             }
 
-            .promo-text{
-                text-align: center;
-                @include header-font;
+            p{
+                color: $white;
+            }
+        }
+
+        &.full{
+            margin: .5em 1%;
+            width: 98%;
+
+            .color-box{
+                background: $green;
+            }
+        }
+
+        &.fifth{
+
+            &:nth-child(even) .color-box{
+                background: $red;
             }
 
             .color-box{
-                width: 100%;
-                display: block;
-                padding: 1em;
-                box-sizing: border-box;
-                text-decoration: none;
-                text-align: center;
-                background: $green;
-
-                h4{
-                    color: $white;
-                    @include header-font;
-                    font-size: 1.2em;
-                }
-
-                p{
-                    color: $white;
-                }
-            }
-
-
-
-            &.full{
-                margin: .5em 1%;
-                width: 98%;
-
-                .color-box{
-                    background: $green;
-                }
-            }
-
-            &.fifth{
-
-                &:nth-child(even) .color-box{
-                    background: $red;
-                }
-
-                .color-box{
-                    background: $orange;
-                }
-            }
-
-            &.quarter{
-
-                &:nth-child(even) .color-box{
-                    background: $red;
-                }
-            }
-
-            img{
-                width: 100%;
-            }
-
-            ul + .mega-menu-column-title{
-                margin-top: .5em;
+                background: $orange;
             }
         }
 
-        .activity-icon{
-            display: block;
-            background: $lightgreen;
-            background: url('../assets/activity-sprite.png');
-            background-repeat: no-repeat;
-            background-position: center 0;
-            background-size: 61px;
-            text-align: center;
-            padding: 25px 0;
-            text-decoration: none;
-            @include header-font;
-            transition: all .5s;
+        &.quarter{
 
-            &:hover{
-                color: $orange;
+            &:nth-child(even) .color-box{
+                background: $red;
             }
+        }
 
-            &.climb{
-                background-position: center -70px;
-            }
+        img{
+            width: 100%;
+        }
 
-            &.fish{
-                background-position: center -140px;
-            }
-
-            &.paddle{
-                background-position: center -210px;
-            }
-
-            &.travel{
-                background-position: center -280px;
-            }
+        ul + .mega-menu-column-title{
+            margin-top: .5em;
         }
     }
+
+    .activity-icon{
+        display: block;
+        background: $lightgreen;
+        background: url('../assets/activity-sprite.png');
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: 61px;
+        text-align: center;
+        padding: 25px 0;
+        text-decoration: none;
+        @include header-font;
+        transition: all .5s;
+
+        &:hover{
+            color: $orange;
+        }
+
+        &.climb{
+            background-position: center -70px;
+        }
+
+        &.fish{
+            background-position: center -140px;
+        }
+
+        &.paddle{
+            background-position: center -210px;
+        }
+
+        &.travel{
+            background-position: center -280px;
+        }
+    }
+}
 
 header{
 	@include clearfix;
@@ -343,6 +369,8 @@ header{
 
 @media screen and (min-width: 1200px){
 
+    .is-mobile{ display: none; }
+
 	header{
 		background-image: url('../assets/site-footer-bg-1600.jpg');
         padding-bottom: 0;
@@ -419,6 +447,10 @@ header{
 		}
 	}
 
+    #locations-mega{
+        text-align: left;
+    }
+
     .mega-menu{
         position: absolute;
         border: 1px solid #ccc;
@@ -437,6 +469,8 @@ header{
             opacity: 1;
             display: block;
         }
+
+        .mega-menu-title, .mega-menu-subtitle{ display: block; }
 
         .mega-menu-title{
             text-align: center;
@@ -459,6 +493,14 @@ header{
 
             h4 a{
                 @include header-font;
+            }
+
+            li{
+                margin: 0;
+            }
+
+            li a{
+                font-size: 1em;
             }
 
             .promo-text{

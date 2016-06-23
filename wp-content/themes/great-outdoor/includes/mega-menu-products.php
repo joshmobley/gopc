@@ -1,4 +1,5 @@
 <div class="mega-menu" id="products-mega">
+    <h2 class="is-mobile">Products</h2>
     <h2 class="mega-menu-title">A Sampling of our Products</h2>
     <h3 class="mega-menu-subtitle">Product info, staff recommendations, picture and more.</h3>
 

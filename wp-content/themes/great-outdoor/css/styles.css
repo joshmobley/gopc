@@ -996,11 +996,18 @@ p + p {
   transition: all .3s; }
   .mega-menu.is-open {
     right: 0; }
+  .mega-menu .is-mobile {
+    color: #6d6f44;
+    text-align: center; }
   .mega-menu.is-static {
     position: static;
     border: none;
     width: 80%;
     margin: 2em auto; }
+    .mega-menu.is-static .mega-menu-title, .mega-menu.is-static .mega-menu-subtitle {
+      display: block; }
+  .mega-menu .mega-menu-title, .mega-menu .mega-menu-subtitle {
+    display: none; }
   .mega-menu .mega-menu-subtitle {
     color: #d78105;
     margin-bottom: 2em; }
@@ -1016,6 +1023,15 @@ p + p {
       color: #d78105 !important; }
     .mega-menu .mega-menu-column .mega-menu-column-title + .mega-menu-column-title, .mega-menu .mega-menu-column ul + .mega-menu-column-title {
       margin-top: 1em; }
+    .mega-menu .mega-menu-column.mobile-2-col {
+      float: left;
+      width: 45%;
+      margin: 1em 2.5%; }
+    .mega-menu .mega-menu-column.full {
+      clear: both; }
+
+#locations-mega {
+  text-align: center; }
 
 .mega-menu .mega-menu-title {
   text-align: center;
@@ -1026,48 +1042,60 @@ p + p {
   margin-bottom: 2em;
   color: #d78105; }
 
-.mega-menu .mega-menu-column {
-  width: 45%;
-  margin-right: 5%;
-  float: left; }
-  .mega-menu .mega-menu-column ul {
-    margin-left: 1em; }
-  .mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
-    text-decoration: none; }
-  .mega-menu .mega-menu-column h4 a {
-    font-family: "Roboto Slab", sans-serif; }
-  .mega-menu .mega-menu-column .promo-text {
-    text-align: center;
-    font-family: "Roboto Slab", sans-serif; }
-  .mega-menu .mega-menu-column .color-box {
-    width: 100%;
-    display: block;
-    padding: 1em;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-align: center;
+.mega-menu .mega-menu-column ul {
+  margin-left: 1em; }
+
+.mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
+  text-decoration: none; }
+
+.mega-menu .mega-menu-column li a {
+  font-size: 1.2em; }
+
+.mega-menu .mega-menu-column li {
+  margin: .5em 0; }
+
+.mega-menu .mega-menu-column h4 a {
+  font-family: "Roboto Slab", sans-serif; }
+
+.mega-menu .mega-menu-column .promo-text {
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif; }
+
+.mega-menu .mega-menu-column .color-box {
+  width: 100%;
+  display: block;
+  padding: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  background: #6d6f44; }
+  .mega-menu .mega-menu-column .color-box h4 {
+    color: #ffffff;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.2em; }
+  .mega-menu .mega-menu-column .color-box p {
+    color: #ffffff; }
+
+.mega-menu .mega-menu-column.full {
+  margin: .5em 1%;
+  width: 98%; }
+  .mega-menu .mega-menu-column.full .color-box {
     background: #6d6f44; }
-    .mega-menu .mega-menu-column .color-box h4 {
-      color: #ffffff;
-      font-family: "Roboto Slab", sans-serif;
-      font-size: 1.2em; }
-    .mega-menu .mega-menu-column .color-box p {
-      color: #ffffff; }
-  .mega-menu .mega-menu-column.full {
-    margin: .5em 1%;
-    width: 98%; }
-    .mega-menu .mega-menu-column.full .color-box {
-      background: #6d6f44; }
-  .mega-menu .mega-menu-column.fifth:nth-child(even) .color-box {
-    background: #bd0000; }
-  .mega-menu .mega-menu-column.fifth .color-box {
-    background: #d78105; }
-  .mega-menu .mega-menu-column.quarter:nth-child(even) .color-box {
-    background: #bd0000; }
-  .mega-menu .mega-menu-column img {
-    width: 100%; }
-  .mega-menu .mega-menu-column ul + .mega-menu-column-title {
-    margin-top: .5em; }
+
+.mega-menu .mega-menu-column.fifth:nth-child(even) .color-box {
+  background: #bd0000; }
+
+.mega-menu .mega-menu-column.fifth .color-box {
+  background: #d78105; }
+
+.mega-menu .mega-menu-column.quarter:nth-child(even) .color-box {
+  background: #bd0000; }
+
+.mega-menu .mega-menu-column img {
+  width: 100%; }
+
+.mega-menu .mega-menu-column ul + .mega-menu-column-title {
+  margin-top: .5em; }
 
 .mega-menu .activity-icon {
   display: block;
@@ -1197,6 +1225,8 @@ header {
     display: none !important; } }
 
 @media screen and (min-width: 1200px) {
+  .is-mobile {
+    display: none; }
   header {
     background-image: url("../assets/site-footer-bg-1600.jpg");
     padding-bottom: 0; }
@@ -1242,6 +1272,8 @@ header {
             color: #deec9b; }
         header #menu-main-nav > li:last-child a {
           border: none; }
+  #locations-mega {
+    text-align: left; }
   .mega-menu {
     position: absolute;
     border: 1px solid #ccc;
@@ -1258,6 +1290,8 @@ header {
     .mega-menu.is-static, .mega-menu.is-open {
       opacity: 1;
       display: block; }
+    .mega-menu .mega-menu-title, .mega-menu .mega-menu-subtitle {
+      display: block; }
     .mega-menu .mega-menu-title {
       text-align: center;
       font-size: 1.4em; }
@@ -1272,6 +1306,10 @@ header {
         text-decoration: none; }
       .mega-menu .mega-menu-column h4 a {
         font-family: "Roboto Slab", sans-serif; }
+      .mega-menu .mega-menu-column li {
+        margin: 0; }
+      .mega-menu .mega-menu-column li a {
+        font-size: 1em; }
       .mega-menu .mega-menu-column .promo-text {
         text-align: center;
         font-family: "Roboto Slab", sans-serif; }

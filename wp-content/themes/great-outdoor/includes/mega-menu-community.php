@@ -1,4 +1,5 @@
 <div class="mega-menu" id="community-mega">
+    <h2 class="is-mobile">Community</h2>
     <h2 class="mega-menu-title">Great Outdoor Provision Co.</h2>
     <h3 class="mega-menu-subtitle">From Our Humble Beginnings To Now</h3>
 
@@ -14,7 +15,7 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/community/we-support">We Support</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/earth-month">Earth Month</a></li>
-           <li><a href="<?php echo get_bloginfo('url'); ?>/community/mountains-sea-trail">Mountains-to Sea Trail</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/community/mountains-sea-trail">Mountains-to Sea Trail</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/land-trust-day">Land Trust Day</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Coat Swap Day</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/habitat-day">Habitat for Humanity</a></li>

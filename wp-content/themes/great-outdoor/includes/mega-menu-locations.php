@@ -1,4 +1,5 @@
 <div class="mega-menu" id="locations-mega">
+    <h2 class="is-mobile">Locations</h2>
     <h2 class="mega-menu-title">Visit us throughout NC &amp; VA</h2>
     <h3 class="mega-menu-subtitle">What's Happening in Your Local Shop?</h3>
 
