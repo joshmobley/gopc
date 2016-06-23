@@ -1048,7 +1048,7 @@ p + p {
 .mega-menu .mega-menu-column h4 a, .mega-menu .mega-menu-column li a {
   text-decoration: none; }
 
-.mega-menu .mega-menu-column li a {
+.mega-menu .mega-menu-column li a, .mega-menu .mega-menu-column p {
   font-size: 1.2em; }
 
 .mega-menu .mega-menu-column li {
@@ -1308,7 +1308,7 @@ header {
         font-family: "Roboto Slab", sans-serif; }
       .mega-menu .mega-menu-column li {
         margin: 0; }
-      .mega-menu .mega-menu-column li a {
+      .mega-menu .mega-menu-column li a, .mega-menu .mega-menu-column p {
         font-size: 1em; }
       .mega-menu .mega-menu-column .promo-text {
         text-align: center;
