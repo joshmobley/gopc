@@ -356,6 +356,11 @@ p + p {
     .main-content .blog-content ol li {
       list-style: decimal;
       margin: 1em; }
+    .main-content .blog-content .wp-caption-text {
+      margin: 0 .5em;
+      font-style: italic;
+      font-size: .8em;
+      margin: 0 .5em; }
     .main-content .blog-content .wpcolumn {
       font-family: "Roboto Condensed", sans-serif; }
       .main-content .blog-content .wpcolumn.wpcolumn-last {
