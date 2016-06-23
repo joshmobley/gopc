@@ -352,7 +352,10 @@ p + p {
       font-style: italic; }
     .main-content .blog-content ul li {
       list-style: disc;
-      margin: 0 1em; }
+      margin: 1em; }
+    .main-content .blog-content ol li {
+      list-style: decimal;
+      margin: 1em; }
     .main-content .blog-content .wpcolumn {
       font-family: "Roboto Condensed", sans-serif; }
       .main-content .blog-content .wpcolumn.wpcolumn-last {

@@ -340,7 +340,12 @@
 
         ul li{
             list-style: disc;
-            margin: 0 1em;
+            margin: 1em;
+        }
+
+        ol li{
+            list-style: decimal;
+            margin: 1em;
         }
 
         blockquote{
