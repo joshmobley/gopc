@@ -341,7 +341,7 @@ p + p {
         float: left; }
     .main-content .blog-content h3 {
       font-size: 1.4em; }
-    .main-content .blog-content p {
+    .main-content .blog-content p, .main-content .blog-content li, .main-content .blog-content blockquote {
       color: #111111;
       margin: 2em 0;
       font-size: 1.1em;
@@ -350,6 +350,9 @@ p + p {
       font-weight: bold; }
     .main-content .blog-content em, .main-content .blog-content i {
       font-style: italic; }
+    .main-content .blog-content ul li {
+      list-style: disc;
+      margin: 0 1em; }
     .main-content .blog-content .wpcolumn {
       font-family: "Roboto Condensed", sans-serif; }
       .main-content .blog-content .wpcolumn.wpcolumn-last {

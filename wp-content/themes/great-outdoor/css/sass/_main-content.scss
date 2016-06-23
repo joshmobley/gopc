@@ -325,7 +325,7 @@
         h3{
             font-size: 1.4em;
         }
-        p{
+        p, li, blockquote{
             color: $black;
             margin: 2em 0;
             font-size: 1.1em;
@@ -336,6 +336,15 @@
         }
         em, i{
             font-style: italic;
+        }
+
+        ul li{
+            list-style: disc;
+            margin: 0 1em;
+        }
+
+        blockquote{
+
         }
 
         .wpcolumn{
