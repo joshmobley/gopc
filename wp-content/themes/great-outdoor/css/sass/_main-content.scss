@@ -209,6 +209,7 @@
     .wysiwyg{
         text-align: left;
         width: 80%;
+        max-width: 800px;
         margin: 2em auto;
         @include clearfix;
 
@@ -230,9 +231,18 @@
         .wp-caption.aligncenter{
             margin: 2em auto;
         }
+
+        .alignleft{
+            float: left;
+            margin: 1em 1em 1em 0;
+        }
+
+        .alignright{
+            float: right;
+            margin: 1em 0 1em 1em;
+        }
+
     }
-
-
 
 	.adventure-menu{
         margin: 0 auto 2em;

@@ -257,6 +257,7 @@ p + p {
   .main-content .wysiwyg {
     text-align: left;
     width: 80%;
+    max-width: 800px;
     margin: 2em auto;
     zoom: 1; }
     .main-content .wysiwyg:after {
@@ -275,6 +276,12 @@ p + p {
       height: 300px; }
     .main-content .wysiwyg .wp-caption.aligncenter {
       margin: 2em auto; }
+    .main-content .wysiwyg .alignleft {
+      float: left;
+      margin: 1em 1em 1em 0; }
+    .main-content .wysiwyg .alignright {
+      float: right;
+      margin: 1em 0 1em 1em; }
   .main-content .adventure-menu {
     margin: 0 auto 2em;
     width: 80%;
