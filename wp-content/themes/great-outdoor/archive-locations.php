@@ -78,4 +78,5 @@
 
 </div>
 
+<?php include('includes/brand-bar.php'); ?>
 <?php get_footer(); ?>
