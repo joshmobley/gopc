@@ -329,7 +329,7 @@ p + p {
     position: relative;
     margin-top: 2em; }
     .main-content .blog-content img {
-      padding: .5em;
+      padding: .5em 0;
       background: #ffffff;
       max-width: 100%;
       height: auto; }
@@ -357,7 +357,7 @@ p + p {
       list-style: decimal;
       margin: 1em; }
     .main-content .blog-content .wp-caption-text {
-      margin: 0 .5em;
+      margin: 0;
       font-style: italic;
       font-size: .8em;
       margin: 0 .5em; }

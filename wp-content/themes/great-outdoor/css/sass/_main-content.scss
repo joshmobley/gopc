@@ -307,7 +307,7 @@
         margin-top: 2em;
 
         img{
-            padding: .5em;
+            padding: .5em 0;
             background: $white;
             max-width: 100%;
             height: auto;
@@ -349,7 +349,7 @@
         }
 
         .wp-caption-text{
-            margin: 0 .5em;
+            margin: 0;
             font-style: italic;
             font-size: .8em;
             margin: 0 .5em;
