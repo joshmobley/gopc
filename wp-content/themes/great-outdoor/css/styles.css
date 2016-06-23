@@ -1553,7 +1553,8 @@ header {
   .post-filter + .products a:nth-child(2n+1) {
     clear: left; }
   .post-filter + .products a img {
-    height: 180px;
+    height: auto;
+    max-height: 180px;
     width: auto;
     max-width: 100%; }
 
