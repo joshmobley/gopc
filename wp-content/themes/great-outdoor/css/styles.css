@@ -1570,7 +1570,8 @@ header {
   .page-title b {
     background: #383a00;
     padding: .5em 1em;
-    width: auto; }
+    width: auto;
+    font-size: .7em; }
 
 .woocommerce-breadcrumb {
   margin: 1em 5%;
@@ -1620,7 +1621,9 @@ header {
       width: 100%; }
     .related-products li .related-products-content {
       float: none;
-      width: 100%; } }
+      width: 100%; }
+  .page-title b {
+    font-size: 1em; } }
 
 #ai1ec-container {
   width: 80%;

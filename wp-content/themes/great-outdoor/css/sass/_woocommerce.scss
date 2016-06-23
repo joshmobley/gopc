@@ -234,6 +234,7 @@
 		background: $darkgreen;
 		padding: .5em 1em;
 		width: auto;
+        font-size: .7em;
 	}
 }
 
@@ -329,5 +330,9 @@
 		}
 
 	}
+
+    .page-title b{
+        font-size: 1em;
+    }
 
 }
