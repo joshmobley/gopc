@@ -13,8 +13,8 @@
         $locationImage  = get_field('location_image');
         $resourceLinks  = get_field('resource_links');
         $facebook       = get_field('facebook_url');
-        $twitter        = get_field('twitter_username');
-        $instagram      = get_field('instragram_username');
+        $twitter        = 'https://twitter.com/' . get_field('twitter_username');
+        $instagram      = 'https://instagram.com/' . get_field('instragram_username');
         $promoText      = get_field('promo_content');
         $promoImage     = get_field('promo_image');
         $promoURL       = get_field('promo_url');
