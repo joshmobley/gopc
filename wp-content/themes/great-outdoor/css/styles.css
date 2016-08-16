@@ -197,7 +197,7 @@ p + p {
       width: 90%; }
     .main-content .promo .promo-bg-image {
       width: 100%;
-      height: 60vw;
+      padding-top: 66.6667%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
@@ -221,6 +221,8 @@ p + p {
         color: #ffffff; }
       .main-content .promo.full-width .promo-bg-image {
         width: 100%;
+        height: 0;
+        padding-top: 66.67%;
         margin: 0 auto 1em; }
       .main-content .promo.full-width .button {
         color: #ffffff;
@@ -424,8 +426,6 @@ p + p {
       width: 45%;
       margin: 0 2.5% 2em;
       float: left; }
-      .main-content .quarter-width .promo-bg-image {
-        height: 25vw; }
     .main-content .adventure-menu h2 {
       width: 20%;
       float: left;
@@ -456,6 +456,8 @@ p + p {
         .main-content .promo.full-width.page-header .promo-bg-image {
           width: 80%;
           margin: 0 auto;
+          height: 0;
+          padding-top: 53.3334%;
           vertical-align: bottom;
           border-right: 10px solid #ffffff;
           border-left: 10px solid #ffffff;
@@ -511,8 +513,6 @@ p + p {
       width: 48%;
       float: left;
       margin: 0 1%; }
-      .main-content .half-width .promo-bg-image {
-        height: 29vw; }
     .main-content .promo.full-width {
       clear: both;
       background-image: url("../assets/site-footer-bg-1200.jpg");
@@ -529,6 +529,7 @@ p + p {
         .main-content .promo.full-width.page-header .promo-bg-image {
           width: 80%;
           height: 65vh;
+          padding-top: 0;
           margin: 0 auto;
           background-position: center;
           border-right: 10px solid #ffffff;
@@ -539,7 +540,6 @@ p + p {
       width: 23%;
       margin: 0 1% 2em; }
       .main-content .quarter-width .promo-bg-image {
-        height: 15vw;
         background-size: cover;
         border: 1px solid #eee;
         background-position: center; }
