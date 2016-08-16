@@ -72,6 +72,7 @@
         <h4 class="mega-menu-column-title">Featured Brands</h4>
         <ul id="featured-brand-list">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/chaco/">Chaco</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
@@ -81,9 +82,9 @@
     </div>
 
     <div class="mega-menu-column fifth">
-        <a href="http://greatoutdoorprovision.com/2016/04/featured-shop-spring-2016/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/IMG_7483.jpg" />
-            <h4 class="promo-text">Beat the Heat</h4>
+        <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
+            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/04/IMAG38991.jpg" />
+            <h4 class="promo-text">Pack to School</h4>
         </a>
     </div>
 </div>
