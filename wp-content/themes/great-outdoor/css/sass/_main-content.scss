@@ -318,6 +318,8 @@
         position: relative;
         margin-top: 2em;
 
+        .wp-caption{ max-width: 100%; }
+
         img{
             padding: .5em 0;
             background: $white;

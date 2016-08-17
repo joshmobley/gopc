@@ -337,6 +337,8 @@ p + p {
     padding: 2em;
     position: relative;
     margin-top: 2em; }
+    .main-content .blog-content .wp-caption {
+      max-width: 100%; }
     .main-content .blog-content img {
       padding: .5em 0;
       background: #ffffff;
