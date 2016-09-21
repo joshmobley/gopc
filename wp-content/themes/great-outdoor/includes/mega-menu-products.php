@@ -7,18 +7,20 @@
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/mens-clothing/">Men's Clothing</a></h4>
         <ul>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-fleece/">Fleece & Pullovers</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-jackets/">Jackets & Vests</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-outerwear/">Outerwear</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shorts/">Shorts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-swim/">Swim</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-pants/">Pants</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">All Mens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/womens-clothing/">Women's Clothing</a></h4>
         <ul>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-fleece/">Fleece &amp; Pullovers</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-jackets/">Jackets &amp; Vests</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-outerwear/">Outerwear</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-tops/">Tops</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-shorts/">Shorts</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-swim/">Swim</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
@@ -55,6 +57,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/paddle-boards/">Paddleboards</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/paddles/">Paddles</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/pdfs/">PFDs</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/transport-racks/">Transport &amp; Racks</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/">All Paddle</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/travel">Travel</a></h4>
@@ -73,6 +76,7 @@
         <ul id="featured-brand-list">
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/chaco/">Chaco</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/merrell-footwear/">Merrell</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
