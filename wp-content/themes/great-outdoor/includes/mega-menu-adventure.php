@@ -31,28 +31,28 @@
         </a>
     </div>
     <div class="mega-menu-column quarter">
-        <a href="<?php echo get_bloginfo('url'); ?>/category/destinations/" class="color-box">
+        <a href="<?php echo get_bloginfo('url'); ?>/adventure/?_sft_category=destinations" class="color-box">
             <h4>Trip Destinations</h4>
             <p>Local trips, tips &amp; guides.</p>
         </a>
     </div>
 
     <div class="mega-menu-column quarter">
-        <a href="<?php echo get_bloginfo('url'); ?>/category/stories-from-the-field/" class="color-box">
+        <a href="<?php echo get_bloginfo('url'); ?>/adventure/?_sft_category=stories-from-the-field" class="color-box">
             <h4>Stories from the Field</h4>
             <p>From those who were there</p>
         </a>
     </div>
 
     <div class="mega-menu-column quarter">
-        <a href="<?php echo get_bloginfo('url'); ?>/category/experts/" class="color-box">
+        <a href="<?php echo get_bloginfo('url'); ?>/adventure/?_sft_category=experts" class="color-box">
             <h4>Expert Advice</h4>
             <p>Gear, How-to's, Readiness</p>
         </a>
     </div>
 
     <div class="mega-menu-column quarter">
-        <a href="<?php echo get_bloginfo('url'); ?>/category/company-culture/" class="color-box">
+        <a href="<?php echo get_bloginfo('url'); ?>/adventure/?_sft_category=company-culture" class="color-box">
             <h4>Company Culture</h4>
             <p>What we're up to...</p>
         </a>
