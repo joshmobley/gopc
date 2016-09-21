@@ -155,7 +155,7 @@ p + p {
       font-family: "Roboto Condensed", sans-serif; }
   .main-content .archive-view {
     width: 80%;
-    margin: 0 auto; }
+    margin: 2em auto 0; }
     .main-content .archive-view .post-filter {
       background: #eee;
       padding: 2em;

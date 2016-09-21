@@ -35,6 +35,8 @@
         Adventure
     </h2>
 
+    <p class="page-section">Filter stories by category and your favorite adventure or locale.</p>
+
 
 
 <div class="archive-view">
