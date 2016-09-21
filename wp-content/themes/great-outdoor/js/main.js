@@ -140,6 +140,10 @@ $(document).ready(function(){
                 gutter: 20,
             });
 
+            $(window).load(function(){
+                $('.tiled-list').masonry('layout');
+            });
+
         });
     }
 
