@@ -29,13 +29,11 @@
 
     </div>
 
-    <?php else: ?>
+    <?php endif; ?>
 
     <h2 class="section-header is-page-title">
         Adventure
     </h2>
-
-    <?php endif; ?>
 
 
 
