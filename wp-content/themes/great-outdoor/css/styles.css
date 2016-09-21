@@ -178,7 +178,8 @@ p + p {
           font-family: "Roboto Slab", sans-serif; }
     .main-content .archive-view .pagination-link {
       clear: right;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 2em; }
   .main-content .promo {
     width: 80%;
     margin-left: 10%;
