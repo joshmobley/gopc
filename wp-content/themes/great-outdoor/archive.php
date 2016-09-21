@@ -97,14 +97,15 @@ echo do_shortcode( '[searchandfilter id="34148"]' );
         </li>
 <?php endwhile; ?>
 
-        <div class="pagination-link"><?php posts_nav_link(); ?></div>
-
         <?php wp_reset_postdata(); ?>
 
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    </ul>
+  
 <?php endif; ?>
+</ul>
+        <div class="pagination-link"><?php posts_nav_link(); ?></div>
+          
 
 </div><!--.archive-view-->
 

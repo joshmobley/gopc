@@ -177,7 +177,7 @@ p + p {
           color: #d78105;
           font-family: "Roboto Slab", sans-serif; }
     .main-content .archive-view .pagination-link {
-      clear: both;
+      clear: right;
       text-align: center; }
   .main-content .promo {
     width: 80%;
@@ -414,9 +414,11 @@ p + p {
       width: 75%;
       float: right; }
       .main-content .tiled-list .tile {
-        width: 27.5%;
-        margin: 2.5%;
-        float: left; }
+        width: calc(32% - 20px);
+        float: left;
+        border: 1px solid #eee;
+        padding: 2%;
+        box-sizing: border-box; }
         .main-content .tiled-list .tile:nth-child(3n+1) {
           clear: left; }
     .main-content .wysiwyg {

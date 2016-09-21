@@ -124,6 +124,25 @@ $(document).ready(function(){
 
     });
 
+    if( $('.tiled-list').length !== 0 ){
+
+        var base = '';
+        //base = '/greatoutdoor';
+        
+
+
+        $.getScript( base + '/wp-content/themes/great-outdoor/js/masonry-4.1.1.min.js', function(){
+
+            $('.tiled-list').masonry({
+                itemSelector: '.tile',
+                columnWidth: '.tile',
+                percentPosition: true,
+                gutter: 20,
+            });
+
+        });
+    }
+
 
 
 });
