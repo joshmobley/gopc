@@ -1289,7 +1289,8 @@ header {
     height: auto;
     z-index: 9999;
     opacity: 0;
-    display: none; }
+    display: none;
+    overflow: visible; }
     .mega-menu.is-static, .mega-menu.is-open {
       opacity: 1;
       display: block; }
@@ -1540,7 +1541,8 @@ header {
     .post-filter .responsive-column {
       float: none;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      overflow: visible; }
     .post-filter .responsive-column + .responsive-column {
       margin-top: 1em; } }
 

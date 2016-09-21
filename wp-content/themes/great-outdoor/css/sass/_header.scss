@@ -464,6 +464,7 @@ header{
         z-index: 9999;
         opacity: 0;
         display: none;
+        overflow: visible;
 
         &.is-static, &.is-open{
             opacity: 1;
