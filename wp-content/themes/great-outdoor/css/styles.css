@@ -1399,7 +1399,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 4em 5%;
+  padding: 4em 5vw;
   margin-top: 4em;
   clear: both; }
   .site-footer p {
@@ -1411,6 +1411,8 @@ header {
 
 @media screen and (min-width: 800px) {
   .site-footer {
+    padding-left: 10vw;
+    padding-right: 10vw;
     background-image: url("../assets/site-footer-bg-1200.jpg"); } }
 
 @media screen and (min-width: 1200px) {
