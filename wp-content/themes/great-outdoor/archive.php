@@ -110,4 +110,5 @@ echo do_shortcode( '[searchandfilter id="34148"]' );
 
 
 </section><!--.main-content-->
+<?php include('includes/brand-bar.php'); ?>
 <?php get_footer(); ?>
