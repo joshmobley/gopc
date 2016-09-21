@@ -91,8 +91,8 @@ echo do_shortcode( '[searchandfilter id="34148"]' );
             <a href="<?php esc_url( the_permalink() ); ?>"><?php echo $postImage; ?></a>
             <a href="<?php esc_url( the_permalink() ); ?>"><h3><?php esc_html( the_title() ); ?></h3></a>
             <?php
-                $body = get_the_excerpt();
-                echo esc_html(substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
+               // $body = get_the_excerpt();
+                //echo esc_html(substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
             ?>
         </li>
 <?php endwhile; ?>
