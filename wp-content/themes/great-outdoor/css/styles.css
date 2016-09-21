@@ -58,6 +58,9 @@ table {
 .no-margin-top {
   margin-top: 0 !important; }
 
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
 .button {
   border: 2px solid #d78105;
   padding: .25em .5em;

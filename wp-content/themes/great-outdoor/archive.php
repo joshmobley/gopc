@@ -19,7 +19,7 @@
             @media screen and (min-width: 1200px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-1600x1067.jpg);}}
         </style>
 
-        <div class="full-width promo no-margin-top page-header bg-image" id="post-0">
+        <div class="full-width promo no-margin-top no-margin-bottom page-header bg-image" id="post-0">
             <div id="bg-0" class="promo-bg-image"></div>
             <div class="promo-content bottom-right light">
                 <h2>Everybody's Got a Story.</h2>
