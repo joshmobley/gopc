@@ -49,17 +49,16 @@ if( $automate != true ){
         if( $item['custom_description'] ){ $desc = $item['custom_description']; }
         if( $item['custom_link_text'] ){ $linkText = $item['custom_link_text']; }
         if( $item['custom_link_url'] ){ $linkURL = $item['custom_link_url']; }
-        if( $mediaType == 'image' ){
-            gopc_bgimageID( $imageID, '#bg-' . $postCount );
+        gopc_bgimageID( $imageID, '#bg-' . $postCount );
 
-            if( $item['custom_image'] ){
-                gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
-            }
-        }else{
+        if( $item['custom_image'] ){
+            gopc_bgimage( $item['custom_image'], '#bg-' . $postCount );
+        }
+        /*}else{
             if( $item['custom_video'] ){
                 gopc_videoBg( $item['custom_video'], '#bg-' . $postCount );
             }
-        }
+        }*/
     }else{
         $mediaType = '';
         gopc_bgimageID( $imageID, '#bg-' . $postCount );
