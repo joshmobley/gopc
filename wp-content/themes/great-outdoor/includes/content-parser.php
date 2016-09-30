@@ -106,13 +106,25 @@ if( get_field('content') != null ){
 
 						$bgcolor = 'bg-' . $item['text_background_color'];
 						echo '<div class="half-width promo" id="post-' . $postCount . '">';
-						echo '<a href="' . esc_url( $linkURL ) . '">';
-                        echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
+                        
+                        if( $mediaType == 'video' ){
+                            if( $item['customize_content'] ){
+                                echo '<div id="bg-' . $postCount . '" class="promo-bg-image" >';
+                                echo $customVideo;
+                                echo '</div>';
+                            }
+
+                        }else{
+						    echo '<a href="' . esc_url( $linkURL ) . '">';
+                            echo '<div id="bg-' . $postCount . '" class="promo-bg-image" ></div>';
+                        }
 						echo '<div class="promo-content ' . $bgcolor . '">';
-						echo '<h3>' . esc_html( $title ) . '</h3>';
+					    echo '<h3>' . esc_html( $title ) . '</h3>';
 						echo '<p>' . esc_html( $desc ) . '</p>';
 						echo '</div><!--.promo-content-->';
-						echo '</a>';
+						if( $mediaType == 'image' ){
+                            echo '</a>';
+                        } 
 						echo '</div><!--.half-width.promo-->';
                         $postCount++;
 					}
