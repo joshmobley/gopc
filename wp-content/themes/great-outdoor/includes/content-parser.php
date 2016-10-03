@@ -122,7 +122,7 @@ if( get_field('content') != null ){
 					    echo '<h3>' . esc_html( $title ) . '</h3>';
 						echo '<p>' . esc_html( $desc ) . '</p>';
 						echo '</div><!--.promo-content-->';
-						if( $mediaType == 'image' ){
+						if( $mediaType != 'video' ){
                             echo '</a>';
                         } 
 						echo '</div><!--.half-width.promo-->';

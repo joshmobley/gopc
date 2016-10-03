@@ -63,7 +63,11 @@ if( $automate != true ){
         $mediaType = '';
         gopc_bgimageID( $imageID, '#bg-' . $postCount );
     }
+}else{
+   // gopc_bgimageID( $imageID, '#bg-' . $postCount );
 }
+
+// TODO -- TEST WHEN THERE IS NO MEDIA TYPE
 
 
 

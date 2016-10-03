@@ -5,6 +5,7 @@
     <?php
 
         $headerImg      = get_field('header_image');
+        $shoppingCenter = get_field('shopping_center');
         $address        = get_field('address');
         $phone          = get_field('phone_number');
         $hours          = get_field('hours');
@@ -28,7 +29,12 @@
 
         <div class="location-details">
             <h3>Address &amp; Hours</h3>
-            <p class="address"><?php echo $address; ?></p>
+            <p class="address">
+                <a target="_blank" href="https://maps.google.com/?q=<?php echo $address; ?>">
+                <?php echo $shoppingCenter; ?><br/>
+                <?php echo $address; ?>
+                </a>
+            </p>
             <p class="phone"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
             <p class="hours"><?php echo $hours; ?></p>
         </div><!--.promo-content-->
