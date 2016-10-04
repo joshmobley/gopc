@@ -1656,10 +1656,15 @@ header {
     font-size: 1em !important;
     margin-bottom: 1em;
     text-transform: uppercase; }
-  .location-details .address a {
-    transition: all .3s; }
-    .location-details .address a:hover {
-      color: #d78105; }
+  .location-details .address {
+    background: url("../assets/map-pin.png") no-repeat 0 50%;
+    background-size: 20px;
+    padding-left: 2em;
+    margin-left: -2em; }
+    .location-details .address a {
+      transition: all .3s; }
+      .location-details .address a:hover {
+        color: #d78105; }
 
 .location-events #ai1ec-container {
   width: 100%;
@@ -1699,12 +1704,7 @@ header {
     bottom: 0;
     right: 10%;
     width: 30%;
-    padding: 3em 2em 3em 3em; }
-    .location-details .address {
-      background: url("../assets/map-pin.png") no-repeat 0 50%;
-      background-size: 20px;
-      padding-left: 2em;
-      margin-left: -2em; } }
+    padding: 3em 2em 3em 3em; } }
 
 @media screen and (min-width: 1024px) {
   .location-details {

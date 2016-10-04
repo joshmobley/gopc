@@ -13,7 +13,12 @@
         text-transform: uppercase;
     }
 
-    .address{ 
+    .address{
+        background: url('../assets/map-pin.png') no-repeat 0 50%;
+        background-size: 20px;
+        padding-left: 2em;
+        margin-left: -2em;
+        
         
 
         a{
@@ -83,13 +88,6 @@
         right: 10%;
         width: 30%;
         padding: 3em 2em 3em 3em;
-
-        .address{
-            background: url('../assets/map-pin.png') no-repeat 0 50%;
-            background-size: 20px;
-            padding-left: 2em;
-            margin-left: -2em;
-        }
     }
 
 }
