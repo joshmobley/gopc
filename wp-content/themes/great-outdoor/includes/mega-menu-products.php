@@ -77,6 +77,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/chaco/">Chaco</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/merrell-footwear/">Merrell</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/the-north-face/">The North Face</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
