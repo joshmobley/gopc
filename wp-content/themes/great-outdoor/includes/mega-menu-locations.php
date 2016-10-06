@@ -9,6 +9,8 @@
 
         $locationsArgs = array(
             'post_type' => 'locations',
+            'orderby' => 'title',
+            'order' => 'asc',
         );
 
         $locations = new WP_Query( $locationsArgs );
