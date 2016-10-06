@@ -66,6 +66,35 @@ get_header( 'shop' );?>
 
 				<?php include( 'includes/category-headers.php'); ?>
 
+				<?php
+					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+					
+					function get_term_top_most_parent($term_id, $taxonomy){
+					    // start from the current term
+					    $parent  = get_term_by( 'id', $term_id, $taxonomy);
+					    // climb up the hierarchy until we reach a term with parent = '0'
+					    while ($parent->parent != '0'){
+					        $term_id = $parent->parent;
+						
+					        $parent  = get_term_by( 'id', $term_id, $taxonomy);
+					    }
+					    return $parent;
+					}
+
+
+					$slug = get_term_top_most_parent( $term->term_id, 'product_cat')->slug;
+					$sidebar_id = 'promo-' . $slug;
+					$total_widgets = wp_get_sidebars_widgets();
+        			$sidebar_widgets = count($total_widgets[$sidebar_id]);
+					//print_r($sidebar_widgets);
+					//dynamic_sidebar( 'product-mens-2' ); 
+				?>
+
+				<div class="promos count-<?php echo $sidebar_widgets; ?>">
+
+					<?php dynamic_sidebar( $sidebar_id ); ?>
+				</div>
+
 				<div class="products-inner">
 
 				<?php while ( have_posts() ) : the_post(); ?>

@@ -147,6 +147,63 @@ $(document).ready(function(){
         });
     }
 
+    function debounce(func, wait, immediate) {
+    	var timeout;
+    	return function() {
+    		var context = this, args = arguments;
+    		var later = function() {
+    			timeout = null;
+    			if (!immediate) func.apply(context, args);
+    		};
+    		var callNow = immediate && !timeout;
+    		clearTimeout(timeout);
+    		timeout = setTimeout(later, wait);
+    		if (callNow) func.apply(context, args);
+    	};
+    }
+
+    function equalizeHeights( selector ){
+        console.log('working');
+
+        function setHeight(){
+
+            var maxHeight = '';
+            var thisHeight = '';
+
+            $(selector).css('height', '');
+
+            $(selector).each(function(){
+
+                thisHeight = $(this).outerHeight();
+
+                if( thisHeight > maxHeight ){
+                    maxHeight = thisHeight;
+                }
+
+            });
+
+            $(selector).css('height', maxHeight);
+
+        }
+
+        setHeight();
+
+        $( window ).on('resize', function(e){
+            (function(){
+                debounce( setHeight() );
+            })();
+        });
+
+    }
+
+    if( $('.products .promos.count-2 div').length !== 0 ){
+        equalizeHeights('.products .promos > div');
+    }
+
+    if( $('.half-width.promo .promo-content').length !== 0 ){
+        equalizeHeights('.half-width.promo .promo-content');
+    }
+
 
 
 });

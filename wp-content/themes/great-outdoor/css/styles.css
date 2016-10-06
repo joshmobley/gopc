@@ -560,6 +560,61 @@ p + p {
     .main-content .promo.full-width {
       background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
+.products .page-title {
+  margin-bottom: 1em; }
+
+.products .promos > div {
+  background: #bd0000;
+  color: #ffffff;
+  margin: 0 2em 2em;
+  clear: both;
+  width: 85%;
+  box-sizing: border-box;
+  padding: 1em;
+  text-align: center; }
+  .products .promos > div h2 {
+    color: #ffffff; }
+  .products .promos > div .textwidget p {
+    color: #ffffff; }
+    .products .promos > div .textwidget p:last-child {
+      margin: 0; }
+  .products .promos > div .textwidget * {
+    float: none;
+    padding: 0;
+    width: auto;
+    text-align: center; }
+  .products .promos > div .textwidget a {
+    padding: .5em 1.5em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    background: #d78105;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none; }
+    .products .promos > div .textwidget a:hover {
+      background: #f09006; }
+
+.products .promos.count-2 > div:nth-child(2) {
+  background: #d78105; }
+  .products .promos.count-2 > div:nth-child(2) .textwidget a {
+    background: #bd0000; }
+    .products .promos.count-2 > div:nth-child(2) .textwidget a:hover {
+      background: #d70000; }
+
+@media screen and (min-width: 800px) {
+  .products .promos > div {
+    width: 95%; }
+  .products .promos.count-2 > div {
+    width: 45%;
+    float: left;
+    clear: none;
+    text-align: left;
+    margin: 0 2.5% 2em; }
+    .products .promos.count-2 > div .textwidget * {
+      text-align: left; }
+    .products .promos.count-2 > div + div {
+      margin-left: 0; } }
+
 .product-page {
   margin: 2em 5%; }
   .product-page .product-list li {
