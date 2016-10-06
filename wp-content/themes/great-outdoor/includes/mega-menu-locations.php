@@ -23,6 +23,7 @@
 
                 $address = get_field('address');
                 $center  = get_field('shopping_center');
+                $phone   = get_field('phone_number');
                  
                 echo '<div class="mega-menu-column fifth">' .
                         '<h4 class="mega-menu-column-title">' .
@@ -31,10 +32,10 @@
                             '</a>' .
                         '</h4>' .
                         '<p>' . $center . '<br/>' .
-                            $address . '</a>' .
+                             $address . ' (<a href="https://www.google.com/maps?q=' . $address . '">map</a>)<br/>' .
+                            '<a href="tel:' . $phone . '">' . $phone . '</a>' .
                         '</p>' .
                     '</div>';
-
             }
 
         }else{
