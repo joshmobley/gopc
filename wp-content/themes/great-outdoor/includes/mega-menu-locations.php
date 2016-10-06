@@ -32,7 +32,7 @@
                             '</a>' .
                         '</h4>' .
                         '<p>' . $center . '<br/>' .
-                             $address . ' (<a href="https://www.google.com/maps?q=' . $address . '">map</a>)<br/>' .
+                             $address . ' (<a target="_blank" href="https://www.google.com/maps?q=' . $address . '">map</a>)<br/>' .
                             '<a href="tel:' . $phone . '">' . $phone . '</a>' .
                         '</p>' .
                     '</div>';
