@@ -196,7 +196,7 @@ $(document).ready(function(){
 
     }
 
-    if( $('.products .promos.count-2 div').length !== 0 ){
+    if( $('.products .promos > div').length !== 0 ){
         equalizeHeights('.products .promos > div');
     }
 
