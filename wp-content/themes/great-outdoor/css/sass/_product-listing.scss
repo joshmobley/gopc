@@ -16,8 +16,6 @@
 			padding: 1em;
 			text-align: center;
 
-
-
 			&:nth-child(n+3){
 				display: none;
 			}
@@ -110,6 +108,11 @@
 
 			> div{
 				width: 95%;
+				text-align: center;
+
+				.textwidget *{
+					text-align: center;
+				}
 			}
 		}
 	}

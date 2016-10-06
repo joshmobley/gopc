@@ -615,7 +615,10 @@ p + p {
     .products .promos > div + div {
       margin-left: 0; }
   .products .promos.count-1 > div {
-    width: 95%; } }
+    width: 95%;
+    text-align: center; }
+    .products .promos.count-1 > div .textwidget * {
+      text-align: center; } }
 
 .product-page {
   margin: 2em 5%; }
