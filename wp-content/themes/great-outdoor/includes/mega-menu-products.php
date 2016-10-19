@@ -62,12 +62,10 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/travel">Travel</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/pets/">Pets</a></h4>
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/">Outdoor Fun</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/">Tech &amp; Toys</a></h4>
         <ul>
-            <li><a href="#">Disc Golf</a></li>
-            <li><a href="#">Kites</a></li>
-            <li><a href="#">Outdoor Toys</a></li>
-            <li><a href="#">High Tech Gadgets</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/games-discs-kites/">Games, Discs, &amp; Kites</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/high-tech-gadgets/">High Tech Gadgets</a></li>
         </ul>
     </div>
 
