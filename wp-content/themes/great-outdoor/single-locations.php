@@ -28,7 +28,7 @@
         <div id="header-bg" class="promo-bg-image"></div>
 
         <div class="location-details">
-            <h3>Address &amp; Hours</h3>
+            <h3><?php echo esc_html( get_the_title() ); ?></br>Address &amp; Hours</h3>
             <p class="address">
                 <a target="_blank" href="https://maps.google.com/?q=<?php echo $address; ?>">
                 <?php echo $shoppingCenter; ?><br/>
