@@ -40,8 +40,8 @@
 
     <div class="mega-menu-column fifth">
         <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/IMG_8165-400x300.jpg" />
-            <h4 class="promo-text">Embrace the Duck</h4>
+            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
+            <h4 class="promo-text">Gotcha Covered</h4>
         </a>
     </div>
 

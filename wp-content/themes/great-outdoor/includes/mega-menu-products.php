@@ -24,7 +24,11 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
-
+	 <ul>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/hats/">Hats</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/sunglasses/">Sunglasses</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">All Accessories</a></li>
+	</ul>
     </div>
 
     <div class="mega-menu-column fifth">
@@ -47,6 +51,11 @@
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/climb/">Climb</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/fish/">Fish</a></h4>
+	 <ul>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/fish/rods-reels-nets/">Rods &amp; Reels</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/fish/waders-boots/">Waders &amp; Boots</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/fish/">All Fish</a></li>
+	</ul>
     </div>
 
     <div class="mega-menu-column fifth">
@@ -61,6 +70,9 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/paddle/">All Paddle</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/travel">Travel</a></h4>
+ 	<ul>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/travel/">Bags &amp; Racks</a></li>
+	</ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/pets/">Pets</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/">Tech &amp; Toys</a></h4>
         <ul>
@@ -86,8 +98,8 @@
 
     <div class="mega-menu-column fifth">
         <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/IMG_8165-400x300.jpg" />
-            <h4 class="promo-text">Embrace the Duck</h4>
+            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
+            <h4 class="promo-text">Gotcha Covered</h4>
         </a>
     </div>
 </div>
