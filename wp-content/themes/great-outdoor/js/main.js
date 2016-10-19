@@ -196,7 +196,7 @@ $(document).ready(function(){
     }
 
     function productMenuRedirect(){
-        $('.post-filter .responsive-column .cat-item a').each( function(){
+        $('.post-filter .responsive-column > ul > .cat-item a').each( function(){
             var href = $(this).attr('href');
             var newHref = href.replace('/product-category/', '/products/');
             $(this).attr('href', newHref);

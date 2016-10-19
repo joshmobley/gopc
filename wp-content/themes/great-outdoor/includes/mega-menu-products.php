@@ -64,8 +64,8 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/pets/">Pets</a></h4>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/">Tech &amp; Toys</a></h4>
         <ul>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/games-discs-kites/">Games, Discs, &amp; Kites</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/products/outdoor-fun/high-tech-gadgets/">High Tech Gadgets</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/outdoor-fun/games-discs-kites/">Games, Discs, &amp; Kites</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/outdoor-fun/high-tech-gadgets/">High Tech Gadgets</a></li>
         </ul>
     </div>
 
