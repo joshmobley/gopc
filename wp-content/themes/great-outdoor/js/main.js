@@ -163,7 +163,6 @@ $(document).ready(function(){
     }
 
     function equalizeHeights( selector ){
-        console.log('working');
 
         function setHeight(){
 
@@ -196,12 +195,25 @@ $(document).ready(function(){
 
     }
 
+    function productMenuRedirect(){
+        $('.post-filter .responsive-column .cat-item a').each( function(){
+            var href = $(this).attr('href');
+            var newHref = href.replace('/product-category/', '/products/');
+        });
+    }
+
     if( $('.products .promos > div').length !== 0 ){
         equalizeHeights('.products .promos > div');
     }
 
     if( $('.half-width.promo .promo-content').length !== 0 ){
         equalizeHeights('.half-width.promo .promo-content');
+    }
+
+    equalizeHeights('.color-box');
+
+    if( $('.post-filter').length !== 0 ){
+        productMenuRedirect();
     }
 
 

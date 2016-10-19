@@ -29,7 +29,7 @@
     if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 
     function enqueue_scripts() {
-        wp_register_script('main-script', get_template_directory_uri() . "/js/main.min.js?10.6.2016a", null, true);
+        wp_register_script('main-script', get_template_directory_uri() . "/js/main.min.js?10.6.2016b", null, true);
         wp_enqueue_script('main-script');
     }
 
