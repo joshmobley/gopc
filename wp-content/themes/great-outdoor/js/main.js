@@ -203,6 +203,10 @@ $(document).ready(function(){
         });
     }
 
+    function addBrands(name, url){
+        $('.post-filter .pa_brands ul').append('<li class="cat-item"><a href="' + url + '">' + name + '</a></li>');
+    }
+
     if( $('.products .promos > div').length !== 0 ){
         equalizeHeights('.products .promos > div');
     }
@@ -215,6 +219,7 @@ $(document).ready(function(){
 
     if( $('.post-filter').length !== 0 ){
         productMenuRedirect();
+        addBrands( 'Confluence', 'http://greatoutdoorprovision.com/pa_brands/confluence/' );
     }
 
 

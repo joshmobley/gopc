@@ -17,7 +17,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/earth-month">Earth Month</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/mountains-sea-trail">Mountains-to Sea Trail</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/land-trust-day">Land Trust Day</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Coat Swap Day</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Gift of Warmth Coat Drive</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/habitat-day">Habitat for Humanity</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/scouts">Local Boy and Girl Scouts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/trustys-trailblazers">Trusty’s Trailblazers</a></li>

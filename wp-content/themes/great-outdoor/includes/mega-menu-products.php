@@ -23,7 +23,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/">Accessories</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/accessories/">Accessories</a></h4>
 	 <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/hats/">Hats</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/accessories/sunglasses/">Sunglasses</a></li>
@@ -40,7 +40,7 @@
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/footwear/">All Footwear</a></li>
         </ul>
 
-        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/camp-hike/">Camp &amp; Hike Gear</a></h4>
+        <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/camp-hike/">Camp &amp; Hike</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/tents/">Tents</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/camp-hike/packs/">Packs</a></li>
