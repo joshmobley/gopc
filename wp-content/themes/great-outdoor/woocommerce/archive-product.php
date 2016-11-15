@@ -111,6 +111,31 @@ get_header( 'shop' );?>
 
 					?>
 					<h4 class="product-name"><?php esc_html(the_title()); ?></h4>
+						
+					<?php
+            		// DISPLAYING PRICING INFO IF AVAILABLE 
+				
+            		if( $product->get_regular_price() ){
+            		    echo '<p>';
+					
+            		    if( $product->is_on_sale() ){
+            		    	echo '<strike>';
+            		    }
+					
+            		    echo wc_price($product->get_regular_price()); 
+					
+		    		    if( $product->is_on_sale() ){
+						
+		    		        echo '</strike><br/>';
+            		        echo '<span class="sale-price">';
+            		        echo wc_price($product->get_sale_price());
+            		        echo '</span>';
+		    		    }
+					
+            		    echo '</p>';
+					
+            		}
+        		?>
 				</li>
 				</a>
 

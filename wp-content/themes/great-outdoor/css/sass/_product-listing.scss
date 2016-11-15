@@ -1,5 +1,15 @@
 .products{
 
+	.amount{
+		text-decoration: none;
+		display: inline-block;
+	}
+
+
+	.sale-price{
+		color: $red;
+	}
+
 	.page-title{
 		margin-bottom: 1em;
 	}
