@@ -1,17 +1,21 @@
 .products{
 
-	.amount{
-		text-decoration: none;
-		display: inline-block;
-	}
-
-
 	.sale-price{
 		color: $red;
 	}
 
 	.page-title{
 		margin-bottom: 1em;
+	}
+
+	.products-inner > a{
+		text-decoration: none;
+
+		&:hover{
+			.product-name{
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.promos{

@@ -560,15 +560,16 @@ p + p {
     .main-content .promo.full-width {
       background-image: url("../assets/site-footer-bg-1600.jpg"); } }
 
-.products .amount {
-  text-decoration: none;
-  display: inline-block; }
-
 .products .sale-price {
   color: #bd0000; }
 
 .products .page-title {
   margin-bottom: 1em; }
+
+.products .products-inner > a {
+  text-decoration: none; }
+  .products .products-inner > a:hover .product-name {
+    text-decoration: underline; }
 
 .products .promos > div {
   background: #bd0000;
