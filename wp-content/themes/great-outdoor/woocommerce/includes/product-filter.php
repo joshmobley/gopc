@@ -11,10 +11,58 @@
         'hierarchical' => true,
         'title_li' => '',
     )); ?>
+        <?php //wp_nav_menu('mens-nav'); ?>
         </ul>
 
         <ul>
-    <?php wp_list_categories( array(
+
+    <?php //get_relevant_brands(); ?>
+
+    <?php
+
+        $terms = array();
+
+        if( have_posts() ){ 
+            while( have_posts() ){ 
+                the_post();
+                $getTerms = get_the_terms( $post, 'product_cat');
+                foreach( $getTerms as $term){
+                   array_push( $terms, $term->term_id);
+                }
+                $getBrands = get_the_terms( $post, 'pa_brands');
+                foreach( $getBrands as $brand ){
+                    $termID = $brand->term_id;
+                    $termCount = get_term( $termID, 'pa_brands' )->count;
+                    $brands[$termID] = $termCount;
+                }
+            }
+        }
+
+      //  print_r($terms);
+       // print_r($brands);
+        arsort($brands);
+
+        //print_r($brands);
+        echo '<li class="pa_brands">';
+        echo 'Brands';
+        echo '<ul>';
+        foreach( $brands as $brandID => $brandCount ){
+            //print_r($brandID);
+            $termObj = get_term( $brandID, 'pa_brands' );
+            $brandName = $termObj->name;
+            $brandSlug = $termObj->slug;
+            echo '<li><a href="' . get_bloginfo("url") . '/?taxonomy=pa_brands&term=' . $brandSlug . '">' . $brandName . '</a></li>';
+           // print_r( get_term( $brandID, 'pa_brands' ) );
+        }
+        echo '</ul></li>';
+
+
+        
+
+    ?>
+
+
+    <?php /*wp_list_categories( array(
         'taxonomy' => 'pa_brands',
         'depth' => 1,
         'hierarchical' => false,
@@ -22,7 +70,7 @@
         'order' => 'desc',
         'number' => 10,
         'title_li' => 'Brands',
-        )); ?>
+        ));*/ ?>
 
         <a href="#" class="do-filter-close is-mobile button">Close</a>
     </div>
