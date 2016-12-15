@@ -96,10 +96,10 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/gift-card/gift-card/">Gift Cards</a></h4>
     </div>
 
-    <div class="mega-menu-column fifth">
+     <div class="mega-menu-column fifth">
         <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
-            <h4 class="promo-text">Gotcha Covered</h4>
+            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/04/IMG_8376.jpg" />
+            <h4 class="promo-text">'Tis the Adventure Gift Season</h4>
         </a>
     </div>
 </div>
