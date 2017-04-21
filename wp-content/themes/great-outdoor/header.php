@@ -21,6 +21,9 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M3D3LZ');</script>
         <!-- End Google Tag Manager -->
+        <!-- N&O Retargeting Pixel -->
+        <script async src="https://i.simpli.fi/dpx.js?cid=89853&action=100&segment=ralgreatoutdoorsiteretargeting&m=1&sifi_tuid=51878"></script>
+        <!-- End Retargeting Pixel -->
     </head>
 
     <?php
