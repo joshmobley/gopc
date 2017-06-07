@@ -29,7 +29,7 @@
     if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 
     function enqueue_scripts() {
-        wp_register_script('main-script', get_template_directory_uri() . "/js/main.min.js?5.18.2016", null, true);
+        wp_register_script('main-script', get_template_directory_uri() . "/js/main.min.js?10.22.2016", null, true);
         wp_enqueue_script('main-script');
     }
 
@@ -180,6 +180,18 @@
         register_nav_menu('adventure-nav',__( 'Adventure Menu' ));
         register_nav_menu('locations-nav',__( 'Locations Menu' ));
         register_nav_menu('community-nav',__( 'Community Menu' ));
+       /* register_nav_menu('mens-nav',__( 'Product - Mens Clothing' ));
+        register_nav_menu('womens-nav',__( 'Product - Womens Clothing' ));
+        register_nav_menu('kids-nav',__( 'Product - Kids Clothing' ));
+        register_nav_menu('accessories-nav',__( 'Product - Accessories' ));
+        register_nav_menu('footwear-nav',__( 'Product - Footwear' ));
+        register_nav_menu('camp-nav',__( 'Product - Camp &amp; Hike' ));
+        register_nav_menu('climb-nav',__( 'Product - Climb' ));
+        register_nav_menu('fish-nav',__( 'Product - Fish' ));
+        register_nav_menu('paddle-nav',__( 'Product - Paddle' ));
+        register_nav_menu('travel-nav',__( 'Product - Travel' ));
+        register_nav_menu('pets-nav',__( 'Product - Pets' ));
+        register_nav_menu('outdoor-nav',__( 'Product - Outdoor Fun' ));*/
     }
     add_action( 'init', 'register_menus' );
 
@@ -205,7 +217,125 @@
             'after_widget'  => '</div>',
             'before_title'  => '<h2>',
             'after_title'   => '</h2>',
-        ) );
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Mens Promo',
+            'id'            => 'promo-mens-clothing',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Womens Promo',
+            'id'            => 'promo-womens-clothing',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Kids Promo',
+            'id'            => 'promo-kids-clothing',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Accessories Promo',
+            'id'            => 'promo-accessories',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Footwear Promo',
+            'id'            => 'promo-footwear',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Camp & Hike Promo',
+            'id'            => 'promo-camp-hike',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Climb Promo',
+            'id'            => 'promo-climb',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Fish Promo',
+            'id'            => 'promo-fish',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Paddle Promo',
+            'id'            => 'promo-paddle',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Travel Promo',
+            'id'            => 'promo-travel',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Pets Promo',
+            'id'            => 'promo-pets',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+        register_sidebar( array(
+            'name'          => 'Outdoor Fun Promo',
+            'id'            => 'promo-outdoor-fun',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
+
+
+        register_sidebar( array(
+            'name'          => 'Gift Cards Promo',
+            'id'            => 'promo-gift-card',
+            'before_widget' => '<div>',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        ));
 
     }
     add_action( 'widgets_init', 'product_filter_init' );
@@ -385,6 +515,22 @@ add_action( 'init', 'activities_tax_init' );
         echo '<img src="' . esc_url( $smallImage ) . '" alt="">';
         echo '</picture>';
 
+    }
+
+    function gopc_videoBg( $embed, $selector ){
+        //echo $embed;
+        echo '<style>'.
+                $selector . '{' .
+                'position: relative;' .
+                '}' .
+                $selector . ' iframe{' .
+                'position: absolute;' .
+                'top: 0;' .
+                'left: 0; ' .
+                'height: 100%!important;' .
+                'width: 100%!important;' .
+                '}' .
+             '</style>';
     }
 
 

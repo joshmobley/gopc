@@ -5,6 +5,7 @@
     <?php
 
         $headerImg      = get_field('header_image');
+        $shoppingCenter = get_field('shopping_center');
         $address        = get_field('address');
         $phone          = get_field('phone_number');
         $hours          = get_field('hours');
@@ -13,8 +14,8 @@
         $locationImage  = get_field('location_image');
         $resourceLinks  = get_field('resource_links');
         $facebook       = get_field('facebook_url');
-        $twitter        = get_field('twitter_usrname');
-        $instagram      = get_field('instagram_username');
+        $twitter        = 'https://twitter.com/' . get_field('twitter_username');
+        $instagram      = 'https://instagram.com/' . get_field('instragram_username');
         $promoText      = get_field('promo_content');
         $promoImage     = get_field('promo_image');
         $promoURL       = get_field('promo_url');
@@ -27,8 +28,13 @@
         <div id="header-bg" class="promo-bg-image"></div>
 
         <div class="location-details">
-            <h3>Address &amp; Hours</h3>
-            <p class="address"><?php echo $address; ?></p>
+            <h3><?php echo esc_html( get_the_title() ); ?></br>Address &amp; Hours</h3>
+            <p class="address">
+                <a target="_blank" href="https://maps.google.com/?q=<?php echo $address; ?>">
+                <?php echo $shoppingCenter; ?><br/>
+                <?php echo $address; ?>
+                </a>
+            </p>
             <p class="phone"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
             <p class="hours"><?php echo $hours; ?></p>
         </div><!--.promo-content-->

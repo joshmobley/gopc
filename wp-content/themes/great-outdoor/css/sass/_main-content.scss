@@ -38,7 +38,7 @@
 
     .archive-view{
         width:80%;
-        margin: 0 auto;
+        margin: 2em auto 0;
 
         .post-filter{
             background: #eee;
@@ -73,7 +73,7 @@
 
         }
 
-        .pagination-link{ clear: both; text-align: center; }
+        .pagination-link{ clear: right; text-align: center; margin-bottom: 2em;}
     }
 
 
@@ -107,7 +107,7 @@
 
         .promo-bg-image{
             width: 100%;
-            height: 60vw;
+            padding-top: 66.6667%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -144,6 +144,8 @@
 
             .promo-bg-image{
                 width: 100%;
+                height: 0;
+                padding-top: 66.67%;
                 margin: 0 auto 1em;
             }
 
@@ -209,6 +211,7 @@
     .wysiwyg{
         text-align: left;
         width: 80%;
+        max-width: 800px;
         margin: 2em auto;
         @include clearfix;
 
@@ -230,9 +233,18 @@
         .wp-caption.aligncenter{
             margin: 2em auto;
         }
+
+        .alignleft{
+            float: left;
+            margin: 1em 1em 1em 0;
+        }
+
+        .alignright{
+            float: right;
+            margin: 1em 0 1em 1em;
+        }
+
     }
-
-
 
 	.adventure-menu{
         margin: 0 auto 2em;
@@ -306,8 +318,10 @@
         position: relative;
         margin-top: 2em;
 
+        .wp-caption{ max-width: 100%; }
+
         img{
-            padding: .5em;
+            padding: .5em 0;
             background: $white;
             max-width: 100%;
             height: auto;
@@ -325,7 +339,7 @@
         h3{
             font-size: 1.4em;
         }
-        p{
+        p, li, blockquote{
             color: $black;
             margin: 2em 0;
             font-size: 1.1em;
@@ -336,6 +350,26 @@
         }
         em, i{
             font-style: italic;
+        }
+
+        ul li{
+            list-style: disc;
+            margin: 1em;
+        }
+
+        ol li{
+            list-style: decimal;
+            margin: 1em;
+        }
+
+        .wp-caption-text{
+            margin: 0;
+            font-style: italic;
+            font-size: .8em;
+        }
+
+        blockquote{
+
         }
 
         .wpcolumn{
@@ -409,9 +443,11 @@
             float: right;
 
             .tile{
-                width: 27.5%;
-                margin: 2.5%;
+                width: calc(32% - 20px);
                 float: left;
+                border: 1px solid #eee;
+                padding: 2%;
+                box-sizing: border-box;
 
                 &:nth-child(3n+1){
                     clear: left;
@@ -437,7 +473,7 @@
             float: left;
 
             .promo-bg-image{
-                height: 25vw;
+                //padding-top: 30%;
             }
 		}
 
@@ -481,6 +517,8 @@
                 .promo-bg-image{
                     width: 80%;
                     margin: 0 auto;
+                    height: 0;
+                    padding-top: 53.3334%;
                     vertical-align: bottom;
                     border-right: 10px solid $white;
                     border-left: 10px solid $white;
@@ -565,7 +603,7 @@
             margin: 0 1%;
 
             .promo-bg-image{
-                height: 29vw;
+               // padding-top: 32%;
             }
 		}
 
@@ -584,6 +622,7 @@
                 .promo-bg-image{
                     width: 80%;
                     height: 65vh;
+                    padding-top: 0;
                     margin: 0 auto;
                     background-position: center;
                     border-right: 10px solid $white;
@@ -603,7 +642,7 @@
 
 
             .promo-bg-image{
-                height: 15vw;
+                //padding-top: 15.3334%;
                 background-size: cover;
                 border: 1px solid #eee;
                 background-position: center;

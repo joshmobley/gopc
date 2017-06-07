@@ -19,7 +19,7 @@
             @media screen and (min-width: 1200px){#bg-0{background-image: url(https://greatoutdoor.wpengine.com/wp-content/uploads/2016/04/GOPC16-fall-campfire-guitar-group-GOPC-22-3000x2000-1600x1067.jpg);}}
         </style>
 
-        <div class="full-width promo no-margin-top page-header bg-image" id="post-0">
+        <div class="full-width promo no-margin-top no-margin-bottom page-header bg-image" id="post-0">
             <div id="bg-0" class="promo-bg-image"></div>
             <div class="promo-content bottom-right light">
                 <h2>Everybody's Got a Story.</h2>
@@ -29,13 +29,13 @@
 
     </div>
 
-    <?php else: ?>
+    <?php endif; ?>
 
     <h2 class="section-header is-page-title">
         Adventure
     </h2>
 
-    <?php endif; ?>
+    <p class="page-section">Filter stories by category and your favorite adventure or locale.</p>
 
 
 
@@ -91,23 +91,25 @@ echo do_shortcode( '[searchandfilter id="34148"]' );
             <a href="<?php esc_url( the_permalink() ); ?>"><?php echo $postImage; ?></a>
             <a href="<?php esc_url( the_permalink() ); ?>"><h3><?php esc_html( the_title() ); ?></h3></a>
             <?php
-                $body = get_the_excerpt();
-                echo esc_html(substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
+               // $body = get_the_excerpt();
+                //echo esc_html(substr( $body, 0, strpos( $body, ' ', 85 ))) . '...';
             ?>
         </li>
 <?php endwhile; ?>
-
-        <div class="pagination-link"><?php posts_nav_link(); ?></div>
 
         <?php wp_reset_postdata(); ?>
 
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    </ul>
+  
 <?php endif; ?>
+</ul>
+        <div class="pagination-link"><?php posts_nav_link(); ?></div>
+          
 
 </div><!--.archive-view-->
 
 
 </section><!--.main-content-->
+<?php include('includes/brand-bar.php'); ?>
 <?php get_footer(); ?>

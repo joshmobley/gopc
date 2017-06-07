@@ -1,4 +1,5 @@
 <div class="mega-menu" id="community-mega">
+    <h2 class="is-mobile">Community</h2>
     <h2 class="mega-menu-title">Great Outdoor Provision Co.</h2>
     <h3 class="mega-menu-subtitle">From Our Humble Beginnings To Now</h3>
 
@@ -14,9 +15,9 @@
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/community/we-support">We Support</a></h4>
         <ul>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/earth-month">Earth Month</a></li>
-           <li><a href="<?php echo get_bloginfo('url'); ?>/community/mountains-sea-trail">Mountains-to Sea Trail</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/community/mountains-sea-trail">Mountains-to Sea Trail</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/land-trust-day">Land Trust Day</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Coat Swap Day</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/community/coat-swap-day">Gift of Warmth Coat Drive</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/habitat-day">Habitat for Humanity</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/scouts">Local Boy and Girl Scouts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/community/trustys-trailblazers">Trusty’s Trailblazers</a></li>
@@ -38,9 +39,9 @@
     </div>
 
     <div class="mega-menu-column fifth">
-        <a href="<?php echo get_bloginfo('url');?>/2016/04/featured-shop-spring-2016/">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/front-table-promo.jpg" />
-            <h4 class="promo-text">Featured in the Shop</h4>
+        <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
+            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
+            <h4 class="promo-text">Gotcha Covered</h4>
         </a>
     </div>
 

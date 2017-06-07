@@ -66,7 +66,6 @@ $(document).ready(function(){
             $el
               .width(newWidth)
               .height(newWidth * $el.data('aspectRatio'));
-
           });
 
         // Kick off one resize to fix all videos on page load
@@ -78,12 +77,8 @@ $(document).ready(function(){
     function ajaxPostFilter( el ){
         $(el).find('.cat-item').click( function(event){
             event.preventDefault();
-
-
             var num_id = $(this).attr('class').match(/\d+/);
             $(this).toggleClass('active');
-
-            console.log(num_id);
         });
     }
 
@@ -92,13 +87,12 @@ $(document).ready(function(){
     /* mega menu animation */
     $('#menu-main-nav li').hover( function(){
         if( $(window).width() >= 1200 ){
-            $('#' + $(this).attr('data-mega')).addClass('is-open');
+            $('#' + $(this).attr('data-mega')).stop().show();
         }
     }, function(){
         if( $(window).width() >= 1200 ) {
-            $('#' + $(this).attr('data-mega')).removeClass('is-open');
+            $('#' + $(this).attr('data-mega')).stop().hide();
         }
-
     });
 
     $('#menu-main-nav > li > a').on('click', function(event){
@@ -129,6 +123,104 @@ $(document).ready(function(){
         }
 
     });
+
+    if( $('.tiled-list').length !== 0 ){
+
+        var base = '';
+        //base = '/greatoutdoor';
+        
+
+
+        $.getScript( base + '/wp-content/themes/great-outdoor/js/masonry-4.1.1.min.js', function(){
+
+            $('.tiled-list').masonry({
+                itemSelector: '.tile',
+                columnWidth: '.tile',
+                percentPosition: true,
+                gutter: 20,
+            });
+
+            $(window).load(function(){
+                $('.tiled-list').masonry('layout');
+            });
+
+        });
+    }
+
+    function debounce(func, wait, immediate) {
+    	var timeout;
+    	return function() {
+    		var context = this, args = arguments;
+    		var later = function() {
+    			timeout = null;
+    			if (!immediate) func.apply(context, args);
+    		};
+    		var callNow = immediate && !timeout;
+    		clearTimeout(timeout);
+    		timeout = setTimeout(later, wait);
+    		if (callNow) func.apply(context, args);
+    	};
+    }
+
+    function equalizeHeights( selector ){
+
+        function setHeight(){
+
+            var maxHeight = '';
+            var thisHeight = '';
+
+            $(selector).css('height', '');
+
+            $(selector).each(function(){
+
+                thisHeight = $(this).outerHeight();
+
+                if( thisHeight > maxHeight ){
+                    maxHeight = thisHeight;
+                }
+
+            });
+
+            $(selector).css('height', maxHeight);
+
+        }
+
+        setHeight();
+
+        $( window ).on('resize', function(e){
+            (function(){
+                debounce( setHeight() );
+            })();
+        });
+
+    }
+
+    function productMenuRedirect(){
+        $('.post-filter .responsive-column > ul > .cat-item > a').each( function(){
+            var href = $(this).attr('href');
+            var newHref = href.replace('/product-category/', '/products/');
+            $(this).attr('href', newHref);
+        });
+    }
+
+    function addBrands(name, url){
+        $('.post-filter .pa_brands ul').append('<li class="cat-item"><a href="' + url + '">' + name + '</a></li>');
+    }
+
+    if( $('.products .promos > div').length !== 0 ){
+        equalizeHeights('.products .promos > div');
+    }
+
+    if( $('.half-width.promo .promo-content').length !== 0 ){
+        equalizeHeights('.half-width.promo .promo-content');
+    }
+
+    equalizeHeights('.color-box');
+
+    if( $('.post-filter').length !== 0 ){
+        productMenuRedirect();
+        addBrands( 'Confluence', 'http://greatoutdoorprovision.com/pa_brands/confluence/' );
+    }
 
 
 
