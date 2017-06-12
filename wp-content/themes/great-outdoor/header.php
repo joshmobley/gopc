@@ -39,7 +39,9 @@
 
         <header class="header">
 
-            <a href="<?php echo esc_url( bloginfo('url') ); ?>"><h1><?php esc_html( bloginfo('name') ); ?></h1></a>
+            <a href="<?php echo esc_url( bloginfo('url') ); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/logo.png' ?>" alt="GOPC logo">
+            </a>
 
             <!--<a href="#" class="search-link">Search</a>-->
             <a href="#" class="menu-link">Menu</a>
