@@ -41,10 +41,10 @@
 
     <div class="product-info">
 
-        <h2 class="section-header orange left"><?php esc_html(the_title()); ?></h2>
+        <h1 class="section-header orange left"><?php esc_html(the_title()); ?></h1>
      
 		<?php
-            // DISPLAYING PRICING INFO IF AVAILABLE 
+            // DISPLAYING PRICING INFO IF AVAILABLE
             
             if( $product->get_regular_price() ){
                 echo '<p>';
@@ -53,7 +53,7 @@
                 	echo '<strike>';
                 }
                 
-                echo wc_price($product->get_regular_price()); 
+                echo wc_price($product->get_regular_price());
 
 		        if( $product->is_on_sale() ){
 		        
