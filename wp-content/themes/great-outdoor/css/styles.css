@@ -1212,12 +1212,10 @@ header {
     height: 0;
     display: block;
     clear: both; }
-  header h1 {
-    background: url("../assets/logo.png") no-repeat 0 0;
-    background-size: 100%;
-    text-indent: -9999em;
+  header img {
+    display: block;
     width: 200px;
-    height: 41px;
+    height: auto;
     float: left; }
   header .menu-link {
     background: url("../assets/menu.png") no-repeat 0 0;
