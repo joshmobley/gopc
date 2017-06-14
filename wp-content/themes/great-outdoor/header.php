@@ -40,7 +40,7 @@
         <header class="header">
 
             <a href="<?php echo esc_url( bloginfo('url') ); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/logo.png' ?>" alt="GOPC logo">
+                <img id="masthead-logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/logo.png' ?>" alt="GOPC logo">
             </a>
 
             <!--<a href="#" class="search-link">Search</a>-->
