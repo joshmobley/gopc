@@ -45,6 +45,27 @@
 
     <?php gopc_bgimage( $promoImage, '#promo-bg' ); ?>
 
+<section class="main-content">
+        <?php include( get_template_directory() . '/includes/content-parser.php'); ?>
+        </section>
+
+    <div class="full-width promo">
+
+        <div class="half-width location-description">
+            <?php echo $locationDesc; ?>
+        </div>
+
+        <div class="half-width">
+           <?php
+                if( $googleView) { echo $googleView; }
+                else{ gopc_image($locationImage); }
+
+            ?>
+        </div>
+
+    </div>
+
+
     <div class="page-section half-container">
 
         <div class="half-width promo">
@@ -126,22 +147,6 @@
                 }
                 /* Restore original Post Data
                 wp_reset_postdata();*/
-            ?>
-        </div>
-
-    </div>
-
-    <div class="full-width promo">
-
-        <div class="half-width location-description">
-            <?php echo $locationDesc; ?>
-        </div>
-
-        <div class="half-width">
-           <?php
-                if( $googleView) { echo $googleView; }
-                else{ gopc_image($locationImage); }
-
             ?>
         </div>
 
