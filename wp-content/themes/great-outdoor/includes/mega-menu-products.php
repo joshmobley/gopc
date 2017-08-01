@@ -7,20 +7,24 @@
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/mens-clothing/">Men's Clothing</a></h4>
         <ul>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-fleece/">Fleece & Pullovers</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-jackets/">Jackets & Vests</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-outerwear/">Outerwear</a></li>
+           <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-fleece/">Fleece & Pullovers</a></li>-->
+            <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-jackets/">Jackets & Vests</a></li>-->
+            <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-outerwear/">Outerwear</a></li>-->
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shirts/">Shirts</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-pants/">Pants</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-shorts/">Shorts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/mens-swim/">Swim</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/mens-clothing/">All Mens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/womens-clothing/">Women's Clothing</a></h4>
         <ul>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-fleece/">Fleece &amp; Pullovers</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-jackets/">Jackets &amp; Vests</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-outerwear/">Outerwear</a></li>
+            <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-fleece/">Fleece &amp; Pullovers</a></li><-->
+            <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-jackets/">Jackets &amp; Vests</a></li>-->
+            <!--<li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-outerwear/">Outerwear</a></li>-->
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-tops/">Tops</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/women-dresses/">Dresses &amp; Skirts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-dresses/">Dresses &amp; Skirts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-shorts/">Shorts</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/womens-swim/">Swim</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/product-category/womens-clothing/">All Womens</a></li>
         </ul>
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/products/accessories/">Accessories</a></h4>
@@ -84,10 +88,9 @@
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title">Featured Brands</h4>
         <ul id="featured-brand-list">
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/black-diamond/">Black Diamond</a></li>
+            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/mountain-khakis/">Mountain Khakis</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/chaco/">Chaco</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/merrell-footwear/">Merrell</a></li>
-            <li><a href="<?php echo get_bloginfo('url'); ?>/brands/the-north-face/">The North Face</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/osprey/">Osprey</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/patagonia/">Patagonia</a></li>
             <li><a href="<?php echo get_bloginfo('url'); ?>/brands/smartwool/">Smartwool</a></li>
@@ -97,10 +100,10 @@
     </div>
 
     <div class="mega-menu-column fifth">
-        <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
-            <h4 class="promo-text">Gotcha Covered</h4>
+        <a href="<?php echo get_bloginfo('url'); ?>/2016/05/summer-sidewalk-sales/">
+            <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2017/07/IMG_9471-opt.jpg">
+            <h4 class="promo-text">Summer Sidewalk Sales</h4>
         </a>
     </div>
 </div>
- </div><!--.mega-menu#products-mega-->
+ </div>
