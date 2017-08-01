@@ -7,7 +7,7 @@
 
     <div class="mega-menu-column fifth">
         <h4 class="mega-menu-column-title"><a href="<?php echo get_bloginfo('url'); ?>/community/about-us">About Us</a></h4>
-        <p>Since 1972, Great Outdoor Provision Co. has been gearing up for life outside. With nine stores throughout NC and VA, we are committed to equipping you for your next big adventure.</p>
+        <p>Since 1972, Great Outdoor Provision Co. has been gearing up for life outside. With nine&nbsp;stores throughout NC and VA, we are committed to equipping you for your next big adventure.</p>
         <p><a href="<?php echo get_bloginfo('url'); ?>/community/about-us">Learn More</a></p>
     </div>
 
@@ -39,13 +39,13 @@
     </div>
 
     <div class="mega-menu-column fifth">
-        <a href="http://greatoutdoorprovision.com/2016/04/featured-in-shop/">
-            <img src="http://greatoutdoorprovision.com/wp-content/uploads/2016/01/image1-2-1.jpg" />
-            <h4 class="promo-text">Gotcha Covered</h4>
+        <a href="<?php echo get_bloginfo('url'); ?>/2016/05/summer-sidewalk-sales/">
+            <img src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2017/07/IMG_9471-opt.jpg">
+            <h4 class="promo-text">Summer Sidewalk Sales</h4>
         </a>
     </div>
 
 
 </div>
 
- </div><!--.mega-menu#products-mega-->
+ </div>
