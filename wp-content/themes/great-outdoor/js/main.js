@@ -128,7 +128,7 @@ $(document).ready(function(){
 
         var base = '';
         //base = '/greatoutdoor';
-        
+
 
 
         $.getScript( base + '/wp-content/themes/great-outdoor/js/masonry-4.1.1.min.js', function(){
@@ -220,6 +220,25 @@ $(document).ready(function(){
     if( $('.post-filter').length !== 0 ){
         productMenuRedirect();
         addBrands( 'Confluence', 'http://greatoutdoorprovision.com/pa_brands/confluence/' );
+    }
+
+
+	// sitewide promotion functionality
+	if ( $('.site-promotion').length && $('.close-site-promotion').length ) {
+		setTimeout( function() {
+			$('.site-promotion').slideDown(450);
+		}, 250);
+
+        if ( sessionStorage.getItem('site-promotion') === 'closed' ) {
+            $('.site-promotion').remove();
+        }
+
+        $('.close-site-promotion').click( function(e) {
+            e.preventDefault();
+            $('.site-promotion').slideUp(450);
+            sessionStorage.setItem('site-promotion', 'closed');
+        });
+
     }
 
 

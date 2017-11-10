@@ -404,6 +404,16 @@ function activities_tax_init() {
 }
 add_action( 'init', 'activities_tax_init' );
 
+/**
+* Create custom option page with ACF
+*/
+if ( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Sitewide Promotion Settings',
+		'menu_title'	=> 'Sitewide Promotion',
+		'parent_slug' => 'themes.php'
+	));
+}
 
     /*****************************************************************************s
     *** v.  Short Codes
