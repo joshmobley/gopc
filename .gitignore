@@ -5,6 +5,8 @@
 *.bak
 *.swp
 Thumbs.db
+yarn.lock
+node_modules
 
 # wordpress specific
 wp-config.php
