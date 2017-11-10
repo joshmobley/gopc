@@ -42,7 +42,7 @@
 .woocommerce-pagination{
     text-align: center;
     float: none;
-    width: 100%;
+    width: auto;
     padding: 1em 10%;
     li{
         display: inline;
@@ -359,7 +359,7 @@
 
     .woocommerce ul.products li.product {
         width: 21.2%;
-    
+
         &:nth-child( 4n + 1){
             clear: left;
         }
