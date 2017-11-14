@@ -72,10 +72,10 @@
 					<p><?php echo $cta; ?></p>
 					<div class="paddle-cta-links">
 						<div class="paddle-appointment">
-							<a href="#" target="_blank">Make An Appointment</a>
+							<a href="https://www.gopcpaddlepro.com/?quiz=true" target="_blank">Make An Appointment</a>
 						</div>
 						<div class="paddle-schedule">
-							<a href="#" target="_blank">Take Quiz</a>
+							<a href="https://www.gopcpaddlepro.com/?schedule=true" target="_blank">Take Quiz</a>
 						</div>
 					</div>
 				</aside>
