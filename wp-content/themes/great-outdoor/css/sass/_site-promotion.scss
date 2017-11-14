@@ -67,7 +67,8 @@
 	position: absolute;
 	right: 1em;
 	top: 1em;
-	width: 15px;
+	height: 19px;
+	width: 19px;
 
 	&:hover {
 		cursor: pointer;
@@ -75,5 +76,87 @@
 
 	svg {
 		fill: $darkgreen;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+.paddle-cta {
+	background-color: rgba(0,0,0,0.95);
+	box-sizing: border-box;
+	bottom: 8px;
+	display: none;
+	left: 0;
+	margin: 0 auto;
+	max-width: 410px;
+	padding: 22px 48px 18px 38px;
+	position: fixed;
+	right: 0;
+
+	@media (min-width: 700px) {
+		bottom: 44px;
+		left: auto;
+
+		padding: 22px 28px 18px 18px;
+		right: 44px;
+		width: 50%;
+	}
+
+	p {
+		color: $lightgreen;
+		margin-bottom: 20px;
+	}
+
+	.paddle-cta-close {
+		height: 15px;
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		width: 15px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		svg {
+			fill: #fff;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.paddle-cta-links {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.paddle-appointment,
+		.paddle-schedule {
+			flex-basis: 44%;
+		}
+
+		a {
+			background-color: $lightgreen;
+			border: 2px solid $lightgreen;
+			color: black;
+			display: block;
+			font-size: 12px;
+			padding: 3px 6px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 155ms ease-out;
+			width: 100%;
+
+			@media (min-width: 700px) {
+				font-size: 14px;
+			}
+
+			&:hover {
+				background-color: black;
+				color: $lightgreen;
+			}
+		}
 	}
 }
