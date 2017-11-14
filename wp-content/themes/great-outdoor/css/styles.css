@@ -1917,8 +1917,73 @@ header {
   position: absolute;
   right: 1em;
   top: 1em;
-  width: 15px; }
+  height: 19px;
+  width: 19px; }
   .close-site-promotion:hover {
     cursor: pointer; }
   .close-site-promotion svg {
-    fill: #383a00; }
+    fill: #383a00;
+    height: 100%;
+    width: 100%; }
+
+.paddle-cta {
+  background-color: rgba(0, 0, 0, 0.95);
+  box-sizing: border-box;
+  bottom: 8px;
+  display: none;
+  left: 0;
+  margin: 0 auto;
+  max-width: 410px;
+  padding: 22px 48px 18px 38px;
+  position: fixed;
+  right: 0; }
+  @media (min-width: 700px) {
+    .paddle-cta {
+      bottom: 44px;
+      left: auto;
+      padding: 22px 28px 18px 18px;
+      right: 44px;
+      width: 50%; } }
+  .paddle-cta p {
+    color: #deec9b;
+    margin-bottom: 20px; }
+  .paddle-cta .paddle-cta-close {
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 15px; }
+    .paddle-cta .paddle-cta-close:hover {
+      cursor: pointer; }
+    .paddle-cta .paddle-cta-close svg {
+      fill: #fff;
+      height: 100%;
+      width: 100%; }
+  .paddle-cta .paddle-cta-links {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: 100%; }
+    .paddle-cta .paddle-cta-links .paddle-appointment,
+    .paddle-cta .paddle-cta-links .paddle-schedule {
+      -ms-flex-preferred-size: 44%;
+          flex-basis: 44%; }
+    .paddle-cta .paddle-cta-links a {
+      background-color: #deec9b;
+      border: 2px solid #deec9b;
+      color: black;
+      display: block;
+      font-size: 12px;
+      padding: 3px 6px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 155ms ease-out;
+      width: 100%; }
+      @media (min-width: 700px) {
+        .paddle-cta .paddle-cta-links a {
+          font-size: 14px; } }
+      .paddle-cta .paddle-cta-links a:hover {
+        background-color: black;
+        color: #deec9b; }
