@@ -413,6 +413,12 @@ if ( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Sitewide Promotion',
 		'parent_slug' => 'themes.php'
 	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Paddle Product CTA Settings',
+		'menu_title'	=> 'Paddle Product CTA',
+		'parent_slug' => 'themes.php'
+	));
 }
 
     /*****************************************************************************s
