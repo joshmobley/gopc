@@ -229,17 +229,29 @@ $(document).ready(function(){
 			$('.site-promotion').slideDown(450);
 		}, 250);
 
-        if ( sessionStorage.getItem('site-promotion') === 'closed' ) {
+        if ( localStorage.getItem('site-promotion') === 'closed' ) {
             $('.site-promotion').remove();
         }
 
         $('.close-site-promotion').click( function(e) {
             e.preventDefault();
             $('.site-promotion').slideUp(450);
-            sessionStorage.setItem('site-promotion', 'closed');
+            localStorage.setItem('site-promotion', 'closed');
         });
-
     }
+
+	if ( $('.paddle-cta').length && $('.paddle-cta-close').length ) {
+		$('.paddle-cta').show();
+		if ( localStorage.getItem('paddle-promotion') === 'closed' ) {
+            $('.paddle-cta').remove();
+        }
+
+        $('.paddle-cta-close').click( function(e) {
+            e.preventDefault();
+            localStorage.setItem('paddle-promotion', 'closed');
+			$('.paddle-cta').remove();
+        });
+	}
 
 
 

@@ -36,67 +36,18 @@
     ?>
 
     <body class="<?php echo $posttype; ?>">
-		<!-- pulls in ACF from options page -->
-		<?php
-		$promotion = get_field( 'promotion_text', 'options' );
-		$promotion_cta = get_field( 'cta_text', 'options' );
-		?>
-		<!-- grab URL slug -->
-		<?php $page_slug = basename(get_permalink()); ?>
-		<!-- grab product category, slugs -->
-		<?php
-		$postID = get_the_ID();
-		$terms = wp_get_post_terms( $postID, $taxonomy, $args );
-		$product_cats = array();
-
-		foreach ($terms as $term) :
-			array_push( $product_cats, $term->slug );
-		endforeach;
-		?>
-
-		<!-- if Paddle page or Paddle products page, show promotion -->
-		<?php if ( $page_slug == 'paddle' || in_array( 'paddle', $product_cats ) ) : ?>
-			<!-- if promotion fields are set, add promo markup -->
-			<?php if ( isset( $promotion, $promotion_cta ) ) : ?>
-					<div class="site-promotion js-promotion">
-						<div class="site-promotion-wrapper">
-							<div class="site-promotion-text">
-								<p><?php echo $promotion; ?></p>
-							</div>
-							<div class="site-promotion-cta">
-								<div class="cta-wrapper">
-									<a href="<?php the_field( 'cta_link', 'options' ); ?>">
-										<?php echo $promotion_cta; ?>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="close-site-promotion">
-							<svg viewBox="0 0 212.982 212.982" width="18" height="18" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve">
-								<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312
-									c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312
-									l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937
-									c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z"/>
-							</svg>
-						</div>
-					</div>
-			<?php endif; ?>
-		<?php endif; ?>
+		<?php get_template_part( 'includes/promotions' ); ?>
 
         <header class="header">
-
             <a href="<?php echo esc_url( bloginfo('url') ); ?>">
                 <img id="masthead-logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/logo.png' ?>" alt="GOPC logo">
             </a>
-
             <!--<a href="#" class="search-link">Search</a>-->
             <a href="#" class="menu-link">Menu</a>
 
             <div class="utility-nav">
-
                 <?php get_search_form(); ?>
                 <a href="<?php echo bloginfo('url'); ?>/join-muleteam/">Join MuleTeam</a>
-
             </div>
 
             <div class="nav-wrapper">
@@ -119,13 +70,5 @@
                         <?php include('includes/mega-menu-community.php'); ?>
                     </li>
                 </ul>
-
             </div>
-
-
-
         </header>
-
-
-
-
