@@ -15,7 +15,7 @@
 
         <ul>
     <?php wp_list_categories( array(
-        'taxonomy' => 'pa_brands',
+        'taxonomy' => 'pa_productbrands',
         'depth' => 1,
         'hierarchical' => false,
         'orderby' => 'count',
