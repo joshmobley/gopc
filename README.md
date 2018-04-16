@@ -31,4 +31,4 @@ We use WPEngine for hosting. WPEngine leverages git for deployments to both stag
 The biggest gotcha on this project, is that the navigation menus are periodically updated by the GOPC staff directly via the wordpress editor. This has been a painpoint to this point that has not been addressed, but obviously the menus will eventually need to be managed via the database, and not HTML.
 For now, you'll need to ensure that you copy the production mega-menus code before each deployment to ensure that you do not overwrite changes.
 
-Please coordinate all deployments with (Beth Khalifa)[mailto:beth@designbox.us] to ensure a collision-free deployment.
+Please coordinate all deployments with [Beth Khalifa](mailto:beth@designbox.us) to ensure a collision-free deployment.
